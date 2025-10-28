@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="conv1.cpp" path="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\conv1.cpp"/>
+    <originFiles name="srcnn.cpp" path="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp"/>
+    <originFiles name="srcnn.h" path="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.h"/>
+    <originFiles name="conv2.cpp" path="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\conv2.cpp"/>
+    <originFiles name="conv3.cpp" path="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\conv3.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="util.cpp" path="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\test\util.cpp"/>
+    <originFiles name="util.h" path="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\test\util.h"/>
+    <originFiles name="tb_set14.cpp" path="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\test\tb_set14.cpp"/>
+    <originFiles name="tb_conv1.cpp" path="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\test\tb_conv1.cpp"/>
+    <originFiles name="tb_srcnn.cpp" path="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\test\tb_srcnn.cpp"/>
+    <originFiles name="csim.cpp" path="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\test\csim.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
