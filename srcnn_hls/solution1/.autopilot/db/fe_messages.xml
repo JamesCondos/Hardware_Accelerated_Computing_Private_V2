@@ -1,0 +1,165 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5575" msg_severity="WARNING" msg_loc="src/srcnn.cpp:46:9" msg_body="'#pragma HLS loop_flatten' can only be applied inside loop body">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5531" msg_severity="WARNING" msg_loc="src/srcnn.cpp:130:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5531" msg_severity="WARNING" msg_loc="src/srcnn.cpp:131:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5531" msg_severity="WARNING" msg_loc="src/srcnn.cpp:171:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5575" msg_severity="WARNING" msg_loc="src/srcnn.cpp:228:9" msg_body="'#pragma HLS loop_flatten' can only be applied inside loop body">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_patch_tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_patch_tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_patch_tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=patch inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_patch_tile" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=patch intra false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_patch_tile" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_all_c1_at_clamped_center" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_all_c1_at_clamped_center" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c1_vec inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_all_c1_at_clamped_center" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c1_vec intra false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1_all_c1_at_clamped_center" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=6" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:96:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv2_single_from_c1" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv2_single_from_c1" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=wrow complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:102:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv2_single_from_c1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=6" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv2_single_from_c1" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=6" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:129:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="precompute_conv12_halo" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:130:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="precompute_conv12_halo" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=conv1_w core=ROM_2P" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:131:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="precompute_conv12_halo" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=conv2_w core=ROM_2P" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:137:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="precompute_conv12_halo" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c1_vec inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:138:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="precompute_conv12_halo" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c1_vec intra false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:170:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv3_from_precomputed_conv2" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:171:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv3_from_precomputed_conv2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=conv3_w core=ROM_2P" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:185:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv3_from_precomputed_conv2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=k complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:188:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv3_from_precomputed_conv2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=6" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:194:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv3_from_precomputed_conv2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=6" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/csynth.tcl:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="srcnn" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=srcnn" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:227:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="srcnn" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/srcnn.cpp:228:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="srcnn" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/srcnn.cpp:147:7" msg_body="Inlining function 'conv1_all_c1_at_clamped_center(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float*)' into 'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])'">
+        <args Callee="conv1_all_c1_at_clamped_center(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float*)" Callee-DebugLoc="File src/srcnn.cpp Line 68 Column 0" Caller="precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])" Caller-DebugLoc="File src/srcnn.cpp Line 128 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-340" msg_severity="WARNING" msg_loc="src/srcnn.cpp:248:7" msg_body="The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead">
+        <args Pragma="call" Pragma-DebugLoc="File src/srcnn.cpp Line 248 Column 7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-340" msg_severity="WARNING" msg_loc="src/srcnn.cpp:255:7" msg_body="The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead">
+        <args Pragma="call" Pragma-DebugLoc="File src/srcnn.cpp Line 255 Column 7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DEPENDENCE" msg_id="214-199" msg_severity="WARNING" msg_loc="src/srcnn.cpp:71:9" msg_body="Ignoring dependence pragma on local scalar variable 'c1_vec'.">
+        <args Value="c1_vec" Value-DebugLoc="File src/srcnn.cpp Line 148 Column 56"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DEPENDENCE" msg_id="214-199" msg_severity="WARNING" msg_loc="src/srcnn.cpp:70:9" msg_body="Ignoring dependence pragma on local scalar variable 'c1_vec'.">
+        <args Value="c1_vec" Value-DebugLoc="File src/srcnn.cpp Line 148 Column 56"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/srcnn.cpp:41:0" msg_body="Inlining function 'clampi(int, int, int)' into 'load_patch_tile(float (*) [255][255], int, int, int, int, float (*) [76])'">
+        <args Callee="clampi(int, int, int)" Callee-DebugLoc="File src/srcnn.cpp Line 25 Column 0" Caller="load_patch_tile(float (*) [255][255], int, int, int, int, float (*) [76])" Caller-DebugLoc="File src/srcnn.cpp Line 41 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'int generic_isnan&lt;float&gt;(float)'">
+        <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 312 Column 0" Caller="int generic_isnan&lt;float&gt;(float)" Caller-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h} Line 16 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:351:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::data() const (.22.29.35.43)' into 'fp_struct&lt;float&gt;::to_float() const'">
+        <args Callee="fp_struct&lt;float&gt;::data() const (.22.29.35.43)" Callee-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 338 Column 0" Caller="fp_struct&lt;float&gt;::to_float() const" Caller-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 351 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:375:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::to_float() const' into 'fp_struct&lt;float&gt;::to_ieee() const'">
+        <args Callee="fp_struct&lt;float&gt;::to_float() const" Callee-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 351 Column 0" Caller="fp_struct&lt;float&gt;::to_ieee() const" Caller-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 375 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:348:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::data() const (.22.29.35.43)' into 'fp_struct&lt;float&gt;::to_int() const'">
+        <args Callee="fp_struct&lt;float&gt;::data() const (.22.29.35.43)" Callee-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 338 Column 0" Caller="fp_struct&lt;float&gt;::to_int() const" Caller-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 348 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::fp_struct(float)' into 'float generic_fmax&lt;float&gt;(float, float)'">
+        <args Callee="fp_struct&lt;float&gt;::fp_struct(float)" Callee-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 312 Column 0" Caller="float generic_fmax&lt;float&gt;(float, float)" Caller-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h} Line 20 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0" msg_body="Inlining function 'int generic_isnan&lt;float&gt;(float)' into 'float generic_fmax&lt;float&gt;(float, float)'">
+        <args Callee="int generic_isnan&lt;float&gt;(float)" Callee-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h} Line 16 Column 0" Caller="float generic_fmax&lt;float&gt;(float, float)" Caller-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h} Line 20 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::to_ieee() const' into 'float generic_fmax&lt;float&gt;(float, float)'">
+        <args Callee="fp_struct&lt;float&gt;::to_ieee() const" Callee-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 375 Column 0" Caller="float generic_fmax&lt;float&gt;(float, float)" Caller-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h} Line 20 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0" msg_body="Inlining function 'fp_struct&lt;float&gt;::to_int() const' into 'float generic_fmax&lt;float&gt;(float, float)'">
+        <args Callee="fp_struct&lt;float&gt;::to_int() const" Callee-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h} Line 348 Column 0" Caller="float generic_fmax&lt;float&gt;(float, float)" Caller-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h} Line 20 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/srcnn.cpp:95:0" msg_body="Inlining function 'mad_no_fma(float, float, float)' into 'conv2_single_from_c1(int, float (*) [64][1][1], float*, float const*)'">
+        <args Callee="mad_no_fma(float, float, float)" Callee-DebugLoc="File src/srcnn.cpp Line 30 Column 0" Caller="conv2_single_from_c1(int, float (*) [64][1][1], float*, float const*)" Caller-DebugLoc="File src/srcnn.cpp Line 95 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/srcnn.cpp:95:0" msg_body="Inlining function 'fmaxf' into 'conv2_single_from_c1(int, float (*) [64][1][1], float*, float const*)'">
+        <args Callee="fmaxf" Callee-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp} Line 6 Column 0" Caller="conv2_single_from_c1(int, float (*) [64][1][1], float*, float const*)" Caller-DebugLoc="File src/srcnn.cpp Line 95 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/srcnn.cpp:128:0" msg_body="Inlining function 'clampi(int, int, int)' into 'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])'">
+        <args Callee="clampi(int, int, int)" Callee-DebugLoc="File src/srcnn.cpp Line 25 Column 0" Caller="precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])" Caller-DebugLoc="File src/srcnn.cpp Line 128 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/srcnn.cpp:128:0" msg_body="Inlining function 'fmaxf' into 'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])'">
+        <args Callee="fmaxf" Callee-DebugLoc="File {C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp} Line 6 Column 0" Caller="precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])" Caller-DebugLoc="File src/srcnn.cpp Line 128 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/srcnn.cpp:128:0" msg_body="Inlining function 'mad_no_fma(float, float, float)' into 'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])'">
+        <args Callee="mad_no_fma(float, float, float)" Callee-DebugLoc="File src/srcnn.cpp Line 30 Column 0" Caller="precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])" Caller-DebugLoc="File src/srcnn.cpp Line 128 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/srcnn.cpp:169:0" msg_body="Inlining function 'clampi(int, int, int)' into 'conv3_from_precomputed_conv2(int, int, int, int, float (*) [32][5][5], float*, float (*) [68][68], float (*) [255][255])'">
+        <args Callee="clampi(int, int, int)" Callee-DebugLoc="File src/srcnn.cpp Line 25 Column 0" Caller="conv3_from_precomputed_conv2(int, int, int, int, float (*) [32][5][5], float*, float (*) [68][68], float (*) [255][255])" Caller-DebugLoc="File src/srcnn.cpp Line 169 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/srcnn.cpp:169:0" msg_body="Inlining function 'mad_no_fma(float, float, float)' into 'conv3_from_precomputed_conv2(int, int, int, int, float (*) [32][5][5], float*, float (*) [68][68], float (*) [255][255])'">
+        <args Callee="mad_no_fma(float, float, float)" Callee-DebugLoc="File src/srcnn.cpp Line 30 Column 0" Caller="conv3_from_precomputed_conv2(int, int, int, int, float (*) [32][5][5], float*, float (*) [68][68], float (*) [255][255])" Caller-DebugLoc="File src/srcnn.cpp Line 169 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/srcnn.cpp:99:10" msg_body="Applying array_partition to 'wrow': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="wrow"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/srcnn.cpp:184:19" msg_body="Applying array_partition to 'k': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="k"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

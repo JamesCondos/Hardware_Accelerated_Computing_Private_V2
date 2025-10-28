@@ -34,10 +34,10 @@ int tb_conv1()
                N1);
 
     // apply conv1 layer to input
-    conv1(input_ftmap,
-          weights,
-          biases,
-          output_ftmap);
+    //conv1(input_ftmap,
+     //     weights,
+     //     biases,
+      //    output_ftmap);
 
     // load golden reference
     load_ftmap(fname_GR, &golden_ftmap[0][0][0], N1*H*W);

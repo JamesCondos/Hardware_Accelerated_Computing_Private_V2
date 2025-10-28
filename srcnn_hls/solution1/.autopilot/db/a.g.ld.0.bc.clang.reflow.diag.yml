@@ -1,0 +1,481 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/srcnn.cpp, Line: 147, Column: 7 }
+Function:        _ZL22precompute_conv12_haloPA76_fiiiiPA1_A9_A9_fPfPA64_A1_A1_fS5_PA68_A68_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'conv1_all_c1_at_clamped_center(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float*)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 68, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 128, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-pragma-preprocess
+Name:            PragmaResourceTopArg
+DebugLoc:        { File: src/srcnn.cpp, Line: 248, Column: 7 }
+Function:        _Z5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_
+Args:            
+  - String:          'The resource pragma (bind_storage) on top-level function argument, in '''
+  - Pragma:          call
+    DebugLoc:        { File: src/srcnn.cpp, Line: 248, Column: 7 }
+  - String:          ''' is unsupported, please use INTERFACE pragma instead'
+...
+--- !Passed
+Pass:            reflow-pragma-preprocess
+Name:            PragmaResourceTopArg
+DebugLoc:        { File: src/srcnn.cpp, Line: 248, Column: 7 }
+Function:        _Z5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_
+Args:            
+  - String:          'The resource pragma (bind_storage) on top-level function argument, in '''
+  - Pragma:          call
+    DebugLoc:        { File: src/srcnn.cpp, Line: 248, Column: 7 }
+  - String:          ''' is unsupported, please use INTERFACE pragma instead'
+...
+--- !Passed
+Pass:            reflow-pragma-preprocess
+Name:            PragmaResourceTopArg
+DebugLoc:        { File: src/srcnn.cpp, Line: 255, Column: 7 }
+Function:        _Z5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_
+Args:            
+  - String:          'The resource pragma (bind_storage) on top-level function argument, in '''
+  - Pragma:          call
+    DebugLoc:        { File: src/srcnn.cpp, Line: 255, Column: 7 }
+  - String:          ''' is unsupported, please use INTERFACE pragma instead'
+...
+--- !Missed
+Pass:            reflow-pragma-preprocess
+Name:            IgnoreDepOnScalar
+DebugLoc:        { File: src/srcnn.cpp, Line: 71, Column: 9 }
+Function:        _ZL22precompute_conv12_haloPA76_fiiiiPA1_A9_A9_fPfPA64_A1_A1_fS5_PA68_A68_f
+Args:            
+  - String:          'Ignoring dependence pragma on local scalar variable '''
+  - Value:           c1_vec
+    DebugLoc:        { File: src/srcnn.cpp, Line: 148, Column: 56 }
+  - String:          '''.'
+...
+--- !Missed
+Pass:            reflow-pragma-preprocess
+Name:            IgnoreDepOnScalar
+DebugLoc:        { File: src/srcnn.cpp, Line: 70, Column: 9 }
+Function:        _ZL22precompute_conv12_haloPA76_fiiiiPA1_A9_A9_fPfPA64_A1_A1_fS5_PA68_A68_f
+Args:            
+  - String:          'Ignoring dependence pragma on local scalar variable '''
+  - Value:           c1_vec
+    DebugLoc:        { File: src/srcnn.cpp, Line: 148, Column: 56 }
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/srcnn.cpp, Line: 41, Column: 0 }
+Function:        _ZL15load_patch_tilePA255_A255_fiiiiPA76_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'clampi(int, int, int)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 25, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'load_patch_tile(float (*) [255][255], int, int, int, int, float (*) [76])'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 41, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isnanIfEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 312, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isnan<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 351, Column: 0 }
+Function:        _ZNK9fp_structIfE8to_floatEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const (.22.29.35.43)'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 338, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 351, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 375, Column: 0 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 351, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 375, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 348, Column: 0 }
+Function:        _ZNK9fp_structIfE6to_intEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const (.22.29.35.43)'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 338, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_int() const'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 348, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 312, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmax<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isnan<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h', 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmax<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 375, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmax<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                   Line: 20, Column: 0 }
+Function:        _Z12generic_fmaxIfET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_int() const'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 348, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float generic_fmax<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h', 
+                       Line: 20, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/srcnn.cpp, Line: 95, Column: 0 }
+Function:        _ZL20conv2_single_from_c1iPA64_A1_A1_fPfPKf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mad_no_fma(float, float, float)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 30, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'conv2_single_from_c1(int, float (*) [64][1][1], float*, float const*)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 95, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/srcnn.cpp, Line: 95, Column: 0 }
+Function:        _ZL20conv2_single_from_c1iPA64_A1_A1_fPfPKf
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          fmaxf
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'conv2_single_from_c1(int, float (*) [64][1][1], float*, float const*)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 95, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/srcnn.cpp, Line: 128, Column: 0 }
+Function:        _ZL22precompute_conv12_haloPA76_fiiiiPA1_A9_A9_fPfPA64_A1_A1_fS5_PA68_A68_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'clampi(int, int, int)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 25, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 128, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/srcnn.cpp, Line: 128, Column: 0 }
+Function:        _ZL22precompute_conv12_haloPA76_fiiiiPA1_A9_A9_fPfPA64_A1_A1_fS5_PA68_A68_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          fmaxf
+    DebugLoc:        { File: 'C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp', 
+                       Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 128, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/srcnn.cpp, Line: 128, Column: 0 }
+Function:        _ZL22precompute_conv12_haloPA76_fiiiiPA1_A9_A9_fPfPA64_A1_A1_fS5_PA68_A68_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mad_no_fma(float, float, float)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 30, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 128, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/srcnn.cpp, Line: 169, Column: 0 }
+Function:        _ZL28conv3_from_precomputed_conv2iiiiPA32_A5_A5_fPfPA68_A68_fPA255_A255_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'clampi(int, int, int)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 25, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'conv3_from_precomputed_conv2(int, int, int, int, float (*) [32][5][5], float*, float (*) [68][68], float (*) [255][255])'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 169, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/srcnn.cpp, Line: 169, Column: 0 }
+Function:        _ZL28conv3_from_precomputed_conv2iiiiPA32_A5_A5_fPfPA68_A68_fPA255_A255_f
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mad_no_fma(float, float, float)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 30, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'conv3_from_precomputed_conv2(int, int, int, int, float (*) [32][5][5], float*, float (*) [68][68], float (*) [255][255])'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 169, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/srcnn.cpp, Line: 99, Column: 10 }
+Function:        _ZL20conv2_single_from_c1iPA64_A1_A1_fPfPKf
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          wrow
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/srcnn.cpp, Line: 184, Column: 19 }
+Function:        _ZL28conv3_from_precomputed_conv2iiiiPA32_A5_A5_fPfPA68_A68_fPA255_A255_f
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          k
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: src/srcnn.cpp, Line: 31, Column: 20 }
+Function:        _ZL22precompute_conv12_haloPA76_fiiiiPA1_A9_A9_fPfPA64_A1_A1_fS5_PA68_A68_f
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src/srcnn.cpp, Line: 31, Column: 20 }
+  - OrigDirection:   write
+  - OrigID:          for.body10.i.store.27
+  - ArrayName:       p.i
+  - String:          ' '
+  - BundleName:      ''
+  - String:          ' '
+  - Function:        'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 128, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: src/srcnn.cpp, Line: 32, Column: 14 }
+Function:        _ZL22precompute_conv12_haloPA76_fiiiiPA1_A9_A9_fPfPA64_A1_A1_fS5_PA68_A68_f
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/srcnn.cpp, Line: 32, Column: 14 }
+  - OrigDirection:   read
+  - OrigID:          for.body10.i.load.28
+  - ArrayName:       p.i
+  - String:          ' '
+  - BundleName:      ''
+  - String:          ' '
+  - Function:        'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 128, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: src/srcnn.cpp, Line: 31, Column: 20 }
+Function:        _ZL28conv3_from_precomputed_conv2iiiiPA32_A5_A5_fPfPA68_A68_fPA255_A255_f
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src/srcnn.cpp, Line: 31, Column: 20 }
+  - OrigDirection:   write
+  - OrigID:          for.body46.store.45
+  - ArrayName:       p.i
+  - String:          ' '
+  - BundleName:      ''
+  - String:          ' '
+  - Function:        'conv3_from_precomputed_conv2(int, int, int, int, float (*) [32][5][5], float*, float (*) [68][68], float (*) [255][255])'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 169, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: src/srcnn.cpp, Line: 32, Column: 14 }
+Function:        _ZL28conv3_from_precomputed_conv2iiiiPA32_A5_A5_fPfPA68_A68_fPA255_A255_f
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/srcnn.cpp, Line: 32, Column: 14 }
+  - OrigDirection:   read
+  - OrigID:          for.body46.load.46
+  - ArrayName:       p.i
+  - String:          ' '
+  - BundleName:      ''
+  - String:          ' '
+  - Function:        'conv3_from_precomputed_conv2(int, int, int, int, float (*) [32][5][5], float*, float (*) [68][68], float (*) [255][255])'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 169, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: src/srcnn.cpp, Line: 31, Column: 20 }
+Function:        _ZL20conv2_single_from_c1iPA64_A1_A1_fPfPKf
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src/srcnn.cpp, Line: 31, Column: 20 }
+  - OrigDirection:   write
+  - OrigID:          for.inc18.store.13
+  - ArrayName:       p.i
+  - String:          ' '
+  - BundleName:      ''
+  - String:          ' '
+  - Function:        'conv2_single_from_c1(int, float (*) [64][1][1], float*, float const*)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 95, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            NonSimpleMemoryAccess
+DebugLoc:        { File: src/srcnn.cpp, Line: 32, Column: 14 }
+Function:        _ZL20conv2_single_from_c1iPA64_A1_A1_fPfPKf
+Args:            
+  - String:          Volatile or Atomic access cannot be transformed
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/srcnn.cpp, Line: 32, Column: 14 }
+  - OrigDirection:   read
+  - OrigID:          for.inc18.load.14
+  - ArrayName:       p.i
+  - String:          ' '
+  - BundleName:      ''
+  - String:          ' '
+  - Function:        'conv2_single_from_c1(int, float (*) [64][1][1], float*, float const*)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 95, Column: 0 }
+  - String:          ' '
+...

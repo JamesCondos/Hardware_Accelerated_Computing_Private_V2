@@ -1,0 +1,230 @@
+
+
+================================================================
+== Vitis HLS Report for 'conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2'
+================================================================
+* Date:           Tue Oct 28 14:00:54 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        srcnn_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.016 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      388|      388|  3.880 us|  3.880 us|  388|  388|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_108_2  |      386|      386|         9|          6|          6|    64|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      31|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       0|     273|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|     100|    -|
+|Register         |        -|     -|     145|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     145|     404|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------+-----------------+---------+----+---+-----+-----+
+    |       Instance       |      Module     | BRAM_18K| DSP| FF| LUT | URAM|
+    +----------------------+-----------------+---------+----+---+-----+-----+
+    |mux_64_6_32_1_1_U102  |mux_64_6_32_1_1  |        0|   0|  0|  273|    0|
+    +----------------------+-----------------+---------+----+---+-----+-----+
+    |Total                 |                 |        0|   0|  0|  273|    0|
+    +----------------------+-----------------+---------+----+---+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln108_fu_617_p2   |         +|   0|  0|  14|           7|           1|
+    |icmp_ln108_fu_611_p2  |      icmp|   0|  0|  15|           7|           8|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  31|          15|          11|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |acc_1_fu_168                 |   9|          2|   32|         64|
+    |ap_NS_fsm                    |  37|          7|    1|          7|
+    |ap_done_int                  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0      |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0_reg  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1      |   9|          2|    1|          2|
+    |ap_sig_allocacmp_c1_1        |   9|          2|    7|         14|
+    |c1_fu_172                    |   9|          2|    7|         14|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 100|         21|   51|        107|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+----+----+-----+-----------+
+    |             Name            | FF | LUT| Bits| Const Bits|
+    +-----------------------------+----+----+-----+-----------+
+    |a_assign_reg_818             |  32|   0|   32|          0|
+    |acc_1_fu_168                 |  32|   0|   32|          0|
+    |ap_CS_fsm                    |   6|   0|    6|          0|
+    |ap_done_reg                  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1      |   1|   0|    1|          0|
+    |c1_fu_172                    |   7|   0|    7|          0|
+    |c1_vec_load_reg_828          |  32|   0|   32|          0|
+    |icmp_ln108_reg_814           |   1|   0|    1|          0|
+    |p_3_fu_176                   |  32|   0|   32|          0|
+    +-----------------------------+----+----+-----+-----------+
+    |Total                        | 145|   0|  145|          0|
+    +-----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+------------------------------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |                  Source Object                 |    C Type    |
++----------------------+-----+-----+------------+------------------------------------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|grp_fu_1433_p_din0    |  out|   32|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|grp_fu_1433_p_din1    |  out|   32|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|grp_fu_1433_p_opcode  |  out|    2|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|grp_fu_1433_p_dout0   |   in|   32|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|grp_fu_1433_p_ce      |  out|    1|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|grp_fu_1437_p_din0    |  out|   32|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|grp_fu_1437_p_din1    |  out|   32|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|grp_fu_1437_p_dout0   |   in|   32|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|grp_fu_1437_p_ce      |  out|    1|  ap_ctrl_hs|  conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2|  return value|
+|acc                   |   in|   32|     ap_none|                                             acc|        scalar|
+|wrow_reload           |   in|   32|     ap_none|                                     wrow_reload|        scalar|
+|wrow_1_reload         |   in|   32|     ap_none|                                   wrow_1_reload|        scalar|
+|wrow_2_reload         |   in|   32|     ap_none|                                   wrow_2_reload|        scalar|
+|wrow_3_reload         |   in|   32|     ap_none|                                   wrow_3_reload|        scalar|
+|wrow_4_reload         |   in|   32|     ap_none|                                   wrow_4_reload|        scalar|
+|wrow_5_reload         |   in|   32|     ap_none|                                   wrow_5_reload|        scalar|
+|wrow_6_reload         |   in|   32|     ap_none|                                   wrow_6_reload|        scalar|
+|wrow_7_reload         |   in|   32|     ap_none|                                   wrow_7_reload|        scalar|
+|wrow_8_reload         |   in|   32|     ap_none|                                   wrow_8_reload|        scalar|
+|wrow_9_reload         |   in|   32|     ap_none|                                   wrow_9_reload|        scalar|
+|wrow_10_reload        |   in|   32|     ap_none|                                  wrow_10_reload|        scalar|
+|wrow_11_reload        |   in|   32|     ap_none|                                  wrow_11_reload|        scalar|
+|wrow_12_reload        |   in|   32|     ap_none|                                  wrow_12_reload|        scalar|
+|wrow_13_reload        |   in|   32|     ap_none|                                  wrow_13_reload|        scalar|
+|wrow_14_reload        |   in|   32|     ap_none|                                  wrow_14_reload|        scalar|
+|wrow_15_reload        |   in|   32|     ap_none|                                  wrow_15_reload|        scalar|
+|wrow_16_reload        |   in|   32|     ap_none|                                  wrow_16_reload|        scalar|
+|wrow_17_reload        |   in|   32|     ap_none|                                  wrow_17_reload|        scalar|
+|wrow_18_reload        |   in|   32|     ap_none|                                  wrow_18_reload|        scalar|
+|wrow_19_reload        |   in|   32|     ap_none|                                  wrow_19_reload|        scalar|
+|wrow_20_reload        |   in|   32|     ap_none|                                  wrow_20_reload|        scalar|
+|wrow_21_reload        |   in|   32|     ap_none|                                  wrow_21_reload|        scalar|
+|wrow_22_reload        |   in|   32|     ap_none|                                  wrow_22_reload|        scalar|
+|wrow_23_reload        |   in|   32|     ap_none|                                  wrow_23_reload|        scalar|
+|wrow_24_reload        |   in|   32|     ap_none|                                  wrow_24_reload|        scalar|
+|wrow_25_reload        |   in|   32|     ap_none|                                  wrow_25_reload|        scalar|
+|wrow_26_reload        |   in|   32|     ap_none|                                  wrow_26_reload|        scalar|
+|wrow_27_reload        |   in|   32|     ap_none|                                  wrow_27_reload|        scalar|
+|wrow_28_reload        |   in|   32|     ap_none|                                  wrow_28_reload|        scalar|
+|wrow_29_reload        |   in|   32|     ap_none|                                  wrow_29_reload|        scalar|
+|wrow_30_reload        |   in|   32|     ap_none|                                  wrow_30_reload|        scalar|
+|wrow_31_reload        |   in|   32|     ap_none|                                  wrow_31_reload|        scalar|
+|wrow_32_reload        |   in|   32|     ap_none|                                  wrow_32_reload|        scalar|
+|wrow_33_reload        |   in|   32|     ap_none|                                  wrow_33_reload|        scalar|
+|wrow_34_reload        |   in|   32|     ap_none|                                  wrow_34_reload|        scalar|
+|wrow_35_reload        |   in|   32|     ap_none|                                  wrow_35_reload|        scalar|
+|wrow_36_reload        |   in|   32|     ap_none|                                  wrow_36_reload|        scalar|
+|wrow_37_reload        |   in|   32|     ap_none|                                  wrow_37_reload|        scalar|
+|wrow_38_reload        |   in|   32|     ap_none|                                  wrow_38_reload|        scalar|
+|wrow_39_reload        |   in|   32|     ap_none|                                  wrow_39_reload|        scalar|
+|wrow_40_reload        |   in|   32|     ap_none|                                  wrow_40_reload|        scalar|
+|wrow_41_reload        |   in|   32|     ap_none|                                  wrow_41_reload|        scalar|
+|wrow_42_reload        |   in|   32|     ap_none|                                  wrow_42_reload|        scalar|
+|wrow_43_reload        |   in|   32|     ap_none|                                  wrow_43_reload|        scalar|
+|wrow_44_reload        |   in|   32|     ap_none|                                  wrow_44_reload|        scalar|
+|wrow_45_reload        |   in|   32|     ap_none|                                  wrow_45_reload|        scalar|
+|wrow_46_reload        |   in|   32|     ap_none|                                  wrow_46_reload|        scalar|
+|wrow_47_reload        |   in|   32|     ap_none|                                  wrow_47_reload|        scalar|
+|wrow_48_reload        |   in|   32|     ap_none|                                  wrow_48_reload|        scalar|
+|wrow_49_reload        |   in|   32|     ap_none|                                  wrow_49_reload|        scalar|
+|wrow_50_reload        |   in|   32|     ap_none|                                  wrow_50_reload|        scalar|
+|wrow_51_reload        |   in|   32|     ap_none|                                  wrow_51_reload|        scalar|
+|wrow_52_reload        |   in|   32|     ap_none|                                  wrow_52_reload|        scalar|
+|wrow_53_reload        |   in|   32|     ap_none|                                  wrow_53_reload|        scalar|
+|wrow_54_reload        |   in|   32|     ap_none|                                  wrow_54_reload|        scalar|
+|wrow_55_reload        |   in|   32|     ap_none|                                  wrow_55_reload|        scalar|
+|wrow_56_reload        |   in|   32|     ap_none|                                  wrow_56_reload|        scalar|
+|wrow_57_reload        |   in|   32|     ap_none|                                  wrow_57_reload|        scalar|
+|wrow_58_reload        |   in|   32|     ap_none|                                  wrow_58_reload|        scalar|
+|wrow_59_reload        |   in|   32|     ap_none|                                  wrow_59_reload|        scalar|
+|wrow_60_reload        |   in|   32|     ap_none|                                  wrow_60_reload|        scalar|
+|wrow_61_reload        |   in|   32|     ap_none|                                  wrow_61_reload|        scalar|
+|wrow_62_reload        |   in|   32|     ap_none|                                  wrow_62_reload|        scalar|
+|wrow_63_reload        |   in|   32|     ap_none|                                  wrow_63_reload|        scalar|
+|c1_vec_address0       |  out|    6|   ap_memory|                                          c1_vec|         array|
+|c1_vec_ce0            |  out|    1|   ap_memory|                                          c1_vec|         array|
+|c1_vec_q0             |   in|   32|   ap_memory|                                          c1_vec|         array|
+|acc_1_out             |  out|   32|      ap_vld|                                       acc_1_out|       pointer|
+|acc_1_out_ap_vld      |  out|    1|      ap_vld|                                       acc_1_out|       pointer|
++----------------------+-----+-----+------------+------------------------------------------------+--------------+
+

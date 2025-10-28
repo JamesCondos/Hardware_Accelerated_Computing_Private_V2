@@ -1,0 +1,50 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'srcnn'" level="0">
+<item name = "Date">Tue Oct 28 14:00:53 2025
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">srcnn_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.016 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">19543209, 59200941737, 0.195 sec, 592.009 sec, 19543210, 59200941738, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_load_patch_tile_fu_99">load_patch_tile, 178, 71298, 1.780 us, 0.713 ms, 178, 71298, no</column>
+<column name="grp_precompute_conv12_halo_fu_110">precompute_conv12_halo, 1214479, 3258727903, 12.145 ms, 32.587 sec, 1214479, 3258727903, no</column>
+<column name="grp_conv3_from_precomputed_conv2_fu_128">conv3_from_precomputed_conv2, 6787, 441259651, 67.870 us, 4.413 sec, 6787, 441259651, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_239_1">19543208, 59200941736, 4885802 ~ 14800235434, -, -, 4, no</column>
+<column name=" + VITIS_LOOP_242_2">4885800, 14800235432, 1221450 ~ 3700058858, -, -, 4, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
