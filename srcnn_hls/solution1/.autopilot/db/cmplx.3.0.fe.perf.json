@@ -1,83 +1,19 @@
 {
   "0": {
-    "basicblocks": 5,
-    "calls": "5 3 1",
+    "basicblocks": 150,
+    "calls": "",
     "file": "srcnn.cpp",
-    "fileloc": 218,
-    "instructions": 24,
+    "fileloc": 41,
+    "instructions": 56740,
     "loads": {
-      "T": 1
+      "L": 15553,
+      "T": 949
     },
     "name": "srcnn",
-    "total_instructions": 804
-  },
-  "1": {
-    "basicblocks": 43,
-    "calls": "",
-    "file": "srcnn.cpp",
-    "fileloc": 161,
-    "instructions": 368,
-    "loads": {
-      "L": 3
-    },
-    "name": "conv3_from_precomputed_conv2",
     "stores": {
-      "L": 2
+      "L": 2153,
+      "T": 1
     },
-    "total_instructions": 368
-  },
-  "2": {
-    "basicblocks": 4,
-    "calls": "",
-    "file": "hls_fmax.h",
-    "fileloc": 19,
-    "instructions": 21,
-    "name": "generic_fmax<float>",
-    "total_instructions": 21
-  },
-  "3": {
-    "basicblocks": 15,
-    "calls": "2 4",
-    "file": "srcnn.cpp",
-    "fileloc": 116,
-    "instructions": 103,
-    "loads": {
-      "L": 4
-    },
-    "name": "precompute_conv12_halo",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 368
-  },
-  "4": {
-    "basicblocks": 69,
-    "calls": "2",
-    "file": "srcnn.cpp",
-    "fileloc": 90,
-    "instructions": 223,
-    "loads": {
-      "L": 4
-    },
-    "name": "conv2_single_from_c1",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 244
-  },
-  "5": {
-    "basicblocks": 7,
-    "calls": "",
-    "file": "srcnn.cpp",
-    "fileloc": 36,
-    "instructions": 44,
-    "loads": {
-      "L": 1
-    },
-    "name": "load_patch_tile",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 44
+    "total_instructions": 56740
   }
 }

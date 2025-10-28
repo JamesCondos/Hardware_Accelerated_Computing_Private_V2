@@ -1,16 +1,4 @@
-src/srcnn.cpp:46:9: warning: '#pragma HLS loop_flatten' can only be applied inside loop body [-Winvalid-hls-pragmas]
-#pragma HLS LOOP_FLATTEN off
-        ^
-src/srcnn.cpp:130:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
-#pragma HLS RESOURCE variable=conv1_w core=ROM_2P
-        ^
-src/srcnn.cpp:131:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
-#pragma HLS RESOURCE variable=conv2_w core=ROM_2P
-        ^
-src/srcnn.cpp:171:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
-#pragma HLS RESOURCE variable=conv3_w core=ROM_2P
-        ^
-src/srcnn.cpp:228:9: warning: '#pragma HLS loop_flatten' can only be applied inside loop body [-Winvalid-hls-pragmas]
-#pragma HLS LOOP_FLATTEN off
-        ^
-5 warnings generated.
+src/srcnn.cpp:52:34: warning: unexpected pragma argument 'mul', expects function/operation [-Winvalid-hls-pragmas]
+#pragma HLS ALLOCATION instances=mul limit=256 operation
+                                 ^
+1 warning generated.

@@ -1,261 +1,206 @@
-
-
+// srcnn.cpp — Vitis HLS 2023.1 friendly: capped unrolls, no massive patch partition, BRAM weight caches
 #include "srcnn.h"
 #include <math.h>
 
-// ---------------- Tunables ----------------
+// ------------------- User knobs (safe defaults) -------------------
 #ifndef Tile_Height
-#define Tile_Height 64
+#define Tile_Height 16
 #endif
 #ifndef Tile_Width
-#define Tile_Width  64
+#define Tile_Width  16
 #endif
 
-
-#ifndef ACC_II
-#define ACC_II 6
+// Parallelism knobs (keep modest first; step up later)
+#ifndef UF_C1_OUT
+#define UF_C1_OUT 8    // unroll Conv1 output channels (N1=64 -> 8-way)
+#endif
+#ifndef UF_C2_OUT
+#define UF_C2_OUT 8    // unroll Conv2 output channels (N2=32 -> 8-way)
+#endif
+#ifndef UF_C2_DOT
+#define UF_C2_DOT 8    // unroll Conv2 dot-product across N1
+#endif
+#ifndef UF_C3_IN
+#define UF_C3_IN 8     // unroll Conv3 over input channels (N2)
 #endif
 
-// -------------- Kernel paddings -----------
-#define Padding_1  (F1/2)                        // 4 for 9x9
-#define Padding_2  (F2/2)                        // 0 for 1x1
-#define Padding_3  (F3/2)                        // 2 for 5x5
-#define Padding_Total (Padding_1 + Padding_2 + Padding_3) // 6 for 9-1-5
+// Optional: allow more multipliers to reduce latency (increase if device allows)
+#ifndef MUL_LIMIT
+#define MUL_LIMIT 256
+#endif
+
+// ------------------- Halo/Patch (compile-time constants) ----------
+enum { HALO_TOTAL = (F1/2 + F2/2 + F3/2) };
+enum { PATCH_H = Tile_Height + 2*HALO_TOTAL };
+enum { PATCH_W = Tile_Width  + 2*HALO_TOTAL };
 
 static inline int clampi(int v, int lo, int hi) {
   return (v < lo) ? lo : ((v > hi) ? hi : v);
 }
 
-// No-FMA mul+add barrier to mirror golden's "acc += w * x;"
-static inline param_t mad_no_fma(param_t a, param_t b, param_t s) {
-  volatile param_t p = a * b;  // rounded multiply
-  return s + p;                // then rounded add
-}
-
-
-static void load_patch_tile(
-    ftmap_t input_ftmap[N0][H][W],
-    int h0, int w0, int th_eff, int tw_eff,
-    ftmap_t patch[Tile_Height + 2*Padding_Total]
-                 [Tile_Width  + 2*Padding_Total])
-{
-  const int PH = th_eff + 2*Padding_Total;
-  const int PW = tw_eff + 2*Padding_Total;
-
-#pragma HLS INLINE off
-#pragma HLS LOOP_FLATTEN off
-#pragma HLS DEPENDENCE variable=patch inter false
-#pragma HLS DEPENDENCE variable=patch intra false
-
-  for (int py = 0; py < PH; ++py) {
-    for (int px = 0; px < PW; ++px) {
-#pragma HLS PIPELINE
-      const int yy = clampi(h0 + py - Padding_Total, 0, H-1);
-      const int xx = clampi(w0 + px - Padding_Total, 0, W-1);
-      // N0==1 for SRCNN Y channel; left generic on first dim
-      patch[py][px] = input_ftmap[0][yy][xx];
-    }
-  }
-}
-
-static void conv1_all_c1_at_clamped_center(
-    ftmap_t patch[Tile_Height + 2*Padding_Total]
-                 [Tile_Width  + 2*Padding_Total],
-    int h0, int w0, int gyc, int gxc,
-    param_t  conv1_w[N1][N0][F1][F1],
-    param_t  conv1_b[N1],
-    param_t  c1_vec[N1])
-{
-#pragma HLS INLINE
-#pragma HLS DEPENDENCE variable=c1_vec inter false
-#pragma HLS DEPENDENCE variable=c1_vec intra false
-
-  for (int c1 = 0; c1 < N1; ++c1) {
-    param_t v = conv1_b[c1];
-    for (int ky = 0; ky < F1; ++ky) {
-      const int gh = clampi(gyc + ky - Padding_1, 0, H-1);
-      const int py = (gh - h0) + Padding_Total;
-      for (int kx = 0; kx < F1; ++kx) {
-#pragma HLS PIPELINE II=ACC_II
-        const int gw = clampi(gxc + kx - Padding_1, 0, W-1);
-        const int px = (gw - w0) + Padding_Total;
-        v = mad_no_fma(conv1_w[c1][0][ky][kx], patch[py][px], v);
-      }
-    }
-    c1_vec[c1] = fmaxf(0.0f, v); // ReLU
-  }
-}
-
-// ---------------- conv2 scalar from c1 (weights cached per n2) ----------------
-static param_t conv2_single_from_c1(
-    int n2,
-    param_t  conv2_w[N2][N1][F2][F2],
-    param_t  conv2_b[N2],
-    const param_t c1_vec[N1])
-{
-#pragma HLS INLINE off   // keep its own small pipelines
-
-  // Cache the entire N1-row of weights for this n2 into registers once.
-  param_t wrow[N1];
-#pragma HLS ARRAY_PARTITION variable=wrow complete dim=1
-  for (int c1 = 0; c1 < N1; ++c1) {
-#pragma HLS PIPELINE II=ACC_II
-    wrow[c1] = conv2_w[n2][c1][0][0];
-  }
-
-  // Dot product from cached weights (register reads only).
-  param_t acc = conv2_b[n2];
-  for (int c1 = 0; c1 < N1; ++c1) {
-#pragma HLS PIPELINE II=ACC_II
-    acc = mad_no_fma(wrow[c1], c1_vec[c1], acc);
-  }
-  return fmaxf(0.0f, acc);
-}
-
-// ------------------------ Precompute conv1 & conv2 over halo -----------------
-static void precompute_conv12_halo(
-    ftmap_t  patch[Tile_Height + 2*Padding_Total]
-                  [Tile_Width  + 2*Padding_Total],
-    int h0, int w0, int th_eff, int tw_eff,
-    param_t  conv1_w[N1][N0][F1][F1],
-    param_t  conv1_b[N1],
-    param_t  conv2_w[N2][N1][F2][F2],
-    param_t  conv2_b[N2],
-    // outputs:
-    ftmap_t  conv2_buf[N2]
-                      [Tile_Height + 2*Padding_3]
-                      [Tile_Width  + 2*Padding_3])
+void srcnn(
+    const ftmap_t input_ftmap[N0][H][W],
+    const param_t conv1_weights[N1][N0][F1][F1],
+    const param_t conv1_biases[N1],
+    const param_t conv2_weights[N2][N1][F2][F2],
+    const param_t conv2_biases[N2],
+    const param_t conv3_weights[N3][N2][F3][F3],
+    const param_t conv3_biases[N3],
+    ftmap_t output_ftmap[N3][H][W])
 {
 #pragma HLS INLINE off
-#pragma HLS RESOURCE variable=conv1_w core=ROM_2P
-#pragma HLS RESOURCE variable=conv2_w core=ROM_2P
+#pragma HLS ALLOCATION instances=mul limit=MUL_LIMIT operation
+// (You can also limit adders similarly if needed)
 
-  const int C2H = th_eff + 2*Padding_3;
-  const int C2W = tw_eff + 2*Padding_3;
+  // ---------------- Local weight caches (BRAM, writable) ----------
+  param_t w1[N1][N0][F1][F1];
+  param_t b1[N1];
+#pragma HLS BIND_STORAGE variable=w1 type=ram_2p impl=bram
+#pragma HLS ARRAY_PARTITION variable=w1 cyclic factor=UF_C1_OUT dim=1
+#pragma HLS ARRAY_PARTITION variable=b1  cyclic factor=UF_C1_OUT dim=1
 
-  param_t c1_vec[N1];
-#pragma HLS DEPENDENCE variable=c1_vec inter false
-#pragma HLS DEPENDENCE variable=c1_vec intra false
+  // F2 == 1 in classic SRCNN; flatten to [N2][N1]
+  param_t w2[N2][N1];
+  param_t b2[N2];
+#pragma HLS BIND_STORAGE variable=w2 type=ram_2p impl=bram
+#pragma HLS ARRAY_PARTITION variable=w2 cyclic factor=UF_C2_OUT dim=1
+#pragma HLS ARRAY_PARTITION variable=w2 cyclic factor=UF_C2_DOT dim=2
+#pragma HLS ARRAY_PARTITION variable=b2  cyclic factor=UF_C2_OUT dim=1
 
+  param_t w3[N3][N2][F3][F3];
+  param_t b3[N3];
+#pragma HLS BIND_STORAGE variable=w3 type=ram_2p impl=bram
+#pragma HLS ARRAY_PARTITION variable=w3 cyclic factor=UF_C3_IN dim=2
+// no complete partition on 5x5 kernels; keep it modest to avoid code explosion
+// b3 is tiny; no need to complete-partition unless N3 is large
 
-  for (int yi = 0; yi < C2H; ++yi) {
-    const int gyc = clampi(h0 + yi - Padding_3, 0, H-1);
-    for (int xi = 0; xi < C2W; ++xi) {
-      const int gxc = clampi(w0 + xi - Padding_3, 0, W-1);
-
-      // conv1 (all c1) at clamped center
-      conv1_all_c1_at_clamped_center(patch, h0, w0, gyc, gxc,
-                                     conv1_w, conv1_b, c1_vec);
-
-
-      for (int n2 = 0; n2 < N2; ++n2) {
-        conv2_buf[n2][yi][xi] =
-            conv2_single_from_c1(n2, conv2_w, conv2_b, c1_vec);
+  // ---------------- Copy weights once -----------------------------
+  init_w1: for (int o=0;o<N1;o++){
+#pragma HLS PIPELINE II=1
+    b1[o] = conv1_biases[o];
+    for (int i=0;i<N0;i++){
+      for (int ky=0;ky<F1;ky++){
+        for (int kx=0;kx<F1;kx++){
+          w1[o][i][ky][kx] = conv1_weights[o][i][ky][kx];
+        }
       }
     }
   }
-}
 
-// ------------------------------- conv3 (golden order) ------------------------
+  init_w2: for (int o=0;o<N2;o++){
+#pragma HLS PIPELINE II=1
+    b2[o] = conv2_biases[o];
+    for (int i=0;i<N1;i++){
+#pragma HLS UNROLL factor=UF_C2_DOT
+      w2[o][i] = conv2_weights[o][i][0][0];
+    }
+  }
 
-static void conv3_from_precomputed_conv2(
-    int h0, int w0, int th_eff, int tw_eff,
-    param_t  conv3_w[N3][N2][F3][F3],
-    param_t  conv3_b[N3],
-    ftmap_t  conv2_buf[N2]
-                      [Tile_Height + 2*Padding_3]
-                      [Tile_Width  + 2*Padding_3],
-    ftmap_t  output_ftmap[N3][H][W])
-{
-#pragma HLS INLINE off
-#pragma HLS RESOURCE variable=conv3_w core=ROM_2P
+  init_w3: for (int o=0;o<N3;o++){
+#pragma HLS PIPELINE II=1
+    b3[o] = conv3_biases[o];
+    for (int i=0;i<N2;i++){
+      for (int ky=0;ky<F3;ky++){
+        for (int kx=0;kx<F3;kx++){
+          w3[o][i][ky][kx] = conv3_weights[o][i][ky][kx];
+        }
+      }
+    }
+  }
 
-  const int C2H = th_eff + 2*Padding_3;
-  const int C2W = tw_eff + 2*Padding_3;
+  // ---------------- On-chip feature buffers -----------------------
+  // NOTE: do NOT over-partition patch; previous logs showed HLS inferring 144 banks (!)
+  ftmap_t patch[PATCH_H][PATCH_W];
 
-  for (int oy = 0; oy < th_eff; ++oy) {
-    for (int ox = 0; ox < tw_eff; ++ox) {
+  ftmap_t c1[N1][Tile_Height][Tile_Width];
+#pragma HLS ARRAY_PARTITION variable=c1 cyclic factor=UF_C1_OUT dim=1
 
-      for (int o = 0; o < N3; ++o) {
-        param_t acc3 = conv3_b[o];
+  ftmap_t c2[N2][Tile_Height][Tile_Width];
+#pragma HLS ARRAY_PARTITION variable=c2 cyclic factor=UF_C2_OUT dim=1
 
-        for (int n2 = 0; n2 < N2; ++n2) {
-          // Cache 5x5 kernel for (o,n2) into registers
-          param_t k[F3][F3];
-#pragma HLS ARRAY_PARTITION variable=k complete dim=0
-          for (int ky = 0; ky < F3; ++ky)
-            for (int kx = 0; kx < F3; ++kx) {
-#pragma HLS PIPELINE II=ACC_II
-              k[ky][kx] = conv3_w[o][n2][ky][kx];
-            }
+  // ---------------- Tiled sweep -----------------------------------
+  tile_h: for (int h0=0; h0<H; h0+=Tile_Height) {
+    const int th_eff = ((h0 + Tile_Height) <= H) ? Tile_Height : (H - h0);
+  tile_w: for (int w0=0; w0<W; w0+=Tile_Width) {
+      const int tw_eff = ((w0 + Tile_Width) <= W) ? Tile_Width : (W - w0);
 
-          for (int ky = 0; ky < F3; ++ky) {
-            for (int kx = 0; kx < F3; ++kx) {
-#pragma HLS PIPELINE II=ACC_II
-              // Global clamped coords for this tap
-              const int gy = clampi(h0 + oy + ky - Padding_3, 0, H-1);
-              const int gx = clampi(w0 + ox + kx - Padding_3, 0, W-1);
-              // Map back into the halo buffer
-              int yi = (gy - h0) + Padding_3;
-              int xi = (gx - w0) + Padding_3;
-              if (yi < 0) yi = 0; else if (yi >= C2H) yi = C2H - 1;
-              if (xi < 0) xi = 0; else if (xi >= C2W) xi = C2W - 1;
+      // ---- Load haloed patch (single producer, II=1) --------------
+      load_patch_rows: for (int dy=-HALO_TOTAL; dy<th_eff+HALO_TOTAL; dy++) {
+      load_patch_cols: for (int dx=-HALO_TOTAL; dx<tw_eff+HALO_TOTAL; dx++) {
+#pragma HLS PIPELINE II=1
+          const int y = clampi(h0 + dy, 0, H-1);
+          const int x = clampi(w0 + dx, 0, W-1);
+          patch[dy + HALO_TOTAL][dx + HALO_TOTAL] = input_ftmap[0][y][x];
+        }
+      }
 
-              const ftmap_t c2 = conv2_buf[n2][yi][xi];
-              acc3 = mad_no_fma(k[ky][kx], c2, acc3);
+      // ---- Conv1: 9x9 + ReLU, per-pixel II=1 ----------------------
+      c1_y: for (int ty=0; ty<th_eff; ty++) {
+      c1_x: for (int tx=0; tx<tw_eff; tx++) {
+#pragma HLS PIPELINE II=1
+          param_t acc1[N1];
+#pragma HLS ARRAY_PARTITION variable=acc1 cyclic factor=UF_C1_OUT dim=1
+
+          init_acc1: for (int o1=0; o1<N1; o1++){
+#pragma HLS UNROLL factor=UF_C1_OUT
+            acc1[o1] = b1[o1];
+          }
+
+          // N0 is usually 1 for SRCNN; keep F1 loops rolled to avoid code bloat
+          for (int i=0;i<N0;i++){
+            for (int ky=0; ky<F1; ky++) {
+              for (int kx=0; kx<F1; kx++) {
+                const param_t p = (param_t)patch[ty + ky][tx + kx];
+                add_c1: for (int o1=0; o1<N1; o1++){
+#pragma HLS UNROLL factor=UF_C1_OUT
+                  acc1[o1] += w1[o1][i][ky][kx] * p;
+                }
+              }
             }
           }
+
+          relu_c1: for (int o1=0; o1<N1; o1++){
+#pragma HLS UNROLL factor=UF_C1_OUT
+            c1[o1][ty][tx] = (acc1[o1] > (param_t)0) ? (ftmap_t)acc1[o1] : (ftmap_t)0;
+          }
         }
-
-        output_ftmap[o][h0 + oy][w0 + ox] = acc3;
       }
-    }
-  }
-}
 
-// ------------------------------------ Top ------------------------------------
-//
-void srcnn(ftmap_t input_ftmap[N0][H][W],
-           param_t  conv1_weights[N1][N0][F1][F1],
-           param_t  conv1_biases[N1],
-           param_t  conv2_weights[N2][N1][F2][F2],
-           param_t  conv2_biases[N2],
-           param_t  conv3_weights[N3][N2][F3][F3],
-           param_t  conv3_biases[N3],
-           ftmap_t  output_ftmap[N3][H][W])
-{
-#pragma HLS INLINE off
-#pragma HLS LOOP_FLATTEN off
+      // ---- Conv2: 1x1 + ReLU, per-pixel II=1 ----------------------
+      c2_y: for (int ty=0; ty<th_eff; ty++) {
+      c2_x: for (int tx=0; tx<tw_eff; tx++) {
+#pragma HLS PIPELINE II=1
+        conv2_out: for (int o2=0; o2<N2; o2++) {
+#pragma HLS UNROLL factor=UF_C2_OUT
+          param_t acc = b2[o2];
+          dot_n1: for (int i=0; i<N1; i++) {
+#pragma HLS UNROLL factor=UF_C2_DOT
+            acc += w2[o2][i] * (param_t)c1[i][ty][tx];
+          }
+          c2[o2][ty][tx] = (acc > (param_t)0) ? (ftmap_t)acc : (ftmap_t)0;
+        }
+      }}
 
-  // Tile-local INPUT patch covering conv1+conv3 halos
-  ftmap_t patch[Tile_Height + 2*Padding_Total]
-                [Tile_Width  + 2*Padding_Total];
+      // ---- Conv3: 5x5 (linear), per-pixel II=1 --------------------
+      c3_y: for (int ty=0; ty<th_eff; ty++) {
+      c3_x: for (int tx=0; tx<tw_eff; tx++) {
+#pragma HLS PIPELINE II=1
+        for (int o3=0; o3<N3; o3++) {
+          param_t acc = b3[o3];
+          in_ch: for (int i=0; i<N2; i++) {
+#pragma HLS UNROLL factor=UF_C3_IN
+            for (int ky=0; ky<F3; ky++) {
+              for (int kx=0; kx<F3; kx++) {
+                const int y_c = clampi(ty + ky - (F3/2), 0, th_eff-1);
+                const int x_c = clampi(tx + kx - (F3/2), 0, tw_eff-1);
+                acc += w3[o3][i][ky][kx] * (param_t)c2[i][y_c][x_c];
+              }
+            }
+          }
+          output_ftmap[o3][h0+ty][w0+tx] = (ftmap_t)acc;
+        }
+      }}
 
-  // Precomputed conv2 over full conv3 halo (clamped centers)
-  ftmap_t conv2_buf[N2]
-                   [Tile_Height + 2*Padding_3]
-                   [Tile_Width  + 2*Padding_3];
-
-  for (int h0 = 0; h0 < H; h0 += Tile_Height) {
-    const int th_eff = (h0 + Tile_Height <= H) ? Tile_Height : (H - h0);
-
-    for (int w0 = 0; w0 < W; w0 += Tile_Width) {
-      const int tw_eff = (w0 + Tile_Width <= W) ? Tile_Width : (W - w0);
-
-      load_patch_tile(input_ftmap, h0, w0, th_eff, tw_eff, patch);
-
-      // 1) Precompute conv1 & conv2 for the whole halo (each at clamped center)
-      precompute_conv12_halo(
-          patch, h0, w0, th_eff, tw_eff,
-          conv1_weights, conv1_biases,
-          conv2_weights, conv2_biases,
-          conv2_buf);
-
-      // 2) Exact-order conv3 using the precomputed conv2 values
-      conv3_from_precomputed_conv2(
-          h0, w0, th_eff, tw_eff,
-          conv3_weights, conv3_biases,
-          conv2_buf, output_ftmap);
-    }
-  }
+    } // tile_w
+  }   // tile_h
 }

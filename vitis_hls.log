@@ -1,6 +1,6 @@
 NOTE: Using modified tcl85t.dll from https://gitenterprise.xilinx.com/ACT/vitis_hls_tcl
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'james' on host 'james_condos' (Windows NT_amd64 version 6.2) on Tue Oct 28 14:00:38 +1100 2025
+INFO: [HLS 200-10] For user 'james' on host 'james_condos' (Windows NT_amd64 version 6.2) on Tue Oct 28 16:12:34 +1100 2025
 INFO: [HLS 200-10] In directory 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden'
 Sourcing Tcl script 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/csynth.tcl'
 INFO: [HLS 200-1510] Running: source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/csynth.tcl
@@ -47,328 +47,87 @@ INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: csynth_design 
 WARNING: [HLS 200-40] Cannot find source file src/conv1_tile.cpp; skipping it.
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.112 seconds; current allocated memory: 1.039 GB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.040 GB.
 INFO: [HLS 200-10] Analyzing design file 'src/conv1.cpp' ... 
 INFO: [HLS 200-10] Analyzing design file 'src/conv2.cpp' ... 
 INFO: [HLS 200-10] Analyzing design file 'src/conv3.cpp' ... 
 INFO: [HLS 200-10] Analyzing design file 'src/srcnn.cpp' ... 
-WARNING: [HLS 207-5575] '#pragma HLS loop_flatten' can only be applied inside loop body (src/srcnn.cpp:46:9)
-WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (src/srcnn.cpp:130:9)
-WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (src/srcnn.cpp:131:9)
-WARNING: [HLS 207-5531] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (src/srcnn.cpp:171:9)
-WARNING: [HLS 207-5575] '#pragma HLS loop_flatten' can only be applied inside loop body (src/srcnn.cpp:228:9)
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.259 seconds; current allocated memory: 1.041 GB.
+WARNING: [HLS 207-5559] unexpected pragma argument 'mul', expects function/operation (src/srcnn.cpp:52:34)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.576 seconds; current allocated memory: 1.041 GB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 214-131] Inlining function 'conv1_all_c1_at_clamped_center(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float*)' into 'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])' (src/srcnn.cpp:147:7)
-WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (src/srcnn.cpp:248:7)
-WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (src/srcnn.cpp:255:7)
-WARNING: [HLS 214-199] Ignoring dependence pragma on local scalar variable 'c1_vec'. (src/srcnn.cpp:71:9)
-WARNING: [HLS 214-199] Ignoring dependence pragma on local scalar variable 'c1_vec'. (src/srcnn.cpp:70:9)
-INFO: [HLS 214-178] Inlining function 'clampi(int, int, int)' into 'load_patch_tile(float (*) [255][255], int, int, int, int, float (*) [76])' (src/srcnn.cpp:41:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_isnan<float>(float)' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const (.22.29.35.43)' into 'fp_struct<float>::to_float() const' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:351:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const' into 'fp_struct<float>::to_ieee() const' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:375:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const (.22.29.35.43)' into 'fp_struct<float>::to_int() const' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:348:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_fmax<float>(float, float)' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
-INFO: [HLS 214-178] Inlining function 'int generic_isnan<float>(float)' into 'float generic_fmax<float>(float, float)' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_fmax<float>(float, float)' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
-INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_int() const' into 'float generic_fmax<float>(float, float)' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
-INFO: [HLS 214-178] Inlining function 'mad_no_fma(float, float, float)' into 'conv2_single_from_c1(int, float (*) [64][1][1], float*, float const*)' (src/srcnn.cpp:95:0)
-INFO: [HLS 214-178] Inlining function 'fmaxf' into 'conv2_single_from_c1(int, float (*) [64][1][1], float*, float const*)' (src/srcnn.cpp:95:0)
-INFO: [HLS 214-178] Inlining function 'clampi(int, int, int)' into 'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])' (src/srcnn.cpp:128:0)
-INFO: [HLS 214-178] Inlining function 'fmaxf' into 'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])' (src/srcnn.cpp:128:0)
-INFO: [HLS 214-178] Inlining function 'mad_no_fma(float, float, float)' into 'precompute_conv12_halo(float (*) [76], int, int, int, int, float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [68][68])' (src/srcnn.cpp:128:0)
-INFO: [HLS 214-178] Inlining function 'clampi(int, int, int)' into 'conv3_from_precomputed_conv2(int, int, int, int, float (*) [32][5][5], float*, float (*) [68][68], float (*) [255][255])' (src/srcnn.cpp:169:0)
-INFO: [HLS 214-178] Inlining function 'mad_no_fma(float, float, float)' into 'conv3_from_precomputed_conv2(int, int, int, int, float (*) [32][5][5], float*, float (*) [68][68], float (*) [255][255])' (src/srcnn.cpp:169:0)
-INFO: [HLS 214-248] Applying array_partition to 'wrow': Complete partitioning on dimension 1. (src/srcnn.cpp:99:10)
-INFO: [HLS 214-248] Applying array_partition to 'k': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (src/srcnn.cpp:184:19)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.524 seconds; current allocated memory: 1.041 GB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 1.041 GB.
+INFO: [HLS 214-291] Loop 'init_acc1' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:144:13)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_150_8' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:150:29)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_151_9' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:151:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_152_10' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:152:34)
+INFO: [HLS 214-291] Loop 'add_c1' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:154:25)
+INFO: [HLS 214-291] Loop 'relu_c1' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:162:20)
+INFO: [HLS 214-291] Loop 'conv2_out' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:173:13)
+INFO: [HLS 214-291] Loop 'dot_n1' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:176:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_188_11' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:188:21)
+INFO: [HLS 214-291] Loop 'in_ch' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:190:18)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_192_12' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:192:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_193_13' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:193:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_102_5' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:102:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_103_6' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:103:25)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_104_7' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:104:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_93_4' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:93:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_81_1' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:81:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_82_2' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:82:24)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_83_3' is marked as complete unroll implied by the pipeline pragma (src/srcnn.cpp:83:26)
+INFO: [HLS 214-186] Unrolling loop 'init_acc1' (src/srcnn.cpp:144:13) in function 'srcnn' completely with a factor of 64 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_150_8' (src/srcnn.cpp:150:29) in function 'srcnn' completely with a factor of 1 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_151_9' (src/srcnn.cpp:151:31) in function 'srcnn' completely with a factor of 9 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_152_10' (src/srcnn.cpp:152:34) in function 'srcnn' completely with a factor of 9 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'add_c1' (src/srcnn.cpp:154:25) in function 'srcnn' completely with a factor of 64 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'relu_c1' (src/srcnn.cpp:162:20) in function 'srcnn' completely with a factor of 64 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'conv2_out' (src/srcnn.cpp:173:13) in function 'srcnn' completely with a factor of 32 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'dot_n1' (src/srcnn.cpp:176:19) in function 'srcnn' completely with a factor of 64 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_188_11' (src/srcnn.cpp:188:21) in function 'srcnn' completely with a factor of 1 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'in_ch' (src/srcnn.cpp:190:18) in function 'srcnn' completely with a factor of 32 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_192_12' (src/srcnn.cpp:192:21) in function 'srcnn' completely with a factor of 5 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_193_13' (src/srcnn.cpp:193:34) in function 'srcnn' completely with a factor of 5 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_102_5' (src/srcnn.cpp:102:23) in function 'srcnn' completely with a factor of 32 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_103_6' (src/srcnn.cpp:103:25) in function 'srcnn' completely with a factor of 5 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_104_7' (src/srcnn.cpp:104:27) in function 'srcnn' completely with a factor of 5 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_93_4' (src/srcnn.cpp:93:22) in function 'srcnn' completely with a factor of 64 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_81_1' (src/srcnn.cpp:81:22) in function 'srcnn' completely with a factor of 1 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_82_2' (src/srcnn.cpp:82:24) in function 'srcnn' completely with a factor of 9 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_83_3' (src/srcnn.cpp:83:26) in function 'srcnn' completely with a factor of 9 (src/srcnn.cpp:50:0)
+INFO: [HLS 214-178] Inlining function 'clampi(int, int, int)' into 'srcnn(float const (*) [255][255], float const (*) [1][9][9], float const*, float const (*) [64][1][1], float const*, float const (*) [32][5][5], float const*, float (*) [255][255])' (src/srcnn.cpp:50:0)
+INFO: [HLS 214-248] Applying array_partition to 'w1': Cyclic partitioning with factor 8 on dimension 1. (src/srcnn.cpp:56:10)
+INFO: [HLS 214-248] Applying array_partition to 'b1': Cyclic partitioning with factor 8 on dimension 1. (src/srcnn.cpp:57:11)
+INFO: [HLS 214-248] Applying array_partition to 'w2': Cyclic partitioning with factor 8 on dimension 1. Cyclic partitioning with factor 8 on dimension 2. (src/srcnn.cpp:63:10)
+INFO: [HLS 214-248] Applying array_partition to 'b2': Cyclic partitioning with factor 8 on dimension 1. (src/srcnn.cpp:64:11)
+INFO: [HLS 214-248] Applying array_partition to 'w3': Cyclic partitioning with factor 8 on dimension 2. (src/srcnn.cpp:70:10)
+INFO: [HLS 214-248] Applying array_partition to 'c1': Cyclic partitioning with factor 8 on dimension 1. (src/srcnn.cpp:115:11)
+INFO: [HLS 214-248] Applying array_partition to 'c2': Cyclic partitioning with factor 8 on dimension 1. (src/srcnn.cpp:118:10)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=3' for array 'w3_0' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=4' for array 'w3_0' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=3' for array 'w3_1' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=4' for array 'w3_1' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=3' for array 'w3_2' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=4' for array 'w3_2' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=3' for array 'w3_3' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=4' for array 'w3_3' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=3' for array 'w3_4' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=4' for array 'w3_4' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=3' for array 'w3_5' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=4' for array 'w3_5' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=3' for array 'w3_6' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=4' for array 'w3_6' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=3' for array 'w3_7' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=4' for array 'w3_7' due to pipeline pragma (src/srcnn.cpp:187:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=9 dim=1' for array 'patch' due to pipeline pragma (src/srcnn.cpp:140:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=9 dim=2' for array 'patch' due to pipeline pragma (src/srcnn.cpp:140:9)
+INFO: [HLS 214-248] Applying array_partition to 'w3_0': Complete partitioning on dimension 3. Complete partitioning on dimension 4. (src/srcnn.cpp:70:10)
+INFO: [HLS 214-248] Applying array_partition to 'w3_1': Complete partitioning on dimension 3. Complete partitioning on dimension 4. (src/srcnn.cpp:70:10)
+INFO: [HLS 214-248] Applying array_partition to 'w3_2': Complete partitioning on dimension 3. Complete partitioning on dimension 4. (src/srcnn.cpp:70:10)
+INFO: [HLS 214-248] Applying array_partition to 'w3_3': Complete partitioning on dimension 3. Complete partitioning on dimension 4. (src/srcnn.cpp:70:10)
+INFO: [HLS 214-248] Applying array_partition to 'w3_4': Complete partitioning on dimension 3. Complete partitioning on dimension 4. (src/srcnn.cpp:70:10)
+INFO: [HLS 214-248] Applying array_partition to 'w3_5': Complete partitioning on dimension 3. Complete partitioning on dimension 4. (src/srcnn.cpp:70:10)
+INFO: [HLS 214-248] Applying array_partition to 'w3_6': Complete partitioning on dimension 3. Complete partitioning on dimension 4. (src/srcnn.cpp:70:10)
+INFO: [HLS 214-248] Applying array_partition to 'w3_7': Complete partitioning on dimension 3. Complete partitioning on dimension 4. (src/srcnn.cpp:70:10)
+INFO: [HLS 214-248] Applying array_partition to 'patch': Cyclic partitioning with factor 9 on dimension 1. Cyclic partitioning with factor 9 on dimension 2. (src/srcnn.cpp:113:11)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 101.247 seconds; current allocated memory: 1.048 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 1.048 GB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 1.049 GB.
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'generic_fmax<float>' into 'conv2_single_from_c1' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp:7->src/srcnn.cpp:112) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_fmax<float>' into 'precompute_conv12_halo' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp:7->src/srcnn.cpp:85->src/srcnn.cpp:147) automatically.
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 1.052 GB.
-INFO: [XFORM 203-602] Inlining function 'generic_fmax<float>' into 'conv2_single_from_c1' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp:7->src/srcnn.cpp:112) automatically.
-INFO: [XFORM 203-602] Inlining function 'generic_fmax<float>' into 'precompute_conv12_halo' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp:7->src/srcnn.cpp:85->src/srcnn.cpp:147) automatically.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp:6:30) to (src/srcnn.cpp:73:19) in function 'precompute_conv12_halo'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp:6:30) to (src/srcnn.cpp:112:3) in function 'conv2_single_from_c1'... converting 4 basic blocks.
-INFO: [XFORM 203-11] Balancing expressions in function 'conv3_from_precomputed_conv2' (src/srcnn.cpp:26:12)...6 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.231 seconds; current allocated memory: 1.077 GB.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_75_2' (src/srcnn.cpp:75:22) in function 'precompute_conv12_halo'.
-WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_73_1' (src/srcnn.cpp:73:19) in function 'precompute_conv12_halo' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
-Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-960.html
-WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_143_2' (src/srcnn.cpp:143:23) in function 'precompute_conv12_halo' more than one sub loop.
-Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-960.html
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_141_1' (src/srcnn.cpp:141:20) in function 'precompute_conv12_halo'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_50_1' (src/srcnn.cpp:50:19) in function 'load_patch_tile'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_186_5' (src/srcnn.cpp:186:20) in function 'conv3_from_precomputed_conv2'.
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_192_7' (src/srcnn.cpp:192:29) in function 'conv3_from_precomputed_conv2'.
-WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_182_4' (src/srcnn.cpp:182:27) in function 'conv3_from_precomputed_conv2' more than one sub loop.
-Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-960.html
-WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_177_2' (src/srcnn.cpp:177:23) in function 'conv3_from_precomputed_conv2' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
-Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-960.html
-INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_176_1' (src/srcnn.cpp:176:21) in function 'conv3_from_precomputed_conv2'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'c1_vec' (src/srcnn.cpp:136).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'c1_vec' (src/srcnn.cpp:136).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'patch'.
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'patch'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'c1_vec' (src/srcnn.cpp:136).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'c1_vec' (src/srcnn.cpp:136).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'patch'.
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'patch'.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.457 seconds; current allocated memory: 1.164 GB.
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'srcnn' ...
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'load_patch_tile_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_51_2' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=mul_ln50) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_50_1_VITIS_LOOP_51_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_50_1_VITIS_LOOP_51_2'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 1.169 GB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 1.170 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'load_patch_tile' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln50_2) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 1.171 GB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.095 seconds; current allocated memory: 1.171 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'precompute_conv12_halo_Pipeline_VITIS_LOOP_75_2_VITIS_LOOP_78_3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln75_1) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_75_2_VITIS_LOOP_78_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 6, Final II = 6, Depth = 12, loop 'VITIS_LOOP_75_2_VITIS_LOOP_78_3'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.261 seconds; current allocated memory: 1.171 GB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.136 seconds; current allocated memory: 1.171 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv2_single_from_c1_Pipeline_VITIS_LOOP_101_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_101_1'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 6, Final II = 2, Depth = 2, loop 'VITIS_LOOP_101_1'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.174 seconds; current allocated memory: 1.175 GB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.111 seconds; current allocated memory: 1.175 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_108_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 6, Final II = 6, Depth = 9, loop 'VITIS_LOOP_108_2'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.208 seconds; current allocated memory: 1.175 GB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 1.176 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv2_single_from_c1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.133 seconds; current allocated memory: 1.176 GB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 1.176 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'precompute_conv12_halo' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln141_2) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.243 seconds; current allocated memory: 1.177 GB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.144 seconds; current allocated memory: 1.177 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv3_from_precomputed_conv2_Pipeline_VITIS_LOOP_186_5_VITIS_LOOP_187_6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_186_5_VITIS_LOOP_187_6'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 6, Final II = 2, Depth = 2, loop 'VITIS_LOOP_186_5_VITIS_LOOP_187_6'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 1.179 GB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 1.179 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv3_from_precomputed_conv2_Pipeline_VITIS_LOOP_192_7_VITIS_LOOP_193_8' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_192_7_VITIS_LOOP_193_8'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 6, Final II = 6, Depth = 10, loop 'VITIS_LOOP_192_7_VITIS_LOOP_193_8'
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.308 seconds; current allocated memory: 1.179 GB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 1.180 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'conv3_from_precomputed_conv2' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.175 seconds; current allocated memory: 1.180 GB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.111 seconds; current allocated memory: 1.181 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'srcnn' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 1.181 GB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 1.181 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'load_patch_tile_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_51_2' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_patch_tile_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_51_2' pipeline 'VITIS_LOOP_50_1_VITIS_LOOP_51_2' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'mac_muladd_9ns_7ns_9ns_13_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'load_patch_tile_Pipeline_VITIS_LOOP_50_1_VITIS_LOOP_51_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 1.184 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'load_patch_tile' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'am_addmul_8ns_4ns_9ns_17_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'load_patch_tile'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.238 seconds; current allocated memory: 1.186 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'precompute_conv12_halo_Pipeline_VITIS_LOOP_75_2_VITIS_LOOP_78_3' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'precompute_conv12_halo_Pipeline_VITIS_LOOP_75_2_VITIS_LOOP_78_3' pipeline 'VITIS_LOOP_75_2_VITIS_LOOP_78_3' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_7ns_7ns_7ns_11s_13_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'precompute_conv12_halo_Pipeline_VITIS_LOOP_75_2_VITIS_LOOP_78_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.194 seconds; current allocated memory: 1.187 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv2_single_from_c1_Pipeline_VITIS_LOOP_101_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2_single_from_c1_Pipeline_VITIS_LOOP_101_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.254 seconds; current allocated memory: 1.190 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2' pipeline 'VITIS_LOOP_108_2' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'mux_64_6_32_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2_single_from_c1_Pipeline_VITIS_LOOP_108_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.322 seconds; current allocated memory: 1.196 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv2_single_from_c1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-WARNING: [RTGEN 206-101] Setting dangling out port 'conv2_single_from_c1/grp_fu_1021_p_opcode' to 0.
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2_single_from_c1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.211 seconds; current allocated memory: 1.199 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'precompute_conv12_halo' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-WARNING: [RTGEN 206-101] Setting dangling out port 'precompute_conv12_halo/grp_fu_293_p_opcode' to 0.
-INFO: [RTGEN 206-100] Generating core module 'am_addmul_8ns_3ns_9ns_18_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'precompute_conv12_halo'.
-INFO: [RTMG 210-278] Implementing memory 'srcnn_precompute_conv12_halo_c1_vec_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.279 seconds; current allocated memory: 1.202 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv3_from_precomputed_conv2_Pipeline_VITIS_LOOP_186_5_VITIS_LOOP_187_6' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv3_from_precomputed_conv2_Pipeline_VITIS_LOOP_186_5_VITIS_LOOP_187_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.362 seconds; current allocated memory: 1.205 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv3_from_precomputed_conv2_Pipeline_VITIS_LOOP_192_7_VITIS_LOOP_193_8' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv3_from_precomputed_conv2_Pipeline_VITIS_LOOP_192_7_VITIS_LOOP_193_8' pipeline 'VITIS_LOOP_192_7_VITIS_LOOP_193_8' pipeline type 'loop pipeline'
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'mux_5_3_32_1_1': 6 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv3_from_precomputed_conv2_Pipeline_VITIS_LOOP_192_7_VITIS_LOOP_193_8'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.278 seconds; current allocated memory: 1.209 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'conv3_from_precomputed_conv2' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-WARNING: [RTGEN 206-101] Setting dangling out port 'conv3_from_precomputed_conv2/grp_fu_293_p_opcode' to 0.
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8ns_16_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'conv3_from_precomputed_conv2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.357 seconds; current allocated memory: 1.212 GB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'srcnn' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'srcnn/input_ftmap' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'srcnn/conv1_weights' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'srcnn/conv1_biases' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'srcnn/conv2_weights' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'srcnn/conv2_biases' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'srcnn/conv3_weights' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'srcnn/conv3_biases' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'srcnn/output_ftmap' to 'ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'srcnn' to 'ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'srcnn'.
-INFO: [RTMG 210-278] Implementing memory 'srcnn_patch_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [RTMG 210-278] Implementing memory 'srcnn_conv2_buf_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.513 seconds; current allocated memory: 1.215 GB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.259 seconds; current allocated memory: 1.221 GB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.853 seconds; current allocated memory: 1.225 GB.
-INFO: [VHDL 208-304] Generating VHDL RTL for srcnn.
-INFO: [VLOG 209-307] Generating Verilog RTL for srcnn.
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
-INFO: [HLS 200-789] **** Estimated Fmax: 142.53 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 16.939 seconds; current allocated memory: 191.258 MB.
-INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 2 seconds. Total elapsed time: 20.054 seconds; peak allocated memory: 1.226 GB.

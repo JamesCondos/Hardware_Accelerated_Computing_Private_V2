@@ -157,14 +157,13 @@ extern "C" {
 # 2 "<built-in>" 2
 # 1 "src/srcnn.cpp" 2
 
-
 # 1 "src/srcnn.h" 1
 # 19 "src/srcnn.h"
 typedef float ftmap_t;
 typedef float param_t;
 
 
-__attribute__((sdx_kernel("srcnn", 0))) void srcnn(ftmap_t input_ftmap[1][255][255],
+void srcnn(ftmap_t input_ftmap[1][255][255],
            param_t conv1_weights[64][1][9][9],
            param_t conv1_biases[64],
            param_t conv2_weights[32][64][1][1],
@@ -186,7 +185,7 @@ void conv3(ftmap_t input_ftmap[32][255][255],
      param_t conv3_weights[1][32][5][5],
      param_t conv3_biases[1],
            ftmap_t output_ftmap[1][255][255]);
-# 4 "src/srcnn.cpp" 2
+# 3 "src/srcnn.cpp" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\math.h" 1 3
 # 36 "C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\math.h" 3
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 1 3
@@ -3635,246 +3634,183 @@ using std::scalbln;
 using std::scalbn;
 using std::tgamma;
 using std::trunc;
-# 5 "src/srcnn.cpp" 2
-# 25 "src/srcnn.cpp"
+# 4 "src/srcnn.cpp" 2
+# 33 "src/srcnn.cpp"
+enum { HALO_TOTAL = (9/2 + 1/2 + 5/2) };
+enum { PATCH_H = 16 + 2*HALO_TOTAL };
+enum { PATCH_W = 16 + 2*HALO_TOTAL };
+
 static inline int clampi(int v, int lo, int hi) {
   return (v < lo) ? lo : ((v > hi) ? hi : v);
 }
 
-
-static inline param_t mad_no_fma(param_t a, param_t b, param_t s) {
-  volatile param_t p = a * b;
-  return s + p;
-}
-
-
-static void load_patch_tile(
-    ftmap_t input_ftmap[1][255][255],
-    int h0, int w0, int th_eff, int tw_eff,
-    ftmap_t patch[64 + 2*((9/2) + (1/2) + (5/2))]
-                 [64 + 2*((9/2) + (1/2) + (5/2))])
-{
-  const int PH = th_eff + 2*((9/2) + (1/2) + (5/2));
-  const int PW = tw_eff + 2*((9/2) + (1/2) + (5/2));
-
-#pragma HLS INLINE off
-#pragma HLS LOOP_FLATTEN off
-#pragma HLS DEPENDENCE variable=patch inter false
-#pragma HLS DEPENDENCE variable=patch intra false
-
- VITIS_LOOP_50_1: for (int py = 0; py < PH; ++py) {
-    VITIS_LOOP_51_2: for (int px = 0; px < PW; ++px) {
-#pragma HLS PIPELINE
- const int yy = clampi(h0 + py - ((9/2) + (1/2) + (5/2)), 0, 255 -1);
-      const int xx = clampi(w0 + px - ((9/2) + (1/2) + (5/2)), 0, 255 -1);
-
-      patch[py][px] = input_ftmap[0][yy][xx];
-    }
-  }
-}
-
-static void conv1_all_c1_at_clamped_center(
-    ftmap_t patch[64 + 2*((9/2) + (1/2) + (5/2))]
-                 [64 + 2*((9/2) + (1/2) + (5/2))],
-    int h0, int w0, int gyc, int gxc,
-    param_t conv1_w[64][1][9][9],
-    param_t conv1_b[64],
-    param_t c1_vec[64])
-{
-#pragma HLS INLINE
-#pragma HLS DEPENDENCE variable=c1_vec inter false
-#pragma HLS DEPENDENCE variable=c1_vec intra false
-
- VITIS_LOOP_73_1: for (int c1 = 0; c1 < 64; ++c1) {
-    param_t v = conv1_b[c1];
-    VITIS_LOOP_75_2: for (int ky = 0; ky < 9; ++ky) {
-      const int gh = clampi(gyc + ky - (9/2), 0, 255 -1);
-      const int py = (gh - h0) + ((9/2) + (1/2) + (5/2));
-      VITIS_LOOP_78_3: for (int kx = 0; kx < 9; ++kx) {
-#pragma HLS PIPELINE II=6
- const int gw = clampi(gxc + kx - (9/2), 0, 255 -1);
-        const int px = (gw - w0) + ((9/2) + (1/2) + (5/2));
-        v = mad_no_fma(conv1_w[c1][0][ky][kx], patch[py][px], v);
-      }
-    }
-    c1_vec[c1] = fmaxf(0.0f, v);
-  }
-}
-
-
-static param_t conv2_single_from_c1(
-    int n2,
-    param_t conv2_w[32][64][1][1],
-    param_t conv2_b[32],
-    const param_t c1_vec[64])
-{
-#pragma HLS INLINE off
-
-
- param_t wrow[64];
-#pragma HLS ARRAY_PARTITION variable=wrow complete dim=1
- VITIS_LOOP_101_1: for (int c1 = 0; c1 < 64; ++c1) {
-#pragma HLS PIPELINE II=6
- wrow[c1] = conv2_w[n2][c1][0][0];
-  }
-
-
-  param_t acc = conv2_b[n2];
-  VITIS_LOOP_108_2: for (int c1 = 0; c1 < 64; ++c1) {
-#pragma HLS PIPELINE II=6
- acc = mad_no_fma(wrow[c1], c1_vec[c1], acc);
-  }
-  return fmaxf(0.0f, acc);
-}
-
-
-static void precompute_conv12_halo(
-    ftmap_t patch[64 + 2*((9/2) + (1/2) + (5/2))]
-                  [64 + 2*((9/2) + (1/2) + (5/2))],
-    int h0, int w0, int th_eff, int tw_eff,
-    param_t conv1_w[64][1][9][9],
-    param_t conv1_b[64],
-    param_t conv2_w[32][64][1][1],
-    param_t conv2_b[32],
-
-    ftmap_t conv2_buf[32]
-                      [64 + 2*(5/2)]
-                      [64 + 2*(5/2)])
-{
-#pragma HLS INLINE off
-#pragma HLS RESOURCE variable=conv1_w core=ROM_2P
-#pragma HLS RESOURCE variable=conv2_w core=ROM_2P
-
- const int C2H = th_eff + 2*(5/2);
-  const int C2W = tw_eff + 2*(5/2);
-
-  param_t c1_vec[64];
-#pragma HLS DEPENDENCE variable=c1_vec inter false
-#pragma HLS DEPENDENCE variable=c1_vec intra false
-
-
- VITIS_LOOP_141_1: for (int yi = 0; yi < C2H; ++yi) {
-    const int gyc = clampi(h0 + yi - (5/2), 0, 255 -1);
-    VITIS_LOOP_143_2: for (int xi = 0; xi < C2W; ++xi) {
-      const int gxc = clampi(w0 + xi - (5/2), 0, 255 -1);
-
-
-      conv1_all_c1_at_clamped_center(patch, h0, w0, gyc, gxc,
-                                     conv1_w, conv1_b, c1_vec);
-
-
-      VITIS_LOOP_151_3: for (int n2 = 0; n2 < 32; ++n2) {
-        conv2_buf[n2][yi][xi] =
-            conv2_single_from_c1(n2, conv2_w, conv2_b, c1_vec);
-      }
-    }
-  }
-}
-
-
-
-static void conv3_from_precomputed_conv2(
-    int h0, int w0, int th_eff, int tw_eff,
-    param_t conv3_w[1][32][5][5],
-    param_t conv3_b[1],
-    ftmap_t conv2_buf[32]
-                      [64 + 2*(5/2)]
-                      [64 + 2*(5/2)],
+__attribute__((sdx_kernel("srcnn", 0))) void srcnn(
+    const ftmap_t input_ftmap[1][255][255],
+    const param_t conv1_weights[64][1][9][9],
+    const param_t conv1_biases[64],
+    const param_t conv2_weights[32][64][1][1],
+    const param_t conv2_biases[32],
+    const param_t conv3_weights[1][32][5][5],
+    const param_t conv3_biases[1],
     ftmap_t output_ftmap[1][255][255])
-{
-#pragma HLS INLINE off
-#pragma HLS RESOURCE variable=conv3_w core=ROM_2P
-
- const int C2H = th_eff + 2*(5/2);
-  const int C2W = tw_eff + 2*(5/2);
-
-  VITIS_LOOP_176_1: for (int oy = 0; oy < th_eff; ++oy) {
-    VITIS_LOOP_177_2: for (int ox = 0; ox < tw_eff; ++ox) {
-
-      VITIS_LOOP_179_3: for (int o = 0; o < 1; ++o) {
-        param_t acc3 = conv3_b[o];
-
-        VITIS_LOOP_182_4: for (int n2 = 0; n2 < 32; ++n2) {
-
-          param_t k[5][5];
-#pragma HLS ARRAY_PARTITION variable=k complete dim=0
- VITIS_LOOP_186_5: for (int ky = 0; ky < 5; ++ky)
-            VITIS_LOOP_187_6: for (int kx = 0; kx < 5; ++kx) {
-#pragma HLS PIPELINE II=6
- k[ky][kx] = conv3_w[o][n2][ky][kx];
-            }
-
-          VITIS_LOOP_192_7: for (int ky = 0; ky < 5; ++ky) {
-            VITIS_LOOP_193_8: for (int kx = 0; kx < 5; ++kx) {
-#pragma HLS PIPELINE II=6
-
- const int gy = clampi(h0 + oy + ky - (5/2), 0, 255 -1);
-              const int gx = clampi(w0 + ox + kx - (5/2), 0, 255 -1);
-
-              int yi = (gy - h0) + (5/2);
-              int xi = (gx - w0) + (5/2);
-              if (yi < 0) yi = 0; else if (yi >= C2H) yi = C2H - 1;
-              if (xi < 0) xi = 0; else if (xi >= C2W) xi = C2W - 1;
-
-              const ftmap_t c2 = conv2_buf[n2][yi][xi];
-              acc3 = mad_no_fma(k[ky][kx], c2, acc3);
-            }
-          }
-        }
-
-        output_ftmap[o][h0 + oy][w0 + ox] = acc3;
-      }
-    }
-  }
-}
-
-
-
-__attribute__((sdx_kernel("srcnn", 0))) void srcnn(ftmap_t input_ftmap[1][255][255],
-           param_t conv1_weights[64][1][9][9],
-           param_t conv1_biases[64],
-           param_t conv2_weights[32][64][1][1],
-           param_t conv2_biases[32],
-           param_t conv3_weights[1][32][5][5],
-           param_t conv3_biases[1],
-           ftmap_t output_ftmap[1][255][255])
 {
 #line 28 "C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=srcnn
-# 226 "src/srcnn.cpp"
+# 50 "src/srcnn.cpp"
 
 #pragma HLS INLINE off
-#pragma HLS LOOP_FLATTEN off
+#pragma HLS ALLOCATION instances=mul limit=256 operation
 
 
- ftmap_t patch[64 + 2*((9/2) + (1/2) + (5/2))]
-                [64 + 2*((9/2) + (1/2) + (5/2))];
+
+ param_t w1[64][1][9][9];
+  param_t b1[64];
+#pragma HLS BIND_STORAGE variable=w1 type=ram_2p impl=bram
+#pragma HLS ARRAY_PARTITION variable=w1 cyclic factor=8 dim=1
+#pragma HLS ARRAY_PARTITION variable=b1 cyclic factor=8 dim=1
 
 
-  ftmap_t conv2_buf[32]
-                   [64 + 2*(5/2)]
-                   [64 + 2*(5/2)];
+ param_t w2[32][64];
+  param_t b2[32];
+#pragma HLS BIND_STORAGE variable=w2 type=ram_2p impl=bram
+#pragma HLS ARRAY_PARTITION variable=w2 cyclic factor=8 dim=1
+#pragma HLS ARRAY_PARTITION variable=w2 cyclic factor=8 dim=2
+#pragma HLS ARRAY_PARTITION variable=b2 cyclic factor=8 dim=1
 
-  VITIS_LOOP_239_1: for (int h0 = 0; h0 < 255; h0 += 64) {
-    const int th_eff = (h0 + 64 <= 255) ? 64 : (255 - h0);
-
-    VITIS_LOOP_242_2: for (int w0 = 0; w0 < 255; w0 += 64) {
-      const int tw_eff = (w0 + 64 <= 255) ? 64 : (255 - w0);
-
-      load_patch_tile(input_ftmap, h0, w0, th_eff, tw_eff, patch);
-
-
-      precompute_conv12_halo(
-          patch, h0, w0, th_eff, tw_eff,
-          conv1_weights, conv1_biases,
-          conv2_weights, conv2_biases,
-          conv2_buf);
+ param_t w3[1][32][5][5];
+  param_t b3[1];
+#pragma HLS BIND_STORAGE variable=w3 type=ram_2p impl=bram
+#pragma HLS ARRAY_PARTITION variable=w3 cyclic factor=8 dim=2
 
 
-      conv3_from_precomputed_conv2(
-          h0, w0, th_eff, tw_eff,
-          conv3_weights, conv3_biases,
-          conv2_buf, output_ftmap);
+
+
+ init_w1: for (int o=0;o<64;o++){
+#pragma HLS PIPELINE II=1
+ b1[o] = conv1_biases[o];
+    VITIS_LOOP_81_1: for (int i=0;i<1;i++){
+      VITIS_LOOP_82_2: for (int ky=0;ky<9;ky++){
+        VITIS_LOOP_83_3: for (int kx=0;kx<9;kx++){
+          w1[o][i][ky][kx] = conv1_weights[o][i][ky][kx];
+        }
+      }
+    }
+  }
+
+  init_w2: for (int o=0;o<32;o++){
+#pragma HLS PIPELINE II=1
+ b2[o] = conv2_biases[o];
+    VITIS_LOOP_93_4: for (int i=0;i<64;i++){
+#pragma HLS UNROLL factor=8
+ w2[o][i] = conv2_weights[o][i][0][0];
+    }
+  }
+
+  init_w3: for (int o=0;o<1;o++){
+#pragma HLS PIPELINE II=1
+ b3[o] = conv3_biases[o];
+    VITIS_LOOP_102_5: for (int i=0;i<32;i++){
+      VITIS_LOOP_103_6: for (int ky=0;ky<5;ky++){
+        VITIS_LOOP_104_7: for (int kx=0;kx<5;kx++){
+          w3[o][i][ky][kx] = conv3_weights[o][i][ky][kx];
+        }
+      }
+    }
+  }
+
+
+
+  ftmap_t patch[PATCH_H][PATCH_W];
+
+  ftmap_t c1[64][16][16];
+#pragma HLS ARRAY_PARTITION variable=c1 cyclic factor=8 dim=1
+
+ ftmap_t c2[32][16][16];
+#pragma HLS ARRAY_PARTITION variable=c2 cyclic factor=8 dim=1
+
+
+ tile_h: for (int h0=0; h0<255; h0+=16) {
+    const int th_eff = ((h0 + 16) <= 255) ? 16 : (255 - h0);
+  tile_w: for (int w0=0; w0<255; w0+=16) {
+      const int tw_eff = ((w0 + 16) <= 255) ? 16 : (255 - w0);
+
+
+      load_patch_rows: for (int dy=-HALO_TOTAL; dy<th_eff+HALO_TOTAL; dy++) {
+      load_patch_cols: for (int dx=-HALO_TOTAL; dx<tw_eff+HALO_TOTAL; dx++) {
+#pragma HLS PIPELINE II=1
+ const int y = clampi(h0 + dy, 0, 255 -1);
+          const int x = clampi(w0 + dx, 0, 255 -1);
+          patch[dy + HALO_TOTAL][dx + HALO_TOTAL] = input_ftmap[0][y][x];
+        }
+      }
+
+
+      c1_y: for (int ty=0; ty<th_eff; ty++) {
+      c1_x: for (int tx=0; tx<tw_eff; tx++) {
+#pragma HLS PIPELINE II=1
+ param_t acc1[64];
+#pragma HLS ARRAY_PARTITION variable=acc1 cyclic factor=8 dim=1
+
+ init_acc1: for (int o1=0; o1<64; o1++){
+#pragma HLS UNROLL factor=8
+ acc1[o1] = b1[o1];
+          }
+
+
+          VITIS_LOOP_150_8: for (int i=0;i<1;i++){
+            VITIS_LOOP_151_9: for (int ky=0; ky<9; ky++) {
+              VITIS_LOOP_152_10: for (int kx=0; kx<9; kx++) {
+                const param_t p = (param_t)patch[ty + ky][tx + kx];
+                add_c1: for (int o1=0; o1<64; o1++){
+#pragma HLS UNROLL factor=8
+ acc1[o1] += w1[o1][i][ky][kx] * p;
+                }
+              }
+            }
+          }
+
+          relu_c1: for (int o1=0; o1<64; o1++){
+#pragma HLS UNROLL factor=8
+ c1[o1][ty][tx] = (acc1[o1] > (param_t)0) ? (ftmap_t)acc1[o1] : (ftmap_t)0;
+          }
+        }
+      }
+
+
+      c2_y: for (int ty=0; ty<th_eff; ty++) {
+      c2_x: for (int tx=0; tx<tw_eff; tx++) {
+#pragma HLS PIPELINE II=1
+ conv2_out: for (int o2=0; o2<32; o2++) {
+#pragma HLS UNROLL factor=8
+ param_t acc = b2[o2];
+          dot_n1: for (int i=0; i<64; i++) {
+#pragma HLS UNROLL factor=8
+ acc += w2[o2][i] * (param_t)c1[i][ty][tx];
+          }
+          c2[o2][ty][tx] = (acc > (param_t)0) ? (ftmap_t)acc : (ftmap_t)0;
+        }
+      }}
+
+
+      c3_y: for (int ty=0; ty<th_eff; ty++) {
+      c3_x: for (int tx=0; tx<tw_eff; tx++) {
+#pragma HLS PIPELINE II=1
+ VITIS_LOOP_188_11: for (int o3=0; o3<1; o3++) {
+          param_t acc = b3[o3];
+          in_ch: for (int i=0; i<32; i++) {
+#pragma HLS UNROLL factor=8
+ VITIS_LOOP_192_12: for (int ky=0; ky<5; ky++) {
+              VITIS_LOOP_193_13: for (int kx=0; kx<5; kx++) {
+                const int y_c = clampi(ty + ky - (5/2), 0, th_eff-1);
+                const int x_c = clampi(tx + kx - (5/2), 0, tw_eff-1);
+                acc += w3[o3][i][ky][kx] * (param_t)c2[i][y_c][x_c];
+              }
+            }
+          }
+          output_ftmap[o3][h0+ty][w0+tx] = (ftmap_t)acc;
+        }
+      }}
+
     }
   }
 }

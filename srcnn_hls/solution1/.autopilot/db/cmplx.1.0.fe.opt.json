@@ -1,191 +1,28 @@
 {
   "0": {
-    "basicblocks": 19,
-    "calls": "12 4 2",
+    "basicblocks": 205,
+    "calls": "1 1 1 1",
     "file": "srcnn.cpp",
-    "fileloc": 218,
-    "instructions": 50,
+    "fileloc": 41,
+    "instructions": 567,
+    "loads": {
+      "L": 12,
+      "T": 7
+    },
     "name": "srcnn",
-    "total_instructions": 6782
+    "stores": {
+      "L": 11,
+      "T": 1
+    },
+    "total_instructions": 611
   },
   "1": {
     "basicblocks": 7,
     "calls": "",
     "file": "srcnn.cpp",
-    "fileloc": 25,
+    "fileloc": 37,
     "instructions": 11,
     "name": "clampi",
     "total_instructions": 11
-  },
-  "10": {
-    "basicblocks": 1,
-    "calls": "14",
-    "file": "x_hls_utils.h",
-    "fileloc": 348,
-    "instructions": 5,
-    "name": "to_int",
-    "total_instructions": 305
-  },
-  "11": {
-    "basicblocks": 1,
-    "calls": "3",
-    "file": "x_hls_utils.h",
-    "fileloc": 375,
-    "instructions": 2,
-    "name": "to_ieee",
-    "total_instructions": 316
-  },
-  "12": {
-    "basicblocks": 13,
-    "calls": "1 1",
-    "file": "srcnn.cpp",
-    "fileloc": 36,
-    "instructions": 40,
-    "loads": {
-      "L": 1
-    },
-    "name": "load_patch_tile",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 62
-  },
-  "13": {
-    "basicblocks": 3,
-    "calls": "8",
-    "file": "hls_isnan.h",
-    "fileloc": 16,
-    "instructions": 18,
-    "name": "generic_isnan<float>",
-    "total_instructions": 420
-  },
-  "14": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 338,
-    "instructions": 33,
-    "name": "data",
-    "total_instructions": 296
-  },
-  "15": {
-    "basicblocks": 19,
-    "calls": "1 1 6 9",
-    "file": "srcnn.cpp",
-    "fileloc": 61,
-    "instructions": 63,
-    "loads": {
-      "L": 3
-    },
-    "name": "conv1_all_c1_at_clamped_center",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 3221
-  },
-  "2": {
-    "basicblocks": 59,
-    "calls": "1 1 6",
-    "file": "srcnn.cpp",
-    "fileloc": 161,
-    "instructions": 156,
-    "loads": {
-      "L": 4
-    },
-    "name": "conv3_from_precomputed_conv2",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 188
-  },
-  "3": {
-    "basicblocks": 1,
-    "calls": "14",
-    "file": "x_hls_utils.h",
-    "fileloc": 351,
-    "instructions": 14,
-    "loads": {
-      "L": 1
-    },
-    "name": "to_float",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 314
-  },
-  "4": {
-    "basicblocks": 19,
-    "calls": "1 1 15 5",
-    "file": "srcnn.cpp",
-    "fileloc": 116,
-    "instructions": 56,
-    "name": "precompute_conv12_halo",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 6482
-  },
-  "5": {
-    "basicblocks": 13,
-    "calls": "6 9",
-    "file": "srcnn.cpp",
-    "fileloc": 90,
-    "instructions": 47,
-    "loads": {
-      "L": 4
-    },
-    "name": "conv2_single_from_c1",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 3183
-  },
-  "6": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "srcnn.cpp",
-    "fileloc": 30,
-    "instructions": 10,
-    "loads": {
-      "L": 1
-    },
-    "name": "mad_no_fma",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 10
-  },
-  "7": {
-    "basicblocks": 22,
-    "calls": "8 8 13 13 11 13 10 10",
-    "file": "hls_fmax.h",
-    "fileloc": 19,
-    "instructions": 82,
-    "name": "generic_fmax<float>",
-    "total_instructions": 3124
-  },
-  "8": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 312,
-    "instructions": 58,
-    "loads": {
-      "L": 1
-    },
-    "name": "fp_struct",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 349
-  },
-  "9": {
-    "basicblocks": 1,
-    "calls": "7",
-    "file": "fmaxfloat.cpp",
-    "fileloc": 6,
-    "instructions": 2,
-    "name": "fmaxf",
-    "total_instructions": 3126
   }
 }
