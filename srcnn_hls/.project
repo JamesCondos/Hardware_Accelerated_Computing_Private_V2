@@ -47,6 +47,11 @@
 			<location>C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/src/conv1.cpp</location>
 		</link>
 		<link>
+			<name>source/conv1_tile.cpp</name>
+			<type>1</type>
+			<location>C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/src/conv1_tile.cpp</location>
+		</link>
+		<link>
 			<name>source/conv2.cpp</name>
 			<type>1</type>
 			<location>C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/src/conv2.cpp</location>

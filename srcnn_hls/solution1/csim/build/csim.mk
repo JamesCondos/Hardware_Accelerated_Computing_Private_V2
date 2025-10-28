@@ -19,7 +19,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../test/util.cpp ../../../../test/tb_set14.cpp ../../../../test/tb_conv1.cpp ../../../../test/tb_srcnn.cpp ../../../../test/csim.cpp ../../../../src/conv1.cpp ../../../../src/conv2.cpp ../../../../src/conv3.cpp ../../../../src/srcnn.cpp
+HLS_SOURCES = ../../../../test/util.cpp ../../../../test/tb_set14.cpp ../../../../test/tb_conv1.cpp ../../../../test/tb_srcnn.cpp ../../../../test/csim.cpp ../../../../src/conv1.cpp ../../../../src/conv1_tile.cpp ../../../../src/conv2.cpp ../../../../src/conv3.cpp ../../../../src/srcnn.cpp
 
 override TARGET := csim.exe
 
@@ -109,6 +109,12 @@ $(ObjDir)/conv1.o: ../../../../src/conv1.cpp $(ObjDir)/.dir
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/conv1.d
+
+$(ObjDir)/conv1_tile.o: ../../../../src/conv1_tile.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../src/conv1_tile.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/conv1_tile.d
 
 $(ObjDir)/conv2.o: ../../../../src/conv2.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../src/conv2.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)

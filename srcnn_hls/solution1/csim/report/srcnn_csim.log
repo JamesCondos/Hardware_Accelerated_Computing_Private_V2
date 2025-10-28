@@ -1,13 +1,37 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-make: 'csim.exe' is up to date.
-***** CONV1 Golden Reference *****
-  - Butterfly MSE: 3.8672e-015
-
-***** SRCNN Golden Reference *****
-  - Butterfly MSE: 2.90363e-014
-
-***** SRCNN - Set14 Test *****
-Image Name     PSNR GT vs HR (dB)  PSNR GT vs HR MATLAB (dB)  PSNR GT vs LR (dB)  MSE GT vs HR   MSE GT vs HR MATLAB        
-ERR: [SIM 100] CSim failed with errors.
+   Compiling ../../../../test/util.cpp in debug mode
+   Compiling ../../../../test/tb_set14.cpp in debug mode
+   Compiling ../../../../test/tb_conv1.cpp in debug mode
+   Compiling ../../../../test/tb_srcnn.cpp in debug mode
+   Compiling ../../../../src/conv1.cpp in debug mode
+   Compiling ../../../../src/conv1_tile.cpp in debug mode
+   Compiling ../../../../src/conv2.cpp in debug mode
+   Compiling ../../../../src/conv3.cpp in debug mode
+   Compiling ../../../../src/srcnn.cpp in debug mode
+csim.mk:132: recipe for target 'obj/srcnn.o' failed
+../../../../src/srcnn.cpp: In function 'void srcnn(ftmap_t (*)[255][255], param_t (*)[1][9][9], param_t*, param_t (*)[64][1][1], param_t*, param_t (*)[32][5][5], param_t*, ftmap_t (*)[255][255])':
+../../../../src/srcnn.cpp:29:83: error: invalid initialization of reference of type 'hls::stream<float>&' from expression of type 'ftmap_t [64][17][17] {aka float [64][17][17]}'
+             conv1_tile(input_tile, conv1_weights, conv1_biases, layer1_output_tile);
+                                                                                   ^
+In file included from ../../../../src/srcnn.cpp:1:0:
+../../../../src/srcnn.h:46:6: note: in passing argument 4 of 'void conv1_tile(ftmap_t (*)[17][17], param_t (*)[1][9][9], param_t*, hls::stream<float>&)'
+ void conv1_tile(ftmap_t input_tile[N0][TILE_H][TILE_W],
+      ^~~~~~~~~~
+../../../../src/srcnn.cpp:30:86: error: invalid initialization of reference of type 'hls::stream<float>&' from expression of type 'ftmap_t [64][17][17] {aka float [64][17][17]}'
+             conv2(layer1_output_tile, conv2_weights, conv2_biases, layer2_output_tile);
+                                                                                      ^
+In file included from ../../../../src/srcnn.cpp:1:0:
+../../../../src/srcnn.h:52:6: note: in passing argument 1 of 'void conv2(hls::stream<float>&, param_t (*)[64][1][1], param_t*, hls::stream<float>&)'
+ void conv2(hls::stream<ftmap_t> &conv1_to_conv2,
+      ^~~~~
+../../../../src/srcnn.cpp:31:86: error: invalid initialization of reference of type 'hls::stream<float>&' from expression of type 'ftmap_t [32][17][17] {aka float [32][17][17]}'
+             conv3(layer2_output_tile, conv3_weights, conv3_biases, layer3_output_tile);
+                                                                                      ^
+In file included from ../../../../src/srcnn.cpp:1:0:
+../../../../src/srcnn.h:58:6: note: in passing argument 1 of 'void conv3(hls::stream<float>&, param_t (*)[32][5][5], param_t*, ftmap_t (*)[17][17])'
+ void conv3(hls::stream<ftmap_t> &conv2_to_conv3,
+      ^~~~~
+make: *** [obj/srcnn.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 3] *************** CSIM finish ***************
