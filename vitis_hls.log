@@ -1,6 +1,6 @@
 NOTE: Using modified tcl85t.dll from https://gitenterprise.xilinx.com/ACT/vitis_hls_tcl
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'james' on host 'james_condos' (Windows NT_amd64 version 6.2) on Tue Oct 28 13:22:54 +1100 2025
+INFO: [HLS 200-10] For user 'james' on host 'james_condos' (Windows NT_amd64 version 6.2) on Tue Oct 28 13:36:04 +1100 2025
 INFO: [HLS 200-10] In directory 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden'
 Sourcing Tcl script 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/csim.tcl'
 INFO: [HLS 200-1510] Running: source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/csim.tcl
@@ -49,42 +49,19 @@ INFO: [HLS 200-1510] Running: csim_design -quiet
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [HLS 200-2036] Building debug C Simulation binaries
-   Compiling ../../../../test/util.cpp in debug mode
    Compiling ../../../../test/tb_set14.cpp in debug mode
-   Compiling ../../../../test/tb_conv1.cpp in debug mode
-   Compiling ../../../../test/tb_srcnn.cpp in debug mode
-   Compiling ../../../../src/conv1.cpp in debug mode
    Compiling ../../../../src/conv1_tile.cpp in debug mode
-   Compiling ../../../../src/conv2.cpp in debug mode
-   Compiling ../../../../src/conv3.cpp in debug mode
-   Compiling ../../../../src/srcnn.cpp in debug mode
-csim.mk:132: recipe for target 'obj/srcnn.o' failed
-../../../../src/srcnn.cpp: In function 'void srcnn(ftmap_t (*)[255][255], param_t (*)[1][9][9], param_t*, param_t (*)[64][1][1], param_t*, param_t (*)[32][5][5], param_t*, ftmap_t (*)[255][255])':
-../../../../src/srcnn.cpp:29:83: error: invalid initialization of reference of type 'hls::stream<float>&' from expression of type 'ftmap_t [64][17][17] {aka float [64][17][17]}'
-             conv1_tile(input_tile, conv1_weights, conv1_biases, layer1_output_tile);
-                                                                                   ^
-In file included from ../../../../src/srcnn.cpp:1:0:
-../../../../src/srcnn.h:46:6: note: in passing argument 4 of 'void conv1_tile(ftmap_t (*)[17][17], param_t (*)[1][9][9], param_t*, hls::stream<float>&)'
- void conv1_tile(ftmap_t input_tile[N0][TILE_H][TILE_W],
-      ^~~~~~~~~~
-../../../../src/srcnn.cpp:30:86: error: invalid initialization of reference of type 'hls::stream<float>&' from expression of type 'ftmap_t [64][17][17] {aka float [64][17][17]}'
-             conv2(layer1_output_tile, conv2_weights, conv2_biases, layer2_output_tile);
-                                                                                      ^
-In file included from ../../../../src/srcnn.cpp:1:0:
-../../../../src/srcnn.h:52:6: note: in passing argument 1 of 'void conv2(hls::stream<float>&, param_t (*)[64][1][1], param_t*, hls::stream<float>&)'
- void conv2(hls::stream<ftmap_t> &conv1_to_conv2,
-      ^~~~~
-../../../../src/srcnn.cpp:31:86: error: invalid initialization of reference of type 'hls::stream<float>&' from expression of type 'ftmap_t [32][17][17] {aka float [32][17][17]}'
-             conv3(layer2_output_tile, conv3_weights, conv3_biases, layer3_output_tile);
-                                                                                      ^
-In file included from ../../../../src/srcnn.cpp:1:0:
-../../../../src/srcnn.h:58:6: note: in passing argument 1 of 'void conv3(hls::stream<float>&, param_t (*)[32][5][5], param_t*, ftmap_t (*)[17][17])'
- void conv3(hls::stream<ftmap_t> &conv2_to_conv3,
-      ^~~~~
-make: *** [obj/srcnn.o] Error 1
+   Generating csim.exe
+Makefile.rules:322: recipe for target 'csim.exe' failed
+obj/tb_set14.o: In function `tb_set14()':
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\csim\build/../../../../test/tb_set14.cpp:120: undefined reference to `srcnn(float (*) [255][255], float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [32][5][5], float*, float (*) [255][255])'
+obj/tb_srcnn.o: In function `tb_srcnn()':
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\csim\build/../../../../test/tb_srcnn.cpp:61: undefined reference to `srcnn(float (*) [255][255], float (*) [1][9][9], float*, float (*) [64][1][1], float*, float (*) [32][5][5], float*, float (*) [255][255])'
+collect2.exe: error: ld returned 1 exit status
+make: *** [csim.exe] Error 1
 ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.01 seconds; current allocated memory: 0.605 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.39 seconds; current allocated memory: 0.395 MB.
 4
     while executing
 "source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/csim.tcl"
@@ -96,4 +73,4 @@ INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU s
     (procedure "hls_proc" line 16)
     invoked from within
 "hls_proc [info nameofexecutable] $argv"
-INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.635 seconds; peak allocated memory: 1.045 GB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.68 seconds; peak allocated memory: 1.045 GB.
