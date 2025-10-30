@@ -34,9 +34,9 @@ set SynModuleInfo {
   {SRCNAME conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2 MODELNAME conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2 RTLNAME srcnn_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2}
   {SRCNAME conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4 MODELNAME conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4 RTLNAME srcnn_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4}
   {SRCNAME conv2_Pipeline_tile_height_loop MODELNAME conv2_Pipeline_tile_height_loop RTLNAME srcnn_conv2_Pipeline_tile_height_loop}
-  {SRCNAME conv2_Pipeline_tile_height_loop12 MODELNAME conv2_Pipeline_tile_height_loop12 RTLNAME srcnn_conv2_Pipeline_tile_height_loop12}
-  {SRCNAME conv2_Pipeline_tile_height_loop13 MODELNAME conv2_Pipeline_tile_height_loop13 RTLNAME srcnn_conv2_Pipeline_tile_height_loop13}
-  {SRCNAME conv2_Pipeline_tile_height_loop14 MODELNAME conv2_Pipeline_tile_height_loop14 RTLNAME srcnn_conv2_Pipeline_tile_height_loop14}
+  {SRCNAME conv2_Pipeline_tile_height_loop4 MODELNAME conv2_Pipeline_tile_height_loop4 RTLNAME srcnn_conv2_Pipeline_tile_height_loop4}
+  {SRCNAME conv2_Pipeline_tile_height_loop5 MODELNAME conv2_Pipeline_tile_height_loop5 RTLNAME srcnn_conv2_Pipeline_tile_height_loop5}
+  {SRCNAME conv2_Pipeline_tile_height_loop6 MODELNAME conv2_Pipeline_tile_height_loop6 RTLNAME srcnn_conv2_Pipeline_tile_height_loop6}
   {SRCNAME conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6 MODELNAME conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6 RTLNAME srcnn_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6}
   {SRCNAME conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8 MODELNAME conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8 RTLNAME srcnn_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8}
   {SRCNAME conv2 MODELNAME conv2 RTLNAME srcnn_conv2
@@ -45,17 +45,16 @@ set SynModuleInfo {
       {MODELNAME srcnn_conv2_layer2_output_tile_RAM_AUTO_1R1W RTLNAME srcnn_conv2_layer2_output_tile_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot47_proc MODELNAME dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot47_proc RTLNAME srcnn_dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot47_proc}
-  {SRCNAME conv37_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3 MODELNAME conv37_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3 RTLNAME srcnn_conv37_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3}
-  {SRCNAME conv37_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4 MODELNAME conv37_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4 RTLNAME srcnn_conv37_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4}
-  {SRCNAME conv37_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 MODELNAME conv37_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 RTLNAME srcnn_conv37_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3
+  {SRCNAME conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3 MODELNAME conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3 RTLNAME srcnn_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3}
+  {SRCNAME conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4 MODELNAME conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4 RTLNAME srcnn_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4}
+  {SRCNAME conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 MODELNAME conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 RTLNAME srcnn_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3
     SUBMODULES {
       {MODELNAME srcnn_mux_8_3_32_1_1 RTLNAME srcnn_mux_8_3_32_1_1 BINDTYPE op TYPE mux IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME conv37 MODELNAME conv37 RTLNAME srcnn_conv37
+  {SRCNAME conv3 MODELNAME conv3 RTLNAME srcnn_conv3
     SUBMODULES {
-      {MODELNAME srcnn_conv37_input_tile_RAM_1WNR_AUTO_1R1W RTLNAME srcnn_conv37_input_tile_RAM_1WNR_AUTO_1R1W BINDTYPE storage TYPE ram_1wnr IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME srcnn_conv3_input_tile_RAM_1WNR_AUTO_1R1W RTLNAME srcnn_conv3_input_tile_RAM_1WNR_AUTO_1R1W BINDTYPE storage TYPE ram_1wnr IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
     }
   }
   {SRCNAME reconstructor_Pipeline_VITIS_LOOP_465_2 MODELNAME reconstructor_Pipeline_VITIS_LOOP_465_2 RTLNAME srcnn_reconstructor_Pipeline_VITIS_LOOP_465_2}
@@ -65,23 +64,22 @@ set SynModuleInfo {
       {MODELNAME srcnn_dataflow_in_loop_tile_height_loop_MAIN_1_layer3_output_tile_0_RAM_AUTO_1R1W_memcore RTLNAME srcnn_dataflow_in_loop_tile_height_loop_MAIN_1_layer3_output_tile_0_RAM_AUTO_1R1W_memcore BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME srcnn_dataflow_in_loop_tile_height_loop_MAIN_1_layer3_output_tile_0_RAM_AUTO_1R1W RTLNAME srcnn_dataflow_in_loop_tile_height_loop_MAIN_1_layer3_output_tile_0_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME srcnn_fifo_w64_d6_S RTLNAME srcnn_fifo_w64_d6_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME output_ftmap_c_U}
-      {MODELNAME srcnn_fifo_w8_d2_S RTLNAME srcnn_fifo_w8_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME pixel_w_loc_c16_channel_U}
-      {MODELNAME srcnn_fifo_w9_d2_S RTLNAME srcnn_fifo_w9_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME pixel_h_loc_c17_channel_U}
+      {MODELNAME srcnn_fifo_w8_d2_S RTLNAME srcnn_fifo_w8_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME pixel_w_loc_c14_channel_U}
+      {MODELNAME srcnn_fifo_w9_d2_S RTLNAME srcnn_fifo_w9_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME pixel_h_loc_c15_channel_U}
       {MODELNAME srcnn_fifo_w32_d512_D RTLNAME srcnn_fifo_w32_d512_D BINDTYPE storage TYPE fifo IMPL lutram ALLOW_PRAGMA 1 INSTNAME conv1_to_conv2_U}
       {MODELNAME srcnn_fifo_w8_d4_S RTLNAME srcnn_fifo_w8_d4_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME pixel_w_loc_c_U}
       {MODELNAME srcnn_fifo_w9_d4_S RTLNAME srcnn_fifo_w9_d4_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME pixel_h_loc_c_U}
       {MODELNAME srcnn_fifo_w32_d512_D RTLNAME srcnn_fifo_w32_d512_D BINDTYPE storage TYPE fifo IMPL lutram ALLOW_PRAGMA 1 INSTNAME conv2_to_conv3_U}
-      {MODELNAME srcnn_fifo_w32_d4_S RTLNAME srcnn_fifo_w32_d4_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME conv3_biases_local_load_loc_channel_U}
     }
   }
   {SRCNAME dataflow_parent_loop_proc MODELNAME dataflow_parent_loop_proc RTLNAME srcnn_dataflow_parent_loop_proc}
   {SRCNAME srcnn MODELNAME srcnn RTLNAME srcnn IS_TOP 1
     SUBMODULES {
-      {MODELNAME srcnn_conv1_weights_local_RAM_S2P_LUTRAM_1R1W RTLNAME srcnn_conv1_weights_local_RAM_S2P_LUTRAM_1R1W BINDTYPE storage TYPE ram_s2p IMPL lutram LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME srcnn_conv1_biases_local_RAM_S2P_BRAM_1R1W RTLNAME srcnn_conv1_biases_local_RAM_S2P_BRAM_1R1W BINDTYPE storage TYPE ram_s2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
-      {MODELNAME srcnn_conv2_weights_local_RAM_S2P_BRAM_1R1W RTLNAME srcnn_conv2_weights_local_RAM_S2P_BRAM_1R1W BINDTYPE storage TYPE ram_s2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME srcnn_p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv1_bkb RTLNAME srcnn_p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv1_bkb BINDTYPE storage TYPE ram_s2p IMPL lutram LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME srcnn_conv2_biases_local_RAM_S2P_BRAM_1R1W RTLNAME srcnn_conv2_biases_local_RAM_S2P_BRAM_1R1W BINDTYPE storage TYPE ram_s2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
-      {MODELNAME srcnn_conv3_weights_local_RAM_S2P_BRAM_1R1W RTLNAME srcnn_conv3_weights_local_RAM_S2P_BRAM_1R1W BINDTYPE storage TYPE ram_s2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME srcnn_p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_cNA RTLNAME srcnn_p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_cNA BINDTYPE storage TYPE ram_s2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME srcnn_p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_cRA RTLNAME srcnn_p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_cRA BINDTYPE storage TYPE ram_s2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME srcnn_conv3_biases_local_RAM_S2P_BRAM_1R1W RTLNAME srcnn_conv3_biases_local_RAM_S2P_BRAM_1R1W BINDTYPE storage TYPE ram_s2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME srcnn_gmem_in_m_axi RTLNAME srcnn_gmem_in_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}
       {MODELNAME srcnn_gmem_w1_m_axi RTLNAME srcnn_gmem_w1_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}

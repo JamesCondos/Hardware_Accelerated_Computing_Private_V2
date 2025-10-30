@@ -115,7 +115,7 @@ newFuncRoot:5 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %co
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv1_to_conv2, void @empty_151, i32 0, i32 0, void @empty_132, i32 0, i32 0, void @empty_132, void @empty_132, void @empty_132, i32 0, i32 0, i32 0, i32 0, void @empty_132, void @empty_132, i32 4294967295, i32 0
+newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv1_to_conv2, void @empty_23, i32 0, i32 0, void @empty_42, i32 0, i32 0, void @empty_42, void @empty_42, void @empty_42, i32 0, i32 0, i32 0, i32 0, void @empty_42, void @empty_42, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -1026,7 +1026,7 @@ for.inc16:41 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4
 
 <Node id="82" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc16:42 %specloopname_ln321 = specloopname void @_ssdm_op_SpecLoopName, void @empty_172
+for.inc16:42 %specloopname_ln321 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln321"/></StgValue>
@@ -1829,23 +1829,23 @@ arrayidx1217.exit:8 %br_ln321 = br void %for.inc
 </dataflow>
 <dataflow id="159" from="conv1_to_conv2" to="specinterface_ln0" fromId="141" toId="11">
 </dataflow>
-<dataflow id="161" from="empty_151" to="specinterface_ln0" fromId="160" toId="11">
+<dataflow id="161" from="empty_23" to="specinterface_ln0" fromId="160" toId="11">
 </dataflow>
 <dataflow id="163" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
 <dataflow id="164" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
-<dataflow id="166" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="166" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
 <dataflow id="167" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
 <dataflow id="168" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
-<dataflow id="169" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="169" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
-<dataflow id="170" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="170" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
-<dataflow id="171" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="171" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
 <dataflow id="172" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
@@ -1855,9 +1855,9 @@ arrayidx1217.exit:8 %br_ln321 = br void %for.inc
 </dataflow>
 <dataflow id="175" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
-<dataflow id="176" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="176" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
-<dataflow id="177" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="177" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
 <dataflow id="179" from="StgValue_178" to="specinterface_ln0" fromId="178" toId="11">
 </dataflow>
@@ -2149,7 +2149,7 @@ arrayidx1217.exit:8 %br_ln321 = br void %for.inc
 </dataflow>
 <dataflow id="345" from="_ssdm_op_SpecLoopName" to="specloopname_ln321" fromId="231" toId="70">
 </dataflow>
-<dataflow id="347" from="empty_172" to="specloopname_ln321" fromId="346" toId="70">
+<dataflow id="347" from="empty_2" to="specloopname_ln321" fromId="346" toId="70">
 </dataflow>
 <dataflow id="349" from="_ssdm_op_Read.ap_fifo.volatile.i32P0A" to="conv1_to_conv2_read" fromId="348" toId="71">
 </dataflow>

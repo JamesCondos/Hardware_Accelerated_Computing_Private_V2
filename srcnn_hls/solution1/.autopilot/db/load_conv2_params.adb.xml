@@ -128,7 +128,7 @@ entry:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_bi
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_0_0, i64 666, i64 25, i64 18446744073709551615
+entry:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, i64 666, i64 25, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -143,7 +143,7 @@ entry:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_we
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_0_1, i64 666, i64 25, i64 18446744073709551615
+entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, i64 666, i64 25, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -158,7 +158,7 @@ entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_we
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_1_0, i64 666, i64 25, i64 18446744073709551615
+entry:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, i64 666, i64 25, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -173,7 +173,7 @@ entry:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_we
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:5 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_1_1, i64 666, i64 25, i64 18446744073709551615
+entry:5 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig, i64 666, i64 25, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -188,7 +188,7 @@ entry:5 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_we
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem_w2, void @empty_131, i32 0, i32 0, void @empty_132, i32 0, i32 2048, void @empty_136, void @empty_134, void @empty_132, i32 16, i32 16, i32 16, i32 16, void @empty_132, void @empty_132, i32 4294967295, i32 0
+entry:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem_w2, void @empty_43, i32 0, i32 0, void @empty_42, i32 0, i32 2048, void @empty_38, void @empty_40, void @empty_42, i32 16, i32 16, i32 16, i32 16, void @empty_42, void @empty_42, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -750,9 +750,9 @@ VITIS_LOOP_163_2.split:14 %store_ln162 = store i32 %bitcast_ln162, i5 %conv2_bia
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="1" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="11" op_8_bw="62" op_9_bw="32" op_10_bw="1" op_11_bw="0">
+<Node id="45" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="1" op_3_bw="11" op_4_bw="62" op_5_bw="32" op_6_bw="1" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="0">
 <![CDATA[
-VITIS_LOOP_163_2.split:15 %call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i32 %conv2_weights_local_0_0, i32 %conv2_weights_local_0_1, i32 %conv2_weights_local_1_0, i32 %conv2_weights_local_1_1, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2
+VITIS_LOOP_163_2.split:15 %call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig
 
 ]]></Node>
 <StgValue><ssdm name="call_ln161"/></StgValue>
@@ -785,7 +785,7 @@ VITIS_LOOP_163_2.split:3 %speclooptripcount_ln161 = speclooptripcount void @_ssd
 
 <Node id="34" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_163_2.split:4 %specloopname_ln161 = specloopname void @_ssdm_op_SpecLoopName, void @empty_157
+VITIS_LOOP_163_2.split:4 %specloopname_ln161 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln161"/></StgValue>
@@ -798,9 +798,9 @@ VITIS_LOOP_163_2.split:4 %specloopname_ln161 = specloopname void @_ssdm_op_SpecL
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="1" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="11" op_8_bw="62" op_9_bw="32" op_10_bw="1" op_11_bw="0">
+<Node id="45" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="1" op_3_bw="11" op_4_bw="62" op_5_bw="32" op_6_bw="1" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="0">
 <![CDATA[
-VITIS_LOOP_163_2.split:15 %call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i32 %conv2_weights_local_0_0, i32 %conv2_weights_local_0_1, i32 %conv2_weights_local_1_0, i32 %conv2_weights_local_1_1, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2
+VITIS_LOOP_163_2.split:15 %call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig
 
 ]]></Node>
 <StgValue><ssdm name="call_ln161"/></StgValue>
@@ -825,34 +825,34 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 
 
 <ports>
-<port id="74" name="conv2_weights_local_0_0" dir="1" iftype="1">
-<core>RAM_S2P_BRAM</core><StgValue><ssdm name="conv2_weights_local_0_0"/><MemPortTyVec>3 0 </MemPortTyVec>
-</StgValue>
+<port id="74" name="gmem_w2" dir="0" iftype="4">
+<core>NULL</core><StgValue><ssdm name="gmem_w2"/></StgValue>
 </port>
-<port id="75" name="conv2_weights_local_0_1" dir="1" iftype="1">
-<core>RAM_S2P_BRAM</core><StgValue><ssdm name="conv2_weights_local_0_1"/><MemPortTyVec>3 0 </MemPortTyVec>
-</StgValue>
+<port id="75" name="conv2_weights" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="conv2_weights"/></StgValue>
 </port>
-<port id="76" name="conv2_weights_local_1_0" dir="1" iftype="1">
-<core>RAM_S2P_BRAM</core><StgValue><ssdm name="conv2_weights_local_1_0"/><MemPortTyVec>3 0 </MemPortTyVec>
-</StgValue>
+<port id="76" name="conv2_biases" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="conv2_biases"/></StgValue>
 </port>
-<port id="77" name="conv2_weights_local_1_1" dir="1" iftype="1">
-<core>RAM_S2P_BRAM</core><StgValue><ssdm name="conv2_weights_local_1_1"/><MemPortTyVec>3 0 </MemPortTyVec>
-</StgValue>
-</port>
-<port id="78" name="conv2_biases_local" dir="1" iftype="1">
+<port id="77" name="conv2_biases_local" dir="1" iftype="1">
 <core>RAM_S2P_BRAM</core><StgValue><ssdm name="conv2_biases_local"/><MemPortTyVec>3 0 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="79" name="gmem_w2" dir="0" iftype="4">
-<core>NULL</core><StgValue><ssdm name="gmem_w2"/></StgValue>
+<port id="78" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3" dir="1" iftype="1">
+<core>RAM_S2P_BRAM</core><StgValue><ssdm name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3"/><MemPortTyVec>3 0 </MemPortTyVec>
+</StgValue>
 </port>
-<port id="80" name="conv2_weights" dir="0" iftype="0">
-<core>NULL</core><StgValue><ssdm name="conv2_weights"/></StgValue>
+<port id="79" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2" dir="1" iftype="1">
+<core>RAM_S2P_BRAM</core><StgValue><ssdm name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2"/><MemPortTyVec>3 0 </MemPortTyVec>
+</StgValue>
 </port>
-<port id="81" name="conv2_biases" dir="0" iftype="0">
-<core>NULL</core><StgValue><ssdm name="conv2_biases"/></StgValue>
+<port id="80" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1" dir="1" iftype="1">
+<core>RAM_S2P_BRAM</core><StgValue><ssdm name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1"/><MemPortTyVec>3 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="81" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig" dir="1" iftype="1">
+<core>RAM_S2P_BRAM</core><StgValue><ssdm name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig"/><MemPortTyVec>3 0 </MemPortTyVec>
+</StgValue>
 </port>
 </ports>
 
@@ -862,7 +862,7 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="85" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="84" toId="15">
 </dataflow>
-<dataflow id="86" from="conv2_biases_local" to="specmemcore_ln0" fromId="78" toId="15">
+<dataflow id="86" from="conv2_biases_local" to="specmemcore_ln0" fromId="77" toId="15">
 </dataflow>
 <dataflow id="88" from="StgValue_87" to="specmemcore_ln0" fromId="87" toId="15">
 </dataflow>
@@ -872,7 +872,7 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="93" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="84" toId="16">
 </dataflow>
-<dataflow id="94" from="conv2_weights_local_0_0" to="specmemcore_ln0" fromId="74" toId="16">
+<dataflow id="94" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3" to="specmemcore_ln0" fromId="78" toId="16">
 </dataflow>
 <dataflow id="95" from="StgValue_87" to="specmemcore_ln0" fromId="87" toId="16">
 </dataflow>
@@ -882,7 +882,7 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="98" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="84" toId="17">
 </dataflow>
-<dataflow id="99" from="conv2_weights_local_0_1" to="specmemcore_ln0" fromId="75" toId="17">
+<dataflow id="99" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2" to="specmemcore_ln0" fromId="79" toId="17">
 </dataflow>
 <dataflow id="100" from="StgValue_87" to="specmemcore_ln0" fromId="87" toId="17">
 </dataflow>
@@ -892,7 +892,7 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="103" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="84" toId="18">
 </dataflow>
-<dataflow id="104" from="conv2_weights_local_1_0" to="specmemcore_ln0" fromId="76" toId="18">
+<dataflow id="104" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1" to="specmemcore_ln0" fromId="80" toId="18">
 </dataflow>
 <dataflow id="105" from="StgValue_87" to="specmemcore_ln0" fromId="87" toId="18">
 </dataflow>
@@ -902,7 +902,7 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="108" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="84" toId="19">
 </dataflow>
-<dataflow id="109" from="conv2_weights_local_1_1" to="specmemcore_ln0" fromId="77" toId="19">
+<dataflow id="109" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig" to="specmemcore_ln0" fromId="81" toId="19">
 </dataflow>
 <dataflow id="110" from="StgValue_87" to="specmemcore_ln0" fromId="87" toId="19">
 </dataflow>
@@ -912,25 +912,25 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="114" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="113" toId="20">
 </dataflow>
-<dataflow id="115" from="gmem_w2" to="specinterface_ln0" fromId="79" toId="20">
+<dataflow id="115" from="gmem_w2" to="specinterface_ln0" fromId="74" toId="20">
 </dataflow>
-<dataflow id="117" from="empty_131" to="specinterface_ln0" fromId="116" toId="20">
+<dataflow id="117" from="empty_43" to="specinterface_ln0" fromId="116" toId="20">
 </dataflow>
 <dataflow id="119" from="StgValue_118" to="specinterface_ln0" fromId="118" toId="20">
 </dataflow>
 <dataflow id="120" from="StgValue_118" to="specinterface_ln0" fromId="118" toId="20">
 </dataflow>
-<dataflow id="122" from="empty_132" to="specinterface_ln0" fromId="121" toId="20">
+<dataflow id="122" from="empty_42" to="specinterface_ln0" fromId="121" toId="20">
 </dataflow>
 <dataflow id="123" from="StgValue_118" to="specinterface_ln0" fromId="118" toId="20">
 </dataflow>
 <dataflow id="125" from="StgValue_124" to="specinterface_ln0" fromId="124" toId="20">
 </dataflow>
-<dataflow id="127" from="empty_136" to="specinterface_ln0" fromId="126" toId="20">
+<dataflow id="127" from="empty_38" to="specinterface_ln0" fromId="126" toId="20">
 </dataflow>
-<dataflow id="129" from="empty_134" to="specinterface_ln0" fromId="128" toId="20">
+<dataflow id="129" from="empty_40" to="specinterface_ln0" fromId="128" toId="20">
 </dataflow>
-<dataflow id="130" from="empty_132" to="specinterface_ln0" fromId="121" toId="20">
+<dataflow id="130" from="empty_42" to="specinterface_ln0" fromId="121" toId="20">
 </dataflow>
 <dataflow id="132" from="StgValue_131" to="specinterface_ln0" fromId="131" toId="20">
 </dataflow>
@@ -940,9 +940,9 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="135" from="StgValue_131" to="specinterface_ln0" fromId="131" toId="20">
 </dataflow>
-<dataflow id="136" from="empty_132" to="specinterface_ln0" fromId="121" toId="20">
+<dataflow id="136" from="empty_42" to="specinterface_ln0" fromId="121" toId="20">
 </dataflow>
-<dataflow id="137" from="empty_132" to="specinterface_ln0" fromId="121" toId="20">
+<dataflow id="137" from="empty_42" to="specinterface_ln0" fromId="121" toId="20">
 </dataflow>
 <dataflow id="139" from="StgValue_138" to="specinterface_ln0" fromId="138" toId="20">
 </dataflow>
@@ -950,11 +950,11 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="142" from="_ssdm_op_Read.ap_auto.i64" to="conv2_biases_read" fromId="141" toId="21">
 </dataflow>
-<dataflow id="143" from="conv2_biases" to="conv2_biases_read" fromId="81" toId="21">
+<dataflow id="143" from="conv2_biases" to="conv2_biases_read" fromId="76" toId="21">
 </dataflow>
 <dataflow id="144" from="_ssdm_op_Read.ap_auto.i64" to="conv2_weights_read" fromId="141" toId="22">
 </dataflow>
-<dataflow id="145" from="conv2_weights" to="conv2_weights_read" fromId="80" toId="22">
+<dataflow id="145" from="conv2_weights" to="conv2_weights_read" fromId="75" toId="22">
 </dataflow>
 <dataflow id="147" from="_ssdm_op_PartSelect.i62.i64.i32.i32" to="trunc_ln" fromId="146" toId="23">
 </dataflow>
@@ -1000,7 +1000,7 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="173" from="add_ln162" to="sext_ln162" fromId="34" toId="35">
 </dataflow>
-<dataflow id="174" from="gmem_w2" to="gmem_w2_addr" fromId="79" toId="36">
+<dataflow id="174" from="gmem_w2" to="gmem_w2_addr" fromId="74" toId="36">
 </dataflow>
 <dataflow id="175" from="sext_ln162" to="gmem_w2_addr" fromId="35" toId="36">
 </dataflow>
@@ -1078,7 +1078,7 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="216" from="gmem_w2_addr_read" to="bitcast_ln162" fromId="47" toId="52">
 </dataflow>
-<dataflow id="217" from="conv2_biases_local" to="conv2_biases_local_addr" fromId="78" toId="53">
+<dataflow id="217" from="conv2_biases_local" to="conv2_biases_local_addr" fromId="77" toId="53">
 </dataflow>
 <dataflow id="219" from="StgValue_218" to="conv2_biases_local_addr" fromId="218" toId="53">
 </dataflow>
@@ -1094,21 +1094,21 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="226" from="tmp" to="call_ln161" fromId="51" toId="55">
 </dataflow>
-<dataflow id="227" from="conv2_weights_local_0_0" to="call_ln161" fromId="74" toId="55">
+<dataflow id="227" from="shl_ln" to="call_ln161" fromId="50" toId="55">
 </dataflow>
-<dataflow id="228" from="conv2_weights_local_0_1" to="call_ln161" fromId="75" toId="55">
+<dataflow id="228" from="trunc_ln" to="call_ln161" fromId="23" toId="55">
 </dataflow>
-<dataflow id="229" from="conv2_weights_local_1_0" to="call_ln161" fromId="76" toId="55">
+<dataflow id="229" from="gmem_w2" to="call_ln161" fromId="74" toId="55">
 </dataflow>
-<dataflow id="230" from="conv2_weights_local_1_1" to="call_ln161" fromId="77" toId="55">
+<dataflow id="230" from="trunc_ln161_2" to="call_ln161" fromId="49" toId="55">
 </dataflow>
-<dataflow id="231" from="shl_ln" to="call_ln161" fromId="50" toId="55">
+<dataflow id="231" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3" to="call_ln161" fromId="78" toId="55">
 </dataflow>
-<dataflow id="232" from="trunc_ln" to="call_ln161" fromId="23" toId="55">
+<dataflow id="232" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2" to="call_ln161" fromId="79" toId="55">
 </dataflow>
-<dataflow id="233" from="gmem_w2" to="call_ln161" fromId="79" toId="55">
+<dataflow id="233" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1" to="call_ln161" fromId="80" toId="55">
 </dataflow>
-<dataflow id="234" from="trunc_ln161_2" to="call_ln161" fromId="49" toId="55">
+<dataflow id="234" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig" to="call_ln161" fromId="81" toId="55">
 </dataflow>
 <dataflow id="236" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln161" fromId="235" toId="56">
 </dataflow>
@@ -1120,7 +1120,7 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="242" from="_ssdm_op_SpecLoopName" to="specloopname_ln161" fromId="241" toId="57">
 </dataflow>
-<dataflow id="244" from="empty_157" to="specloopname_ln161" fromId="243" toId="57">
+<dataflow id="244" from="empty_16" to="specloopname_ln161" fromId="243" toId="57">
 </dataflow>
 <dataflow id="245" from="load_conv2_params_Pipeline_VITIS_LOOP_163_2" to="call_ln161" fromId="223" toId="58">
 </dataflow>
@@ -1128,21 +1128,21 @@ VITIS_LOOP_163_2.split:17 %br_ln161 = br void %VITIS_LOOP_163_2
 </dataflow>
 <dataflow id="247" from="tmp" to="call_ln161" fromId="51" toId="58">
 </dataflow>
-<dataflow id="248" from="conv2_weights_local_0_0" to="call_ln161" fromId="74" toId="58">
+<dataflow id="248" from="shl_ln" to="call_ln161" fromId="50" toId="58">
 </dataflow>
-<dataflow id="249" from="conv2_weights_local_0_1" to="call_ln161" fromId="75" toId="58">
+<dataflow id="249" from="trunc_ln" to="call_ln161" fromId="23" toId="58">
 </dataflow>
-<dataflow id="250" from="conv2_weights_local_1_0" to="call_ln161" fromId="76" toId="58">
+<dataflow id="250" from="gmem_w2" to="call_ln161" fromId="74" toId="58">
 </dataflow>
-<dataflow id="251" from="conv2_weights_local_1_1" to="call_ln161" fromId="77" toId="58">
+<dataflow id="251" from="trunc_ln161_2" to="call_ln161" fromId="49" toId="58">
 </dataflow>
-<dataflow id="252" from="shl_ln" to="call_ln161" fromId="50" toId="58">
+<dataflow id="252" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3" to="call_ln161" fromId="78" toId="58">
 </dataflow>
-<dataflow id="253" from="trunc_ln" to="call_ln161" fromId="23" toId="58">
+<dataflow id="253" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2" to="call_ln161" fromId="79" toId="58">
 </dataflow>
-<dataflow id="254" from="gmem_w2" to="call_ln161" fromId="79" toId="58">
+<dataflow id="254" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1" to="call_ln161" fromId="80" toId="58">
 </dataflow>
-<dataflow id="255" from="trunc_ln161_2" to="call_ln161" fromId="49" toId="58">
+<dataflow id="255" from="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig" to="call_ln161" fromId="81" toId="58">
 </dataflow>
 <dataflow id="256" from="icmp_ln161" to="StgValue_2" fromId="30" toId="2">
 </dataflow>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_conv2_params'" level="0">
-<item name = "Date">Thu Oct 30 18:13:35 2025
+<item name = "Date">Thu Oct 30 21:33:47 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -135,26 +135,6 @@
 <column name="ap_done">out, 1, ap_ctrl_hs, load_conv2_params, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, load_conv2_params, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, load_conv2_params, return value</column>
-<column name="conv2_weights_local_0_0_address1">out, 9, ap_memory, conv2_weights_local_0_0, array</column>
-<column name="conv2_weights_local_0_0_ce1">out, 1, ap_memory, conv2_weights_local_0_0, array</column>
-<column name="conv2_weights_local_0_0_we1">out, 1, ap_memory, conv2_weights_local_0_0, array</column>
-<column name="conv2_weights_local_0_0_d1">out, 32, ap_memory, conv2_weights_local_0_0, array</column>
-<column name="conv2_weights_local_0_1_address1">out, 9, ap_memory, conv2_weights_local_0_1, array</column>
-<column name="conv2_weights_local_0_1_ce1">out, 1, ap_memory, conv2_weights_local_0_1, array</column>
-<column name="conv2_weights_local_0_1_we1">out, 1, ap_memory, conv2_weights_local_0_1, array</column>
-<column name="conv2_weights_local_0_1_d1">out, 32, ap_memory, conv2_weights_local_0_1, array</column>
-<column name="conv2_weights_local_1_0_address1">out, 9, ap_memory, conv2_weights_local_1_0, array</column>
-<column name="conv2_weights_local_1_0_ce1">out, 1, ap_memory, conv2_weights_local_1_0, array</column>
-<column name="conv2_weights_local_1_0_we1">out, 1, ap_memory, conv2_weights_local_1_0, array</column>
-<column name="conv2_weights_local_1_0_d1">out, 32, ap_memory, conv2_weights_local_1_0, array</column>
-<column name="conv2_weights_local_1_1_address1">out, 9, ap_memory, conv2_weights_local_1_1, array</column>
-<column name="conv2_weights_local_1_1_ce1">out, 1, ap_memory, conv2_weights_local_1_1, array</column>
-<column name="conv2_weights_local_1_1_we1">out, 1, ap_memory, conv2_weights_local_1_1, array</column>
-<column name="conv2_weights_local_1_1_d1">out, 32, ap_memory, conv2_weights_local_1_1, array</column>
-<column name="conv2_biases_local_address1">out, 5, ap_memory, conv2_biases_local, array</column>
-<column name="conv2_biases_local_ce1">out, 1, ap_memory, conv2_biases_local, array</column>
-<column name="conv2_biases_local_we1">out, 1, ap_memory, conv2_biases_local, array</column>
-<column name="conv2_biases_local_d1">out, 32, ap_memory, conv2_biases_local, array</column>
 <column name="m_axi_gmem_w2_AWVALID">out, 1, m_axi, gmem_w2, pointer</column>
 <column name="m_axi_gmem_w2_AWREADY">in, 1, m_axi, gmem_w2, pointer</column>
 <column name="m_axi_gmem_w2_AWADDR">out, 64, m_axi, gmem_w2, pointer</column>
@@ -203,6 +183,26 @@
 <column name="m_axi_gmem_w2_BUSER">in, 1, m_axi, gmem_w2, pointer</column>
 <column name="conv2_weights">in, 64, ap_none, conv2_weights, scalar</column>
 <column name="conv2_biases">in, 64, ap_none, conv2_biases, scalar</column>
+<column name="conv2_biases_local_address1">out, 5, ap_memory, conv2_biases_local, array</column>
+<column name="conv2_biases_local_ce1">out, 1, ap_memory, conv2_biases_local, array</column>
+<column name="conv2_biases_local_we1">out, 1, ap_memory, conv2_biases_local, array</column>
+<column name="conv2_biases_local_d1">out, 32, ap_memory, conv2_biases_local, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_address1">out, 9, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_ce1">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_we1">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_d1">out, 32, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_address1">out, 9, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_ce1">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_we1">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_d1">out, 32, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_address1">out, 9, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_ce1">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_we1">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_d1">out, 32, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_address1">out, 9, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_ce1">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_we1">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_d1">out, 32, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig, array</column>
 </table>
 </item>
 </section>

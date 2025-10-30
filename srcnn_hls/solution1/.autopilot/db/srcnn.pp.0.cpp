@@ -3860,12 +3860,12 @@ __attribute__((sdx_kernel("srcnn", 0))) void srcnn(
 
 
 
- param_t conv1_weights_local[64][1][9][9];
- param_t conv1_biases_local[64];
- param_t conv2_weights_local[32][64][1][1];
- param_t conv2_biases_local[32];
- param_t conv3_weights_local[1][32][5][5];
- param_t conv3_biases_local[1];
+ static param_t conv1_weights_local[64][1][9][9];
+ static param_t conv1_biases_local[64];
+ static param_t conv2_weights_local[32][64][1][1];
+ static param_t conv2_biases_local[32];
+ static param_t conv3_weights_local[1][32][5][5];
+ static param_t conv3_biases_local[1];
 
 
 
@@ -3919,7 +3919,7 @@ __attribute__((sdx_kernel("srcnn", 0))) void srcnn(
 #pragma HLS STREAM variable=conv2_to_conv3 depth=64
 #pragma HLS BIND_STORAGE variable=conv1_to_conv2 type=fifo impl=lutram
 #pragma HLS BIND_STORAGE variable=conv2_to_conv3 type=fifo impl=lutram
- conv1_tile(input_ftmap,pixel_h, pixel_w, conv1_weights_local, conv1_biases_local, conv1_to_conv2);
+ conv1_tile(input_ftmap, pixel_h, pixel_w, conv1_weights_local, conv1_biases_local, conv1_to_conv2);
           conv2(conv1_to_conv2, conv2_weights_local, conv2_biases_local, conv2_to_conv3);
           conv3(conv2_to_conv3, conv3_weights_local, conv3_biases_local, layer3_output_tile);
 

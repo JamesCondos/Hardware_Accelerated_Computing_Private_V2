@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'load_conv2_params'
 ================================================================
-* Date:           Thu Oct 30 18:13:35 2025
+* Date:           Thu Oct 30 21:33:47 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -154,84 +154,84 @@
 == Interface
 ================================================================
 * Summary: 
-+----------------------------------+-----+-----+------------+-------------------------+--------------+
-|             RTL Ports            | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
-+----------------------------------+-----+-----+------------+-------------------------+--------------+
-|ap_clk                            |   in|    1|  ap_ctrl_hs|        load_conv2_params|  return value|
-|ap_rst                            |   in|    1|  ap_ctrl_hs|        load_conv2_params|  return value|
-|ap_start                          |   in|    1|  ap_ctrl_hs|        load_conv2_params|  return value|
-|ap_done                           |  out|    1|  ap_ctrl_hs|        load_conv2_params|  return value|
-|ap_idle                           |  out|    1|  ap_ctrl_hs|        load_conv2_params|  return value|
-|ap_ready                          |  out|    1|  ap_ctrl_hs|        load_conv2_params|  return value|
-|conv2_weights_local_0_0_address1  |  out|    9|   ap_memory|  conv2_weights_local_0_0|         array|
-|conv2_weights_local_0_0_ce1       |  out|    1|   ap_memory|  conv2_weights_local_0_0|         array|
-|conv2_weights_local_0_0_we1       |  out|    1|   ap_memory|  conv2_weights_local_0_0|         array|
-|conv2_weights_local_0_0_d1        |  out|   32|   ap_memory|  conv2_weights_local_0_0|         array|
-|conv2_weights_local_0_1_address1  |  out|    9|   ap_memory|  conv2_weights_local_0_1|         array|
-|conv2_weights_local_0_1_ce1       |  out|    1|   ap_memory|  conv2_weights_local_0_1|         array|
-|conv2_weights_local_0_1_we1       |  out|    1|   ap_memory|  conv2_weights_local_0_1|         array|
-|conv2_weights_local_0_1_d1        |  out|   32|   ap_memory|  conv2_weights_local_0_1|         array|
-|conv2_weights_local_1_0_address1  |  out|    9|   ap_memory|  conv2_weights_local_1_0|         array|
-|conv2_weights_local_1_0_ce1       |  out|    1|   ap_memory|  conv2_weights_local_1_0|         array|
-|conv2_weights_local_1_0_we1       |  out|    1|   ap_memory|  conv2_weights_local_1_0|         array|
-|conv2_weights_local_1_0_d1        |  out|   32|   ap_memory|  conv2_weights_local_1_0|         array|
-|conv2_weights_local_1_1_address1  |  out|    9|   ap_memory|  conv2_weights_local_1_1|         array|
-|conv2_weights_local_1_1_ce1       |  out|    1|   ap_memory|  conv2_weights_local_1_1|         array|
-|conv2_weights_local_1_1_we1       |  out|    1|   ap_memory|  conv2_weights_local_1_1|         array|
-|conv2_weights_local_1_1_d1        |  out|   32|   ap_memory|  conv2_weights_local_1_1|         array|
-|conv2_biases_local_address1       |  out|    5|   ap_memory|       conv2_biases_local|         array|
-|conv2_biases_local_ce1            |  out|    1|   ap_memory|       conv2_biases_local|         array|
-|conv2_biases_local_we1            |  out|    1|   ap_memory|       conv2_biases_local|         array|
-|conv2_biases_local_d1             |  out|   32|   ap_memory|       conv2_biases_local|         array|
-|m_axi_gmem_w2_AWVALID             |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWREADY             |   in|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWADDR              |  out|   64|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWID                |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWLEN               |  out|   32|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWSIZE              |  out|    3|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWBURST             |  out|    2|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWLOCK              |  out|    2|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWCACHE             |  out|    4|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWPROT              |  out|    3|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWQOS               |  out|    4|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWREGION            |  out|    4|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_AWUSER              |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_WVALID              |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_WREADY              |   in|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_WDATA               |  out|   32|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_WSTRB               |  out|    4|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_WLAST               |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_WID                 |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_WUSER               |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARVALID             |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARREADY             |   in|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARADDR              |  out|   64|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARID                |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARLEN               |  out|   32|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARSIZE              |  out|    3|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARBURST             |  out|    2|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARLOCK              |  out|    2|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARCACHE             |  out|    4|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARPROT              |  out|    3|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARQOS               |  out|    4|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARREGION            |  out|    4|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_ARUSER              |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_RVALID              |   in|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_RREADY              |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_RDATA               |   in|   32|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_RLAST               |   in|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_RID                 |   in|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_RFIFONUM            |   in|    9|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_RUSER               |   in|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_RRESP               |   in|    2|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_BVALID              |   in|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_BREADY              |  out|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_BRESP               |   in|    2|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_BID                 |   in|    1|       m_axi|                  gmem_w2|       pointer|
-|m_axi_gmem_w2_BUSER               |   in|    1|       m_axi|                  gmem_w2|       pointer|
-|conv2_weights                     |   in|   64|     ap_none|            conv2_weights|        scalar|
-|conv2_biases                      |   in|   64|     ap_none|             conv2_biases|        scalar|
-+----------------------------------+-----+-----+------------+-------------------------+--------------+
++----------------------------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------------------------+--------------+
+|                                           RTL Ports                                          | Dir | Bits|  Protocol  |                                    Source Object                                    |    C Type    |
++----------------------------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------------------------+--------------+
+|ap_clk                                                                                        |   in|    1|  ap_ctrl_hs|                                                                    load_conv2_params|  return value|
+|ap_rst                                                                                        |   in|    1|  ap_ctrl_hs|                                                                    load_conv2_params|  return value|
+|ap_start                                                                                      |   in|    1|  ap_ctrl_hs|                                                                    load_conv2_params|  return value|
+|ap_done                                                                                       |  out|    1|  ap_ctrl_hs|                                                                    load_conv2_params|  return value|
+|ap_idle                                                                                       |  out|    1|  ap_ctrl_hs|                                                                    load_conv2_params|  return value|
+|ap_ready                                                                                      |  out|    1|  ap_ctrl_hs|                                                                    load_conv2_params|  return value|
+|m_axi_gmem_w2_AWVALID                                                                         |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWREADY                                                                         |   in|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWADDR                                                                          |  out|   64|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWID                                                                            |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWLEN                                                                           |  out|   32|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWSIZE                                                                          |  out|    3|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWBURST                                                                         |  out|    2|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWLOCK                                                                          |  out|    2|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWCACHE                                                                         |  out|    4|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWPROT                                                                          |  out|    3|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWQOS                                                                           |  out|    4|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWREGION                                                                        |  out|    4|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_AWUSER                                                                          |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_WVALID                                                                          |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_WREADY                                                                          |   in|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_WDATA                                                                           |  out|   32|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_WSTRB                                                                           |  out|    4|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_WLAST                                                                           |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_WID                                                                             |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_WUSER                                                                           |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARVALID                                                                         |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARREADY                                                                         |   in|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARADDR                                                                          |  out|   64|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARID                                                                            |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARLEN                                                                           |  out|   32|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARSIZE                                                                          |  out|    3|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARBURST                                                                         |  out|    2|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARLOCK                                                                          |  out|    2|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARCACHE                                                                         |  out|    4|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARPROT                                                                          |  out|    3|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARQOS                                                                           |  out|    4|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARREGION                                                                        |  out|    4|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_ARUSER                                                                          |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_RVALID                                                                          |   in|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_RREADY                                                                          |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_RDATA                                                                           |   in|   32|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_RLAST                                                                           |   in|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_RID                                                                             |   in|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_RFIFONUM                                                                        |   in|    9|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_RUSER                                                                           |   in|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_RRESP                                                                           |   in|    2|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_BVALID                                                                          |   in|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_BREADY                                                                          |  out|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_BRESP                                                                           |   in|    2|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_BID                                                                             |   in|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|m_axi_gmem_w2_BUSER                                                                           |   in|    1|       m_axi|                                                                              gmem_w2|       pointer|
+|conv2_weights                                                                                 |   in|   64|     ap_none|                                                                        conv2_weights|        scalar|
+|conv2_biases                                                                                  |   in|   64|     ap_none|                                                                         conv2_biases|        scalar|
+|conv2_biases_local_address1                                                                   |  out|    5|   ap_memory|                                                                   conv2_biases_local|         array|
+|conv2_biases_local_ce1                                                                        |  out|    1|   ap_memory|                                                                   conv2_biases_local|         array|
+|conv2_biases_local_we1                                                                        |  out|    1|   ap_memory|                                                                   conv2_biases_local|         array|
+|conv2_biases_local_d1                                                                         |  out|   32|   ap_memory|                                                                   conv2_biases_local|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_address1  |  out|    9|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_ce1       |  out|    1|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_we1       |  out|    1|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_d1        |  out|   32|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_address1  |  out|    9|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_ce1       |  out|    1|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_we1       |  out|    1|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_d1        |  out|   32|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_address1  |  out|    9|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_ce1       |  out|    1|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_we1       |  out|    1|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_d1        |  out|   32|   ap_memory|  p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_address1    |  out|    9|   ap_memory|    p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_ce1         |  out|    1|   ap_memory|    p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_we1         |  out|    1|   ap_memory|    p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig|         array|
+|p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_d1          |  out|   32|   ap_memory|    p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig|         array|
++----------------------------------------------------------------------------------------------+-----+-----+------------+-------------------------------------------------------------------------------------+--------------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -283,13 +283,13 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.42>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 14 'alloca' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_biases_local, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 15 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_0_0, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 16 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_0_1, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 17 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_1_0, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 18 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_1_1, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 19 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem_w2, void @empty_131, i32 0, i32 0, void @empty_132, i32 0, i32 2048, void @empty_136, void @empty_134, void @empty_132, i32 16, i32 16, i32 16, i32 16, void @empty_132, void @empty_132, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%conv2_biases_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %conv2_biases" [src/srcnn.cpp:154]   --->   Operation 21 'read' 'conv2_biases_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%conv2_weights_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %conv2_weights" [src/srcnn.cpp:154]   --->   Operation 22 'read' 'conv2_weights_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 16 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 17 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 18 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig, i64 666, i64 25, i64 18446744073709551615"   --->   Operation 19 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem_w2, void @empty_43, i32 0, i32 0, void @empty_42, i32 0, i32 2048, void @empty_38, void @empty_40, void @empty_42, i32 16, i32 16, i32 16, i32 16, void @empty_42, void @empty_42, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%conv2_biases_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %conv2_biases" [src/srcnn.cpp:161]   --->   Operation 21 'read' 'conv2_biases_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%conv2_weights_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %conv2_weights" [src/srcnn.cpp:161]   --->   Operation 22 'read' 'conv2_weights_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %conv2_weights_read, i32 2, i32 63" [src/srcnn.cpp:161]   --->   Operation 23 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln161_1 = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %conv2_biases_read, i32 2, i32 63" [src/srcnn.cpp:161]   --->   Operation 24 'partselect' 'trunc_ln161_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%sext_ln161 = sext i62 %trunc_ln161_1" [src/srcnn.cpp:161]   --->   Operation 25 'sext' 'sext_ln161' <Predicate = true> <Delay = 0.00>
@@ -344,12 +344,12 @@ ST_12 : Operation 51 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitS
 ST_12 : Operation 52 [1/1] (0.00ns)   --->   "%bitcast_ln162 = bitcast i32 %gmem_w2_addr_read" [src/srcnn.cpp:162]   --->   Operation 52 'bitcast' 'bitcast_ln162' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 53 [1/1] (0.00ns)   --->   "%conv2_biases_local_addr = getelementptr i32 %conv2_biases_local, i64 0, i64 %zext_ln161" [src/srcnn.cpp:162]   --->   Operation 53 'getelementptr' 'conv2_biases_local_addr' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 54 [1/1] (1.23ns)   --->   "%store_ln162 = store i32 %bitcast_ln162, i5 %conv2_biases_local_addr" [src/srcnn.cpp:162]   --->   Operation 54 'store' 'store_ln162' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_S2P_BRAM">   --->   Core 97 'RAM_S2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
-ST_12 : Operation 55 [2/2] (1.88ns)   --->   "%call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i32 %conv2_weights_local_0_0, i32 %conv2_weights_local_0_1, i32 %conv2_weights_local_1_0, i32 %conv2_weights_local_1_1, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2" [src/srcnn.cpp:161]   --->   Operation 55 'call' 'call_ln161' <Predicate = true> <Delay = 1.88> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 55 [2/2] (1.88ns)   --->   "%call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig" [src/srcnn.cpp:161]   --->   Operation 55 'call' 'call_ln161' <Predicate = true> <Delay = 1.88> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 13 <SV = 12> <Delay = 0.00>
 ST_13 : Operation 56 [1/1] (0.00ns)   --->   "%speclooptripcount_ln161 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32" [src/srcnn.cpp:161]   --->   Operation 56 'speclooptripcount' 'speclooptripcount_ln161' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 57 [1/1] (0.00ns)   --->   "%specloopname_ln161 = specloopname void @_ssdm_op_SpecLoopName, void @empty_157" [src/srcnn.cpp:161]   --->   Operation 57 'specloopname' 'specloopname_ln161' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 58 [1/2] (0.00ns)   --->   "%call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i32 %conv2_weights_local_0_0, i32 %conv2_weights_local_0_1, i32 %conv2_weights_local_1_0, i32 %conv2_weights_local_1_1, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2" [src/srcnn.cpp:161]   --->   Operation 58 'call' 'call_ln161' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 57 [1/1] (0.00ns)   --->   "%specloopname_ln161 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16" [src/srcnn.cpp:161]   --->   Operation 57 'specloopname' 'specloopname_ln161' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 58 [1/2] (0.00ns)   --->   "%call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig" [src/srcnn.cpp:161]   --->   Operation 58 'call' 'call_ln161' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_13 : Operation 59 [1/1] (0.00ns)   --->   "%br_ln161 = br void %VITIS_LOOP_163_2" [src/srcnn.cpp:161]   --->   Operation 59 'br' 'br_ln161' <Predicate = true> <Delay = 0.00>
 
 
@@ -364,14 +364,14 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ conv2_weights_local_0_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
-Port [ conv2_weights_local_0_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
-Port [ conv2_weights_local_1_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
-Port [ conv2_weights_local_1_1]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
-Port [ conv2_biases_local]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
 Port [ gmem_w2]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=4; pingpong=0; private_global=0; IO mode=m_axi:ce=0
 Port [ conv2_weights]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ conv2_biases]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ conv2_biases_local]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
+Port [ p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
+Port [ p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
+Port [ p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
+Port [ p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[30]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -421,49 +421,36 @@ br_ln161                (br               ) [ 00000000000000]
 <model>
 
 <comp_list>
-<comp id="0" class="1000" name="conv2_weights_local_0_0">
+<comp id="0" class="1000" name="gmem_w2">
 <pin_list>
 <pin id="1" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="conv2_weights_local_0_0"/><MemPortTyVec>3 0 </MemPortTyVec>
-</StgValue>
+<StgValue><ssdm name="gmem_w2"/></StgValue>
 </bind>
 </comp>
 
-<comp id="2" class="1000" name="conv2_weights_local_0_1">
+<comp id="2" class="1000" name="conv2_weights">
 <pin_list>
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="conv2_weights_local_0_1"/><MemPortTyVec>3 0 </MemPortTyVec>
-</StgValue>
+<StgValue><ssdm name="conv2_weights"/></StgValue>
 </bind>
 </comp>
 
-<comp id="4" class="1000" name="conv2_weights_local_1_0">
+<comp id="4" class="1000" name="conv2_biases">
 <pin_list>
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="conv2_weights_local_1_0"/><MemPortTyVec>3 0 </MemPortTyVec>
-</StgValue>
+<StgValue><ssdm name="conv2_biases"/></StgValue>
 </bind>
 </comp>
 
-<comp id="6" class="1000" name="conv2_weights_local_1_1">
+<comp id="6" class="1000" name="conv2_biases_local">
 <pin_list>
 <pin id="7" dir="1" index="0" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="conv2_weights_local_1_1"/><MemPortTyVec>3 0 </MemPortTyVec>
-</StgValue>
-</bind>
-</comp>
-
-<comp id="8" class="1000" name="conv2_biases_local">
-<pin_list>
-<pin id="9" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name="conv2_biases_local"/><MemPortTyVec>3 0 </MemPortTyVec>
@@ -471,30 +458,43 @@ br_ln161                (br               ) [ 00000000000000]
 </bind>
 </comp>
 
-<comp id="10" class="1000" name="gmem_w2">
+<comp id="8" class="1000" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3"/><MemPortTyVec>3 0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2">
 <pin_list>
 <pin id="11" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="gmem_w2"/></StgValue>
+<StgValue><ssdm name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2"/><MemPortTyVec>3 0 </MemPortTyVec>
+</StgValue>
 </bind>
 </comp>
 
-<comp id="12" class="1000" name="conv2_weights">
+<comp id="12" class="1000" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1">
 <pin_list>
 <pin id="13" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="conv2_weights"/></StgValue>
+<StgValue><ssdm name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1"/><MemPortTyVec>3 0 </MemPortTyVec>
+</StgValue>
 </bind>
 </comp>
 
-<comp id="14" class="1000" name="conv2_biases">
+<comp id="14" class="1000" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig">
 <pin_list>
 <pin id="15" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="conv2_biases"/></StgValue>
+<StgValue><ssdm name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig"/><MemPortTyVec>3 0 </MemPortTyVec>
+</StgValue>
 </bind>
 </comp>
 
@@ -557,7 +557,7 @@ br_ln161                (br               ) [ 00000000000000]
 <pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_131"/></StgValue>
+<StgValue><ssdm name="empty_43"/></StgValue>
 </bind>
 </comp>
 
@@ -575,7 +575,7 @@ br_ln161                (br               ) [ 00000000000000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_132"/></StgValue>
+<StgValue><ssdm name="empty_42"/></StgValue>
 </bind>
 </comp>
 
@@ -593,7 +593,7 @@ br_ln161                (br               ) [ 00000000000000]
 <pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_136"/></StgValue>
+<StgValue><ssdm name="empty_38"/></StgValue>
 </bind>
 </comp>
 
@@ -602,7 +602,7 @@ br_ln161                (br               ) [ 00000000000000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_134"/></StgValue>
+<StgValue><ssdm name="empty_40"/></StgValue>
 </bind>
 </comp>
 
@@ -773,7 +773,7 @@ br_ln161                (br               ) [ 00000000000000]
 <pin id="77" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_157"/></StgValue>
+<StgValue><ssdm name="empty_16"/></StgValue>
 </bind>
 </comp>
 
@@ -872,14 +872,14 @@ br_ln161                (br               ) [ 00000000000000]
 <pin id="124" dir="0" index="0" bw="0" slack="0"/>
 <pin id="125" dir="0" index="1" bw="5" slack="10"/>
 <pin id="126" dir="0" index="2" bw="1" slack="0"/>
-<pin id="127" dir="0" index="3" bw="32" slack="0"/>
-<pin id="128" dir="0" index="4" bw="32" slack="0"/>
+<pin id="127" dir="0" index="3" bw="11" slack="0"/>
+<pin id="128" dir="0" index="4" bw="62" slack="11"/>
 <pin id="129" dir="0" index="5" bw="32" slack="0"/>
-<pin id="130" dir="0" index="6" bw="32" slack="0"/>
-<pin id="131" dir="0" index="7" bw="11" slack="0"/>
-<pin id="132" dir="0" index="8" bw="62" slack="11"/>
+<pin id="130" dir="0" index="6" bw="1" slack="0"/>
+<pin id="131" dir="0" index="7" bw="32" slack="0"/>
+<pin id="132" dir="0" index="8" bw="32" slack="0"/>
 <pin id="133" dir="0" index="9" bw="32" slack="0"/>
-<pin id="134" dir="0" index="10" bw="1" slack="0"/>
+<pin id="134" dir="0" index="10" bw="32" slack="0"/>
 <pin id="135" dir="1" index="11" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -1209,11 +1209,11 @@ br_ln161                (br               ) [ 00000000000000]
 
 <net id="86"><net_src comp="44" pin="0"/><net_sink comp="82" pin=0"/></net>
 
-<net id="87"><net_src comp="14" pin="0"/><net_sink comp="82" pin=1"/></net>
+<net id="87"><net_src comp="4" pin="0"/><net_sink comp="82" pin=1"/></net>
 
 <net id="92"><net_src comp="44" pin="0"/><net_sink comp="88" pin=0"/></net>
 
-<net id="93"><net_src comp="12" pin="0"/><net_sink comp="88" pin=1"/></net>
+<net id="93"><net_src comp="2" pin="0"/><net_sink comp="88" pin=1"/></net>
 
 <net id="99"><net_src comp="58" pin="0"/><net_sink comp="94" pin=0"/></net>
 
@@ -1221,7 +1221,7 @@ br_ln161                (br               ) [ 00000000000000]
 
 <net id="105"><net_src comp="60" pin="0"/><net_sink comp="101" pin=0"/></net>
 
-<net id="111"><net_src comp="8" pin="0"/><net_sink comp="106" pin=0"/></net>
+<net id="111"><net_src comp="6" pin="0"/><net_sink comp="106" pin=0"/></net>
 
 <net id="112"><net_src comp="66" pin="0"/><net_sink comp="106" pin=1"/></net>
 
@@ -1229,15 +1229,15 @@ br_ln161                (br               ) [ 00000000000000]
 
 <net id="136"><net_src comp="68" pin="0"/><net_sink comp="123" pin=0"/></net>
 
-<net id="137"><net_src comp="0" pin="0"/><net_sink comp="123" pin=3"/></net>
+<net id="137"><net_src comp="0" pin="0"/><net_sink comp="123" pin=5"/></net>
 
-<net id="138"><net_src comp="2" pin="0"/><net_sink comp="123" pin=4"/></net>
+<net id="138"><net_src comp="8" pin="0"/><net_sink comp="123" pin=7"/></net>
 
-<net id="139"><net_src comp="4" pin="0"/><net_sink comp="123" pin=5"/></net>
+<net id="139"><net_src comp="10" pin="0"/><net_sink comp="123" pin=8"/></net>
 
-<net id="140"><net_src comp="6" pin="0"/><net_sink comp="123" pin=6"/></net>
+<net id="140"><net_src comp="12" pin="0"/><net_sink comp="123" pin=9"/></net>
 
-<net id="141"><net_src comp="10" pin="0"/><net_sink comp="123" pin=9"/></net>
+<net id="141"><net_src comp="14" pin="0"/><net_sink comp="123" pin=10"/></net>
 
 <net id="148"><net_src comp="46" pin="0"/><net_sink comp="142" pin=0"/></net>
 
@@ -1275,7 +1275,7 @@ br_ln161                (br               ) [ 00000000000000]
 
 <net id="202"><net_src comp="194" pin="2"/><net_sink comp="199" pin=0"/></net>
 
-<net id="207"><net_src comp="10" pin="0"/><net_sink comp="203" pin=0"/></net>
+<net id="207"><net_src comp="0" pin="0"/><net_sink comp="203" pin=0"/></net>
 
 <net id="208"><net_src comp="199" pin="1"/><net_sink comp="203" pin=1"/></net>
 
@@ -1283,13 +1283,13 @@ br_ln161                (br               ) [ 00000000000000]
 
 <net id="217"><net_src comp="214" pin="1"/><net_sink comp="106" pin=2"/></net>
 
-<net id="221"><net_src comp="218" pin="1"/><net_sink comp="123" pin=10"/></net>
+<net id="221"><net_src comp="218" pin="1"/><net_sink comp="123" pin=6"/></net>
 
 <net id="227"><net_src comp="62" pin="0"/><net_sink comp="222" pin=0"/></net>
 
 <net id="228"><net_src comp="52" pin="0"/><net_sink comp="222" pin=2"/></net>
 
-<net id="229"><net_src comp="222" pin="3"/><net_sink comp="123" pin=7"/></net>
+<net id="229"><net_src comp="222" pin="3"/><net_sink comp="123" pin=3"/></net>
 
 <net id="235"><net_src comp="64" pin="0"/><net_sink comp="230" pin=0"/></net>
 
@@ -1309,7 +1309,7 @@ br_ln161                (br               ) [ 00000000000000]
 
 <net id="252"><net_src comp="142" pin="4"/><net_sink comp="249" pin=0"/></net>
 
-<net id="253"><net_src comp="249" pin="1"/><net_sink comp="123" pin=8"/></net>
+<net id="253"><net_src comp="249" pin="1"/><net_sink comp="123" pin=4"/></net>
 
 <net id="257"><net_src comp="162" pin="1"/><net_sink comp="254" pin=0"/></net>
 
@@ -1341,11 +1341,11 @@ br_ln161                (br               ) [ 00000000000000]
 
 <net id="289"><net_src comp="218" pin="1"/><net_sink comp="286" pin=0"/></net>
 
-<net id="290"><net_src comp="286" pin="1"/><net_sink comp="123" pin=10"/></net>
+<net id="290"><net_src comp="286" pin="1"/><net_sink comp="123" pin=6"/></net>
 
 <net id="294"><net_src comp="222" pin="3"/><net_sink comp="291" pin=0"/></net>
 
-<net id="295"><net_src comp="291" pin="1"/><net_sink comp="123" pin=7"/></net>
+<net id="295"><net_src comp="291" pin="1"/><net_sink comp="123" pin=3"/></net>
 
 <net id="299"><net_src comp="230" pin="3"/><net_sink comp="296" pin=0"/></net>
 
@@ -1358,16 +1358,21 @@ br_ln161                (br               ) [ 00000000000000]
 
 * FSMD analyzer results:
   - Output states:
-	Port: conv2_weights_local_0_0 | {12 13 }
-	Port: conv2_weights_local_0_1 | {12 13 }
-	Port: conv2_weights_local_1_0 | {12 13 }
-	Port: conv2_weights_local_1_1 | {12 13 }
-	Port: conv2_biases_local | {12 }
 	Port: gmem_w2 | {}
+	Port: conv2_biases_local | {12 }
+	Port: p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3 | {12 13 }
+	Port: p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2 | {12 13 }
+	Port: p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1 | {12 13 }
+	Port: p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig | {12 13 }
  - Input state : 
 	Port: load_conv2_params : gmem_w2 | {3 4 5 6 7 8 9 10 11 12 13 }
 	Port: load_conv2_params : conv2_weights | {1 }
 	Port: load_conv2_params : conv2_biases | {1 }
+	Port: load_conv2_params : conv2_biases_local | {}
+	Port: load_conv2_params : p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3 | {}
+	Port: load_conv2_params : p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2 | {}
+	Port: load_conv2_params : p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1 | {}
+	Port: load_conv2_params : p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig | {}
   - Chain level:
 	State 1
 		sext_ln161 : 1
@@ -1464,8 +1469,8 @@ N/A
 |                          Comp                          |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
 |--------------------------------------------------------|------|------|------|--------||---------||---------|
 | grp_load_conv2_params_Pipeline_VITIS_LOOP_163_2_fu_123 |  p2  |   2  |   1  |    2   ||    9    |
-| grp_load_conv2_params_Pipeline_VITIS_LOOP_163_2_fu_123 |  p7  |   2  |  11  |   22   ||    9    |
-| grp_load_conv2_params_Pipeline_VITIS_LOOP_163_2_fu_123 |  p10 |   2  |   1  |    2   ||    9    |
+| grp_load_conv2_params_Pipeline_VITIS_LOOP_163_2_fu_123 |  p3  |   2  |  11  |   22   ||    9    |
+| grp_load_conv2_params_Pipeline_VITIS_LOOP_163_2_fu_123 |  p6  |   2  |   1  |    2   ||    9    |
 |--------------------------------------------------------|------|------|------|--------||---------||---------|
 |                          Total                         |      |      |      |   26   ||  1.281  ||    27   |
 |--------------------------------------------------------|------|------|------|--------||---------||---------|

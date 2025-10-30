@@ -389,6 +389,102 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
+DebugLoc:        { File: src/srcnn.cpp, Line: 65, Column: 0 }
+Function:        _Z17load_conv3_paramsPA32_A5_A5_fPfS2_S3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weights_local
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '8'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '4'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/srcnn.cpp, Line: 63, Column: 0 }
+Function:        _Z17load_conv2_paramsPA64_A1_A1_fPfS2_S3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weights_local
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/srcnn.cpp, Line: 61, Column: 0 }
+Function:        _Z17load_conv1_paramsPA1_A9_A9_fPfS2_S3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv1_weights_local
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '2'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '4'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
 DebugLoc:        { File: src/srcnn.cpp, Line: 208, Column: 13 }
 Function:        _Z10conv1_tilePA255_A255_fiiPA1_A9_A9_fPfRN3hls6streamIfLi0EEE
 Args:            
@@ -431,156 +527,6 @@ Args:
   - String:          .
 ...
 --- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: src/srcnn.cpp, Line: 61, Column: 10 }
-Function:        _Z5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          conv1_weights_local
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Cyclic
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '2'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
-  - String:          ' '
-  - Mode:            Complete
-  - String:          ' partitioning'
-  - String:          ' on dimension '
-  - Dim:             '3'
-  - String:          .
-  - String:          ' '
-  - Mode:            Complete
-  - String:          ' partitioning'
-  - String:          ' on dimension '
-  - Dim:             '4'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: src/srcnn.cpp, Line: 63, Column: 10 }
-Function:        _Z5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          conv2_weights_local
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Cyclic
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '2'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
-  - String:          ' '
-  - Mode:            Cyclic
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '2'
-  - String:          ' on dimension '
-  - Dim:             '2'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: src/srcnn.cpp, Line: 65, Column: 10 }
-Function:        _Z5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          conv3_weights_local
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Cyclic
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '8'
-  - String:          ' on dimension '
-  - Dim:             '2'
-  - String:          .
-  - String:          ' '
-  - Mode:            Cyclic
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '2'
-  - String:          ' on dimension '
-  - Dim:             '3'
-  - String:          .
-  - String:          ' '
-  - Mode:            Cyclic
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '2'
-  - String:          ' on dimension '
-  - Dim:             '4'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-burst-inference
-Name:            BurstInferred
-DebugLoc:        { File: src/srcnn.cpp, Line: 465, Column: 27 }
-Function:        _Z13reconstructorPA255_A255_fPA17_A17_fii
-Args:            
-  - String:          'Sequential '
-  - Direction:       write
-  - String:          ' of length '
-  - Length:          '17'
-  - String:          ' has been inferred'
-  - String:          ' _XLX_SEP_ '
-  - AccessID:        scevgepseq
-  - ArrayName:       output_ftmap
-  - String:          ' '
-  - BundleName:      gmem_out
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_465_2
-  - String:          ' '
-  - LoopLoc:         'src/srcnn.cpp:465:27'
-  - String:          ' '
-  - Function:        'reconstructor(float (*) [255][255], float (*) [17][17], int, int)'
-    DebugLoc:        { File: src/srcnn.cpp, Line: 462, Column: 0 }
-  - String:          ' '
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      store
-    DebugLoc:        { File: src/srcnn.cpp, Line: 467, Column: 44 }
-  - OrigDirection:   write
-  - OrigID:          for.inc.store.7
-...
---- !Missed
-Pass:            reflow-burst-inference
-Name:            IncompatibleStride
-DebugLoc:        { File: src/srcnn.cpp, Line: 465, Column: 27 }
-Function:        _Z13reconstructorPA255_A255_fPA17_A17_fii
-Args:            
-  - String:          Stride is incompatible
-  - String:          ' _XLX_SEP_ '
-  - OrigAccess:      call
-    DebugLoc:        { File: src/srcnn.cpp, Line: 465, Column: 27 }
-  - OrigDirection:   write
-  - OrigID:          scevgepseq
-  - ArrayName:       output_ftmap
-  - String:          ' '
-  - BundleName:      gmem_out
-  - String:          ' '
-  - LoopName:        VITIS_LOOP_464_1
-  - String:          ' '
-  - LoopLoc:         'src/srcnn.cpp:464:23'
-  - String:          ' '
-  - Function:        'reconstructor(float (*) [255][255], float (*) [17][17], int, int)'
-    DebugLoc:        { File: src/srcnn.cpp, Line: 462, Column: 0 }
-  - String:          ' '
-...
---- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
 DebugLoc:        { File: src/srcnn.cpp, Line: 140, Column: 20 }
@@ -592,7 +538,7 @@ Args:
   - Length:          '5184'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        conv1_weights1seq
+  - AccessID:        conv1_weights216seq
   - ArrayName:       conv1_weights
   - String:          ' '
   - BundleName:      gmem_w1
@@ -622,7 +568,7 @@ Args:
   - Length:          '64'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        conv1_biases2seq
+  - AccessID:        conv1_biases217seq
   - ArrayName:       conv1_biases
   - String:          ' '
   - BundleName:      gmem_w1
@@ -652,7 +598,7 @@ Args:
   - Length:          '2048'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        conv2_weights3seq
+  - AccessID:        conv2_weights13seq
   - ArrayName:       conv2_weights
   - String:          ' '
   - BundleName:      gmem_w2
@@ -682,7 +628,7 @@ Args:
   - Length:          '32'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        conv2_biases4seq
+  - AccessID:        conv2_biases14seq
   - ArrayName:       conv2_biases
   - String:          ' '
   - BundleName:      gmem_w2
@@ -712,7 +658,7 @@ Args:
   - Length:          '800'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
-  - AccessID:        conv3_weights24seq
+  - AccessID:        conv3_weights121seq
   - ArrayName:       conv3_weights
   - String:          ' '
   - BundleName:      gmem_w3
@@ -784,16 +730,43 @@ Args:
     DebugLoc:        { File: src/srcnn.cpp, Line: 202, Column: 0 }
   - String:          ' '
 ...
---- !Missed
-Pass:            reflow-burst-widen
-Name:            GreaterOrEqualThreshold
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
 DebugLoc:        { File: src/srcnn.cpp, Line: 465, Column: 27 }
 Function:        _Z13reconstructorPA255_A255_fPA17_A17_fii
 Args:            
-  - String:          'Could not widen since type '
-  - Type:            float
-  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
-  - Threshold:       '0'
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '17'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       output_ftmap
+  - String:          ' '
+  - BundleName:      gmem_out
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_465_2
+  - String:          ' '
+  - LoopLoc:         'src/srcnn.cpp:465:27'
+  - String:          ' '
+  - Function:        'reconstructor(float (*) [255][255], float (*) [17][17], int, int)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 462, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src/srcnn.cpp, Line: 467, Column: 44 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.7
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/srcnn.cpp, Line: 465, Column: 27 }
+Function:        _Z13reconstructorPA255_A255_fPA17_A17_fii
+Args:            
+  - String:          Stride is incompatible
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
     DebugLoc:        { File: src/srcnn.cpp, Line: 465, Column: 27 }
@@ -803,9 +776,9 @@ Args:
   - String:          ' '
   - BundleName:      gmem_out
   - String:          ' '
-  - LoopName:        VITIS_LOOP_465_2
+  - LoopName:        VITIS_LOOP_464_1
   - String:          ' '
-  - LoopLoc:         'src/srcnn.cpp:465:27'
+  - LoopLoc:         'src/srcnn.cpp:464:23'
   - String:          ' '
   - Function:        'reconstructor(float (*) [255][255], float (*) [17][17], int, int)'
     DebugLoc:        { File: src/srcnn.cpp, Line: 462, Column: 0 }
@@ -825,7 +798,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/srcnn.cpp, Line: 140, Column: 20 }
   - OrigDirection:   read
-  - OrigID:          conv1_weights1seq
+  - OrigID:          conv1_weights216seq
   - ArrayName:       conv1_weights
   - String:          ' '
   - BundleName:      gmem_w1
@@ -852,7 +825,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/srcnn.cpp, Line: 140, Column: 20 }
   - OrigDirection:   read
-  - OrigID:          conv1_biases2seq
+  - OrigID:          conv1_biases217seq
   - ArrayName:       conv1_biases
   - String:          ' '
   - BundleName:      gmem_w1
@@ -879,7 +852,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/srcnn.cpp, Line: 161, Column: 20 }
   - OrigDirection:   read
-  - OrigID:          conv2_weights3seq
+  - OrigID:          conv2_weights13seq
   - ArrayName:       conv2_weights
   - String:          ' '
   - BundleName:      gmem_w2
@@ -906,7 +879,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/srcnn.cpp, Line: 161, Column: 20 }
   - OrigDirection:   read
-  - OrigID:          conv2_biases4seq
+  - OrigID:          conv2_biases14seq
   - ArrayName:       conv2_biases
   - String:          ' '
   - BundleName:      gmem_w2
@@ -933,7 +906,7 @@ Args:
   - OrigAccess:      call
     DebugLoc:        { File: src/srcnn.cpp, Line: 180, Column: 27 }
   - OrigDirection:   read
-  - OrigID:          conv3_weights24seq
+  - OrigID:          conv3_weights121seq
   - ArrayName:       conv3_weights
   - String:          ' '
   - BundleName:      gmem_w3
@@ -971,6 +944,33 @@ Args:
   - String:          ' '
   - Function:        'conv1_tile(float (*) [255][255], int, int, float (*) [1][9][9], float*, hls::stream<float, 0>&)'
     DebugLoc:        { File: src/srcnn.cpp, Line: 202, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/srcnn.cpp, Line: 465, Column: 27 }
+Function:        _Z13reconstructorPA255_A255_fPA17_A17_fii
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/srcnn.cpp, Line: 465, Column: 27 }
+  - OrigDirection:   write
+  - OrigID:          scevgepseq
+  - ArrayName:       output_ftmap
+  - String:          ' '
+  - BundleName:      gmem_out
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_465_2
+  - String:          ' '
+  - LoopLoc:         'src/srcnn.cpp:465:27'
+  - String:          ' '
+  - Function:        'reconstructor(float (*) [255][255], float (*) [17][17], int, int)'
+    DebugLoc:        { File: src/srcnn.cpp, Line: 462, Column: 0 }
   - String:          ' '
 ...
 --- !Passed

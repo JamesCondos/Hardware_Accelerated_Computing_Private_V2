@@ -128,7 +128,7 @@ entry:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_bi
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_0_0, i64 666, i64 25, i64 18446744073709551615
+entry:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, i64 666, i64 25, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -143,7 +143,7 @@ entry:2 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_we
 
 <Node id="12" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_0_1, i64 666, i64 25, i64 18446744073709551615
+entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, i64 666, i64 25, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -158,7 +158,7 @@ entry:3 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_we
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_1_0, i64 666, i64 25, i64 18446744073709551615
+entry:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, i64 666, i64 25, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -173,7 +173,7 @@ entry:4 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_we
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-entry:5 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_weights_local_1_1, i64 666, i64 25, i64 18446744073709551615
+entry:5 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig, i64 666, i64 25, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -188,7 +188,7 @@ entry:5 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_we
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem_w2, void @empty_131, i32 0, i32 0, void @empty_132, i32 0, i32 2048, void @empty_136, void @empty_134, void @empty_132, i32 16, i32 16, i32 16, i32 16, void @empty_132, void @empty_132, i32 4294967295, i32 0
+entry:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem_w2, void @empty_43, i32 0, i32 0, void @empty_42, i32 0, i32 2048, void @empty_38, void @empty_40, void @empty_42, i32 16, i32 16, i32 16, i32 16, void @empty_42, void @empty_42, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -750,9 +750,9 @@ VITIS_LOOP_163_2.split:14 %store_ln162 = store i32 %bitcast_ln162, i5 %conv2_bia
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="1" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="11" op_8_bw="62" op_9_bw="32" op_10_bw="1" op_11_bw="0">
+<Node id="45" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="1" op_3_bw="11" op_4_bw="62" op_5_bw="32" op_6_bw="1" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="0">
 <![CDATA[
-VITIS_LOOP_163_2.split:15 %call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i32 %conv2_weights_local_0_0, i32 %conv2_weights_local_0_1, i32 %conv2_weights_local_1_0, i32 %conv2_weights_local_1_1, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2
+VITIS_LOOP_163_2.split:15 %call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig
 
 ]]></Node>
 <StgValue><ssdm name="call_ln161"/></StgValue>
@@ -785,7 +785,7 @@ VITIS_LOOP_163_2.split:3 %speclooptripcount_ln161 = speclooptripcount void @_ssd
 
 <Node id="34" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_163_2.split:4 %specloopname_ln161 = specloopname void @_ssdm_op_SpecLoopName, void @empty_157
+VITIS_LOOP_163_2.split:4 %specloopname_ln161 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln161"/></StgValue>
@@ -798,9 +798,9 @@ VITIS_LOOP_163_2.split:4 %specloopname_ln161 = specloopname void @_ssdm_op_SpecL
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="1" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="11" op_8_bw="62" op_9_bw="32" op_10_bw="1" op_11_bw="0">
+<Node id="45" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="1" op_3_bw="11" op_4_bw="62" op_5_bw="32" op_6_bw="1" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="0">
 <![CDATA[
-VITIS_LOOP_163_2.split:15 %call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i32 %conv2_weights_local_0_0, i32 %conv2_weights_local_0_1, i32 %conv2_weights_local_1_0, i32 %conv2_weights_local_1_1, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2
+VITIS_LOOP_163_2.split:15 %call_ln161 = call void @load_conv2_params_Pipeline_VITIS_LOOP_163_2, i5 %trunc_ln161, i1 %tmp, i11 %shl_ln, i62 %trunc_ln, i32 %gmem_w2, i1 %trunc_ln161_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, i32 %p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig
 
 ]]></Node>
 <StgValue><ssdm name="call_ln161"/></StgValue>

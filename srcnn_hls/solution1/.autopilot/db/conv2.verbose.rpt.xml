@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv2'" level="0">
-<item name = "Date">Thu Oct 30 18:13:45 2025
+<item name = "Date">Thu Oct 30 21:33:57 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -36,9 +36,9 @@
 <column name="grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8_fu_407">conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8, 9250, 9250, 92.500 us, 92.500 us, 9250, 9250, no</column>
 <column name="grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6_fu_430">conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6, 292, 292, 2.920 us, 2.920 us, 292, 292, no</column>
 <column name="grp_conv2_Pipeline_tile_height_loop_fu_452">conv2_Pipeline_tile_height_loop, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
-<column name="grp_conv2_Pipeline_tile_height_loop12_fu_493">conv2_Pipeline_tile_height_loop12, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
-<column name="grp_conv2_Pipeline_tile_height_loop13_fu_534">conv2_Pipeline_tile_height_loop13, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
-<column name="grp_conv2_Pipeline_tile_height_loop14_fu_575">conv2_Pipeline_tile_height_loop14, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
+<column name="grp_conv2_Pipeline_tile_height_loop4_fu_493">conv2_Pipeline_tile_height_loop4, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
+<column name="grp_conv2_Pipeline_tile_height_loop5_fu_534">conv2_Pipeline_tile_height_loop5, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
+<column name="grp_conv2_Pipeline_tile_height_loop6_fu_575">conv2_Pipeline_tile_height_loop6, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -76,9 +76,9 @@
 <column name="grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8_fu_407">conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8, 0, 0, 49, 364, 0</column>
 <column name="grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2_fu_344">conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2, 0, 0, 46, 294, 0</column>
 <column name="grp_conv2_Pipeline_tile_height_loop_fu_452">conv2_Pipeline_tile_height_loop, 0, 0, 3527, 673, 0</column>
-<column name="grp_conv2_Pipeline_tile_height_loop12_fu_493">conv2_Pipeline_tile_height_loop12, 0, 0, 3527, 673, 0</column>
-<column name="grp_conv2_Pipeline_tile_height_loop13_fu_534">conv2_Pipeline_tile_height_loop13, 0, 0, 3527, 673, 0</column>
-<column name="grp_conv2_Pipeline_tile_height_loop14_fu_575">conv2_Pipeline_tile_height_loop14, 0, 0, 3527, 673, 0</column>
+<column name="grp_conv2_Pipeline_tile_height_loop4_fu_493">conv2_Pipeline_tile_height_loop4, 0, 0, 3527, 673, 0</column>
+<column name="grp_conv2_Pipeline_tile_height_loop5_fu_534">conv2_Pipeline_tile_height_loop5, 0, 0, 3527, 673, 0</column>
+<column name="grp_conv2_Pipeline_tile_height_loop6_fu_575">conv2_Pipeline_tile_height_loop6, 0, 0, 3527, 673, 0</column>
 <column name="fadd_32ns_32ns_32_4_full_dsp_1_U1900">fadd_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214, 0</column>
 <column name="fadd_32ns_32ns_32_4_full_dsp_1_U1901">fadd_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214, 0</column>
 <column name="fadd_32ns_32ns_32_4_full_dsp_1_U1902">fadd_32ns_32ns_32_4_full_dsp_1, 0, 2, 227, 214, 0</column>
@@ -186,10 +186,6 @@
 <column name="ap_done">9, 2, 1, 2</column>
 <column name="conv1_to_conv2_read">9, 2, 1, 2</column>
 <column name="conv2_to_conv3_write">9, 2, 1, 2</column>
-<column name="conv2_weights_0_0_address0">14, 3, 9, 27</column>
-<column name="conv2_weights_0_1_address0">14, 3, 9, 27</column>
-<column name="conv2_weights_1_0_address0">14, 3, 9, 27</column>
-<column name="conv2_weights_1_1_address0">14, 3, 9, 27</column>
 <column name="feat_fu_108">9, 2, 6, 12</column>
 <column name="grp_fu_1002_ce">26, 5, 1, 5</column>
 <column name="grp_fu_1002_p0">26, 5, 32, 160</column>
@@ -447,6 +443,10 @@
 <column name="layer2_output_tile_ce1">31, 6, 1, 6</column>
 <column name="layer2_output_tile_d0">37, 7, 32, 224</column>
 <column name="layer2_output_tile_we0">37, 7, 1, 7</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_address0">14, 3, 9, 27</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_address0">14, 3, 9, 27</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_address0">14, 3, 9, 27</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_address0">14, 3, 9, 27</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -465,9 +465,9 @@
 <column name="grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6_fu_430_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8_fu_407_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2_fu_344_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_conv2_Pipeline_tile_height_loop12_fu_493_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_conv2_Pipeline_tile_height_loop13_fu_534_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_conv2_Pipeline_tile_height_loop14_fu_575_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_conv2_Pipeline_tile_height_loop4_fu_493_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_conv2_Pipeline_tile_height_loop5_fu_534_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_conv2_Pipeline_tile_height_loop6_fu_575_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_conv2_Pipeline_tile_height_loop_fu_452_ap_start_reg">1, 0, 1, 0</column>
 <column name="in_feat_reg_332">7, 0, 7, 0</column>
 <column name="lshr_ln3_reg_909">5, 0, 5, 0</column>
@@ -497,26 +497,26 @@
 <column name="conv1_to_conv2_fifo_cap">in, 10, ap_fifo, conv1_to_conv2, pointer</column>
 <column name="conv1_to_conv2_empty_n">in, 1, ap_fifo, conv1_to_conv2, pointer</column>
 <column name="conv1_to_conv2_read">out, 1, ap_fifo, conv1_to_conv2, pointer</column>
-<column name="conv2_weights_0_0_address0">out, 9, ap_memory, conv2_weights_0_0, array</column>
-<column name="conv2_weights_0_0_ce0">out, 1, ap_memory, conv2_weights_0_0, array</column>
-<column name="conv2_weights_0_0_q0">in, 32, ap_memory, conv2_weights_0_0, array</column>
-<column name="conv2_weights_0_1_address0">out, 9, ap_memory, conv2_weights_0_1, array</column>
-<column name="conv2_weights_0_1_ce0">out, 1, ap_memory, conv2_weights_0_1, array</column>
-<column name="conv2_weights_0_1_q0">in, 32, ap_memory, conv2_weights_0_1, array</column>
-<column name="conv2_weights_1_0_address0">out, 9, ap_memory, conv2_weights_1_0, array</column>
-<column name="conv2_weights_1_0_ce0">out, 1, ap_memory, conv2_weights_1_0, array</column>
-<column name="conv2_weights_1_0_q0">in, 32, ap_memory, conv2_weights_1_0, array</column>
-<column name="conv2_weights_1_1_address0">out, 9, ap_memory, conv2_weights_1_1, array</column>
-<column name="conv2_weights_1_1_ce0">out, 1, ap_memory, conv2_weights_1_1, array</column>
-<column name="conv2_weights_1_1_q0">in, 32, ap_memory, conv2_weights_1_1, array</column>
-<column name="conv2_biases_address0">out, 5, ap_memory, conv2_biases, array</column>
-<column name="conv2_biases_ce0">out, 1, ap_memory, conv2_biases, array</column>
-<column name="conv2_biases_q0">in, 32, ap_memory, conv2_biases, array</column>
 <column name="conv2_to_conv3_din">out, 32, ap_fifo, conv2_to_conv3, pointer</column>
 <column name="conv2_to_conv3_num_data_valid">in, 10, ap_fifo, conv2_to_conv3, pointer</column>
 <column name="conv2_to_conv3_fifo_cap">in, 10, ap_fifo, conv2_to_conv3, pointer</column>
 <column name="conv2_to_conv3_full_n">in, 1, ap_fifo, conv2_to_conv3, pointer</column>
 <column name="conv2_to_conv3_write">out, 1, ap_fifo, conv2_to_conv3, pointer</column>
+<column name="conv2_biases_local_address0">out, 5, ap_memory, conv2_biases_local, array</column>
+<column name="conv2_biases_local_ce0">out, 1, ap_memory, conv2_biases_local, array</column>
+<column name="conv2_biases_local_q0">in, 32, ap_memory, conv2_biases_local, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_address0">out, 9, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_ce0">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3_q0">in, 32, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_address0">out, 9, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_ce0">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1_q0">in, 32, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_address0">out, 9, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_ce0">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2_q0">in, 32, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_address0">out, 9, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_ce0">out, 1, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig, array</column>
+<column name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_q0">in, 32, ap_memory, p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig, array</column>
 </table>
 </item>
 </section>

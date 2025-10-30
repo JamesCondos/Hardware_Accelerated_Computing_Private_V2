@@ -16,9 +16,6 @@ port (
     ap_done : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    conv2_biases_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
-    conv2_biases_ce0 : OUT STD_LOGIC;
-    conv2_biases_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
     layer2_output_tile_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     layer2_output_tile_ce0 : OUT STD_LOGIC;
     layer2_output_tile_we0 : OUT STD_LOGIC;
@@ -86,7 +83,10 @@ port (
     layer2_output_tile_16_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     layer2_output_tile_16_ce0 : OUT STD_LOGIC;
     layer2_output_tile_16_we0 : OUT STD_LOGIC;
-    layer2_output_tile_16_d0 : OUT STD_LOGIC_VECTOR (31 downto 0) );
+    layer2_output_tile_16_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+    conv2_biases_local_address0 : OUT STD_LOGIC_VECTOR (4 downto 0);
+    conv2_biases_local_ce0 : OUT STD_LOGIC;
+    conv2_biases_local_q0 : IN STD_LOGIC_VECTOR (31 downto 0) );
 end;
 
 
@@ -447,14 +447,14 @@ begin
         end if; 
     end process;
 
-    conv2_biases_address0 <= zext_ln329_fu_459_p1(5 - 1 downto 0);
+    conv2_biases_local_address0 <= zext_ln329_fu_459_p1(5 - 1 downto 0);
 
-    conv2_biases_ce0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_11001)
+    conv2_biases_local_ce0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_11001)
     begin
         if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            conv2_biases_ce0 <= ap_const_logic_1;
+            conv2_biases_local_ce0 <= ap_const_logic_1;
         else 
-            conv2_biases_ce0 <= ap_const_logic_0;
+            conv2_biases_local_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
@@ -472,7 +472,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_10_d0 <= conv2_biases_q0;
+    layer2_output_tile_10_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_10_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -494,7 +494,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_11_d0 <= conv2_biases_q0;
+    layer2_output_tile_11_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_11_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -516,7 +516,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_12_d0 <= conv2_biases_q0;
+    layer2_output_tile_12_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_12_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -538,7 +538,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_13_d0 <= conv2_biases_q0;
+    layer2_output_tile_13_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_13_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -560,7 +560,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_14_d0 <= conv2_biases_q0;
+    layer2_output_tile_14_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_14_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -582,7 +582,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_15_d0 <= conv2_biases_q0;
+    layer2_output_tile_15_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_15_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -604,7 +604,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_16_d0 <= conv2_biases_q0;
+    layer2_output_tile_16_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_16_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -626,7 +626,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_1_d0 <= conv2_biases_q0;
+    layer2_output_tile_1_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_1_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -648,7 +648,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_2_d0 <= conv2_biases_q0;
+    layer2_output_tile_2_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_2_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -670,7 +670,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_3_d0 <= conv2_biases_q0;
+    layer2_output_tile_3_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_3_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -692,7 +692,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_4_d0 <= conv2_biases_q0;
+    layer2_output_tile_4_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_4_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -714,7 +714,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_5_d0 <= conv2_biases_q0;
+    layer2_output_tile_5_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_5_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -736,7 +736,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_6_d0 <= conv2_biases_q0;
+    layer2_output_tile_6_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_6_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -758,7 +758,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_7_d0 <= conv2_biases_q0;
+    layer2_output_tile_7_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_7_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -780,7 +780,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_8_d0 <= conv2_biases_q0;
+    layer2_output_tile_8_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_8_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -802,7 +802,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_9_d0 <= conv2_biases_q0;
+    layer2_output_tile_9_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_9_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin
@@ -824,7 +824,7 @@ begin
         end if; 
     end process;
 
-    layer2_output_tile_d0 <= conv2_biases_q0;
+    layer2_output_tile_d0 <= conv2_biases_local_q0;
 
     layer2_output_tile_we0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001, select_ln330_fu_550_p3)
     begin

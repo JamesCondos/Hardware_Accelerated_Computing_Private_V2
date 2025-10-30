@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2'
 ================================================================
-* Date:           Thu Oct 30 18:13:20 2025
+* Date:           Thu Oct 30 21:33:32 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -91,7 +91,7 @@ ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%feat = alloca i32 1"   --->   Operation 8 'alloca' 'feat' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%indvar_flatten29 = alloca i32 1"   --->   Operation 9 'alloca' 'indvar_flatten29' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv1_to_conv2, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 10 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv1_to_conv2, void @empty_151, i32 0, i32 0, void @empty_132, i32 0, i32 0, void @empty_132, void @empty_132, void @empty_132, i32 0, i32 0, i32 0, i32 0, void @empty_132, void @empty_132, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv1_to_conv2, void @empty_23, i32 0, i32 0, void @empty_42, i32 0, i32 0, void @empty_42, void @empty_42, void @empty_42, i32 0, i32 0, i32 0, i32 0, void @empty_42, void @empty_42, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.42ns)   --->   "%store_ln0 = store i15 0, i15 %indvar_flatten29"   --->   Operation 12 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 13 [1/1] (0.42ns)   --->   "%store_ln0 = store i7 0, i7 %feat"   --->   Operation 13 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 14 [1/1] (0.42ns)   --->   "%store_ln0 = store i10 0, i10 %indvar_flatten"   --->   Operation 14 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
@@ -153,7 +153,7 @@ ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%input_tile_14_addr = getelementptr
 ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%input_tile_15_addr = getelementptr i32 %input_tile_15, i64 0, i64 %zext_ln322_2" [src/srcnn.cpp:322]   --->   Operation 67 'getelementptr' 'input_tile_15_addr' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%input_tile_16_addr = getelementptr i32 %input_tile_16, i64 0, i64 %zext_ln322_2" [src/srcnn.cpp:322]   --->   Operation 68 'getelementptr' 'input_tile_16_addr' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 69 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%specloopname_ln321 = specloopname void @_ssdm_op_SpecLoopName, void @empty_172" [src/srcnn.cpp:321]   --->   Operation 70 'specloopname' 'specloopname_ln321' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%specloopname_ln321 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [src/srcnn.cpp:321]   --->   Operation 70 'specloopname' 'specloopname_ln321' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 71 [1/1] (2.97ns)   --->   "%conv1_to_conv2_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %conv1_to_conv2" [src/srcnn.cpp:322]   --->   Operation 71 'read' 'conv1_to_conv2_read' <Predicate = true> <Delay = 2.97> <CoreInst = "FIFO_LUTRAM">   --->   Core 80 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 2.97> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 512> <FIFO>
 ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%bitcast_ln322 = bitcast i32 %conv1_to_conv2_read" [src/srcnn.cpp:322]   --->   Operation 72 'bitcast' 'bitcast_ln322' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 73 [1/1] (0.74ns)   --->   "%switch_ln322 = switch i5 %select_ln320, void %arrayidx1217.case.16, i5 0, void %arrayidx1217.case.0, i5 1, void %arrayidx1217.case.1, i5 2, void %arrayidx1217.case.2, i5 3, void %arrayidx1217.case.3, i5 4, void %arrayidx1217.case.4, i5 5, void %arrayidx1217.case.5, i5 6, void %arrayidx1217.case.6, i5 7, void %arrayidx1217.case.7, i5 8, void %arrayidx1217.case.8, i5 9, void %arrayidx1217.case.9, i5 10, void %arrayidx1217.case.10, i5 11, void %arrayidx1217.case.11, i5 12, void %arrayidx1217.case.12, i5 13, void %arrayidx1217.case.13, i5 14, void %arrayidx1217.case.14, i5 15, void %arrayidx1217.case.15" [src/srcnn.cpp:322]   --->   Operation 73 'switch' 'switch_ln322' <Predicate = true> <Delay = 0.74>
@@ -585,7 +585,7 @@ ret_ln0               (ret              ) [ 000]
 <pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_151"/></StgValue>
+<StgValue><ssdm name="empty_23"/></StgValue>
 </bind>
 </comp>
 
@@ -603,7 +603,7 @@ ret_ln0               (ret              ) [ 000]
 <pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_132"/></StgValue>
+<StgValue><ssdm name="empty_42"/></StgValue>
 </bind>
 </comp>
 
@@ -819,7 +819,7 @@ ret_ln0               (ret              ) [ 000]
 <pin id="101" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_172"/></StgValue>
+<StgValue><ssdm name="empty_2"/></StgValue>
 </bind>
 </comp>
 

@@ -13,9 +13,6 @@ module srcnn_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331
         ap_done,
         ap_idle,
         ap_ready,
-        conv2_biases_address0,
-        conv2_biases_ce0,
-        conv2_biases_q0,
         layer2_output_tile_address0,
         layer2_output_tile_ce0,
         layer2_output_tile_we0,
@@ -83,7 +80,10 @@ module srcnn_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331
         layer2_output_tile_16_address0,
         layer2_output_tile_16_ce0,
         layer2_output_tile_16_we0,
-        layer2_output_tile_16_d0
+        layer2_output_tile_16_d0,
+        conv2_biases_local_address0,
+        conv2_biases_local_ce0,
+        conv2_biases_local_q0
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -94,9 +94,6 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [4:0] conv2_biases_address0;
-output   conv2_biases_ce0;
-input  [31:0] conv2_biases_q0;
 output  [9:0] layer2_output_tile_address0;
 output   layer2_output_tile_ce0;
 output   layer2_output_tile_we0;
@@ -165,9 +162,11 @@ output  [9:0] layer2_output_tile_16_address0;
 output   layer2_output_tile_16_ce0;
 output   layer2_output_tile_16_we0;
 output  [31:0] layer2_output_tile_16_d0;
+output  [4:0] conv2_biases_local_address0;
+output   conv2_biases_local_ce0;
+input  [31:0] conv2_biases_local_q0;
 
 reg ap_idle;
-reg conv2_biases_ce0;
 reg layer2_output_tile_ce0;
 reg layer2_output_tile_we0;
 reg layer2_output_tile_1_ce0;
@@ -202,6 +201,7 @@ reg layer2_output_tile_15_ce0;
 reg layer2_output_tile_15_we0;
 reg layer2_output_tile_16_ce0;
 reg layer2_output_tile_16_we0;
+reg conv2_biases_local_ce0;
 
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_pp0_stage0;
@@ -435,9 +435,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        conv2_biases_ce0 = 1'b1;
+        conv2_biases_local_ce0 = 1'b1;
     end else begin
-        conv2_biases_ce0 = 1'b0;
+        conv2_biases_local_ce0 = 1'b0;
     end
 end
 
@@ -758,7 +758,7 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
-assign conv2_biases_address0 = zext_ln329_fu_459_p1;
+assign conv2_biases_local_address0 = zext_ln329_fu_459_p1;
 
 assign icmp_ln329_fu_424_p2 = ((ap_sig_allocacmp_indvar_flatten67_load == 14'd9248) ? 1'b1 : 1'b0);
 
@@ -768,71 +768,71 @@ assign icmp_ln331_fu_527_p2 = ((j_fu_122 == 5'd17) ? 1'b1 : 1'b0);
 
 assign layer2_output_tile_10_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_10_d0 = conv2_biases_q0;
+assign layer2_output_tile_10_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_11_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_11_d0 = conv2_biases_q0;
+assign layer2_output_tile_11_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_12_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_12_d0 = conv2_biases_q0;
+assign layer2_output_tile_12_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_13_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_13_d0 = conv2_biases_q0;
+assign layer2_output_tile_13_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_14_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_14_d0 = conv2_biases_q0;
+assign layer2_output_tile_14_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_15_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_15_d0 = conv2_biases_q0;
+assign layer2_output_tile_15_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_16_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_16_d0 = conv2_biases_q0;
+assign layer2_output_tile_16_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_1_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_1_d0 = conv2_biases_q0;
+assign layer2_output_tile_1_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_2_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_2_d0 = conv2_biases_q0;
+assign layer2_output_tile_2_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_3_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_3_d0 = conv2_biases_q0;
+assign layer2_output_tile_3_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_4_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_4_d0 = conv2_biases_q0;
+assign layer2_output_tile_4_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_5_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_5_d0 = conv2_biases_q0;
+assign layer2_output_tile_5_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_6_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_6_d0 = conv2_biases_q0;
+assign layer2_output_tile_6_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_7_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_7_d0 = conv2_biases_q0;
+assign layer2_output_tile_7_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_8_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_8_d0 = conv2_biases_q0;
+assign layer2_output_tile_8_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_9_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_9_d0 = conv2_biases_q0;
+assign layer2_output_tile_9_d0 = conv2_biases_local_q0;
 
 assign layer2_output_tile_address0 = zext_ln333_2_fu_576_p1;
 
-assign layer2_output_tile_d0 = conv2_biases_q0;
+assign layer2_output_tile_d0 = conv2_biases_local_q0;
 
 assign or_ln330_fu_545_p2 = (icmp_ln330_reg_651 | and_ln329_fu_533_p2);
 

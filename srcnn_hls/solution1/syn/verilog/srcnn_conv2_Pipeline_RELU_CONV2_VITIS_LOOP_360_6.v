@@ -369,7 +369,7 @@ reg   [9:0] layer2_output_tile_15_addr_reg_757;
 reg   [9:0] layer2_output_tile_15_addr_reg_757_pp0_iter1_reg;
 reg   [9:0] layer2_output_tile_16_addr_reg_763;
 reg   [9:0] layer2_output_tile_16_addr_reg_763_pp0_iter1_reg;
-wire   [31:0] tmp_3_fu_557_p19;
+wire   [31:0] tmp_26_fu_557_p19;
 wire   [0:0] icmp_ln362_fu_615_p2;
 reg   [0:0] icmp_ln362_reg_774;
 wire   [0:0] icmp_ln362_1_fu_621_p2;
@@ -392,7 +392,7 @@ wire   [4:0] add_ln359_fu_477_p2;
 wire   [9:0] zext_ln362_fu_505_p1;
 wire   [9:0] add_ln362_fu_509_p2;
 wire   [31:0] bitcast_ln362_fu_597_p1;
-wire   [7:0] tmp_5_fu_601_p4;
+wire   [7:0] tmp_1_fu_601_p4;
 wire   [22:0] trunc_ln362_fu_611_p1;
 wire   [0:0] or_ln362_fu_627_p2;
 wire   [0:0] grp_fu_436_p2;
@@ -423,7 +423,7 @@ srcnn_fcmp_32ns_32ns_1_2_no_dsp_1 #(
 fcmp_32ns_32ns_1_2_no_dsp_1_U1859(
     .clk(ap_clk),
     .reset(ap_rst),
-    .din0(tmp_3_fu_557_p19),
+    .din0(tmp_26_fu_557_p19),
     .din1(32'd0),
     .ce(1'b1),
     .opcode(5'd4),
@@ -471,7 +471,7 @@ mux_17_5_32_1_1_U1860(
     .din15(layer2_output_tile_15_q1),
     .din16(layer2_output_tile_16_q1),
     .din17(select_ln359_reg_662),
-    .dout(tmp_3_fu_557_p19)
+    .dout(tmp_26_fu_557_p19)
 );
 
 srcnn_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U(
@@ -1125,7 +1125,7 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
-assign bitcast_ln362_fu_597_p1 = tmp_3_fu_557_p19;
+assign bitcast_ln362_fu_597_p1 = tmp_26_fu_557_p19;
 
 assign icmp_ln359_fu_459_p2 = ((ap_sig_allocacmp_indvar_flatten108_load == 9'd289) ? 1'b1 : 1'b0);
 
@@ -1133,7 +1133,7 @@ assign icmp_ln360_fu_483_p2 = ((ap_sig_allocacmp_j_load == 5'd17) ? 1'b1 : 1'b0)
 
 assign icmp_ln362_1_fu_621_p2 = ((trunc_ln362_fu_611_p1 == 23'd0) ? 1'b1 : 1'b0);
 
-assign icmp_ln362_fu_615_p2 = ((tmp_5_fu_601_p4 != 8'd255) ? 1'b1 : 1'b0);
+assign icmp_ln362_fu_615_p2 = ((tmp_1_fu_601_p4 != 8'd255) ? 1'b1 : 1'b0);
 
 assign layer2_output_tile_10_address0 = layer2_output_tile_10_addr_reg_727_pp0_iter1_reg;
 
@@ -1243,7 +1243,7 @@ assign select_ln359_1_fu_497_p3 = ((icmp_ln360_fu_483_p2[0:0] == 1'b1) ? add_ln3
 
 assign select_ln359_fu_489_p3 = ((icmp_ln360_fu_483_p2[0:0] == 1'b1) ? 5'd0 : ap_sig_allocacmp_j_load);
 
-assign tmp_5_fu_601_p4 = {{bitcast_ln362_fu_597_p1[30:23]}};
+assign tmp_1_fu_601_p4 = {{bitcast_ln362_fu_597_p1[30:23]}};
 
 assign trunc_ln362_fu_611_p1 = bitcast_ln362_fu_597_p1[22:0];
 

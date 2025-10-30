@@ -121,7 +121,7 @@ newFuncRoot:5 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %co
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv2_to_conv3, void @empty_151, i32 0, i32 0, void @empty_132, i32 0, i32 0, void @empty_132, void @empty_132, void @empty_132, i32 0, i32 0, i32 0, i32 0, void @empty_132, void @empty_132, i32 4294967295, i32 0
+newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv2_to_conv3, void @empty_23, i32 0, i32 0, void @empty_42, i32 0, i32 0, void @empty_42, void @empty_42, void @empty_42, i32 0, i32 0, i32 0, i32 0, void @empty_42, void @empty_42, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -1406,7 +1406,7 @@ for.inc155:42 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 
 
 <Node id="82" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc155:43 %specloopname_ln373 = specloopname void @_ssdm_op_SpecLoopName, void @empty_166
+for.inc155:43 %specloopname_ln373 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln373"/></StgValue>
@@ -1676,10 +1676,10 @@ for.inc155:60 %layer2_output_tile_16_load = load i10 %layer2_output_tile_16_addr
 
 <Node id="100" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="5">
 <![CDATA[
-for.inc155:61 %tmp_1 = mux i32 @_ssdm_op_Mux.ap_auto.17f32.i5, i32 %layer2_output_tile_load, i32 %layer2_output_tile_1_load, i32 %layer2_output_tile_2_load, i32 %layer2_output_tile_3_load, i32 %layer2_output_tile_4_load, i32 %layer2_output_tile_5_load, i32 %layer2_output_tile_6_load, i32 %layer2_output_tile_7_load, i32 %layer2_output_tile_8_load, i32 %layer2_output_tile_9_load, i32 %layer2_output_tile_10_load, i32 %layer2_output_tile_11_load, i32 %layer2_output_tile_12_load, i32 %layer2_output_tile_13_load, i32 %layer2_output_tile_14_load, i32 %layer2_output_tile_15_load, i32 %layer2_output_tile_16_load, i5 %select_ln372
+for.inc155:61 %tmp_24 = mux i32 @_ssdm_op_Mux.ap_auto.17f32.i5, i32 %layer2_output_tile_load, i32 %layer2_output_tile_1_load, i32 %layer2_output_tile_2_load, i32 %layer2_output_tile_3_load, i32 %layer2_output_tile_4_load, i32 %layer2_output_tile_5_load, i32 %layer2_output_tile_6_load, i32 %layer2_output_tile_7_load, i32 %layer2_output_tile_8_load, i32 %layer2_output_tile_9_load, i32 %layer2_output_tile_10_load, i32 %layer2_output_tile_11_load, i32 %layer2_output_tile_12_load, i32 %layer2_output_tile_13_load, i32 %layer2_output_tile_14_load, i32 %layer2_output_tile_15_load, i32 %layer2_output_tile_16_load, i5 %select_ln372
 
 ]]></Node>
-<StgValue><ssdm name="tmp_1"/></StgValue>
+<StgValue><ssdm name="tmp_24"/></StgValue>
 </operation>
 
 <operation id="110" st_id="3" stage="1" lat="1">
@@ -1691,7 +1691,7 @@ for.inc155:61 %tmp_1 = mux i32 @_ssdm_op_Mux.ap_auto.17f32.i5, i32 %layer2_outpu
 
 <Node id="101" bw="32" op_0_bw="32">
 <![CDATA[
-for.inc155:62 %bitcast_ln374 = bitcast i32 %tmp_1
+for.inc155:62 %bitcast_ln374 = bitcast i32 %tmp_24
 
 ]]></Node>
 <StgValue><ssdm name="bitcast_ln374"/></StgValue>

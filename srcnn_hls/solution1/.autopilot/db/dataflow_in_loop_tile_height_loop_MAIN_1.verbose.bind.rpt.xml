@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dataflow_in_loop_tile_height_loop_MAIN_1'" level="0">
-<item name = "Date">Thu Oct 30 18:13:32 2025
+<item name = "Date">Thu Oct 30 21:33:45 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -31,13 +31,12 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc_fu_536">dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc, 11, 11, 0.110 us, 0.110 us, 11, 11, no</column>
-<column name="grp_dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot47_proc_fu_542">dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot47_proc, 1, 1, 10.000 ns, 10.000 ns, 1, 1, no</column>
-<column name="grp_conv1_tile_fu_548">conv1_tile, 58874, 58874, 0.589 ms, 0.589 ms, 58874, 58874, no</column>
-<column name="grp_conv2_fu_887">conv2, 106347, 106347, 1.063 ms, 1.063 ms, 106347, 106347, no</column>
-<column name="grp_conv37_fu_903">conv37, 92585, 92585, 0.926 ms, 0.926 ms, 92585, 92585, no</column>
-<column name="call_ln0_entry_proc_fu_974">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="grp_reconstructor_fu_981">reconstructor, 298, 298, 2.980 us, 2.980 us, 298, 298, no</column>
+<column name="grp_dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc_fu_530">dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc, 11, 11, 0.110 us, 0.110 us, 11, 11, no</column>
+<column name="grp_conv1_tile_fu_536">conv1_tile, 58874, 58874, 0.589 ms, 0.589 ms, 58874, 58874, no</column>
+<column name="grp_conv2_fu_875">conv2, 106347, 106347, 1.063 ms, 1.063 ms, 106347, 106347, no</column>
+<column name="grp_conv3_fu_891">conv3, 92585, 92585, 0.926 ms, 0.926 ms, 92585, 92585, no</column>
+<column name="call_ln0_entry_proc_fu_963">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_reconstructor_fu_970">reconstructor, 298, 298, 2.980 us, 2.980 us, 298, 298, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6'
 ================================================================
-* Date:           Thu Oct 30 18:13:45 2025
+* Date:           Thu Oct 30 21:33:56 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -437,23 +437,23 @@ ST_2 : Operation 79 [1/2] (1.23ns)   --->   "%layer2_output_tile_13_load = load 
 ST_2 : Operation 80 [1/2] (1.23ns)   --->   "%layer2_output_tile_14_load = load i10 %layer2_output_tile_14_addr" [src/srcnn.cpp:362]   --->   Operation 80 'load' 'layer2_output_tile_14_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
 ST_2 : Operation 81 [1/2] (1.23ns)   --->   "%layer2_output_tile_15_load = load i10 %layer2_output_tile_15_addr" [src/srcnn.cpp:362]   --->   Operation 81 'load' 'layer2_output_tile_15_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
 ST_2 : Operation 82 [1/2] (1.23ns)   --->   "%layer2_output_tile_16_load = load i10 %layer2_output_tile_16_addr" [src/srcnn.cpp:362]   --->   Operation 82 'load' 'layer2_output_tile_16_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
-ST_2 : Operation 83 [1/1] (0.76ns)   --->   "%tmp_3 = mux i32 @_ssdm_op_Mux.ap_auto.17f32.i5, i32 %layer2_output_tile_load, i32 %layer2_output_tile_1_load, i32 %layer2_output_tile_2_load, i32 %layer2_output_tile_3_load, i32 %layer2_output_tile_4_load, i32 %layer2_output_tile_5_load, i32 %layer2_output_tile_6_load, i32 %layer2_output_tile_7_load, i32 %layer2_output_tile_8_load, i32 %layer2_output_tile_9_load, i32 %layer2_output_tile_10_load, i32 %layer2_output_tile_11_load, i32 %layer2_output_tile_12_load, i32 %layer2_output_tile_13_load, i32 %layer2_output_tile_14_load, i32 %layer2_output_tile_15_load, i32 %layer2_output_tile_16_load, i5 %select_ln359" [src/srcnn.cpp:362]   --->   Operation 83 'mux' 'tmp_3' <Predicate = true> <Delay = 0.76> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%bitcast_ln362 = bitcast i32 %tmp_3" [src/srcnn.cpp:362]   --->   Operation 84 'bitcast' 'bitcast_ln362' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%tmp_5 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %bitcast_ln362, i32 23, i32 30" [src/srcnn.cpp:362]   --->   Operation 85 'partselect' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (0.76ns)   --->   "%tmp_26 = mux i32 @_ssdm_op_Mux.ap_auto.17f32.i5, i32 %layer2_output_tile_load, i32 %layer2_output_tile_1_load, i32 %layer2_output_tile_2_load, i32 %layer2_output_tile_3_load, i32 %layer2_output_tile_4_load, i32 %layer2_output_tile_5_load, i32 %layer2_output_tile_6_load, i32 %layer2_output_tile_7_load, i32 %layer2_output_tile_8_load, i32 %layer2_output_tile_9_load, i32 %layer2_output_tile_10_load, i32 %layer2_output_tile_11_load, i32 %layer2_output_tile_12_load, i32 %layer2_output_tile_13_load, i32 %layer2_output_tile_14_load, i32 %layer2_output_tile_15_load, i32 %layer2_output_tile_16_load, i5 %select_ln359" [src/srcnn.cpp:362]   --->   Operation 83 'mux' 'tmp_26' <Predicate = true> <Delay = 0.76> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%bitcast_ln362 = bitcast i32 %tmp_26" [src/srcnn.cpp:362]   --->   Operation 84 'bitcast' 'bitcast_ln362' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %bitcast_ln362, i32 23, i32 30" [src/srcnn.cpp:362]   --->   Operation 85 'partselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 86 [1/1] (0.00ns)   --->   "%trunc_ln362 = trunc i32 %bitcast_ln362" [src/srcnn.cpp:362]   --->   Operation 86 'trunc' 'trunc_ln362' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 87 [1/1] (0.76ns)   --->   "%icmp_ln362 = icmp_ne  i8 %tmp_5, i8 255" [src/srcnn.cpp:362]   --->   Operation 87 'icmp' 'icmp_ln362' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 87 [1/1] (0.76ns)   --->   "%icmp_ln362 = icmp_ne  i8 %tmp_1, i8 255" [src/srcnn.cpp:362]   --->   Operation 87 'icmp' 'icmp_ln362' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 88 [1/1] (0.92ns)   --->   "%icmp_ln362_1 = icmp_eq  i23 %trunc_ln362, i23 0" [src/srcnn.cpp:362]   --->   Operation 88 'icmp' 'icmp_ln362_1' <Predicate = true> <Delay = 0.92> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.92> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 89 [2/2] (2.78ns)   --->   "%tmp_6 = fcmp_olt  i32 %tmp_3, i32 0" [src/srcnn.cpp:362]   --->   Operation 89 'fcmp' 'tmp_6' <Predicate = true> <Delay = 2.78> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 2.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 89 [2/2] (2.78ns)   --->   "%tmp_2 = fcmp_olt  i32 %tmp_26, i32 0" [src/srcnn.cpp:362]   --->   Operation 89 'fcmp' 'tmp_2' <Predicate = true> <Delay = 2.78> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 2.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 134 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 134 'ret' 'ret_ln0' <Predicate = (icmp_ln359)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 4.30>
 ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @RELU_CONV2_VITIS_LOOP_360_6_str"   --->   Operation 90 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 289, i64 289, i64 289"   --->   Operation 91 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%specpipeline_ln361 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_132" [src/srcnn.cpp:361]   --->   Operation 92 'specpipeline' 'specpipeline_ln361' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%specloopname_ln360 = specloopname void @_ssdm_op_SpecLoopName, void @empty_29" [src/srcnn.cpp:360]   --->   Operation 93 'specloopname' 'specloopname_ln360' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%specpipeline_ln361 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_42" [src/srcnn.cpp:361]   --->   Operation 92 'specpipeline' 'specpipeline_ln361' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%specloopname_ln360 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5" [src/srcnn.cpp:360]   --->   Operation 93 'specloopname' 'specloopname_ln360' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 94 [1/1] (0.00ns) (grouped into LUT with out node and_ln362)   --->   "%or_ln362 = or i1 %icmp_ln362_1, i1 %icmp_ln362" [src/srcnn.cpp:362]   --->   Operation 94 'or' 'or_ln362' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 95 [1/2] (2.78ns)   --->   "%tmp_6 = fcmp_olt  i32 %tmp_3, i32 0" [src/srcnn.cpp:362]   --->   Operation 95 'fcmp' 'tmp_6' <Predicate = true> <Delay = 2.78> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 2.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 96 [1/1] (0.28ns) (out node of the LUT)   --->   "%and_ln362 = and i1 %or_ln362, i1 %tmp_6" [src/srcnn.cpp:362]   --->   Operation 96 'and' 'and_ln362' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 95 [1/2] (2.78ns)   --->   "%tmp_2 = fcmp_olt  i32 %tmp_26, i32 0" [src/srcnn.cpp:362]   --->   Operation 95 'fcmp' 'tmp_2' <Predicate = true> <Delay = 2.78> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 1> <II = 1> <Delay = 2.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 96 [1/1] (0.28ns) (out node of the LUT)   --->   "%and_ln362 = and i1 %or_ln362, i1 %tmp_2" [src/srcnn.cpp:362]   --->   Operation 96 'and' 'and_ln362' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 97 [1/1] (0.00ns)   --->   "%br_ln362 = br i1 %and_ln362, void %for.inc119, void %if.then" [src/srcnn.cpp:362]   --->   Operation 97 'br' 'br_ln362' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 98 [1/1] (0.74ns)   --->   "%switch_ln363 = switch i5 %select_ln359, void %arrayidx1114.case.16, i5 0, void %arrayidx1114.case.0, i5 1, void %arrayidx1114.case.1, i5 2, void %arrayidx1114.case.2, i5 3, void %arrayidx1114.case.3, i5 4, void %arrayidx1114.case.4, i5 5, void %arrayidx1114.case.5, i5 6, void %arrayidx1114.case.6, i5 7, void %arrayidx1114.case.7, i5 8, void %arrayidx1114.case.8, i5 9, void %arrayidx1114.case.9, i5 10, void %arrayidx1114.case.10, i5 11, void %arrayidx1114.case.11, i5 12, void %arrayidx1114.case.12, i5 13, void %arrayidx1114.case.13, i5 14, void %arrayidx1114.case.14, i5 15, void %arrayidx1114.case.15" [src/srcnn.cpp:363]   --->   Operation 98 'switch' 'switch_ln363' <Predicate = (and_ln362)> <Delay = 0.74>
 ST_3 : Operation 99 [1/1] (1.23ns)   --->   "%store_ln363 = store i32 0, i10 %layer2_output_tile_15_addr" [src/srcnn.cpp:363]   --->   Operation 99 'store' 'store_ln363' <Predicate = (and_ln362 & select_ln359 == 15)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
@@ -588,9 +588,9 @@ layer2_output_tile_13_load (load             ) [ 0000]
 layer2_output_tile_14_load (load             ) [ 0000]
 layer2_output_tile_15_load (load             ) [ 0000]
 layer2_output_tile_16_load (load             ) [ 0000]
-tmp_3                      (mux              ) [ 0101]
+tmp_26                     (mux              ) [ 0101]
 bitcast_ln362              (bitcast          ) [ 0000]
-tmp_5                      (partselect       ) [ 0000]
+tmp_1                      (partselect       ) [ 0000]
 trunc_ln362                (trunc            ) [ 0000]
 icmp_ln362                 (icmp             ) [ 0101]
 icmp_ln362_1               (icmp             ) [ 0101]
@@ -599,7 +599,7 @@ speclooptripcount_ln0      (speclooptripcount) [ 0000]
 specpipeline_ln361         (specpipeline     ) [ 0000]
 specloopname_ln360         (specloopname     ) [ 0000]
 or_ln362                   (or               ) [ 0000]
-tmp_6                      (fcmp             ) [ 0000]
+tmp_2                      (fcmp             ) [ 0000]
 and_ln362                  (and              ) [ 0101]
 br_ln362                   (br               ) [ 0000]
 switch_ln363               (switch           ) [ 0000]
@@ -1026,7 +1026,7 @@ ret_ln0                    (ret              ) [ 0000]
 <pin id="81" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_132"/></StgValue>
+<StgValue><ssdm name="empty_42"/></StgValue>
 </bind>
 </comp>
 
@@ -1035,7 +1035,7 @@ ret_ln0                    (ret              ) [ 0000]
 <pin id="83" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_29"/></StgValue>
+<StgValue><ssdm name="empty_5"/></StgValue>
 </bind>
 </comp>
 
@@ -1728,7 +1728,7 @@ ret_ln0                    (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="fcmp(46) " fcode="fcmp"/>
-<opset="tmp_6/2 "/>
+<opset="tmp_2/2 "/>
 </bind>
 </comp>
 
@@ -1957,7 +1957,7 @@ ret_ln0                    (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="557" class="1004" name="tmp_3_fu_557">
+<comp id="557" class="1004" name="tmp_26_fu_557">
 <pin_list>
 <pin id="558" dir="0" index="0" bw="32" slack="0"/>
 <pin id="559" dir="0" index="1" bw="32" slack="0"/>
@@ -1982,7 +1982,7 @@ ret_ln0                    (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="mux(1196) " fcode="mux"/>
-<opset="tmp_3/2 "/>
+<opset="tmp_26/2 "/>
 </bind>
 </comp>
 
@@ -1997,7 +1997,7 @@ ret_ln0                    (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="601" class="1004" name="tmp_5_fu_601">
+<comp id="601" class="1004" name="tmp_1_fu_601">
 <pin_list>
 <pin id="602" dir="0" index="0" bw="8" slack="0"/>
 <pin id="603" dir="0" index="1" bw="32" slack="0"/>
@@ -2007,7 +2007,7 @@ ret_ln0                    (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_5/2 "/>
+<opset="tmp_1/2 "/>
 </bind>
 </comp>
 
@@ -2290,13 +2290,13 @@ ret_ln0                    (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="769" class="1005" name="tmp_3_reg_769">
+<comp id="769" class="1005" name="tmp_26_reg_769">
 <pin_list>
 <pin id="770" dir="0" index="0" bw="32" slack="1"/>
 <pin id="771" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_3 "/>
+<opset="tmp_26 "/>
 </bind>
 </comp>
 
@@ -2863,13 +2863,13 @@ ret_ln0                    (ret              ) [ 0000]
 		store_ln360 : 4
 		store_ln360 : 5
 	State 2
-		tmp_3 : 1
+		tmp_26 : 1
 		bitcast_ln362 : 2
-		tmp_5 : 3
+		tmp_1 : 3
 		trunc_ln362 : 3
 		icmp_ln362 : 4
 		icmp_ln362_1 : 4
-		tmp_6 : 2
+		tmp_2 : 2
 	State 3
 		and_ln362 : 1
 		br_ln362 : 1
@@ -2883,7 +2883,7 @@ ret_ln0                    (ret              ) [ 0000]
 |----------|----------------------------|---------|---------|
 | Operation|       Functional Unit      |    FF   |   LUT   |
 |----------|----------------------------|---------|---------|
-|    mux   |        tmp_3_fu_557        |    0    |    81   |
+|    mux   |        tmp_26_fu_557       |    0    |    81   |
 |----------|----------------------------|---------|---------|
 |          |      icmp_ln359_fu_459     |    0    |    16   |
 |   icmp   |      icmp_ln360_fu_483     |    0    |    12   |
@@ -2909,7 +2909,7 @@ ret_ln0                    (ret              ) [ 0000]
 |   zext   |      zext_ln362_fu_505     |    0    |    0    |
 |          |     zext_ln362_1_fu_515    |    0    |    0    |
 |----------|----------------------------|---------|---------|
-|partselect|        tmp_5_fu_601        |    0    |    0    |
+|partselect|        tmp_1_fu_601        |    0    |    0    |
 |----------|----------------------------|---------|---------|
 |   trunc  |     trunc_ln362_fu_611     |    0    |    0    |
 |----------|----------------------------|---------|---------|
@@ -2947,7 +2947,7 @@ N/A
 | layer2_output_tile_9_addr_reg_721|   10   |
 |  layer2_output_tile_addr_reg_667 |   10   |
 |       select_ln359_reg_662       |    5   |
-|           tmp_3_reg_769          |   32   |
+|          tmp_26_reg_769          |   32   |
 +----------------------------------+--------+
 |               Total              |   229  |
 +----------------------------------+--------+

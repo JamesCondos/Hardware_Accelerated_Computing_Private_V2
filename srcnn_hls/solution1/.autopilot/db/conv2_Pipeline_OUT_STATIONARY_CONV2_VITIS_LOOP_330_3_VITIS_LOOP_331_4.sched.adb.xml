@@ -100,7 +100,7 @@ newFuncRoot:4 %indvar_flatten67 = alloca i32 1
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="64" op_4_bw="64">
 <![CDATA[
-newFuncRoot:5 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_biases, i64 666, i64 25, i64 18446744073709551615
+newFuncRoot:5 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv2_biases_local, i64 666, i64 25, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln0"/></StgValue>
@@ -361,10 +361,10 @@ for.inc47:9 %zext_ln329 = zext i6 %select_ln329_1
 
 <Node id="51" bw="5" op_0_bw="32" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc47:13 %conv2_biases_addr = getelementptr i32 %conv2_biases, i64 0, i64 %zext_ln329
+for.inc47:13 %conv2_biases_local_addr = getelementptr i32 %conv2_biases_local, i64 0, i64 %zext_ln329
 
 ]]></Node>
-<StgValue><ssdm name="conv2_biases_addr"/></StgValue>
+<StgValue><ssdm name="conv2_biases_local_addr"/></StgValue>
 </operation>
 
 <operation id="28" st_id="1" stage="2" lat="2">
@@ -377,10 +377,10 @@ for.inc47:13 %conv2_biases_addr = getelementptr i32 %conv2_biases, i64 0, i64 %z
 
 <Node id="52" bw="32" op_0_bw="5">
 <![CDATA[
-for.inc47:14 %conv2_biases_load = load i5 %conv2_biases_addr
+for.inc47:14 %conv2_biases_local_load = load i5 %conv2_biases_local_addr
 
 ]]></Node>
-<StgValue><ssdm name="conv2_biases_load"/></StgValue>
+<StgValue><ssdm name="conv2_biases_local_load"/></StgValue>
 </operation>
 
 <operation id="29" st_id="1" stage="1" lat="1">
@@ -612,10 +612,10 @@ for.inc47:12 %add_ln333 = add i10 %tmp_s, i10 %zext_ln333
 
 <Node id="52" bw="32" op_0_bw="5">
 <![CDATA[
-for.inc47:14 %conv2_biases_load = load i5 %conv2_biases_addr
+for.inc47:14 %conv2_biases_local_load = load i5 %conv2_biases_local_addr
 
 ]]></Node>
-<StgValue><ssdm name="conv2_biases_load"/></StgValue>
+<StgValue><ssdm name="conv2_biases_local_load"/></StgValue>
 </operation>
 
 <operation id="43" st_id="2" stage="1" lat="1">
@@ -1047,7 +1047,7 @@ for.inc47:42 %layer2_output_tile_16_addr = getelementptr i32 %layer2_output_tile
 
 <Node id="81" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-for.inc47:43 %specpipeline_ln332 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_132
+for.inc47:43 %specpipeline_ln332 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_42
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln332"/></StgValue>
@@ -1062,7 +1062,7 @@ for.inc47:43 %specpipeline_ln332 = specpipeline void @_ssdm_op_SpecPipeline, i32
 
 <Node id="82" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc47:44 %specloopname_ln331 = specloopname void @_ssdm_op_SpecLoopName, void @empty_171
+for.inc47:44 %specloopname_ln331 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln331"/></StgValue>
@@ -1093,7 +1093,7 @@ for.inc47:45 %switch_ln333 = switch i5 %select_ln330, void %arrayidx4015.case.16
 
 <Node id="85" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.15:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_15_addr
+arrayidx4015.case.15:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_15_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1125,7 +1125,7 @@ arrayidx4015.case.15:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="88" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.14:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_14_addr
+arrayidx4015.case.14:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_14_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1157,7 +1157,7 @@ arrayidx4015.case.14:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="91" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.13:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_13_addr
+arrayidx4015.case.13:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_13_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1189,7 +1189,7 @@ arrayidx4015.case.13:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="94" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.12:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_12_addr
+arrayidx4015.case.12:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_12_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1221,7 +1221,7 @@ arrayidx4015.case.12:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="97" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.11:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_11_addr
+arrayidx4015.case.11:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_11_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1253,7 +1253,7 @@ arrayidx4015.case.11:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="100" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.10:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_10_addr
+arrayidx4015.case.10:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_10_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1285,7 +1285,7 @@ arrayidx4015.case.10:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="103" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.9:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_9_addr
+arrayidx4015.case.9:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_9_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1317,7 +1317,7 @@ arrayidx4015.case.9:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="106" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.8:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_8_addr
+arrayidx4015.case.8:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_8_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1349,7 +1349,7 @@ arrayidx4015.case.8:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="109" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.7:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_7_addr
+arrayidx4015.case.7:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_7_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1381,7 +1381,7 @@ arrayidx4015.case.7:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="112" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.6:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_6_addr
+arrayidx4015.case.6:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_6_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1413,7 +1413,7 @@ arrayidx4015.case.6:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="115" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.5:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_5_addr
+arrayidx4015.case.5:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_5_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1445,7 +1445,7 @@ arrayidx4015.case.5:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="118" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.4:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_4_addr
+arrayidx4015.case.4:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_4_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1477,7 +1477,7 @@ arrayidx4015.case.4:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="121" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.3:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_3_addr
+arrayidx4015.case.3:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_3_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1509,7 +1509,7 @@ arrayidx4015.case.3:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="124" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.2:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_2_addr
+arrayidx4015.case.2:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_2_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1541,7 +1541,7 @@ arrayidx4015.case.2:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="127" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.1:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_1_addr
+arrayidx4015.case.1:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1573,7 +1573,7 @@ arrayidx4015.case.1:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="130" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.0:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_addr
+arrayidx4015.case.0:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>
@@ -1620,7 +1620,7 @@ arrayidx4015.case.0:1 %br_ln333 = br void %arrayidx4015.exit
 
 <Node id="133" bw="0" op_0_bw="32" op_1_bw="10">
 <![CDATA[
-arrayidx4015.case.16:0 %store_ln333 = store i32 %conv2_biases_load, i10 %layer2_output_tile_16_addr
+arrayidx4015.case.16:0 %store_ln333 = store i32 %conv2_biases_local_load, i10 %layer2_output_tile_16_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln333"/></StgValue>

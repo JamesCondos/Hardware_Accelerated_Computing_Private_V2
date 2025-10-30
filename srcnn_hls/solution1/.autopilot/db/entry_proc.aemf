@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761808416608">
-  <ports id="1" name="output_ftmap" type="PortType" coreId="0" bitwidth="64">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761820428510">
+  <ports id="1" name="output_ftmap" type="PortType" coreId="1635147636" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="output_ftmap_c" type="PortType" coreName="FIFO_SRL" coreId="0" bitwidth="64" direction="DirOut" iftype="IfTypeRom">
+  <ports id="2" name="output_ftmap_c" type="PortType" coreName="FIFO_SRL" coreId="1953391988" bitwidth="64" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>write</dataInputObjs>
   </ports>
   <edges id="10" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>

@@ -15,7 +15,6 @@ set DLRegItemOffset 0
 set C_modelName {conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ conv2_biases float 32 regular {array 32 { 1 3 } 1 1 }  }
 	{ layer2_output_tile float 32 regular {array 544 { 0 3 } 0 1 }  }
 	{ layer2_output_tile_1 float 32 regular {array 544 { 0 3 } 0 1 }  }
 	{ layer2_output_tile_2 float 32 regular {array 544 { 0 3 } 0 1 }  }
@@ -33,11 +32,11 @@ set C_modelArgList {
 	{ layer2_output_tile_14 float 32 regular {array 544 { 0 3 } 0 1 }  }
 	{ layer2_output_tile_15 float 32 regular {array 544 { 0 3 } 0 1 }  }
 	{ layer2_output_tile_16 float 32 regular {array 544 { 0 3 } 0 1 }  }
+	{ conv2_biases_local float 32 regular {array 32 { 1 3 } 1 1 } {global 0}  }
 }
 set hasAXIMCache 0
 set C_modelArgMapList {[ 
-	{ "Name" : "conv2_biases", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "layer2_output_tile", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
+	{ "Name" : "layer2_output_tile", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "layer2_output_tile_1", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "layer2_output_tile_2", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "layer2_output_tile_3", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
@@ -53,7 +52,8 @@ set C_modelArgMapList {[
  	{ "Name" : "layer2_output_tile_13", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "layer2_output_tile_14", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
  	{ "Name" : "layer2_output_tile_15", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "layer2_output_tile_16", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "layer2_output_tile_16", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "conv2_biases_local", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY", "extern" : 0} ]}
 # RTL Port declarations: 
 set portNum 77
 set portList { 
@@ -63,77 +63,77 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ conv2_biases_address0 sc_out sc_lv 5 signal 0 } 
-	{ conv2_biases_ce0 sc_out sc_logic 1 signal 0 } 
-	{ conv2_biases_q0 sc_in sc_lv 32 signal 0 } 
-	{ layer2_output_tile_address0 sc_out sc_lv 10 signal 1 } 
-	{ layer2_output_tile_ce0 sc_out sc_logic 1 signal 1 } 
-	{ layer2_output_tile_we0 sc_out sc_logic 1 signal 1 } 
-	{ layer2_output_tile_d0 sc_out sc_lv 32 signal 1 } 
-	{ layer2_output_tile_1_address0 sc_out sc_lv 10 signal 2 } 
-	{ layer2_output_tile_1_ce0 sc_out sc_logic 1 signal 2 } 
-	{ layer2_output_tile_1_we0 sc_out sc_logic 1 signal 2 } 
-	{ layer2_output_tile_1_d0 sc_out sc_lv 32 signal 2 } 
-	{ layer2_output_tile_2_address0 sc_out sc_lv 10 signal 3 } 
-	{ layer2_output_tile_2_ce0 sc_out sc_logic 1 signal 3 } 
-	{ layer2_output_tile_2_we0 sc_out sc_logic 1 signal 3 } 
-	{ layer2_output_tile_2_d0 sc_out sc_lv 32 signal 3 } 
-	{ layer2_output_tile_3_address0 sc_out sc_lv 10 signal 4 } 
-	{ layer2_output_tile_3_ce0 sc_out sc_logic 1 signal 4 } 
-	{ layer2_output_tile_3_we0 sc_out sc_logic 1 signal 4 } 
-	{ layer2_output_tile_3_d0 sc_out sc_lv 32 signal 4 } 
-	{ layer2_output_tile_4_address0 sc_out sc_lv 10 signal 5 } 
-	{ layer2_output_tile_4_ce0 sc_out sc_logic 1 signal 5 } 
-	{ layer2_output_tile_4_we0 sc_out sc_logic 1 signal 5 } 
-	{ layer2_output_tile_4_d0 sc_out sc_lv 32 signal 5 } 
-	{ layer2_output_tile_5_address0 sc_out sc_lv 10 signal 6 } 
-	{ layer2_output_tile_5_ce0 sc_out sc_logic 1 signal 6 } 
-	{ layer2_output_tile_5_we0 sc_out sc_logic 1 signal 6 } 
-	{ layer2_output_tile_5_d0 sc_out sc_lv 32 signal 6 } 
-	{ layer2_output_tile_6_address0 sc_out sc_lv 10 signal 7 } 
-	{ layer2_output_tile_6_ce0 sc_out sc_logic 1 signal 7 } 
-	{ layer2_output_tile_6_we0 sc_out sc_logic 1 signal 7 } 
-	{ layer2_output_tile_6_d0 sc_out sc_lv 32 signal 7 } 
-	{ layer2_output_tile_7_address0 sc_out sc_lv 10 signal 8 } 
-	{ layer2_output_tile_7_ce0 sc_out sc_logic 1 signal 8 } 
-	{ layer2_output_tile_7_we0 sc_out sc_logic 1 signal 8 } 
-	{ layer2_output_tile_7_d0 sc_out sc_lv 32 signal 8 } 
-	{ layer2_output_tile_8_address0 sc_out sc_lv 10 signal 9 } 
-	{ layer2_output_tile_8_ce0 sc_out sc_logic 1 signal 9 } 
-	{ layer2_output_tile_8_we0 sc_out sc_logic 1 signal 9 } 
-	{ layer2_output_tile_8_d0 sc_out sc_lv 32 signal 9 } 
-	{ layer2_output_tile_9_address0 sc_out sc_lv 10 signal 10 } 
-	{ layer2_output_tile_9_ce0 sc_out sc_logic 1 signal 10 } 
-	{ layer2_output_tile_9_we0 sc_out sc_logic 1 signal 10 } 
-	{ layer2_output_tile_9_d0 sc_out sc_lv 32 signal 10 } 
-	{ layer2_output_tile_10_address0 sc_out sc_lv 10 signal 11 } 
-	{ layer2_output_tile_10_ce0 sc_out sc_logic 1 signal 11 } 
-	{ layer2_output_tile_10_we0 sc_out sc_logic 1 signal 11 } 
-	{ layer2_output_tile_10_d0 sc_out sc_lv 32 signal 11 } 
-	{ layer2_output_tile_11_address0 sc_out sc_lv 10 signal 12 } 
-	{ layer2_output_tile_11_ce0 sc_out sc_logic 1 signal 12 } 
-	{ layer2_output_tile_11_we0 sc_out sc_logic 1 signal 12 } 
-	{ layer2_output_tile_11_d0 sc_out sc_lv 32 signal 12 } 
-	{ layer2_output_tile_12_address0 sc_out sc_lv 10 signal 13 } 
-	{ layer2_output_tile_12_ce0 sc_out sc_logic 1 signal 13 } 
-	{ layer2_output_tile_12_we0 sc_out sc_logic 1 signal 13 } 
-	{ layer2_output_tile_12_d0 sc_out sc_lv 32 signal 13 } 
-	{ layer2_output_tile_13_address0 sc_out sc_lv 10 signal 14 } 
-	{ layer2_output_tile_13_ce0 sc_out sc_logic 1 signal 14 } 
-	{ layer2_output_tile_13_we0 sc_out sc_logic 1 signal 14 } 
-	{ layer2_output_tile_13_d0 sc_out sc_lv 32 signal 14 } 
-	{ layer2_output_tile_14_address0 sc_out sc_lv 10 signal 15 } 
-	{ layer2_output_tile_14_ce0 sc_out sc_logic 1 signal 15 } 
-	{ layer2_output_tile_14_we0 sc_out sc_logic 1 signal 15 } 
-	{ layer2_output_tile_14_d0 sc_out sc_lv 32 signal 15 } 
-	{ layer2_output_tile_15_address0 sc_out sc_lv 10 signal 16 } 
-	{ layer2_output_tile_15_ce0 sc_out sc_logic 1 signal 16 } 
-	{ layer2_output_tile_15_we0 sc_out sc_logic 1 signal 16 } 
-	{ layer2_output_tile_15_d0 sc_out sc_lv 32 signal 16 } 
-	{ layer2_output_tile_16_address0 sc_out sc_lv 10 signal 17 } 
-	{ layer2_output_tile_16_ce0 sc_out sc_logic 1 signal 17 } 
-	{ layer2_output_tile_16_we0 sc_out sc_logic 1 signal 17 } 
-	{ layer2_output_tile_16_d0 sc_out sc_lv 32 signal 17 } 
+	{ layer2_output_tile_address0 sc_out sc_lv 10 signal 0 } 
+	{ layer2_output_tile_ce0 sc_out sc_logic 1 signal 0 } 
+	{ layer2_output_tile_we0 sc_out sc_logic 1 signal 0 } 
+	{ layer2_output_tile_d0 sc_out sc_lv 32 signal 0 } 
+	{ layer2_output_tile_1_address0 sc_out sc_lv 10 signal 1 } 
+	{ layer2_output_tile_1_ce0 sc_out sc_logic 1 signal 1 } 
+	{ layer2_output_tile_1_we0 sc_out sc_logic 1 signal 1 } 
+	{ layer2_output_tile_1_d0 sc_out sc_lv 32 signal 1 } 
+	{ layer2_output_tile_2_address0 sc_out sc_lv 10 signal 2 } 
+	{ layer2_output_tile_2_ce0 sc_out sc_logic 1 signal 2 } 
+	{ layer2_output_tile_2_we0 sc_out sc_logic 1 signal 2 } 
+	{ layer2_output_tile_2_d0 sc_out sc_lv 32 signal 2 } 
+	{ layer2_output_tile_3_address0 sc_out sc_lv 10 signal 3 } 
+	{ layer2_output_tile_3_ce0 sc_out sc_logic 1 signal 3 } 
+	{ layer2_output_tile_3_we0 sc_out sc_logic 1 signal 3 } 
+	{ layer2_output_tile_3_d0 sc_out sc_lv 32 signal 3 } 
+	{ layer2_output_tile_4_address0 sc_out sc_lv 10 signal 4 } 
+	{ layer2_output_tile_4_ce0 sc_out sc_logic 1 signal 4 } 
+	{ layer2_output_tile_4_we0 sc_out sc_logic 1 signal 4 } 
+	{ layer2_output_tile_4_d0 sc_out sc_lv 32 signal 4 } 
+	{ layer2_output_tile_5_address0 sc_out sc_lv 10 signal 5 } 
+	{ layer2_output_tile_5_ce0 sc_out sc_logic 1 signal 5 } 
+	{ layer2_output_tile_5_we0 sc_out sc_logic 1 signal 5 } 
+	{ layer2_output_tile_5_d0 sc_out sc_lv 32 signal 5 } 
+	{ layer2_output_tile_6_address0 sc_out sc_lv 10 signal 6 } 
+	{ layer2_output_tile_6_ce0 sc_out sc_logic 1 signal 6 } 
+	{ layer2_output_tile_6_we0 sc_out sc_logic 1 signal 6 } 
+	{ layer2_output_tile_6_d0 sc_out sc_lv 32 signal 6 } 
+	{ layer2_output_tile_7_address0 sc_out sc_lv 10 signal 7 } 
+	{ layer2_output_tile_7_ce0 sc_out sc_logic 1 signal 7 } 
+	{ layer2_output_tile_7_we0 sc_out sc_logic 1 signal 7 } 
+	{ layer2_output_tile_7_d0 sc_out sc_lv 32 signal 7 } 
+	{ layer2_output_tile_8_address0 sc_out sc_lv 10 signal 8 } 
+	{ layer2_output_tile_8_ce0 sc_out sc_logic 1 signal 8 } 
+	{ layer2_output_tile_8_we0 sc_out sc_logic 1 signal 8 } 
+	{ layer2_output_tile_8_d0 sc_out sc_lv 32 signal 8 } 
+	{ layer2_output_tile_9_address0 sc_out sc_lv 10 signal 9 } 
+	{ layer2_output_tile_9_ce0 sc_out sc_logic 1 signal 9 } 
+	{ layer2_output_tile_9_we0 sc_out sc_logic 1 signal 9 } 
+	{ layer2_output_tile_9_d0 sc_out sc_lv 32 signal 9 } 
+	{ layer2_output_tile_10_address0 sc_out sc_lv 10 signal 10 } 
+	{ layer2_output_tile_10_ce0 sc_out sc_logic 1 signal 10 } 
+	{ layer2_output_tile_10_we0 sc_out sc_logic 1 signal 10 } 
+	{ layer2_output_tile_10_d0 sc_out sc_lv 32 signal 10 } 
+	{ layer2_output_tile_11_address0 sc_out sc_lv 10 signal 11 } 
+	{ layer2_output_tile_11_ce0 sc_out sc_logic 1 signal 11 } 
+	{ layer2_output_tile_11_we0 sc_out sc_logic 1 signal 11 } 
+	{ layer2_output_tile_11_d0 sc_out sc_lv 32 signal 11 } 
+	{ layer2_output_tile_12_address0 sc_out sc_lv 10 signal 12 } 
+	{ layer2_output_tile_12_ce0 sc_out sc_logic 1 signal 12 } 
+	{ layer2_output_tile_12_we0 sc_out sc_logic 1 signal 12 } 
+	{ layer2_output_tile_12_d0 sc_out sc_lv 32 signal 12 } 
+	{ layer2_output_tile_13_address0 sc_out sc_lv 10 signal 13 } 
+	{ layer2_output_tile_13_ce0 sc_out sc_logic 1 signal 13 } 
+	{ layer2_output_tile_13_we0 sc_out sc_logic 1 signal 13 } 
+	{ layer2_output_tile_13_d0 sc_out sc_lv 32 signal 13 } 
+	{ layer2_output_tile_14_address0 sc_out sc_lv 10 signal 14 } 
+	{ layer2_output_tile_14_ce0 sc_out sc_logic 1 signal 14 } 
+	{ layer2_output_tile_14_we0 sc_out sc_logic 1 signal 14 } 
+	{ layer2_output_tile_14_d0 sc_out sc_lv 32 signal 14 } 
+	{ layer2_output_tile_15_address0 sc_out sc_lv 10 signal 15 } 
+	{ layer2_output_tile_15_ce0 sc_out sc_logic 1 signal 15 } 
+	{ layer2_output_tile_15_we0 sc_out sc_logic 1 signal 15 } 
+	{ layer2_output_tile_15_d0 sc_out sc_lv 32 signal 15 } 
+	{ layer2_output_tile_16_address0 sc_out sc_lv 10 signal 16 } 
+	{ layer2_output_tile_16_ce0 sc_out sc_logic 1 signal 16 } 
+	{ layer2_output_tile_16_we0 sc_out sc_logic 1 signal 16 } 
+	{ layer2_output_tile_16_d0 sc_out sc_lv 32 signal 16 } 
+	{ conv2_biases_local_address0 sc_out sc_lv 5 signal 17 } 
+	{ conv2_biases_local_ce0 sc_out sc_logic 1 signal 17 } 
+	{ conv2_biases_local_q0 sc_in sc_lv 32 signal 17 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -142,9 +142,6 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "conv2_biases_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "conv2_biases", "role": "address0" }} , 
- 	{ "name": "conv2_biases_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv2_biases", "role": "ce0" }} , 
- 	{ "name": "conv2_biases_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv2_biases", "role": "q0" }} , 
  	{ "name": "layer2_output_tile_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "layer2_output_tile", "role": "address0" }} , 
  	{ "name": "layer2_output_tile_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "layer2_output_tile", "role": "ce0" }} , 
  	{ "name": "layer2_output_tile_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "layer2_output_tile", "role": "we0" }} , 
@@ -212,7 +209,10 @@ set NewPortList {[
  	{ "name": "layer2_output_tile_16_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "layer2_output_tile_16", "role": "address0" }} , 
  	{ "name": "layer2_output_tile_16_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "layer2_output_tile_16", "role": "ce0" }} , 
  	{ "name": "layer2_output_tile_16_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "layer2_output_tile_16", "role": "we0" }} , 
- 	{ "name": "layer2_output_tile_16_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "layer2_output_tile_16", "role": "d0" }}  ]}
+ 	{ "name": "layer2_output_tile_16_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "layer2_output_tile_16", "role": "d0" }} , 
+ 	{ "name": "conv2_biases_local_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "conv2_biases_local", "role": "address0" }} , 
+ 	{ "name": "conv2_biases_local_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "conv2_biases_local", "role": "ce0" }} , 
+ 	{ "name": "conv2_biases_local_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "conv2_biases_local", "role": "q0" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
@@ -230,7 +230,6 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "conv2_biases", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "layer2_output_tile", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "layer2_output_tile_1", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "layer2_output_tile_2", "Type" : "Memory", "Direction" : "O"},
@@ -247,7 +246,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "layer2_output_tile_13", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "layer2_output_tile_14", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "layer2_output_tile_15", "Type" : "Memory", "Direction" : "O"},
-			{"Name" : "layer2_output_tile_16", "Type" : "Memory", "Direction" : "O"}],
+			{"Name" : "layer2_output_tile_16", "Type" : "Memory", "Direction" : "O"},
+			{"Name" : "conv2_biases_local", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
@@ -256,7 +256,6 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4 {
-		conv2_biases {Type I LastRead 0 FirstWrite -1}
 		layer2_output_tile {Type O LastRead -1 FirstWrite 1}
 		layer2_output_tile_1 {Type O LastRead -1 FirstWrite 1}
 		layer2_output_tile_2 {Type O LastRead -1 FirstWrite 1}
@@ -273,7 +272,8 @@ set ArgLastReadFirstWriteLatency {
 		layer2_output_tile_13 {Type O LastRead -1 FirstWrite 1}
 		layer2_output_tile_14 {Type O LastRead -1 FirstWrite 1}
 		layer2_output_tile_15 {Type O LastRead -1 FirstWrite 1}
-		layer2_output_tile_16 {Type O LastRead -1 FirstWrite 1}}}
+		layer2_output_tile_16 {Type O LastRead -1 FirstWrite 1}
+		conv2_biases_local {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -287,7 +287,6 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	conv2_biases { ap_memory {  { conv2_biases_address0 mem_address 1 5 }  { conv2_biases_ce0 mem_ce 1 1 }  { conv2_biases_q0 in_data 0 32 } } }
 	layer2_output_tile { ap_memory {  { layer2_output_tile_address0 mem_address 1 10 }  { layer2_output_tile_ce0 mem_ce 1 1 }  { layer2_output_tile_we0 mem_we 1 1 }  { layer2_output_tile_d0 mem_din 1 32 } } }
 	layer2_output_tile_1 { ap_memory {  { layer2_output_tile_1_address0 mem_address 1 10 }  { layer2_output_tile_1_ce0 mem_ce 1 1 }  { layer2_output_tile_1_we0 mem_we 1 1 }  { layer2_output_tile_1_d0 mem_din 1 32 } } }
 	layer2_output_tile_2 { ap_memory {  { layer2_output_tile_2_address0 mem_address 1 10 }  { layer2_output_tile_2_ce0 mem_ce 1 1 }  { layer2_output_tile_2_we0 mem_we 1 1 }  { layer2_output_tile_2_d0 mem_din 1 32 } } }
@@ -305,4 +304,5 @@ set Spec2ImplPortList {
 	layer2_output_tile_14 { ap_memory {  { layer2_output_tile_14_address0 mem_address 1 10 }  { layer2_output_tile_14_ce0 mem_ce 1 1 }  { layer2_output_tile_14_we0 mem_we 1 1 }  { layer2_output_tile_14_d0 mem_din 1 32 } } }
 	layer2_output_tile_15 { ap_memory {  { layer2_output_tile_15_address0 mem_address 1 10 }  { layer2_output_tile_15_ce0 mem_ce 1 1 }  { layer2_output_tile_15_we0 mem_we 1 1 }  { layer2_output_tile_15_d0 mem_din 1 32 } } }
 	layer2_output_tile_16 { ap_memory {  { layer2_output_tile_16_address0 mem_address 1 10 }  { layer2_output_tile_16_ce0 mem_ce 1 1 }  { layer2_output_tile_16_we0 mem_we 1 1 }  { layer2_output_tile_16_d0 mem_din 1 32 } } }
+	conv2_biases_local { ap_memory {  { conv2_biases_local_address0 mem_address 1 5 }  { conv2_biases_local_ce0 mem_ce 1 1 }  { conv2_biases_local_q0 in_data 0 32 } } }
 }

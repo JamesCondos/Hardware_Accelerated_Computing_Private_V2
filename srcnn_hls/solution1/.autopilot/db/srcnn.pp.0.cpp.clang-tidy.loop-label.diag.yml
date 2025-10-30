@@ -47,7 +47,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          121695
+        Offset:          121738
         Length:          0
         ReplacementText: 'VITIS_LOOP_140_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -56,7 +56,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          121783
+        Offset:          121826
         Length:          0
         ReplacementText: 'VITIS_LOOP_142_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -65,7 +65,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          121825
+        Offset:          121868
         Length:          0
         ReplacementText: 'VITIS_LOOP_143_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -74,7 +74,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          121874
+        Offset:          121917
         Length:          0
         ReplacementText: 'VITIS_LOOP_144_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -83,7 +83,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          122255
+        Offset:          122298
         Length:          0
         ReplacementText: 'VITIS_LOOP_161_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -92,7 +92,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          122343
+        Offset:          122386
         Length:          0
         ReplacementText: 'VITIS_LOOP_163_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -101,7 +101,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          122682
+        Offset:          122725
         Length:          0
         ReplacementText: 'VITIS_LOOP_178_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -110,7 +110,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          122769
+        Offset:          122812
         Length:          0
         ReplacementText: 'VITIS_LOOP_180_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -119,7 +119,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          122812
+        Offset:          122855
         Length:          0
         ReplacementText: 'VITIS_LOOP_181_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -128,7 +128,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          122861
+        Offset:          122904
         Length:          0
         ReplacementText: 'VITIS_LOOP_182_4: '
   - DiagnosticName:  clang-diagnostic-error
@@ -147,7 +147,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          123852
+        Offset:          123895
         Length:          0
         ReplacementText: 'VITIS_LOOP_224_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -156,7 +156,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          123909
+        Offset:          123952
         Length:          0
         ReplacementText: 'VITIS_LOOP_225_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -165,7 +165,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          123956
+        Offset:          123999
         Length:          0
         ReplacementText: 'VITIS_LOOP_226_3: '
   - DiagnosticName:  clang-diagnostic-error
@@ -184,7 +184,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          125621
+        Offset:          125664
         Length:          0
         ReplacementText: 'VITIS_LOOP_294_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -193,7 +193,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          125667
+        Offset:          125710
         Length:          0
         ReplacementText: 'VITIS_LOOP_295_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -202,7 +202,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          126218
+        Offset:          126261
         Length:          0
         ReplacementText: 'VITIS_LOOP_320_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -211,7 +211,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          126261
+        Offset:          126304
         Length:          0
         ReplacementText: 'VITIS_LOOP_321_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -220,7 +220,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          126478
+        Offset:          126521
         Length:          0
         ReplacementText: 'VITIS_LOOP_330_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -229,7 +229,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          126521
+        Offset:          126564
         Length:          0
         ReplacementText: 'VITIS_LOOP_331_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -238,7 +238,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          126977
+        Offset:          127020
         Length:          0
         ReplacementText: 'VITIS_LOOP_349_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -247,7 +247,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          127289
+        Offset:          127332
         Length:          0
         ReplacementText: 'VITIS_LOOP_360_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -256,7 +256,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          127571
+        Offset:          127614
         Length:          0
         ReplacementText: 'VITIS_LOOP_372_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -265,7 +265,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          127614
+        Offset:          127657
         Length:          0
         ReplacementText: 'VITIS_LOOP_373_8: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -274,7 +274,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          128062
+        Offset:          128105
         Length:          0
         ReplacementText: 'VITIS_LOOP_398_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -283,7 +283,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          128110
+        Offset:          128153
         Length:          0
         ReplacementText: 'VITIS_LOOP_399_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -292,7 +292,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          128153
+        Offset:          128196
         Length:          0
         ReplacementText: 'VITIS_LOOP_400_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -301,7 +301,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          128349
+        Offset:          128392
         Length:          0
         ReplacementText: 'VITIS_LOOP_409_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -310,7 +310,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          129827
+        Offset:          129870
         Length:          0
         ReplacementText: 'VITIS_LOOP_464_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -319,7 +319,7 @@ Diagnostics:
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          129866
+        Offset:          129909
         Length:          0
         ReplacementText: 'VITIS_LOOP_465_2: '
 ...

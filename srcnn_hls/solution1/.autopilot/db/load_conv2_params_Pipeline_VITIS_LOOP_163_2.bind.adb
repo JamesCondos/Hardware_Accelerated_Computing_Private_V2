@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1751607653</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>5</bitwidth>
@@ -88,150 +88,6 @@
 					<Obj>
 						<type>1</type>
 						<id>3</id>
-						<name>conv2_weights_local_0_0</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName>RAM_S2P_BRAM</coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<direction>1</direction>
-				<if_type>1</if_type>
-				<array_size>512</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_4">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>4</id>
-						<name>conv2_weights_local_0_1</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName>RAM_S2P_BRAM</coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1751607653</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<direction>1</direction>
-				<if_type>1</if_type>
-				<array_size>512</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_5">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>5</id>
-						<name>conv2_weights_local_1_0</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName>RAM_S2P_BRAM</coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>544433525</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<direction>1</direction>
-				<if_type>1</if_type>
-				<array_size>512</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_6">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>6</id>
-						<name>conv2_weights_local_1_1</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName>RAM_S2P_BRAM</coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>1763716145</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>32</bitwidth>
-				</Value>
-				<direction>1</direction>
-				<if_type>1</if_type>
-				<array_size>512</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_7">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>7</id>
 						<name>zext_ln161_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -250,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1931485194</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -263,11 +119,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_8">
+			<item class_id_reference="3" object_id="_4">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>8</id>
+						<id>4</id>
 						<name>sext_ln161</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -286,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
+						<coreId>1478142800</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>62</bitwidth>
@@ -299,11 +155,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_9">
+			<item class_id_reference="3" object_id="_5">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>9</id>
+						<id>5</id>
 						<name>gmem_w2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -322,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
+						<coreId>1597395814</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -335,11 +191,11 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_10">
+			<item class_id_reference="3" object_id="_6">
 				<Value>
 					<Obj>
 						<type>1</type>
-						<id>10</id>
+						<id>6</id>
 						<name>trunc_ln161_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -358,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6581</coreId>
+						<coreId>1597395814</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -366,6 +222,150 @@
 				<direction>0</direction>
 				<if_type>0</if_type>
 				<array_size>0</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_7">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>7</id>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName>RAM_S2P_BRAM</coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1478168320</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<direction>1</direction>
+				<if_type>1</if_type>
+				<array_size>512</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_8">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>8</id>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName>RAM_S2P_BRAM</coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1478131520</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<direction>1</direction>
+				<if_type>1</if_type>
+				<array_size>512</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_9">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>9</id>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName>RAM_S2P_BRAM</coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1478171920</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<direction>1</direction>
+				<if_type>1</if_type>
+				<array_size>512</array_size>
+				<bit_vecs>
+					<count>0</count>
+					<item_version>0</item_version>
+				</bit_vecs>
+			</item>
+			<item class_id_reference="3" object_id="_10">
+				<Value>
+					<Obj>
+						<type>1</type>
+						<id>10</id>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName>RAM_S2P_BRAM</coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1478257840</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>32</bitwidth>
+				</Value>
+				<direction>1</direction>
+				<if_type>1</if_type>
+				<array_size>512</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -398,7 +398,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2910</coreId>
+						<coreId>576532529</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>7</bitwidth>
@@ -440,7 +440,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>808</coreId>
+						<coreId>1634889760</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -483,7 +483,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2966</coreId>
+						<coreId>539113016</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>62</bitwidth>
@@ -526,7 +526,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1438</coreId>
+						<coreId>1699560457</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -569,7 +569,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3021</coreId>
+						<coreId>576532529</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -612,7 +612,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6758</coreId>
+						<coreId>1190729536</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>5</bitwidth>
@@ -655,7 +655,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>494</coreId>
+						<coreId>1852776551</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>63</bitwidth>
@@ -697,7 +697,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>5982</coreId>
+						<coreId>825111346</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -739,7 +739,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1786</coreId>
+						<coreId>1769170276</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -782,7 +782,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1858</coreId>
+						<coreId>1868770936</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -838,7 +838,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>5020</coreId>
+						<coreId>1835627552</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>7</bitwidth>
@@ -1009,7 +1009,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1346</coreId>
+						<coreId>1970233138</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1067,7 +1067,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1490</coreId>
+						<coreId>544501349</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -1123,7 +1123,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2886</coreId>
+						<coreId>1885415020</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1179,7 +1179,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4541</coreId>
+						<coreId>758395186</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>5</bitwidth>
@@ -1238,7 +1238,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2204</coreId>
+						<coreId>1635013408</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -1297,7 +1297,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3138</coreId>
+						<coreId>1919252069</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -1356,7 +1356,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1253</coreId>
+						<coreId>1634889760</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1380,7 +1380,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>conv2_weights_local_0_0_addr</name>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_4</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
 						<lineNumber>165</lineNumber>
@@ -1412,7 +1412,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1202</coreId>
+						<coreId>539113016</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -1438,7 +1438,7 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>conv2_weights_local_0_1_addr</name>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_5</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
 						<lineNumber>165</lineNumber>
@@ -1470,7 +1470,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>841</coreId>
+						<coreId>1885415020</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -1496,7 +1496,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>conv2_weights_local_1_0_addr</name>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_6</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
 						<lineNumber>165</lineNumber>
@@ -1528,7 +1528,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2976</coreId>
+						<coreId>1629888622</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -1554,7 +1554,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>conv2_weights_local_1_1_addr</name>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_7</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
 						<lineNumber>165</lineNumber>
@@ -1586,7 +1586,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1853</coreId>
+						<coreId>1701999988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -1701,7 +1701,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1274</coreId>
+						<coreId>1919252069</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>63</bitwidth>
@@ -1814,7 +1814,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1562</coreId>
+						<coreId>1852776551</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -1870,7 +1870,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1236</coreId>
+						<coreId>1835627552</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2043,7 +2043,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3584</coreId>
+						<coreId>1970233138</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2099,7 +2099,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1412</coreId>
+						<coreId>1699560457</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2157,7 +2157,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>651</coreId>
+						<coreId>1635013408</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2183,7 +2183,7 @@
 					<Obj>
 						<type>0</type>
 						<id>57</id>
-						<name>conv2_weights_local_0_0_addr_write_ln165</name>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_4_write_ln165</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
 						<lineNumber>165</lineNumber>
@@ -2272,7 +2272,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3923290160</coreId>
+						<coreId>1919252069</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2296,7 +2296,7 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>conv2_weights_local_0_1_addr_write_ln165</name>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_5_write_ln165</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
 						<lineNumber>165</lineNumber>
@@ -2385,7 +2385,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4132729904</coreId>
+						<coreId>1769170276</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2441,7 +2441,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4130617456</coreId>
+						<coreId>1717924464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2497,7 +2497,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4132648992</coreId>
+						<coreId>1563964466</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2523,7 +2523,7 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>conv2_weights_local_1_0_addr_write_ln165</name>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_6_write_ln165</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
 						<lineNumber>165</lineNumber>
@@ -2612,7 +2612,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1936683105</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2636,7 +2636,7 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>conv2_weights_local_1_1_addr_write_ln165</name>
+						<name>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_7_write_ln165</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
 						<lineNumber>165</lineNumber>
@@ -2725,7 +2725,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4130618096</coreId>
+						<coreId>1852142702</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2781,7 +2781,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3923302480</coreId>
+						<coreId>1330398785</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2837,7 +2837,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4132739184</coreId>
+						<coreId>790785133</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2896,7 +2896,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4130617456</coreId>
+						<coreId>1869833586</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2938,7 +2938,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1886413614</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2983,7 +2983,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3917103808</coreId>
+						<coreId>1478234560</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3014,7 +3014,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1751607653</coreId>
+						<coreId>1478137680</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>7</bitwidth>
@@ -3045,7 +3045,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1751607653</coreId>
+						<coreId>1478159280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>7</bitwidth>
@@ -3076,7 +3076,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4132949280</coreId>
+						<coreId>1478151120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>7</bitwidth>
@@ -3107,7 +3107,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1751607653</coreId>
+						<coreId>1478158240</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3138,7 +3138,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6592</coreId>
+						<coreId>1478198560</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3169,7 +3169,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1478176480</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -3200,7 +3200,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1478189600</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -3234,7 +3234,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>6850</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3274,7 +3274,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>4123</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3308,7 +3308,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>1004</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3339,7 +3339,7 @@
 				<Obj>
 					<type>3</type>
 					<id>56</id>
-					<name>arrayidx1864.case.0</name>
+					<name>arrayidx1868.case.0</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3357,7 +3357,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>2380</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3370,7 +3370,7 @@
 				<Obj>
 					<type>3</type>
 					<id>59</id>
-					<name>arrayidx1864.case.03</name>
+					<name>arrayidx1868.case.05</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3388,7 +3388,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>2641</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3402,7 +3402,7 @@
 				<Obj>
 					<type>3</type>
 					<id>62</id>
-					<name>arrayidx1864.case.14</name>
+					<name>arrayidx1868.case.16</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3420,7 +3420,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>2795</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3434,7 +3434,7 @@
 				<Obj>
 					<type>3</type>
 					<id>64</id>
-					<name>arrayidx1864.exit2</name>
+					<name>arrayidx1868.exit4</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3452,7 +3452,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>2945</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3465,7 +3465,7 @@
 				<Obj>
 					<type>3</type>
 					<id>66</id>
-					<name>arrayidx1864.case.1</name>
+					<name>arrayidx1868.case.1</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3483,7 +3483,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>3099</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3496,7 +3496,7 @@
 				<Obj>
 					<type>3</type>
 					<id>69</id>
-					<name>arrayidx1864.case.07</name>
+					<name>arrayidx1868.case.09</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3514,7 +3514,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3528,7 +3528,7 @@
 				<Obj>
 					<type>3</type>
 					<id>72</id>
-					<name>arrayidx1864.case.18</name>
+					<name>arrayidx1868.case.110</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3546,7 +3546,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>3254</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3560,7 +3560,7 @@
 				<Obj>
 					<type>3</type>
 					<id>74</id>
-					<name>arrayidx1864.exit6</name>
+					<name>arrayidx1868.exit8</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3578,7 +3578,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>3407</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3591,7 +3591,7 @@
 				<Obj>
 					<type>3</type>
 					<id>77</id>
-					<name>arrayidx1864.exit</name>
+					<name>arrayidx1868.exit</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -3609,7 +3609,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>3710</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3641,7 +3641,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>656423456</coreId>
+					<coreId>257</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3664,21 +3664,21 @@
 			<item class_id_reference="20" object_id="_81">
 				<id>84</id>
 				<edge_type>1</edge_type>
-				<source_obj>10</source_obj>
+				<source_obj>6</source_obj>
 				<sink_obj>12</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_82">
 				<id>87</id>
 				<edge_type>1</edge_type>
-				<source_obj>8</source_obj>
+				<source_obj>4</source_obj>
 				<sink_obj>13</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_83">
 				<id>90</id>
 				<edge_type>1</edge_type>
-				<source_obj>7</source_obj>
+				<source_obj>3</source_obj>
 				<sink_obj>14</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -3944,7 +3944,7 @@
 			<item class_id_reference="20" object_id="_121">
 				<id>143</id>
 				<edge_type>1</edge_type>
-				<source_obj>3</source_obj>
+				<source_obj>7</source_obj>
 				<sink_obj>41</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -3965,7 +3965,7 @@
 			<item class_id_reference="20" object_id="_124">
 				<id>147</id>
 				<edge_type>1</edge_type>
-				<source_obj>4</source_obj>
+				<source_obj>8</source_obj>
 				<sink_obj>42</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -3986,7 +3986,7 @@
 			<item class_id_reference="20" object_id="_127">
 				<id>150</id>
 				<edge_type>1</edge_type>
-				<source_obj>5</source_obj>
+				<source_obj>9</source_obj>
 				<sink_obj>43</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -4007,7 +4007,7 @@
 			<item class_id_reference="20" object_id="_130">
 				<id>153</id>
 				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
+				<source_obj>10</source_obj>
 				<sink_obj>44</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -4070,7 +4070,7 @@
 			<item class_id_reference="20" object_id="_139">
 				<id>162</id>
 				<edge_type>1</edge_type>
-				<source_obj>9</source_obj>
+				<source_obj>5</source_obj>
 				<sink_obj>49</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -5820,38 +5820,6 @@
 			</second>
 		</item>
 		<item>
-			<first>conv2_weights_local_0_0_addr_gep_fu_136</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>41</item>
-			</second>
-		</item>
-		<item>
-			<first>conv2_weights_local_0_1_addr_gep_fu_143</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>42</item>
-			</second>
-		</item>
-		<item>
-			<first>conv2_weights_local_1_0_addr_gep_fu_150</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>43</item>
-			</second>
-		</item>
-		<item>
-			<first>conv2_weights_local_1_1_addr_gep_fu_157</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>44</item>
-			</second>
-		</item>
-		<item>
 			<first>gmem_w2_addr_fu_270</first>
 			<second>
 				<count>1</count>
@@ -5881,6 +5849,38 @@
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>37</item>
+			</second>
+		</item>
+		<item>
+			<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_4_gep_fu_136</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>41</item>
+			</second>
+		</item>
+		<item>
+			<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_5_gep_fu_143</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>42</item>
+			</second>
+		</item>
+		<item>
+			<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_6_gep_fu_150</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>43</item>
+			</second>
+		</item>
+		<item>
+			<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_7_gep_fu_157</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>44</item>
 			</second>
 		</item>
 		<item>
@@ -6060,29 +6060,18 @@
 		<item_version>0</item_version>
 		<item class_id="50" tracking_level="0" version="0">
 			<first class_id="51" tracking_level="0" version="0">
-				<first>conv2_weights_local_0_0</first>
+				<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig</first>
 				<second>1</second>
 			</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>57</item>
+				<item>70</item>
 			</second>
 		</item>
 		<item>
 			<first>
-				<first>conv2_weights_local_0_1</first>
-				<second>1</second>
-			</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>60</item>
-			</second>
-		</item>
-		<item>
-			<first>
-				<first>conv2_weights_local_1_0</first>
+				<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1</first>
 				<second>1</second>
 			</first>
 			<second>
@@ -6093,13 +6082,24 @@
 		</item>
 		<item>
 			<first>
-				<first>conv2_weights_local_1_1</first>
+				<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2</first>
 				<second>1</second>
 			</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>70</item>
+				<item>60</item>
+			</second>
+		</item>
+		<item>
+			<first>
+				<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3</first>
+				<second>1</second>
+			</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>57</item>
 			</second>
 		</item>
 	</dp_mem_port_nodes>
@@ -6267,66 +6267,6 @@
 		<count>10</count>
 		<item_version>0</item_version>
 		<item class_id="53" tracking_level="0" version="0">
-			<first>conv2_weights_local_0_0(p1)</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>store</first>
-					<second>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>57</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>conv2_weights_local_0_1(p1)</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>store</first>
-					<second>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>60</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>conv2_weights_local_1_0(p1)</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>store</first>
-					<second>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>67</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
-			<first>conv2_weights_local_1_1(p1)</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>
-					<first>store</first>
-					<second>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>70</item>
-					</second>
-				</item>
-			</second>
-		</item>
-		<item>
 			<first>gmem_w2</first>
 			<second>
 				<count>2</count>
@@ -6360,6 +6300,66 @@
 						<count>1</count>
 						<item_version>0</item_version>
 						<item>16</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig(p1)</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>store</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>70</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1(p1)</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>store</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>67</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2(p1)</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>store</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>60</item>
+					</second>
+				</item>
+			</second>
+		</item>
+		<item>
+			<first>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3(p1)</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>
+					<first>store</first>
+					<second>
+						<count>1</count>
+						<item_version>0</item_version>
+						<item>57</item>
 					</second>
 				</item>
 			</second>
@@ -6429,28 +6429,28 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item>
-			<first>3</first>
+			<first>7</first>
 			<second>
 				<first>666</first>
 				<second>25</second>
 			</second>
 		</item>
 		<item>
-			<first>4</first>
+			<first>8</first>
 			<second>
 				<first>666</first>
 				<second>25</second>
 			</second>
 		</item>
 		<item>
-			<first>5</first>
+			<first>9</first>
 			<second>
 				<first>666</first>
 				<second>25</second>
 			</second>
 		</item>
 		<item>
-			<first>6</first>
+			<first>10</first>
 			<second>
 				<first>666</first>
 				<second>25</second>

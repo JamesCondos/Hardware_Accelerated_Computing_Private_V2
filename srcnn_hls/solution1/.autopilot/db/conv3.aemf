@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761820441887">
+  <ports id="1" name="conv2_to_conv3" type="PortType" coreName="FIFO_LUTRAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="layer3_output_tile_0" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="289">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31" type="PortType" coreName="RAM_S2P_BRAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="4" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_27" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="5" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_23" type="PortType" coreName="RAM_S2P_BRAM" coreId="4294967294" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="6" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_19" type="PortType" coreName="RAM_S2P_BRAM" coreId="1986360096" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="7" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_15" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="8" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_11" type="PortType" coreName="RAM_S2P_BRAM" coreId="539127920" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="9" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_7" type="PortType" coreName="RAM_S2P_BRAM" coreId="1601031264" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="10" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_3" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="11" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_30" type="PortType" coreName="RAM_S2P_BRAM" coreId="1607482656" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="12" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_26" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602391520" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="13" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_22" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="14" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_18" type="PortType" coreName="RAM_S2P_BRAM" coreId="1031040613" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="15" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_14" type="PortType" coreName="RAM_S2P_BRAM" coreId="539111737" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="16" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_10" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602462640" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="17" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_6" type="PortType" coreName="RAM_S2P_BRAM" coreId="1936484413" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="18" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_2" type="PortType" coreName="RAM_S2P_BRAM" coreId="1601031264" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="19" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_29" type="PortType" coreName="RAM_S2P_BRAM" coreId="1601031264" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="20" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_25" type="PortType" coreName="RAM_S2P_BRAM" coreId="1935961711" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="21" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_21" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602380080" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="22" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_17" type="PortType" coreName="RAM_S2P_BRAM" coreId="1937055858" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="23" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_13" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602462720" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="24" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_9" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602382640" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="25" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_5" type="PortType" coreName="RAM_S2P_BRAM" coreId="171847458" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="26" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="1885415023" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="27" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_28" type="PortType" coreName="RAM_S2P_BRAM" coreId="1607993056" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="28" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_24" type="PortType" coreName="RAM_S2P_BRAM" coreId="1601031264" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="29" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_20" type="PortType" coreName="RAM_S2P_BRAM" coreId="1607476000" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="30" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_16" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="31" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_12" type="PortType" coreName="RAM_S2P_BRAM" coreId="1952673397" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="32" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_8" type="PortType" coreName="RAM_S2P_BRAM" coreId="790785133" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="33" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_4" type="PortType" coreName="RAM_S2P_BRAM" coreId="1601031264" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="34" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602391600" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="86" name="conv3_biases_local" type="PortType" coreName="RAM_S2P_BRAM" coreId="1953394531" bitwidth="32" iftype="IfTypeRegister" arraysize="1"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="85" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="92" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="93" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="96" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="97" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="98" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="99" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="100" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="101" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="102" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="103" source_obj="//@ports.7" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="104" source_obj="//@ports.8" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="105" source_obj="//@ports.9" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="106" source_obj="//@ports.10" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="107" source_obj="//@ports.11" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="108" source_obj="//@ports.12" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="109" source_obj="//@ports.13" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="110" source_obj="//@ports.14" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="111" source_obj="//@ports.15" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="112" source_obj="//@ports.16" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="113" source_obj="//@ports.17" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="114" source_obj="//@ports.18" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="115" source_obj="//@ports.19" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="116" source_obj="//@ports.20" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="117" source_obj="//@ports.21" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="118" source_obj="//@ports.22" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="119" source_obj="//@ports.23" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="120" source_obj="//@ports.24" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="121" source_obj="//@ports.25" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="122" source_obj="//@ports.26" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="123" source_obj="//@ports.27" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="124" source_obj="//@ports.28" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="125" source_obj="//@ports.29" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="126" source_obj="//@ports.30" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="127" source_obj="//@ports.31" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="128" source_obj="//@ports.32" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="129" source_obj="//@ports.33" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="329" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="330" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="331" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="332" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="333" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="334" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="335" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="-92" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@ports.1"/>
+  <edges id="-96" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@ports.1"/>
+  <blocks id="77" name="conv3" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="input_tile" lineNumber="395" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_U" coreName="RAM_1WnR" implIndex="auto" control="no" opType="rom_np" coreId="84" contextFuncName="conv3" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="395" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv3"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="empty" coreId="4228300630" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="_ln0" rtlName="grp_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3_fu_112" coreId="1610771864" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>conv2_to_conv3</dataInputObjs>
+      <constName>conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="conv3_biases_local_load" coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="_ln0" rtlName="grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119" coreId="1610765848" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>layer3_output_tile_0</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>layer3_output_tile_0</dataOutputObjs>
+      <constName>conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="_ln0" rtlName="grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127" coreId="11191" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>layer3_output_tile_0</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_27</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_23</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_19</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_15</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_11</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_7</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_3</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_30</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_26</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_22</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_18</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_14</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_10</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_6</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_2</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_29</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_25</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_21</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_17</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_13</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_9</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_5</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_1</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_28</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_24</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_20</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_16</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_12</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_8</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_4</dataInputObjs>
+      <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig</dataInputObjs>
+      <dataOutputObjs>layer3_output_tile_0</dataOutputObjs>
+      <constName>conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="_ln454" lineNumber="454" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv3" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="454" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv3"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/srcnn.cpp">
+      <validLinenumbers>395</validLinenumbers>
+      <validLinenumbers>454</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <regnodes realName="conv3_biases_local_load_reg_198">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <expressionNodes realName="input_tile_alloca_fu_102">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119">
+    <nodeIds>74</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3_fu_112">
+    <nodeIds>72</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127">
+    <nodeIds>75</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="conv3_biases_local">
+    <nodeIds>73</nodeIds>
+  </memoryPorts>
+  <ioPorts name="conv2_to_conv3">
+    <contents name="call">
+      <nodeIds>72</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv3_biases_local(p0)">
+    <contents name="load">
+      <nodeIds>73</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="73" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="72" stage="2" latency="2"/>
+      <operations id="73" stage="1" latency="2"/>
+      <operations id="74" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="72" stage="1" latency="2"/>
+      <operations id="74" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="75" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="2"/>
+      <operations id="76" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="conv3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="92585" mMaxLatency="92585">
+      <basicBlocks>77</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

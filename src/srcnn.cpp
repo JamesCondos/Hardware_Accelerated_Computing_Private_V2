@@ -6,8 +6,8 @@
 
 void srcnn(
     float input_ftmap[N0][H][W],
-    float  conv1_weights[N1][N0][F1][F1],
-    float  conv1_biases[N1],
+    float conv1_weights[N1][N0][F1][F1],
+    float conv1_biases[N1],
     float conv2_weights[N2][N1][F2][F2],
     float conv2_biases[N2],
     float conv3_weights[N3][N2][F3][F3],
@@ -58,12 +58,12 @@ void srcnn(
 
 
 
-	param_t conv1_weights_local[N1][N0][F1][F1];
-	param_t conv1_biases_local[N1];
-	param_t conv2_weights_local[N2][N1][F2][F2];
-	param_t conv2_biases_local[N2];
-	param_t conv3_weights_local[N3][N2][F3][F3];
-	param_t conv3_biases_local[N3];
+	static param_t conv1_weights_local[N1][N0][F1][F1];
+	static param_t conv1_biases_local[N1];
+	static param_t conv2_weights_local[N2][N1][F2][F2];
+	static param_t conv2_biases_local[N2];
+	static param_t conv3_weights_local[N3][N2][F3][F3];
+	static param_t conv3_biases_local[N3];
 
 	//pragmas for weights
 
@@ -93,7 +93,7 @@ void srcnn(
 
 
 	const int TILE_NUM_ROW = W/TILE_W; //number of tiles along width of image
-	const int TILE_NUM_COLUMN = H/TILE_H; //number of tiles along columb of image
+	const int TILE_NUM_COLUMN = H/TILE_H; //number of tiles along column of image
 	const int TILE_NUM = TILE_NUM_ROW*TILE_NUM_COLUMN;//total number of tiles
 
 

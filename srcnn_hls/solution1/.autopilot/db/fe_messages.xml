@@ -1,6 +1,6 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="src/srcnn.cpp:120:43" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="src/srcnn.cpp:120:64" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="src/srcnn.cpp:120:44" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="src/srcnn.cpp:120:65" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
     <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="src/srcnn.cpp:121:33" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
     <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="src/srcnn.cpp:121:54" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
     <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="src/srcnn.cpp:122:33" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
@@ -254,20 +254,20 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/srcnn.cpp:202:0" msg_body="Unrolling loop 'kernel_width_loop_conv1' (src/srcnn.cpp:256:21) in function 'conv1_tile' completely with a factor of 9">
         <args Factor="9" LoopLoc="src/srcnn.cpp:256:21" LoopName="kernel_width_loop_conv1"/>
     </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/srcnn.cpp:65:0" msg_body="Applying array_partition to '_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weights_local': Cyclic partitioning with factor 8 on dimension 2. Cyclic partitioning with factor 2 on dimension 3. Cyclic partitioning with factor 2 on dimension 4.">
+        <args Dim="islist 2 3 4" Factor="islist 8 2 2" Mode="islist Cyclic Cyclic Cyclic" UOName="_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weights_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/srcnn.cpp:63:0" msg_body="Applying array_partition to '_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weights_local': Cyclic partitioning with factor 2 on dimension 1. Cyclic partitioning with factor 2 on dimension 2.">
+        <args Dim="islist 1 2" Factor="islist 2 2" Mode="islist Cyclic Cyclic" UOName="_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weights_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/srcnn.cpp:61:0" msg_body="Applying array_partition to '_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv1_weights_local': Cyclic partitioning with factor 2 on dimension 1. Complete partitioning on dimension 3. Complete partitioning on dimension 4.">
+        <args Dim="islist 1 3 4" Factor="2" Mode="islist Cyclic Complete Complete" UOName="_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv1_weights_local"/>
+    </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/srcnn.cpp:208:13" msg_body="Applying array_partition to 'input_tile': Complete partitioning on dimension 2. Complete partitioning on dimension 3.">
         <args Dim="islist 2 3" Mode="islist Complete Complete" UOName="input_tile"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/srcnn.cpp:209:13" msg_body="Applying array_partition to 'layer1_output_tile': Cyclic partitioning with factor 2 on dimension 1.">
         <args Dim="1" Factor="2" Mode="Cyclic" UOName="layer1_output_tile"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/srcnn.cpp:61:10" msg_body="Applying array_partition to 'conv1_weights_local': Cyclic partitioning with factor 2 on dimension 1. Complete partitioning on dimension 3. Complete partitioning on dimension 4.">
-        <args Dim="islist 1 3 4" Factor="2" Mode="islist Cyclic Complete Complete" UOName="conv1_weights_local"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/srcnn.cpp:63:10" msg_body="Applying array_partition to 'conv2_weights_local': Cyclic partitioning with factor 2 on dimension 1. Cyclic partitioning with factor 2 on dimension 2.">
-        <args Dim="islist 1 2" Factor="islist 2 2" Mode="islist Cyclic Cyclic" UOName="conv2_weights_local"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/srcnn.cpp:65:10" msg_body="Applying array_partition to 'conv3_weights_local': Cyclic partitioning with factor 8 on dimension 2. Cyclic partitioning with factor 2 on dimension 3. Cyclic partitioning with factor 2 on dimension 4.">
-        <args Dim="islist 2 3 4" Factor="islist 8 2 2" Mode="islist Cyclic Cyclic Cyclic" UOName="conv3_weights_local"/>
     </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src/srcnn.cpp:0:1" msg_body="array_partition dim=3 type=complete  variable=input_tile 1 conv2 src/srcnn.cpp:314:10 src/srcnn.cpp:347:9input_tile">
         <args PragmaFunction="conv2" PragmaIsAuto="1" PragmaOptions="dim=3 type=complete  variable=input_tile" PragmaSrcLoc="src/srcnn.cpp:347:9" PragmaSrcLoc-DebugLoc="File src/srcnn.cpp Line 347 Column 9" PragmaType="array_partition" VarName="input_tile" varLoc="src/srcnn.cpp:314:10"/>

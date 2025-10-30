@@ -1,247 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761808416468">
-  <ports id="1" name="conv3_weights_local_0_0_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="1953391988" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="2" name="conv3_weights_local_0_0_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="190" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="3" name="conv3_weights_local_0_1_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="1346117694" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="4" name="conv3_weights_local_0_1_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="1346117694" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="5" name="conv3_weights_local_1_0_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="1867529248" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="6" name="conv3_weights_local_1_0_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="1008746023" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="7" name="conv3_weights_local_1_1_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="1867529248" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="8" name="conv3_weights_local_1_1_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="1346117694" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="9" name="conv3_weights_local_2_0_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="1346117694" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="10" name="conv3_weights_local_2_0_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="1346117694" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="11" name="conv3_weights_local_2_1_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="1346117694" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="12" name="conv3_weights_local_2_1_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="1008746023" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="13" name="conv3_weights_local_3_0_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="1346117694" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="14" name="conv3_weights_local_3_0_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="132" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="15" name="conv3_weights_local_3_1_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="238" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="16" name="conv3_weights_local_3_1_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="343" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="17" name="conv3_weights_local_4_0_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="120" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="18" name="conv3_weights_local_4_0_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="225" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="19" name="conv3_weights_local_4_1_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="330" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="20" name="conv3_weights_local_4_1_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="106" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="21" name="conv3_weights_local_5_0_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="211" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="22" name="conv3_weights_local_5_0_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="317" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="23" name="conv3_weights_local_5_1_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="24" name="conv3_weights_local_5_1_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="501" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="25" name="conv3_weights_local_6_0_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="4274049272" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="26" name="conv3_weights_local_6_0_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="27" name="conv3_weights_local_6_1_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="28" name="conv3_weights_local_6_1_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="623386724" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="29" name="conv3_weights_local_7_0_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="30" name="conv3_weights_local_7_0_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="1701470831" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="31" name="conv3_weights_local_7_1_0" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="32" name="conv3_weights_local_7_1_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="4274046512" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
-    <dataInputObjs>call</dataInputObjs>
-  </ports>
-  <ports id="33" name="conv3_biases_local" type="PortType" coreName="RAM_S2P_BRAM" coreId="1" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="1">
-    <dataInputObjs>getelementptr</dataInputObjs>
-  </ports>
-  <ports id="34" name="gmem_w3" type="PortType" coreId="1516123456" bitwidth="32" iftype="IfTypeFifo">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761820428336">
+  <ports id="1" name="gmem_w3" type="PortType" coreId="1953391988" bitwidth="32" iftype="IfTypeFifo">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="35" name="conv3_weights" type="PortType" coreId="1008755749" bitwidth="64">
+  <ports id="2" name="conv3_weights" type="PortType" coreId="540946720" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="36" name="conv3_biases_0_0_val" type="PortType" coreId="1769169253" bitwidth="32">
+  <ports id="3" name="conv3_biases_0_0_val" type="PortType" coreId="0" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <edges id="84" source_obj="//@ports.35" sink_obj="//@blocks.0/@node_objs.0"/>
-  <edges id="87" source_obj="//@ports.34" sink_obj="//@blocks.0/@node_objs.1"/>
-  <edges id="88" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@ports.32"/>
-  <edges id="92" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
-  <edges id="93" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
-  <edges id="96" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
-  <edges id="101" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
-  <edges id="102" source_obj="//@ports.33" sink_obj="//@blocks.0/@node_objs.6"/>
+  <ports id="4" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31" type="PortType" coreName="RAM_S2P_BRAM" coreId="540946720" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="5" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_30" type="PortType" coreName="RAM_S2P_BRAM" coreId="1043406909" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="6" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_29" type="PortType" coreName="RAM_S2P_BRAM" coreId="1835101728" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="7" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_28" type="PortType" coreName="RAM_S2P_BRAM" coreId="65" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="8" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_27" type="PortType" coreName="RAM_S2P_BRAM" coreId="1953391988" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="9" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_26" type="PortType" coreName="RAM_S2P_BRAM" coreId="1818846752" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="10" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_25" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="11" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_24" type="PortType" coreName="RAM_S2P_BRAM" coreId="575620686" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="12" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_23" type="PortType" coreName="RAM_S2P_BRAM" coreId="1684367475" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="13" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_22" type="PortType" coreName="RAM_S2P_BRAM" coreId="1836597052" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="14" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_21" type="PortType" coreName="RAM_S2P_BRAM" coreId="825438559" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="15" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_20" type="PortType" coreName="RAM_S2P_BRAM" coreId="1701999221" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="16" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_19" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="17" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_18" type="PortType" coreName="RAM_S2P_BRAM" coreId="1986360096" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="18" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_17" type="PortType" coreName="RAM_S2P_BRAM" coreId="542" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="19" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_16" type="PortType" coreName="RAM_S2P_BRAM" coreId="1730900844" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="20" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_15" type="PortType" coreName="RAM_S2P_BRAM" coreId="858861104" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="21" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_14" type="PortType" coreName="RAM_S2P_BRAM" coreId="1230384215" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="22" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_13" type="PortType" coreName="RAM_S2P_BRAM" coreId="1063481188" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="23" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_12" type="PortType" coreName="RAM_S2P_BRAM" coreId="1818324545" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="24" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_11" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="25" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_10" type="PortType" coreName="RAM_S2P_BRAM" coreId="539122992" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="26" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_9" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="27" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_8" type="PortType" coreName="RAM_S2P_BRAM" coreId="1986948963" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="28" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_7" type="PortType" coreName="RAM_S2P_BRAM" coreId="825306420" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="29" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_6" type="PortType" coreName="RAM_S2P_BRAM" coreId="842085169" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="30" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_5" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="31" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_4" type="PortType" coreName="RAM_S2P_BRAM" coreId="1629909104" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="32" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_3" type="PortType" coreName="RAM_S2P_BRAM" coreId="28" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="33" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_2" type="PortType" coreName="RAM_S2P_BRAM" coreId="1918989856" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="34" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="1970040691" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="35" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig" type="PortType" coreName="RAM_S2P_BRAM" coreId="1701344288" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="36">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="87" name="conv3_biases_local" type="PortType" coreName="RAM_S2P_BRAM" coreId="1031365995" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="1"/>
+  <edges id="82" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="85" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="86" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="93" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="98" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="99" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="100" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
   <edges id="103" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
-  <edges id="106" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
-  <edges id="111" source_obj="//@ports.33" sink_obj="//@blocks.0/@node_objs.8"/>
-  <edges id="112" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.8"/>
-  <edges id="113" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.0"/>
-  <edges id="114" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.1"/>
-  <edges id="115" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.2"/>
-  <edges id="116" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.3"/>
-  <edges id="117" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.4"/>
-  <edges id="118" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.5"/>
-  <edges id="119" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.6"/>
-  <edges id="120" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.7"/>
-  <edges id="121" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.8"/>
-  <edges id="122" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.9"/>
-  <edges id="123" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.10"/>
-  <edges id="124" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.11"/>
-  <edges id="125" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.12"/>
-  <edges id="126" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.13"/>
-  <edges id="127" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.14"/>
-  <edges id="128" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.15"/>
-  <edges id="129" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.16"/>
-  <edges id="130" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.17"/>
-  <edges id="131" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.18"/>
-  <edges id="132" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.19"/>
-  <edges id="133" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.20"/>
-  <edges id="134" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.21"/>
-  <edges id="135" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.22"/>
-  <edges id="136" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.23"/>
-  <edges id="137" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.24"/>
-  <edges id="138" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.25"/>
-  <edges id="139" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.26"/>
-  <edges id="140" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.27"/>
-  <edges id="141" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.28"/>
-  <edges id="142" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.29"/>
-  <edges id="143" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.30"/>
-  <edges id="144" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.31"/>
-  <edges id="341" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
-  <blocks id="81" name="load_conv3_params" type="BlockType">
-    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="conv3_biases_0_0_val_read" lineNumber="171" fileName="src/srcnn.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="load_conv3_params" bitwidth="32" opcode="read" nodeLabel="9.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="171" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
+  <edges id="108" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="109" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="110" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.3"/>
+  <edges id="111" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.4"/>
+  <edges id="112" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.5"/>
+  <edges id="113" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.6"/>
+  <edges id="114" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.7"/>
+  <edges id="115" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.8"/>
+  <edges id="116" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.9"/>
+  <edges id="117" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.10"/>
+  <edges id="118" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.11"/>
+  <edges id="119" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.12"/>
+  <edges id="120" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.13"/>
+  <edges id="121" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.14"/>
+  <edges id="122" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.15"/>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.16"/>
+  <edges id="124" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.17"/>
+  <edges id="125" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.18"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.19"/>
+  <edges id="127" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.20"/>
+  <edges id="128" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.21"/>
+  <edges id="129" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.22"/>
+  <edges id="130" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.23"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.24"/>
+  <edges id="132" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.25"/>
+  <edges id="133" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.26"/>
+  <edges id="134" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.27"/>
+  <edges id="135" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.28"/>
+  <edges id="136" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.29"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.30"/>
+  <edges id="138" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.31"/>
+  <edges id="139" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.32"/>
+  <edges id="140" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.33"/>
+  <edges id="141" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.34"/>
+  <edges id="338" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <blocks id="79" name="load_conv3_params" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="conv3_biases_0_0_val_read" lineNumber="179" fileName="src/srcnn.cpp" fileDirectory="../." coreId="342" contextFuncName="load_conv3_params" bitwidth="32" opcode="read" nodeLabel="9.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="179" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
       <dataInputObjs>conv3_biases_0_0_val</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="conv3_weights_read" lineNumber="171" fileName="src/srcnn.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="load_conv3_params" bitwidth="64" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="171" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="conv3_weights_read" lineNumber="179" fileName="src/srcnn.cpp" fileDirectory="../." coreId="1485289936" contextFuncName="load_conv3_params" bitwidth="64" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="179" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
       <dataInputObjs>conv3_weights</dataInputObjs>
       <dataOutputObjs>partselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="conv3_biases_local_addr" lineNumber="171" fileName="src/srcnn.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="load_conv3_params" bitwidth="1" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="171" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
-      <dataOutputObjs>conv3_biases_local</dataOutputObjs>
-      <dataOutputObjs>store</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="conv3_biases_local_addr_write_ln179" lineNumber="179" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="load_conv3_params" opcode="store" nodeLabel="9.0" m_display="0" m_delay="1.23" m_topoIndex="9" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="0_write_ln179" lineNumber="179" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="load_conv3_params" opcode="store" nodeLabel="9.0" m_display="0" m_delay="1.23" m_topoIndex="8" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="179" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
       <dataInputObjs>read</dataInputObjs>
-      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="trunc_ln" lineNumber="180" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln_reg_244" coreId="4294967295" contextFuncName="load_conv3_params" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="trunc_ln" lineNumber="180" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln_reg_236" coreId="0" contextFuncName="load_conv3_params" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="180" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>sext</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="sext_ln180" lineNumber="180" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="sext_ln180_fu_233_p1" coreId="0" contextFuncName="load_conv3_params" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="sext_ln180" lineNumber="180" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="sext_ln180_fu_225_p1" coreId="2" contextFuncName="load_conv3_params" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="180" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="gmem_w3_addr" lineNumber="180" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="load_conv3_params" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="gmem_w3_addr" lineNumber="180" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="load_conv3_params" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="180" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
       <dataInputObjs>gmem_w3</dataInputObjs>
       <dataInputObjs>sext</dataInputObjs>
       <dataOutputObjs>readreq</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="empty" lineNumber="180" fileName="src/srcnn.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="load_conv3_params" bitwidth="1" opcode="readreq" nodeLatency="7" m_display="0" m_delay="7.3" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="empty" lineNumber="180" fileName="src/srcnn.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="load_conv3_params" bitwidth="1" opcode="readreq" nodeLatency="7" m_display="0" m_delay="7.3" m_topoIndex="5" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="180" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="_ln180" lineNumber="180" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_152" coreId="0" contextFuncName="load_conv3_params" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="_ln180" lineNumber="180" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144" coreId="4294967294" contextFuncName="load_conv3_params" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="180" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
       <dataInputObjs>gmem_w3</dataInputObjs>
       <dataInputObjs>partselect</dataInputObjs>
-      <dataOutputObjs>conv3_weights_local_0_0_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_0_0_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_0_1_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_0_1_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_1_0_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_1_0_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_1_1_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_1_1_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_2_0_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_2_0_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_2_1_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_2_1_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_3_0_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_3_0_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_3_1_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_3_1_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_4_0_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_4_0_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_4_1_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_4_1_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_5_0_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_5_0_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_5_1_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_5_1_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_6_0_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_6_0_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_6_1_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_6_1_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_7_0_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_7_0_1</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_7_1_0</dataOutputObjs>
-      <dataOutputObjs>conv3_weights_local_7_1_1</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_30</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_29</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_28</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_27</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_26</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_25</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_24</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_23</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_22</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_21</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_20</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_19</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_18</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_17</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_16</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_15</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_14</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_13</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_12</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_11</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_10</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_9</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_8</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_7</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_6</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_5</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_4</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_3</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_2</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_1</dataOutputObjs>
+      <dataOutputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig</dataOutputObjs>
       <constName>load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="_ln189" lineNumber="189" fileName="src/srcnn.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="load_conv3_params" opcode="ret" nodeLabel="9.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="_ln189" lineNumber="189" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="load_conv3_params" opcode="ret" nodeLabel="9.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="189" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv3_params"/>
     </node_objs>
     <fileValidLineNumbers fileName="src/srcnn.cpp">
-      <validLinenumbers>171</validLinenumbers>
       <validLinenumbers>179</validLinenumbers>
       <validLinenumbers>180</validLinenumbers>
       <validLinenumbers>189</validLinenumbers>
@@ -257,95 +246,93 @@
   <ScheduleInfo time="7"/>
   <ScheduleInfo time="8"/>
   <ScheduleInfo time="9"/>
-  <regnodes realName="gmem_w3_addr_reg_249">
-    <nodeIds>77</nodeIds>
+  <regnodes realName="trunc_ln_reg_236">
+    <nodeIds>73</nodeIds>
   </regnodes>
-  <regnodes realName="trunc_ln_reg_244">
+  <regnodes realName="gmem_w3_addr_reg_241">
     <nodeIds>75</nodeIds>
   </regnodes>
-  <expressionNodes realName="gmem_w3_addr_fu_237">
-    <nodeIds>77</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln_fu_223">
-    <nodeIds>75</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="conv3_biases_local_addr_gep_fu_133">
+  <expressionNodes realName="trunc_ln_fu_215">
     <nodeIds>73</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="sext_ln180_fu_233">
-    <nodeIds>76</nodeIds>
+  <expressionNodes realName="sext_ln180_fu_225">
+    <nodeIds>74</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_152">
-    <nodeIds>79</nodeIds>
+  <expressionNodes realName="gmem_w3_addr_fu_229">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144">
+    <nodeIds>77</nodeIds>
   </moduleNodes>
   <ioNodes realName="conv3_biases_0_0_val_read_read_fu_127">
-    <nodeIds>71</nodeIds>
+    <nodeIds>70</nodeIds>
   </ioNodes>
   <ioNodes realName="grp_readreq_fu_120">
-    <nodeIds>78</nodeIds>
+    <nodeIds>76</nodeIds>
   </ioNodes>
   <ioNodes realName="conv3_weights_read_read_fu_114">
-    <nodeIds>72</nodeIds>
+    <nodeIds>71</nodeIds>
   </ioNodes>
   <memoryPorts dataString="conv3_biases_local" portID="1">
-    <nodeIds>74</nodeIds>
+    <nodeIds>72</nodeIds>
   </memoryPorts>
   <ioPorts name="conv3_biases_0_0_val">
     <contents name="read">
-      <nodeIds>71</nodeIds>
+      <nodeIds>70</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="conv3_biases_local(p1)">
     <contents name="store">
-      <nodeIds>74</nodeIds>
+      <nodeIds>72</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="conv3_weights">
     <contents name="read">
-      <nodeIds>72</nodeIds>
+      <nodeIds>71</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="gmem_w3">
     <contents name="call">
-      <nodeIds>79</nodeIds>
+      <nodeIds>77</nodeIds>
     </contents>
     <contents name="readreq">
-      <nodeIds>78</nodeIds>
+      <nodeIds>76</nodeIds>
     </contents>
   </ioPorts>
   <fsm>
     <states id="1">
-      <operations id="72" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
       <operations id="75" stage="1" latency="1"/>
-      <operations id="76" stage="1" latency="1"/>
-      <operations id="77" stage="1" latency="1"/>
-      <operations id="78" stage="8" latency="8"/>
+      <operations id="76" stage="8" latency="8"/>
     </states>
     <states id="2">
-      <operations id="78" stage="7" latency="8"/>
+      <operations id="76" stage="7" latency="8"/>
     </states>
     <states id="3">
-      <operations id="78" stage="6" latency="8"/>
+      <operations id="76" stage="6" latency="8"/>
     </states>
     <states id="4">
-      <operations id="78" stage="5" latency="8"/>
+      <operations id="76" stage="5" latency="8"/>
     </states>
     <states id="5">
-      <operations id="78" stage="4" latency="8"/>
+      <operations id="76" stage="4" latency="8"/>
     </states>
     <states id="6">
-      <operations id="78" stage="3" latency="8"/>
+      <operations id="76" stage="3" latency="8"/>
     </states>
     <states id="7">
-      <operations id="78" stage="2" latency="8"/>
+      <operations id="76" stage="2" latency="8"/>
     </states>
     <states id="8">
-      <operations id="78" stage="1" latency="8"/>
+      <operations id="76" stage="1" latency="8"/>
     </states>
     <states id="9">
-      <operations id="79" stage="2" latency="2"/>
+      <operations id="77" stage="2" latency="2"/>
     </states>
     <states id="10">
+      <operations id="36" stage="1" latency="1"/>
       <operations id="37" stage="1" latency="1"/>
       <operations id="38" stage="1" latency="1"/>
       <operations id="39" stage="1" latency="1"/>
@@ -380,11 +367,9 @@
       <operations id="68" stage="1" latency="1"/>
       <operations id="69" stage="1" latency="1"/>
       <operations id="70" stage="1" latency="1"/>
-      <operations id="71" stage="1" latency="1"/>
-      <operations id="73" stage="1" latency="1"/>
-      <operations id="74" stage="1" latency="1"/>
-      <operations id="79" stage="1" latency="2"/>
-      <operations id="80" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="2"/>
+      <operations id="78" stage="1" latency="1"/>
     </states>
     <transitions inState="1" outState="2">
       <condition id="-1"/>
@@ -416,7 +401,7 @@
   </fsm>
   <CFGRegionsRoot>
     <cfgRegions mId="1" mTag="load_conv3_params" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="812" mMaxLatency="812">
-      <basicBlocks>81</basicBlocks>
+      <basicBlocks>79</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
   </CFGRegionsRoot>

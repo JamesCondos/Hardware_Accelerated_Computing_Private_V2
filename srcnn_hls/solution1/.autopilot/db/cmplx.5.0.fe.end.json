@@ -1,42 +1,147 @@
 {
     "1": {
-        "name": "entry_proc",
+        "name": "conv2",
         "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "4",
-        "total_instructions": "4",
-        "calls": "",
-        "basicblocks": "1"
+        "fileloc": "306",
+        "instructions": "124",
+        "total_instructions": "1107",
+        "calls": "24 27 7 5 13 14 18 26",
+        "basicblocks": "7",
+        "loads": {
+            "G": "8",
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
     },
     "2": {
-        "name": "dataflow_in_loop_tile_height_loop_MAIN.1",
+        "name": "dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc",
         "file": "srcnn.cpp",
         "fileloc": "0",
-        "instructions": "235",
-        "total_instructions": "6214",
-        "calls": "1 7 23 8 12 28 10",
+        "instructions": "13",
+        "total_instructions": "13",
+        "calls": "",
         "basicblocks": "1"
     },
     "3": {
-        "name": "conv2_Pipeline_tile_height_loop14",
+        "name": "load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4",
         "file": "srcnn.cpp",
         "fileloc": "0",
-        "instructions": "141",
-        "total_instructions": "141",
+        "instructions": "252",
+        "total_instructions": "252",
         "calls": "",
-        "basicblocks": "4",
+        "basicblocks": "85",
         "loads": {
-            "L": "35"
+            "L": "5"
         },
         "stores": {
-            "L": "19"
+            "G": "32",
+            "L": "10"
         },
         "loops": {
             "L": "1"
         }
     },
     "4": {
-        "name": "conv37_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3",
+        "name": "conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3",
+        "file": "srcnn.cpp",
+        "fileloc": "0",
+        "instructions": "1245",
+        "total_instructions": "1245",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "400",
+            "L": "31"
+        },
+        "stores": {
+            "L": "11"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6",
+        "file": "srcnn.cpp",
+        "fileloc": "0",
+        "instructions": "111",
+        "total_instructions": "111",
+        "calls": "",
+        "basicblocks": "24",
+        "loads": {
+            "L": "20"
+        },
+        "stores": {
+            "L": "23"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "load_conv2_params_Pipeline_VITIS_LOOP_163_2",
+        "file": "srcnn.cpp",
+        "fileloc": "0",
+        "instructions": "56",
+        "total_instructions": "56",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "4",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8",
+        "file": "srcnn.cpp",
+        "fileloc": "0",
+        "instructions": "92",
+        "total_instructions": "92",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "22"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "load_conv1_params",
+        "file": "srcnn.cpp",
+        "fileloc": "132",
+        "instructions": "199",
+        "total_instructions": "941",
+        "calls": "25",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "G": "1",
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3",
         "file": "srcnn.cpp",
         "fileloc": "0",
         "instructions": "66",
@@ -53,89 +158,16 @@
             "L": "1"
         }
     },
-    "0": {
-        "name": "srcnn",
-        "file": "srcnn.cpp",
-        "fileloc": "7",
-        "instructions": "449",
-        "total_instructions": "8210",
-        "calls": "17 6 16 14",
-        "basicblocks": "1"
-    },
-    "5": {
-        "name": "conv37_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3",
+    "10": {
+        "name": "reconstructor_Pipeline_VITIS_LOOP_465_2",
         "file": "srcnn.cpp",
         "fileloc": "0",
-        "instructions": "1245",
-        "total_instructions": "1245",
+        "instructions": "75",
+        "total_instructions": "75",
         "calls": "",
-        "basicblocks": "4",
+        "basicblocks": "8",
         "loads": {
-            "L": "431"
-        },
-        "stores": {
-            "L": "11"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "6": {
-        "name": "load_conv2_params",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "38",
-        "total_instructions": "94",
-        "calls": "9",
-        "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "3"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "7": {
-        "name": "dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "13",
-        "total_instructions": "13",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "8": {
-        "name": "conv2",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "124",
-        "total_instructions": "1107",
-        "calls": "26 18 19 20 13 15 11 3",
-        "basicblocks": "7",
-        "loads": {
-            "L": "9"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1",
-            "N": "1"
-        }
-    },
-    "9": {
-        "name": "load_conv2_params_Pipeline_VITIS_LOOP_163_2",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "56",
-        "total_instructions": "56",
-        "calls": "",
-        "basicblocks": "13",
-        "loads": {
-            "L": "1"
+            "L": "4"
         },
         "stores": {
             "L": "6"
@@ -144,44 +176,26 @@
             "L": "1"
         }
     },
-    "10": {
-        "name": "reconstructor",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "10",
-        "total_instructions": "85",
-        "calls": "25",
-        "basicblocks": "1"
-    },
     "11": {
-        "name": "conv2_Pipeline_tile_height_loop13",
+        "name": "load_conv3_params",
         "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "141",
-        "total_instructions": "141",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "35"
-        },
+        "fileloc": "170",
+        "instructions": "43",
+        "total_instructions": "295",
+        "calls": "3",
+        "basicblocks": "1",
         "stores": {
-            "L": "19"
-        },
-        "loops": {
-            "L": "1"
+            "G": "1"
         }
     },
     "12": {
-        "name": "dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot47_proc",
+        "name": "_Z5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1__for.inc",
         "file": "srcnn.cpp",
         "fileloc": "0",
-        "instructions": "4",
-        "total_instructions": "4",
-        "calls": "",
-        "basicblocks": "1",
-        "loads": {
-            "L": "1"
-        }
+        "instructions": "33",
+        "total_instructions": "6009",
+        "calls": "21 2 17 1 15 23",
+        "basicblocks": "1"
     },
     "13": {
         "name": "conv2_Pipeline_tile_height_loop",
@@ -202,19 +216,7 @@
         }
     },
     "14": {
-        "name": "dataflow_parent_loop_proc",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "216",
-        "total_instructions": "6430",
-        "calls": "2",
-        "basicblocks": "4",
-        "loops": {
-            "L": "1"
-        }
-    },
-    "15": {
-        "name": "conv2_Pipeline_tile_height_loop12",
+        "name": "conv2_Pipeline_tile_height_loop4",
         "file": "srcnn.cpp",
         "fileloc": "0",
         "instructions": "141",
@@ -231,91 +233,19 @@
             "L": "1"
         }
     },
-    "16": {
-        "name": "load_conv3_params",
+    "15": {
+        "name": "conv3",
         "file": "srcnn.cpp",
         "fileloc": "0",
-        "instructions": "44",
-        "total_instructions": "296",
-        "calls": "24",
+        "instructions": "42",
+        "total_instructions": "1389",
+        "calls": "9 22 4",
         "basicblocks": "1",
-        "stores": {
-            "L": "1"
-        }
-    },
-    "17": {
-        "name": "load_conv1_params",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "199",
-        "total_instructions": "941",
-        "calls": "22",
-        "basicblocks": "4",
         "loads": {
-            "L": "2"
-        },
-        "stores": {
-            "L": "5"
-        },
-        "loops": {
-            "L": "1"
+            "G": "1"
         }
     },
-    "18": {
-        "name": "conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "107",
-        "total_instructions": "107",
-        "calls": "",
-        "basicblocks": "22",
-        "loads": {
-            "L": "6"
-        },
-        "stores": {
-            "L": "27"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "19": {
-        "name": "conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "92",
-        "total_instructions": "92",
-        "calls": "",
-        "basicblocks": "4",
-        "loads": {
-            "L": "22"
-        },
-        "stores": {
-            "L": "10"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "20": {
-        "name": "conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "111",
-        "total_instructions": "111",
-        "calls": "",
-        "basicblocks": "24",
-        "loads": {
-            "L": "20"
-        },
-        "stores": {
-            "L": "23"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "21": {
+    "16": {
         "name": "conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co",
         "file": "srcnn.cpp",
         "fileloc": "0",
@@ -324,7 +254,8 @@
         "calls": "",
         "basicblocks": "7",
         "loads": {
-            "L": "168"
+            "G": "163",
+            "L": "5"
         },
         "stores": {
             "L": "12"
@@ -333,31 +264,13 @@
             "L": "1"
         }
     },
-    "22": {
-        "name": "load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "742",
-        "total_instructions": "742",
-        "calls": "",
-        "basicblocks": "207",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "L": "168"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "23": {
+    "17": {
         "name": "conv1_tile",
         "file": "srcnn.cpp",
         "fileloc": "0",
         "instructions": "1451",
         "total_instructions": "3378",
-        "calls": "21",
+        "calls": "16",
         "basicblocks": "334",
         "loads": {
             "L": "293"
@@ -370,43 +283,101 @@
             "N": "3"
         }
     },
+    "18": {
+        "name": "conv2_Pipeline_tile_height_loop5",
+        "file": "srcnn.cpp",
+        "fileloc": "0",
+        "instructions": "141",
+        "total_instructions": "141",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "35"
+        },
+        "stores": {
+            "L": "19"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "load_conv2_params",
+        "file": "srcnn.cpp",
+        "fileloc": "153",
+        "instructions": "38",
+        "total_instructions": "94",
+        "calls": "6",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "G": "1",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "dataflow_parent_loop_proc",
+        "file": "srcnn.cpp",
+        "fileloc": "0",
+        "instructions": "15",
+        "total_instructions": "6024",
+        "calls": "12",
+        "basicblocks": "4",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "21": {
+        "name": "entry_proc",
+        "file": "srcnn.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "22": {
+        "name": "conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4",
+        "file": "srcnn.cpp",
+        "fileloc": "0",
+        "instructions": "36",
+        "total_instructions": "36",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "srcnn",
+        "file": "srcnn.cpp",
+        "fileloc": "7",
+        "instructions": "248",
+        "total_instructions": "7602",
+        "calls": "8 19 11 20",
+        "basicblocks": "1"
+    },
+    "23": {
+        "name": "reconstructor",
+        "file": "srcnn.cpp",
+        "fileloc": "0",
+        "instructions": "10",
+        "total_instructions": "85",
+        "calls": "10",
+        "basicblocks": "1"
+    },
     "24": {
-        "name": "load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "252",
-        "total_instructions": "252",
-        "calls": "",
-        "basicblocks": "85",
-        "loads": {
-            "L": "5"
-        },
-        "stores": {
-            "L": "42"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "25": {
-        "name": "reconstructor_Pipeline_VITIS_LOOP_465_2",
-        "file": "srcnn.cpp",
-        "fileloc": "0",
-        "instructions": "75",
-        "total_instructions": "75",
-        "calls": "",
-        "basicblocks": "8",
-        "loads": {
-            "L": "4"
-        },
-        "stores": {
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "26": {
         "name": "conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2",
         "file": "srcnn.cpp",
         "fileloc": "0",
@@ -424,31 +395,60 @@
             "L": "1"
         }
     },
-    "27": {
-        "name": "conv37_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4",
+    "25": {
+        "name": "load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4",
         "file": "srcnn.cpp",
         "fileloc": "0",
-        "instructions": "36",
-        "total_instructions": "36",
+        "instructions": "742",
+        "total_instructions": "742",
         "calls": "",
-        "basicblocks": "4",
+        "basicblocks": "207",
         "loads": {
             "L": "3"
         },
         "stores": {
-            "L": "7"
+            "G": "162",
+            "L": "6"
         },
         "loops": {
             "L": "1"
         }
     },
-    "28": {
-        "name": "conv37",
+    "26": {
+        "name": "conv2_Pipeline_tile_height_loop6",
         "file": "srcnn.cpp",
         "fileloc": "0",
-        "instructions": "41",
-        "total_instructions": "1388",
-        "calls": "4 27 5",
-        "basicblocks": "1"
+        "instructions": "141",
+        "total_instructions": "141",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "35"
+        },
+        "stores": {
+            "L": "19"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
+        "name": "conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4",
+        "file": "srcnn.cpp",
+        "fileloc": "0",
+        "instructions": "107",
+        "total_instructions": "107",
+        "calls": "",
+        "basicblocks": "22",
+        "loads": {
+            "G": "1",
+            "L": "5"
+        },
+        "stores": {
+            "L": "27"
+        },
+        "loops": {
+            "L": "1"
+        }
     }
 }

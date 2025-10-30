@@ -35,7 +35,8 @@ signal address0_tmp : std_logic_vector(AddressWidth-1 downto 0);
 
 type mem_array is array (0 to AddressRange-1) of std_logic_vector (DataWidth-1 downto 0); 
 -- Init 
-signal ram : mem_array;
+signal ram : mem_array := (
+    others=>(others=>'0')); -- 
 attribute syn_ramstyle : string;
 attribute syn_ramstyle of ram : signal is "block_ram";
 attribute ram_style : string;

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'conv2_Pipeline_tile_height_loop'
 ================================================================
-* Date:           Thu Oct 30 18:13:43 2025
+* Date:           Thu Oct 30 21:33:55 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -921,9 +921,9 @@ ST_9 : Operation 250 [1/4] (6.43ns)   --->   "%add_15 = fadd i32 %layer2_output_
 ST_9 : Operation 272 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 272 'ret' 'ret_ln0' <Predicate = (icmp_ln345)> <Delay = 0.00>
 
 State 10 <SV = 9> <Delay = 1.23>
-ST_10 : Operation 251 [1/1] (0.00ns)   --->   "%specpipeline_ln347 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_132" [src/srcnn.cpp:347]   --->   Operation 251 'specpipeline' 'specpipeline_ln347' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 251 [1/1] (0.00ns)   --->   "%specpipeline_ln347 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_42" [src/srcnn.cpp:347]   --->   Operation 251 'specpipeline' 'specpipeline_ln347' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 252 [1/1] (0.00ns)   --->   "%speclooptripcount_ln345 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 17, i64 17, i64 17" [src/srcnn.cpp:345]   --->   Operation 252 'speclooptripcount' 'speclooptripcount_ln345' <Predicate = true> <Delay = 0.00>
-ST_10 : Operation 253 [1/1] (0.00ns)   --->   "%specloopname_ln345 = specloopname void @_ssdm_op_SpecLoopName, void @empty_167" [src/srcnn.cpp:345]   --->   Operation 253 'specloopname' 'specloopname_ln345' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 253 [1/1] (0.00ns)   --->   "%specloopname_ln345 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [src/srcnn.cpp:345]   --->   Operation 253 'specloopname' 'specloopname_ln345' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 254 [1/1] (1.23ns)   --->   "%store_ln350 = store i32 %add, i10 %layer2_output_tile_addr" [src/srcnn.cpp:350]   --->   Operation 254 'store' 'store_ln350' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
 ST_10 : Operation 255 [1/1] (1.23ns)   --->   "%store_ln350 = store i32 %add_s, i10 %layer2_output_tile_1_addr" [src/srcnn.cpp:350]   --->   Operation 255 'store' 'store_ln350' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
 ST_10 : Operation 256 [1/1] (1.23ns)   --->   "%store_ln350 = store i32 %add_1, i10 %layer2_output_tile_2_addr" [src/srcnn.cpp:350]   --->   Operation 256 'store' 'store_ln350' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 544> <RAM>
@@ -1606,7 +1606,7 @@ ret_ln0                    (ret              ) [ 00000000000]
 <pin id="95" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_132"/></StgValue>
+<StgValue><ssdm name="empty_42"/></StgValue>
 </bind>
 </comp>
 
@@ -1642,7 +1642,7 @@ ret_ln0                    (ret              ) [ 00000000000]
 <pin id="103" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_167"/></StgValue>
+<StgValue><ssdm name="empty_7"/></StgValue>
 </bind>
 </comp>
 

@@ -147,7 +147,7 @@ attribute shreg_extract : string;
     signal zext_ln374_1_fu_498_p1 : STD_LOGIC_VECTOR (9 downto 0);
     signal add_ln374_1_fu_502_p2 : STD_LOGIC_VECTOR (9 downto 0);
     signal add_ln372_1_fu_535_p2 : STD_LOGIC_VECTOR (9 downto 0);
-    signal tmp_1_fu_574_p19 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_24_fu_574_p19 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_done_reg : STD_LOGIC := '0';
     signal ap_continue_int : STD_LOGIC;
     signal ap_done_int : STD_LOGIC;
@@ -263,7 +263,7 @@ begin
         din15 => layer2_output_tile_15_q0,
         din16 => layer2_output_tile_16_q0,
         din17 => select_ln372_reg_656,
-        dout => tmp_1_fu_574_p19);
+        dout => tmp_24_fu_574_p19);
 
     flow_control_loop_pipe_sequential_init_U : component srcnn_flow_control_loop_pipe_sequential_init
     port map (
@@ -525,7 +525,7 @@ begin
         end if; 
     end process;
 
-    conv2_to_conv3_din <= tmp_1_fu_574_p19;
+    conv2_to_conv3_din <= tmp_24_fu_574_p19;
 
     conv2_to_conv3_write_assign_proc : process(ap_enable_reg_pp0_iter2, ap_block_pp0_stage0_11001)
     begin

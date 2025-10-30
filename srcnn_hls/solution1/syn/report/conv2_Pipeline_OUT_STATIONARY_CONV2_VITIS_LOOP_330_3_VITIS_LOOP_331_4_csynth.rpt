@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4'
 ================================================================
-* Date:           Thu Oct 30 18:13:42 2025
+* Date:           Thu Oct 30 21:33:54 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -159,9 +159,6 @@
 |ap_done                         |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4|  return value|
 |ap_idle                         |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4|  return value|
 |ap_ready                        |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4|  return value|
-|conv2_biases_address0           |  out|    5|   ap_memory|                                                           conv2_biases|         array|
-|conv2_biases_ce0                |  out|    1|   ap_memory|                                                           conv2_biases|         array|
-|conv2_biases_q0                 |   in|   32|   ap_memory|                                                           conv2_biases|         array|
 |layer2_output_tile_address0     |  out|   10|   ap_memory|                                                     layer2_output_tile|         array|
 |layer2_output_tile_ce0          |  out|    1|   ap_memory|                                                     layer2_output_tile|         array|
 |layer2_output_tile_we0          |  out|    1|   ap_memory|                                                     layer2_output_tile|         array|
@@ -230,5 +227,8 @@
 |layer2_output_tile_16_ce0       |  out|    1|   ap_memory|                                                  layer2_output_tile_16|         array|
 |layer2_output_tile_16_we0       |  out|    1|   ap_memory|                                                  layer2_output_tile_16|         array|
 |layer2_output_tile_16_d0        |  out|   32|   ap_memory|                                                  layer2_output_tile_16|         array|
+|conv2_biases_local_address0     |  out|    5|   ap_memory|                                                     conv2_biases_local|         array|
+|conv2_biases_local_ce0          |  out|    1|   ap_memory|                                                     conv2_biases_local|         array|
+|conv2_biases_local_q0           |   in|   32|   ap_memory|                                                     conv2_biases_local|         array|
 +--------------------------------+-----+-----+------------+-----------------------------------------------------------------------+--------------+
 

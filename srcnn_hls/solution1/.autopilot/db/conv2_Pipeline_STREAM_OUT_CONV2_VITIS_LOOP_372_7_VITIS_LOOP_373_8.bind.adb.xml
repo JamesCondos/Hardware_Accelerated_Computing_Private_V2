@@ -121,7 +121,7 @@ newFuncRoot:5 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %co
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv2_to_conv3, void @empty_151, i32 0, i32 0, void @empty_132, i32 0, i32 0, void @empty_132, void @empty_132, void @empty_132, i32 0, i32 0, i32 0, i32 0, void @empty_132, void @empty_132, i32 4294967295, i32 0
+newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %conv2_to_conv3, void @empty_23, i32 0, i32 0, void @empty_42, i32 0, i32 0, void @empty_42, void @empty_42, void @empty_42, i32 0, i32 0, i32 0, i32 0, void @empty_42, void @empty_42, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -1406,7 +1406,7 @@ for.inc155:42 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 
 
 <Node id="82" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc155:43 %specloopname_ln373 = specloopname void @_ssdm_op_SpecLoopName, void @empty_166
+for.inc155:43 %specloopname_ln373 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln373"/></StgValue>
@@ -1676,10 +1676,10 @@ for.inc155:60 %layer2_output_tile_16_load = load i10 %layer2_output_tile_16_addr
 
 <Node id="100" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="5">
 <![CDATA[
-for.inc155:61 %tmp_1 = mux i32 @_ssdm_op_Mux.ap_auto.17f32.i5, i32 %layer2_output_tile_load, i32 %layer2_output_tile_1_load, i32 %layer2_output_tile_2_load, i32 %layer2_output_tile_3_load, i32 %layer2_output_tile_4_load, i32 %layer2_output_tile_5_load, i32 %layer2_output_tile_6_load, i32 %layer2_output_tile_7_load, i32 %layer2_output_tile_8_load, i32 %layer2_output_tile_9_load, i32 %layer2_output_tile_10_load, i32 %layer2_output_tile_11_load, i32 %layer2_output_tile_12_load, i32 %layer2_output_tile_13_load, i32 %layer2_output_tile_14_load, i32 %layer2_output_tile_15_load, i32 %layer2_output_tile_16_load, i5 %select_ln372
+for.inc155:61 %tmp_24 = mux i32 @_ssdm_op_Mux.ap_auto.17f32.i5, i32 %layer2_output_tile_load, i32 %layer2_output_tile_1_load, i32 %layer2_output_tile_2_load, i32 %layer2_output_tile_3_load, i32 %layer2_output_tile_4_load, i32 %layer2_output_tile_5_load, i32 %layer2_output_tile_6_load, i32 %layer2_output_tile_7_load, i32 %layer2_output_tile_8_load, i32 %layer2_output_tile_9_load, i32 %layer2_output_tile_10_load, i32 %layer2_output_tile_11_load, i32 %layer2_output_tile_12_load, i32 %layer2_output_tile_13_load, i32 %layer2_output_tile_14_load, i32 %layer2_output_tile_15_load, i32 %layer2_output_tile_16_load, i5 %select_ln372
 
 ]]></Node>
-<StgValue><ssdm name="tmp_1"/></StgValue>
+<StgValue><ssdm name="tmp_24"/></StgValue>
 </operation>
 
 <operation id="110" st_id="3" stage="1" lat="1">
@@ -1691,7 +1691,7 @@ for.inc155:61 %tmp_1 = mux i32 @_ssdm_op_Mux.ap_auto.17f32.i5, i32 %layer2_outpu
 
 <Node id="101" bw="32" op_0_bw="32">
 <![CDATA[
-for.inc155:62 %bitcast_ln374 = bitcast i32 %tmp_1
+for.inc155:62 %bitcast_ln374 = bitcast i32 %tmp_24
 
 ]]></Node>
 <StgValue><ssdm name="bitcast_ln374"/></StgValue>
@@ -1830,23 +1830,23 @@ for.inc155:72 %br_ln373 = br void %for.inc149
 </dataflow>
 <dataflow id="159" from="conv2_to_conv3" to="specinterface_ln0" fromId="141" toId="11">
 </dataflow>
-<dataflow id="161" from="empty_151" to="specinterface_ln0" fromId="160" toId="11">
+<dataflow id="161" from="empty_23" to="specinterface_ln0" fromId="160" toId="11">
 </dataflow>
 <dataflow id="163" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
 <dataflow id="164" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
-<dataflow id="166" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="166" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
 <dataflow id="167" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
 <dataflow id="168" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
-<dataflow id="169" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="169" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
-<dataflow id="170" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="170" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
-<dataflow id="171" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="171" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
 <dataflow id="172" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
@@ -1856,9 +1856,9 @@ for.inc155:72 %br_ln373 = br void %for.inc149
 </dataflow>
 <dataflow id="175" from="StgValue_162" to="specinterface_ln0" fromId="162" toId="11">
 </dataflow>
-<dataflow id="176" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="176" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
-<dataflow id="177" from="empty_132" to="specinterface_ln0" fromId="165" toId="11">
+<dataflow id="177" from="empty_42" to="specinterface_ln0" fromId="165" toId="11">
 </dataflow>
 <dataflow id="179" from="StgValue_178" to="specinterface_ln0" fromId="178" toId="11">
 </dataflow>
@@ -2200,7 +2200,7 @@ for.inc155:72 %br_ln373 = br void %for.inc149
 </dataflow>
 <dataflow id="370" from="_ssdm_op_SpecLoopName" to="specloopname_ln373" fromId="345" toId="91">
 </dataflow>
-<dataflow id="372" from="empty_166" to="specloopname_ln373" fromId="371" toId="91">
+<dataflow id="372" from="empty_8" to="specloopname_ln373" fromId="371" toId="91">
 </dataflow>
 <dataflow id="373" from="layer2_output_tile_addr" to="layer2_output_tile_load" fromId="44" toId="92">
 </dataflow>
@@ -2236,45 +2236,45 @@ for.inc155:72 %br_ln373 = br void %for.inc149
 </dataflow>
 <dataflow id="389" from="layer2_output_tile_16_addr" to="layer2_output_tile_16_load" fromId="60" toId="108">
 </dataflow>
-<dataflow id="391" from="_ssdm_op_Mux.ap_auto.17f32.i5" to="tmp_1" fromId="390" toId="109">
+<dataflow id="391" from="_ssdm_op_Mux.ap_auto.17f32.i5" to="tmp_24" fromId="390" toId="109">
 </dataflow>
-<dataflow id="392" from="layer2_output_tile_load" to="tmp_1" fromId="92" toId="109">
+<dataflow id="392" from="layer2_output_tile_load" to="tmp_24" fromId="92" toId="109">
 </dataflow>
-<dataflow id="393" from="layer2_output_tile_1_load" to="tmp_1" fromId="93" toId="109">
+<dataflow id="393" from="layer2_output_tile_1_load" to="tmp_24" fromId="93" toId="109">
 </dataflow>
-<dataflow id="394" from="layer2_output_tile_2_load" to="tmp_1" fromId="94" toId="109">
+<dataflow id="394" from="layer2_output_tile_2_load" to="tmp_24" fromId="94" toId="109">
 </dataflow>
-<dataflow id="395" from="layer2_output_tile_3_load" to="tmp_1" fromId="95" toId="109">
+<dataflow id="395" from="layer2_output_tile_3_load" to="tmp_24" fromId="95" toId="109">
 </dataflow>
-<dataflow id="396" from="layer2_output_tile_4_load" to="tmp_1" fromId="96" toId="109">
+<dataflow id="396" from="layer2_output_tile_4_load" to="tmp_24" fromId="96" toId="109">
 </dataflow>
-<dataflow id="397" from="layer2_output_tile_5_load" to="tmp_1" fromId="97" toId="109">
+<dataflow id="397" from="layer2_output_tile_5_load" to="tmp_24" fromId="97" toId="109">
 </dataflow>
-<dataflow id="398" from="layer2_output_tile_6_load" to="tmp_1" fromId="98" toId="109">
+<dataflow id="398" from="layer2_output_tile_6_load" to="tmp_24" fromId="98" toId="109">
 </dataflow>
-<dataflow id="399" from="layer2_output_tile_7_load" to="tmp_1" fromId="99" toId="109">
+<dataflow id="399" from="layer2_output_tile_7_load" to="tmp_24" fromId="99" toId="109">
 </dataflow>
-<dataflow id="400" from="layer2_output_tile_8_load" to="tmp_1" fromId="100" toId="109">
+<dataflow id="400" from="layer2_output_tile_8_load" to="tmp_24" fromId="100" toId="109">
 </dataflow>
-<dataflow id="401" from="layer2_output_tile_9_load" to="tmp_1" fromId="101" toId="109">
+<dataflow id="401" from="layer2_output_tile_9_load" to="tmp_24" fromId="101" toId="109">
 </dataflow>
-<dataflow id="402" from="layer2_output_tile_10_load" to="tmp_1" fromId="102" toId="109">
+<dataflow id="402" from="layer2_output_tile_10_load" to="tmp_24" fromId="102" toId="109">
 </dataflow>
-<dataflow id="403" from="layer2_output_tile_11_load" to="tmp_1" fromId="103" toId="109">
+<dataflow id="403" from="layer2_output_tile_11_load" to="tmp_24" fromId="103" toId="109">
 </dataflow>
-<dataflow id="404" from="layer2_output_tile_12_load" to="tmp_1" fromId="104" toId="109">
+<dataflow id="404" from="layer2_output_tile_12_load" to="tmp_24" fromId="104" toId="109">
 </dataflow>
-<dataflow id="405" from="layer2_output_tile_13_load" to="tmp_1" fromId="105" toId="109">
+<dataflow id="405" from="layer2_output_tile_13_load" to="tmp_24" fromId="105" toId="109">
 </dataflow>
-<dataflow id="406" from="layer2_output_tile_14_load" to="tmp_1" fromId="106" toId="109">
+<dataflow id="406" from="layer2_output_tile_14_load" to="tmp_24" fromId="106" toId="109">
 </dataflow>
-<dataflow id="407" from="layer2_output_tile_15_load" to="tmp_1" fromId="107" toId="109">
+<dataflow id="407" from="layer2_output_tile_15_load" to="tmp_24" fromId="107" toId="109">
 </dataflow>
-<dataflow id="408" from="layer2_output_tile_16_load" to="tmp_1" fromId="108" toId="109">
+<dataflow id="408" from="layer2_output_tile_16_load" to="tmp_24" fromId="108" toId="109">
 </dataflow>
-<dataflow id="409" from="select_ln372" to="tmp_1" fromId="39" toId="109">
+<dataflow id="409" from="select_ln372" to="tmp_24" fromId="39" toId="109">
 </dataflow>
-<dataflow id="410" from="tmp_1" to="bitcast_ln374" fromId="109" toId="110">
+<dataflow id="410" from="tmp_24" to="bitcast_ln374" fromId="109" toId="110">
 </dataflow>
 <dataflow id="412" from="_ssdm_op_Write.ap_fifo.volatile.i32P0A" to="write_ln374" fromId="411" toId="111">
 </dataflow>

@@ -202,7 +202,7 @@ wire   [9:0] add_ln374_fu_446_p2;
 wire   [9:0] zext_ln374_1_fu_498_p1;
 wire   [9:0] add_ln374_1_fu_502_p2;
 wire   [9:0] add_ln372_1_fu_535_p2;
-wire   [31:0] tmp_1_fu_574_p19;
+wire   [31:0] tmp_24_fu_574_p19;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -260,7 +260,7 @@ mux_17_5_32_1_1_U1879(
     .din15(layer2_output_tile_15_q0),
     .din16(layer2_output_tile_16_q0),
     .din17(select_ln372_reg_656),
-    .dout(tmp_1_fu_574_p19)
+    .dout(tmp_24_fu_574_p19)
 );
 
 srcnn_flow_control_loop_pipe_sequential_init flow_control_loop_pipe_sequential_init_U(
@@ -627,7 +627,7 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter1_stage0;
 
-assign conv2_to_conv3_din = tmp_1_fu_574_p19;
+assign conv2_to_conv3_din = tmp_24_fu_574_p19;
 
 assign icmp_ln371_fu_382_p2 = ((indvar_flatten145_fu_122 == 14'd9248) ? 1'b1 : 1'b0);
 
