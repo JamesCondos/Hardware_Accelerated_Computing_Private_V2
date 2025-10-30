@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co'
 ================================================================
-* Date:           Thu Oct 30 21:33:50 2025
+* Date:           Thu Oct 30 21:58:23 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls

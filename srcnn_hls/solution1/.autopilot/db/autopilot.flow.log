@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1 opened at Thu Oct 30 21:32:45 +1100 2025
+INFO-FLOW: Workspace C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1 opened at Thu Oct 30 21:57:15 +1100 2025
 Execute     ap_set_clock -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     set_part xck26-sfvc784-2LV-c 
@@ -7,7 +7,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2023.1\lib\win
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2023.1/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
-Command       create_platform done; 4.623 sec.
+Command       create_platform done; 2.815 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
@@ -20,10 +20,9 @@ Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/ut
 Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.154 sec.
 Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 4.812 sec.
+Command     set_part done; 2.978 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
@@ -32,7 +31,7 @@ Execute     config_export -format=ip_catalog
 Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 4.886 sec.
+Command   open_solution done; 3.065 sec.
 Execute   set_part xck26-sfvc784-2LV-c 
 INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
 Execute     create_platform xck26-sfvc784-2LV-c -board  
@@ -50,7 +49,7 @@ Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir
 Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
 Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.103 sec.
+Command   set_part done; 0.219 sec.
 Execute   create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 Execute   config_export -format ip_catalog -rtl verilog 
@@ -63,7 +62,7 @@ Execute   csynth_design
 INFO: [HLS 200-1510] Running: csynth_design 
 INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.134 seconds; current allocated memory: 1.052 GB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 1.045 GB.
 Execute       set_directive_top srcnn -name=srcnn 
 Execute       source C:/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source C:/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
@@ -83,7 +82,7 @@ INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clan
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/all.directive.json -fix-errors C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0 seconds per iteration
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1.pp.0.cpp std=gnu++14 -target fpga  
@@ -171,7 +170,7 @@ Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang src/srcnn.cpp -foptimization-record-file=C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/Vitis_HLS/2023.1/common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.cpp.clang.out.log 2> C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.cpp.clang.err.log
-INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+INFO-FLOW: Done: GCC PP 39 time: 0.2 seconds per iteration
 INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/Vitis_HLS/2023.1/common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/clang.out.log 2> C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/clang.err.log
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/.systemc_flag 
@@ -185,7 +184,7 @@ INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ...
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp.clang-tidy.loop-label.err.log
 Execute         source C:/Xilinx/Vitis_HLS/2023.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
-Command       clang_tidy done; 0.168 sec.
+Command       clang_tidy done; 0.162 sec.
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (src/srcnn.cpp:120:44)
 WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (src/srcnn.cpp:120:65)
@@ -198,7 +197,7 @@ WARNING: [HLS 200-471] Dataflow form checks found 6 issue(s) in file src/srcnn.c
 Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
 INFO-FLOW: compiling source code to llvm bc
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.bc {-hls-platform-db-name=C:/Xilinx/Vitis_HLS/2023.1/common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp.clang.out.log 2> C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp.clang.err.log
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.302 seconds; current allocated memory: 1.055 GB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.93 seconds; current allocated memory: 1.047 GB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.0.bc -args  "C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1.g.bc" "C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile.g.bc" "C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2.g.bc" "C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3.g.bc" "C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.g.bc"  
@@ -213,13 +212,13 @@ INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2023.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2023.1/win64/lib/libhlsmc++_39.bc 
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2023.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2023.1/win64/lib/libhlsmc++_39.bc -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
 INFO-FLOW: 
-Command       run_link_or_opt done; 1.527 sec.
+Command       run_link_or_opt done; 1.741 sec.
 Execute       run_link_or_opt -opt -out C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=srcnn -reflow-float-conversion 
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=srcnn -reflow-float-conversion -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
 INFO-FLOW: 
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
-Command       run_link_or_opt done; 0.669 sec.
+Command       run_link_or_opt done; 0.817 sec.
 Execute       run_link_or_opt -out C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2023.1/win64/lib/libfloatconversion_39.bc 
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2023.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2023.1/win64/lib/libfloatconversion_39.bc -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
 INFO-FLOW: 
@@ -257,22 +256,22 @@ INFO: [HLS 214-115] Multiple burst reads of length 800 and bit width 32 in loop 
 INFO: [HLS 214-115] Multiple burst reads of length 17 and bit width 32 in loop 'VITIS_LOOP_226_3'(src/srcnn.cpp:226:32) has been inferred on bundle 'gmem_in'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (src/srcnn.cpp:226:32)
 INFO: [HLS 214-115] Multiple burst writes of length 17 and bit width 32 in loop 'VITIS_LOOP_465_2'(src/srcnn.cpp:465:27) has been inferred on bundle 'gmem_out'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (src/srcnn.cpp:465:27)
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 14.253 seconds; current allocated memory: 1.057 GB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 1.057 GB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 15.522 seconds; current allocated memory: 1.049 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 1.049 GB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top srcnn -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.0.bc -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 2.329 sec.
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.361 seconds; current allocated memory: 1.080 GB.
+Command         transform done; 2.399 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.435 seconds; current allocated memory: 1.073 GB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.1.bc -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform done; 1.913 sec.
+Command         transform done; 1.939 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.964 seconds; current allocated memory: 1.089 GB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.984 seconds; current allocated memory: 1.082 GB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.g.1.bc to C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -288,12 +287,12 @@ INFO: [XFORM 203-712] Applying dataflow to function 'dataflow_in_loop_tile_heigh
 	 'conv2'
 	 'conv3'
 	 'reconstructor'.
-Command         transform done; 3.943 sec.
+Command         transform done; 4.004 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-11] Balancing expressions in function 'load_conv1_params' (src/srcnn.cpp:140:35)...3 expression(s) balanced.
-Command         transform done; 0.71 sec.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 4.657 seconds; current allocated memory: 1.129 GB.
+Command         transform done; 0.717 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 4.724 seconds; current allocated memory: 1.122 GB.
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dce -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric -cdfg-build C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.o.2.bc -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_464_1' (src/srcnn.cpp:464:23) in function 'reconstructor'.
@@ -327,13 +326,13 @@ WARNING: [HLS 200-1449] Process conv1_tile has both a predecessor and reads an i
 WARNING: [HLS 200-1449] Process conv2 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
 WARNING: [HLS 200-1449] Process conv3 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
 WARNING: [HLS 200-1449] Process dataflow_in_loop_tile_height_loop_MAIN.1 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
-Command         transform done; 4.609 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 4.609 seconds; current allocated memory: 1.389 GB.
+Command         transform done; 4.978 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 4.979 seconds; current allocated memory: 1.382 GB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 13.607 sec.
-Command     elaborate done; 32.243 sec.
+Command       opt_and_import_c done; 14.141 sec.
+Command     elaborate done; 34.656 sec.
 Execute     ap_eval exec zip -j C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
-Command     ap_eval done; 0.131 sec.
+Command     ap_eval done; 0.124 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -492,7 +491,7 @@ Execute       rtl_gen_preprocess dataflow_in_loop_tile_height_loop_MAIN.1_Block_
 INFO-FLOW: Preprocessing Module: conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co ...
 Execute       set_default_model conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co 
 Execute       cdfg_preprocess -model conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co 
-Command       cdfg_preprocess done; 0.196 sec.
+Command       cdfg_preprocess done; 0.233 sec.
 Execute       rtl_gen_preprocess conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co 
 INFO-FLOW: Preprocessing Module: conv1_tile ...
 Execute       set_default_model conv1_tile 
@@ -580,8 +579,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_143_3_VITIS_LOOP_144_4'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'VITIS_LOOP_143_3_VITIS_LOOP_144_4'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.374 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.923 seconds; current allocated memory: 1.407 GB.
+Command       schedule done; 0.435 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.1 seconds; current allocated memory: 1.400 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -595,7 +594,8 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.204 seconds; current allocated memory: 1.408 GB.
+Command       bind done; 0.101 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.262 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -609,7 +609,7 @@ Execute       set_default_model load_conv1_params
 Execute       schedule -model load_conv1_params 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.224 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.267 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv1_params.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -623,7 +623,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.141 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv1_params.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -639,7 +639,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_163_2'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'VITIS_LOOP_163_2'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 1.408 GB.
+Command       schedule done; 0.114 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv2_params_Pipeline_VITIS_LOOP_163_2.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -653,7 +654,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.174 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv2_params_Pipeline_VITIS_LOOP_163_2.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -667,7 +668,7 @@ Execute       set_default_model load_conv2_params
 Execute       schedule -model load_conv2_params 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.131 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv2_params.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -681,7 +682,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv2_params.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -697,8 +698,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.137 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 1.408 GB.
+Command       schedule done; 0.142 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.212 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -712,7 +713,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.116 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -726,7 +727,7 @@ Execute       set_default_model load_conv3_params
 Execute       schedule -model load_conv3_params 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.122 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv3_params.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -740,7 +741,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.155 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv3_params.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -754,7 +755,7 @@ Execute       set_default_model entry_proc
 Execute       schedule -model entry_proc 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.092 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/entry_proc.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -768,7 +769,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 1.401 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/entry_proc.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -782,7 +783,7 @@ Execute       set_default_model dataflow_in_loop_tile_height_loop_MAIN.1_Block_n
 Execute       schedule -model dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 1.402 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -796,7 +797,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.137 seconds; current allocated memory: 1.402 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -812,15 +813,15 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_conv1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 331, loop 'feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_conv1'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 2.544 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.598 seconds; current allocated memory: 1.436 GB.
+Command       schedule done; 2.779 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.847 seconds; current allocated memory: 1.429 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 1.124 sec.
+Command       syn_report done; 1.14 sec.
 Execute       db_write -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co.sched.adb -f 
-Command       db_write done; 0.13 sec.
+Command       db_write done; 0.132 sec.
 INFO-FLOW: Finish scheduling conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co.
 Execute       set_default_model conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co 
 Execute       bind -model conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co 
@@ -829,15 +830,15 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.775 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.03 seconds; current allocated memory: 1.436 GB.
+Command       bind done; 0.782 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.054 seconds; current allocated memory: 1.429 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
 Command       syn_report done; 0.32 sec.
 Execute       db_write -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co.bind.adb -f 
-Command       db_write done; 0.178 sec.
+Command       db_write done; 0.18 sec.
 INFO-FLOW: Finish binding conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv1_tile' 
@@ -846,14 +847,14 @@ Execute       set_default_model conv1_tile
 Execute       schedule -model conv1_tile 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.615 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.144 seconds; current allocated memory: 1.438 GB.
+Command       schedule done; 0.631 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.158 seconds; current allocated memory: 1.431 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
 Execute       db_write -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile.sched.adb -f 
-Command       db_write done; 0.108 sec.
+Command       db_write done; 0.111 sec.
 INFO-FLOW: Finish scheduling conv1_tile.
 Execute       set_default_model conv1_tile 
 Execute       bind -model conv1_tile 
@@ -864,15 +865,15 @@ WARNING: [BIND 205-102] The specified resource core for memory 'layer1_output_ti
 WARNING: [BIND 205-102] The specified resource core for memory 'layer1_output_tile_1' will be ignored if a simpler one can be used.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.187 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.395 seconds; current allocated memory: 1.438 GB.
+Command       bind done; 0.178 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.389 seconds; current allocated memory: 1.431 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.109 sec.
+Command       syn_report done; 0.135 sec.
 Execute       db_write -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile.bind.adb -f 
-Command       db_write done; 0.131 sec.
+Command       db_write done; 0.14 sec.
 INFO-FLOW: Finish binding conv1_tile.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2' 
@@ -883,8 +884,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.104 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.375 seconds; current allocated memory: 1.438 GB.
+Command       schedule done; 0.106 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.415 seconds; current allocated memory: 1.431 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -898,7 +899,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 1.438 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 1.431 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -914,8 +915,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.104 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.171 seconds; current allocated memory: 1.438 GB.
+Command       schedule done; 0.109 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.174 seconds; current allocated memory: 1.431 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -929,7 +930,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.438 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 1.431 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -945,8 +946,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'tile_height_loop'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 10, loop 'tile_height_loop'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 1.037 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.103 seconds; current allocated memory: 1.438 GB.
+Command       schedule done; 1.102 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.167 seconds; current allocated memory: 1.431 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_tile_height_loop.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -960,7 +961,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.134 seconds; current allocated memory: 1.438 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.174 seconds; current allocated memory: 1.431 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_tile_height_loop.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -976,8 +977,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'tile_height_loop'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 10, loop 'tile_height_loop'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 1.02 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.098 seconds; current allocated memory: 1.439 GB.
+Command       schedule done; 1.115 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.203 seconds; current allocated memory: 1.431 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_tile_height_loop4.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -991,7 +992,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.134 seconds; current allocated memory: 1.439 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 1.432 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_tile_height_loop4.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1007,8 +1008,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'tile_height_loop'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 10, loop 'tile_height_loop'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 1.03 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.104 seconds; current allocated memory: 1.441 GB.
+Command       schedule done; 1.128 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.215 seconds; current allocated memory: 1.433 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_tile_height_loop5.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1022,7 +1023,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 1.442 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.162 seconds; current allocated memory: 1.434 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_tile_height_loop5.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1038,8 +1039,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'tile_height_loop'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 10, loop 'tile_height_loop'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 1.025 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.101 seconds; current allocated memory: 1.443 GB.
+Command       schedule done; 1.17 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.269 seconds; current allocated memory: 1.435 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_tile_height_loop6.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1053,7 +1054,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.138 seconds; current allocated memory: 1.443 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.435 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_tile_height_loop6.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1069,8 +1070,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'RELU_CONV2_VITIS_LOOP_360_6'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'RELU_CONV2_VITIS_LOOP_360_6'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.112 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.189 seconds; current allocated memory: 1.444 GB.
+Command       schedule done; 0.121 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.198 seconds; current allocated memory: 1.436 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1084,7 +1085,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 1.444 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 1.437 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1100,8 +1101,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.111 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.179 seconds; current allocated memory: 1.444 GB.
+Command       schedule done; 0.144 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 1.437 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1115,7 +1116,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 1.445 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 1.438 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1130,7 +1131,7 @@ Execute       schedule -model conv2
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
 Command       schedule done; 0.106 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.172 seconds; current allocated memory: 1.445 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.166 seconds; current allocated memory: 1.438 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1144,7 +1145,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.179 seconds; current allocated memory: 1.446 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.178 seconds; current allocated memory: 1.439 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1161,7 +1162,7 @@ INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.188 seconds; current allocated memory: 1.447 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.194 seconds; current allocated memory: 1.439 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1175,7 +1176,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 1.447 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 1.439 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1191,7 +1192,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'OUT_STATIONARY_CONV3_VITIS_LOOP_409_4'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'OUT_STATIONARY_CONV3_VITIS_LOOP_409_4'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.134 seconds; current allocated memory: 1.447 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.132 seconds; current allocated memory: 1.439 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1205,7 +1206,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 1.447 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 1.439 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1222,13 +1223,13 @@ INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for
 INFO: [SCHED 204-61] Pipelining loop 'in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 9, Final II = 9, Depth = 108, loop 'in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 3.214 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.269 seconds; current allocated memory: 1.459 GB.
+Command       schedule done; 3.245 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 3.301 seconds; current allocated memory: 1.451 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.394 sec.
+Command       syn_report done; 0.388 sec.
 Execute       db_write -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3.sched.adb -f 
 INFO-FLOW: Finish scheduling conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3.
 Execute       set_default_model conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 
@@ -1239,7 +1240,7 @@ INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
 Command       bind done; 0.341 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.826 seconds; current allocated memory: 1.459 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.82 seconds; current allocated memory: 1.451 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1255,7 +1256,7 @@ Execute       set_default_model conv3
 Execute       schedule -model conv3 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.332 seconds; current allocated memory: 1.459 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.323 seconds; current allocated memory: 1.451 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1269,7 +1270,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 1.459 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 1.451 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1286,7 +1287,7 @@ INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_464_1_VITIS_LOOP_465_2'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_464_1_VITIS_LOOP_465_2'
 INFO: [SCHED 204-11] Finished scheduling.
 Command       schedule done; 0.119 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.206 seconds; current allocated memory: 1.459 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 1.451 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/reconstructor_Pipeline_VITIS_LOOP_465_2.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1300,7 +1301,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.119 seconds; current allocated memory: 1.459 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 1.451 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/reconstructor_Pipeline_VITIS_LOOP_465_2.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1314,7 +1315,7 @@ Execute       set_default_model reconstructor
 Execute       schedule -model reconstructor 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 1.459 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 1.451 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/reconstructor.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1328,7 +1329,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 1.459 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.092 seconds; current allocated memory: 1.451 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/reconstructor.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1342,7 +1343,7 @@ Execute       set_default_model dataflow_in_loop_tile_height_loop_MAIN.1
 Execute       schedule -model dataflow_in_loop_tile_height_loop_MAIN.1 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.112 seconds; current allocated memory: 1.459 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 1.451 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_in_loop_tile_height_loop_MAIN_1.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1356,8 +1357,8 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.128 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 1.460 GB.
+Command       bind done; 0.121 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 1.452 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_in_loop_tile_height_loop_MAIN_1.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1372,7 +1373,7 @@ Execute       set_default_model dataflow_parent_loop_proc
 Execute       schedule -model dataflow_parent_loop_proc 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.222 seconds; current allocated memory: 1.460 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.224 seconds; current allocated memory: 1.452 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_parent_loop_proc.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1386,12 +1387,12 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.137 seconds; current allocated memory: 1.453 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_parent_loop_proc.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.136 sec.
+Command       syn_report done; 0.139 sec.
 Execute       db_write -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_parent_loop_proc.bind.adb -f 
 INFO-FLOW: Finish binding dataflow_parent_loop_proc.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1401,7 +1402,7 @@ Execute       set_default_model srcnn
 Execute       schedule -model srcnn 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.266 seconds; current allocated memory: 1.462 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.275 seconds; current allocated memory: 1.454 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.verbose.sched.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1415,13 +1416,13 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.149 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.223 seconds; current allocated memory: 1.463 GB.
+Command       bind done; 0.142 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.215 seconds; current allocated memory: 1.455 GB.
 Execute       syn_report -verbosereport -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.verbose.bind.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.163 sec.
+Command       syn_report done; 0.162 sec.
 Execute       db_write -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.bind.adb -f 
 INFO-FLOW: Finish binding srcnn.
 Execute       get_model_list srcnn -filter all-wo-channel 
@@ -1462,8 +1463,8 @@ Execute       create_rtl_model load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4' pipeline 'VITIS_LOOP_143_3_VITIS_LOOP_144_4' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-104] Estimated max fanout for 'load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4' is 5994 from HDL expression: ((ap_enable_reg_pp0_iter10 == 1'b1) & (1'b0 == ap_block_pp0_stage0))
 INFO: [RTGEN 206-100] Finished creating RTL model for 'load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4'.
-Command       create_rtl_model done; 0.11 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.373 seconds; current allocated memory: 1.470 GB.
+Command       create_rtl_model done; 0.103 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.366 seconds; current allocated memory: 1.461 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4 
 Execute       gen_rtl load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4 
@@ -1488,7 +1489,7 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       create_rtl_model load_conv1_params -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv1_params.compgen.tcl 
 INFO: [RTGEN 206-104] Estimated max fanout for 'load_conv1_params' is 6318 from HDL expression: (1'b1 == ap_CS_fsm_state13)
 INFO: [RTGEN 206-100] Finished creating RTL model for 'load_conv1_params'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.653 seconds; current allocated memory: 1.487 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.661 seconds; current allocated memory: 1.478 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl load_conv1_params -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_load_conv1_params 
 Execute       gen_rtl load_conv1_params -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_load_conv1_params 
@@ -1513,7 +1514,7 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       create_rtl_model load_conv2_params_Pipeline_VITIS_LOOP_163_2 -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv2_params_Pipeline_VITIS_LOOP_163_2.compgen.tcl 
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'load_conv2_params_Pipeline_VITIS_LOOP_163_2' pipeline 'VITIS_LOOP_163_2' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'load_conv2_params_Pipeline_VITIS_LOOP_163_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.242 seconds; current allocated memory: 1.490 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.247 seconds; current allocated memory: 1.482 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl load_conv2_params_Pipeline_VITIS_LOOP_163_2 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_load_conv2_params_Pipeline_VITIS_LOOP_163_2 
 Execute       gen_rtl load_conv2_params_Pipeline_VITIS_LOOP_163_2 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_load_conv2_params_Pipeline_VITIS_LOOP_163_2 
@@ -1537,7 +1538,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'load_conv2_params'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       create_rtl_model load_conv2_params -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv2_params.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'load_conv2_params'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.191 seconds; current allocated memory: 1.491 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 1.483 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl load_conv2_params -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_load_conv2_params 
 Execute       gen_rtl load_conv2_params -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_load_conv2_params 
@@ -1574,8 +1575,8 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'load_conv3_params_Pipeline_V
 WARNING: [RTGEN 206-101] Setting dangling out port 'load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4/m_axi_gmem_w3_ARREGION' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4/m_axi_gmem_w3_ARUSER' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4'.
-Command       create_rtl_model done; 0.242 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.384 seconds; current allocated memory: 1.493 GB.
+Command       create_rtl_model done; 0.254 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.402 seconds; current allocated memory: 1.485 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4 
 Execute       gen_rtl load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4 
@@ -1599,7 +1600,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'load_conv3_params'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       create_rtl_model load_conv3_params -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/load_conv3_params.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'load_conv3_params'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.343 seconds; current allocated memory: 1.499 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.355 seconds; current allocated memory: 1.490 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl load_conv3_params -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_load_conv3_params 
 Execute       gen_rtl load_conv3_params -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_load_conv3_params 
@@ -1623,7 +1624,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       create_rtl_model entry_proc -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/entry_proc.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 1.500 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.158 seconds; current allocated memory: 1.491 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl entry_proc -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_entry_proc 
 Execute       gen_rtl entry_proc -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_entry_proc 
@@ -1649,7 +1650,7 @@ Execute       create_rtl_model dataflow_in_loop_tile_height_loop_MAIN.1_Block_ne
 INFO: [RTGEN 206-100] Generating core module 'mul_8ns_10ns_17_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'urem_8ns_5ns_8_12_seq_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.224 seconds; current allocated memory: 1.501 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.189 seconds; current allocated memory: 1.492 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc 
 Execute       gen_rtl dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc 
@@ -1681,31 +1682,31 @@ INFO: [RTGEN 206-100] Generating core module 'mux_16_4_32_1_1': 104 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mux_17_5_32_1_1': 130 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mux_2_1_32_1_1': 81 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co'.
-Command       create_rtl_model done; 1.696 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.822 seconds; current allocated memory: 1.588 GB.
+Command       create_rtl_model done; 1.851 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.002 seconds; current allocated memory: 1.578 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co 
 Execute       gen_rtl conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co 
-Command       gen_rtl done; 0.102 sec.
+Command       gen_rtl done; 0.127 sec.
 Execute       syn_report -csynth -model conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/report/conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co_csynth.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.401 sec.
+Command       syn_report done; 0.469 sec.
 Execute       syn_report -rtlxml -model conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/report/conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co_csynth.xml 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.191 sec.
+Command       syn_report done; 0.202 sec.
 Execute       syn_report -verbosereport -model conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co.verbose.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.59 sec.
+Command       syn_report done; 0.61 sec.
 Execute       db_write -model conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co -f -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co.adb 
-Command       db_write done; 0.428 sec.
+Command       db_write done; 0.448 sec.
 Execute       db_write -model conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co -bindview -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/design.bindinfo.xml 
-Command       db_write done; 0.122 sec.
+Command       db_write done; 0.141 sec.
 Execute       gen_tb_info conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co -p C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv1_tile' 
@@ -1714,8 +1715,8 @@ Execute       create_rtl_model conv1_tile -top_prefix srcnn_ -sub_prefix srcnn_ 
 INFO: [RTGEN 206-100] Generating core module 'mux_2_1_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1_tile'.
 INFO: [RTMG 210-278] Implementing memory 'srcnn_conv1_tile_layer1_output_tile_RAM_S2P_BRAM_1R1W' using block RAMs.
-Command       create_rtl_model done; 0.183 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.755 seconds; current allocated memory: 1.619 GB.
+Command       create_rtl_model done; 0.195 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.068 seconds; current allocated memory: 1.610 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv1_tile -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv1_tile 
 Execute       gen_rtl conv1_tile -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv1_tile 
@@ -1731,9 +1732,9 @@ Execute       syn_report -verbosereport -model conv1_tile -o C:/Users/james/Docu
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.177 sec.
+Command       syn_report done; 0.183 sec.
 Execute       db_write -model conv1_tile -f -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile.adb 
-Command       db_write done; 0.154 sec.
+Command       db_write done; 0.16 sec.
 Execute       db_write -model conv1_tile -bindview -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info conv1_tile -p C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv1_tile 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1742,7 +1743,7 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       create_rtl_model conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2 -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2.compgen.tcl 
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2' pipeline 'STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.995 seconds; current allocated memory: 1.641 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.067 seconds; current allocated memory: 1.631 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2 
 Execute       gen_rtl conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2 
@@ -1767,7 +1768,7 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       create_rtl_model conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4 -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4.compgen.tcl 
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4' pipeline 'OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.281 seconds; current allocated memory: 1.641 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.232 seconds; current allocated memory: 1.631 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4 
 Execute       gen_rtl conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4 
@@ -1795,8 +1796,7 @@ INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2_Pipeline_ti
 INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 17 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 17 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2_Pipeline_tile_height_loop'.
-Command       create_rtl_model done; 0.104 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.307 seconds; current allocated memory: 1.643 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.315 seconds; current allocated memory: 1.633 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv2_Pipeline_tile_height_loop -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv2_Pipeline_tile_height_loop 
 Execute       gen_rtl conv2_Pipeline_tile_height_loop -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv2_Pipeline_tile_height_loop 
@@ -1824,7 +1824,7 @@ INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2_Pipeline_ti
 INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 17 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 17 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2_Pipeline_tile_height_loop4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.487 seconds; current allocated memory: 1.648 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.501 seconds; current allocated memory: 1.638 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv2_Pipeline_tile_height_loop4 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv2_Pipeline_tile_height_loop4 
 Execute       gen_rtl conv2_Pipeline_tile_height_loop4 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv2_Pipeline_tile_height_loop4 
@@ -1852,7 +1852,7 @@ INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2_Pipeline_ti
 INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 17 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 17 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2_Pipeline_tile_height_loop5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.473 seconds; current allocated memory: 1.652 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.496 seconds; current allocated memory: 1.642 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv2_Pipeline_tile_height_loop5 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv2_Pipeline_tile_height_loop5 
 Execute       gen_rtl conv2_Pipeline_tile_height_loop5 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv2_Pipeline_tile_height_loop5 
@@ -1880,7 +1880,8 @@ INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2_Pipeline_ti
 INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 17 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 17 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2_Pipeline_tile_height_loop6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.498 seconds; current allocated memory: 1.658 GB.
+Command       create_rtl_model done; 0.112 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.55 seconds; current allocated memory: 1.647 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv2_Pipeline_tile_height_loop6 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv2_Pipeline_tile_height_loop6 
 Execute       gen_rtl conv2_Pipeline_tile_height_loop6 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv2_Pipeline_tile_height_loop6 
@@ -1888,6 +1889,7 @@ Execute       syn_report -csynth -model conv2_Pipeline_tile_height_loop6 -o C:/U
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
+Command       syn_report done; 0.105 sec.
 Execute       syn_report -rtlxml -model conv2_Pipeline_tile_height_loop6 -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/report/conv2_Pipeline_tile_height_loop6_csynth.xml 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1908,7 +1910,8 @@ INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2_Pipeline_RE
 INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mux_17_5_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.46 seconds; current allocated memory: 1.662 GB.
+Command       create_rtl_model done; 0.111 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.594 seconds; current allocated memory: 1.652 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6 
 Execute       gen_rtl conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6 
@@ -1934,7 +1937,7 @@ Execute       create_rtl_model conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8' pipeline 'STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'mux_17_5_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.258 seconds; current allocated memory: 1.664 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 1.655 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8 
 Execute       gen_rtl conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8 
@@ -1963,8 +1966,8 @@ INFO: [RTGEN 206-100] Generating core module 'mux_2_1_32_1_1': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2'.
 INFO: [RTMG 210-278] Implementing memory 'srcnn_conv2_input_tile_RAM_AUTO_1R1W' using auto RAMs.
 INFO: [RTMG 210-278] Implementing memory 'srcnn_conv2_layer2_output_tile_RAM_AUTO_1R1W' using auto RAMs.
-Command       create_rtl_model done; 0.144 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.349 seconds; current allocated memory: 1.672 GB.
+Command       create_rtl_model done; 0.167 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.416 seconds; current allocated memory: 1.662 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv2 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv2 
 Execute       gen_rtl conv2 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv2 
@@ -1980,7 +1983,7 @@ Execute       syn_report -verbosereport -model conv2 -o C:/Users/james/Documents
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.112 sec.
+Command       syn_report done; 0.117 sec.
 Execute       db_write -model conv2 -f -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2.adb 
 Execute       db_write -model conv2 -bindview -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info conv2 -p C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv2 
@@ -1990,7 +1993,7 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       create_rtl_model conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3 -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3.compgen.tcl 
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3' pipeline 'VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.466 seconds; current allocated memory: 1.677 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.49 seconds; current allocated memory: 1.667 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3 
 Execute       gen_rtl conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3 
@@ -2014,7 +2017,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'conv3_Pipeline_OUT_STATIONARY_C
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       create_rtl_model conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4 -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.191 seconds; current allocated memory: 1.679 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.228 seconds; current allocated memory: 1.669 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4 
 Execute       gen_rtl conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4 
@@ -2043,8 +2046,8 @@ INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 3
 INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 3 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mux_8_3_32_1_1': 8 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3'.
-Command       create_rtl_model done; 0.251 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.385 seconds; current allocated memory: 1.685 GB.
+Command       create_rtl_model done; 0.26 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.432 seconds; current allocated memory: 1.674 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 
 Execute       gen_rtl conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 
@@ -2052,19 +2055,19 @@ Execute       syn_report -csynth -model conv3_Pipeline_in_feat_loop_conv3_tile_h
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.762 sec.
+Command       syn_report done; 0.83 sec.
 Execute       syn_report -rtlxml -model conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/report/conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_csynth.xml 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.358 sec.
+Command       syn_report done; 0.376 sec.
 Execute       syn_report -verbosereport -model conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3.verbose.rpt 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.555 sec.
+Command       syn_report done; 0.612 sec.
 Execute       db_write -model conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 -f -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3.adb 
-Command       db_write done; 0.546 sec.
+Command       db_write done; 0.552 sec.
 Execute       db_write -model conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 -bindview -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 -p C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -2073,7 +2076,7 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       create_rtl_model conv3 -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv3'.
 INFO: [RTMG 210-278] Implementing memory 'srcnn_conv3_input_tile_RAM_1WNR_AUTO_1R1W' using auto RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.088 seconds; current allocated memory: 1.707 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.388 seconds; current allocated memory: 1.697 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl conv3 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_conv3 
 Execute       gen_rtl conv3 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_conv3 
@@ -2089,7 +2092,7 @@ Execute       syn_report -verbosereport -model conv3 -o C:/Users/james/Documents
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.124 sec.
+Command       syn_report done; 0.135 sec.
 Execute       db_write -model conv3 -f -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3.adb 
 Execute       db_write -model conv3 -bindview -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info conv3 -p C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3 
@@ -2099,7 +2102,7 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       create_rtl_model reconstructor_Pipeline_VITIS_LOOP_465_2 -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/reconstructor_Pipeline_VITIS_LOOP_465_2.compgen.tcl 
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'reconstructor_Pipeline_VITIS_LOOP_465_2' pipeline 'VITIS_LOOP_464_1_VITIS_LOOP_465_2' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reconstructor_Pipeline_VITIS_LOOP_465_2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.302 seconds; current allocated memory: 1.708 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.32 seconds; current allocated memory: 1.698 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl reconstructor_Pipeline_VITIS_LOOP_465_2 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_reconstructor_Pipeline_VITIS_LOOP_465_2 
 Execute       gen_rtl reconstructor_Pipeline_VITIS_LOOP_465_2 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_reconstructor_Pipeline_VITIS_LOOP_465_2 
@@ -2123,7 +2126,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'reconstructor'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       create_rtl_model reconstructor -top_prefix srcnn_ -sub_prefix srcnn_ -mg_file C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/reconstructor.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reconstructor'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.253 seconds; current allocated memory: 1.708 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 1.698 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl reconstructor -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_reconstructor 
 Execute       gen_rtl reconstructor -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_reconstructor 
@@ -2188,8 +2191,8 @@ INFO: [RTMG 210-285] Implementing FIFO 'conv1_to_conv2_U(srcnn_fifo_w32_d512_D)'
 INFO: [RTMG 210-285] Implementing FIFO 'pixel_w_loc_c_U(srcnn_fifo_w8_d4_S)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'pixel_h_loc_c_U(srcnn_fifo_w9_d4_S)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'conv2_to_conv3_U(srcnn_fifo_w32_d512_D)' using Distributed RAMs.
-Command       create_rtl_model done; 0.919 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.088 seconds; current allocated memory: 1.716 GB.
+Command       create_rtl_model done; 0.929 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.072 seconds; current allocated memory: 1.705 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl dataflow_in_loop_tile_height_loop_MAIN.1 -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_dataflow_in_loop_tile_height_loop_MAIN_1 
 Execute       gen_rtl dataflow_in_loop_tile_height_loop_MAIN.1 -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_dataflow_in_loop_tile_height_loop_MAIN_1 
@@ -2197,6 +2200,7 @@ Execute       syn_report -csynth -model dataflow_in_loop_tile_height_loop_MAIN.1
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
+Command       syn_report done; 0.132 sec.
 Execute       syn_report -rtlxml -model dataflow_in_loop_tile_height_loop_MAIN.1 -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/report/dataflow_in_loop_tile_height_loop_MAIN_1_csynth.xml 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -2205,7 +2209,7 @@ Execute       syn_report -verbosereport -model dataflow_in_loop_tile_height_loop
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.229 sec.
+Command       syn_report done; 0.235 sec.
 Execute       db_write -model dataflow_in_loop_tile_height_loop_MAIN.1 -f -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_in_loop_tile_height_loop_MAIN_1.adb 
 Execute       db_write -model dataflow_in_loop_tile_height_loop_MAIN.1 -bindview -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info dataflow_in_loop_tile_height_loop_MAIN.1 -p C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_in_loop_tile_height_loop_MAIN_1 
@@ -2246,8 +2250,8 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_parent_loop_proc/m_
 WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_parent_loop_proc/m_axi_gmem_out_ARUSER' to 0.
 WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_parent_loop_proc/m_axi_gmem_out_RREADY' to 0.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_parent_loop_proc'.
-Command       create_rtl_model done; 0.665 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.229 seconds; current allocated memory: 1.736 GB.
+Command       create_rtl_model done; 0.794 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.438 seconds; current allocated memory: 1.725 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl dataflow_parent_loop_proc -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn_dataflow_parent_loop_proc 
 Execute       gen_rtl dataflow_parent_loop_proc -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn_dataflow_parent_loop_proc 
@@ -2263,7 +2267,7 @@ Execute       syn_report -verbosereport -model dataflow_parent_loop_proc -o C:/U
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.182 sec.
+Command       syn_report done; 0.233 sec.
 Execute       db_write -model dataflow_parent_loop_proc -f -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_parent_loop_proc.adb 
 Execute       db_write -model dataflow_parent_loop_proc -bindview -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info dataflow_parent_loop_proc -p C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_parent_loop_proc 
@@ -2492,8 +2496,8 @@ INFO: [RTMG 210-278] Implementing memory 'srcnn_conv2_biases_local_RAM_S2P_BRAM_
 INFO: [RTMG 210-278] Implementing memory 'srcnn_p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_cNA' using block RAMs.
 INFO: [RTMG 210-278] Implementing memory 'srcnn_p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_cRA' using block RAMs.
 INFO: [RTMG 210-278] Implementing memory 'srcnn_conv3_biases_local_RAM_S2P_BRAM_1R1W' using block RAMs.
-Command       create_rtl_model done; 4.853 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 5.317 seconds; current allocated memory: 1.763 GB.
+Command       create_rtl_model done; 5.26 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 5.778 seconds; current allocated memory: 1.752 GB.
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.rtl_wrap.cfg.tcl 
 Execute       gen_rtl srcnn -istop -style xilinx -f -lang vhdl -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/vhdl/srcnn 
 Execute       gen_rtl srcnn -istop -style xilinx -f -lang vlog -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/verilog/srcnn 
@@ -2509,13 +2513,13 @@ Execute       syn_report -verbosereport -model srcnn -o C:/Users/james/Documents
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
 Execute           ap_part_info -quiet -name xck26-sfvc784-2LV-c -data family 
-Command       syn_report done; 0.205 sec.
+Command       syn_report done; 0.197 sec.
 Execute       db_write -model srcnn -f -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.adb 
 Execute       db_write -model srcnn -bindview -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info srcnn -p C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn 
 Execute       export_constraint_db -f -tool general -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.constraint.tcl 
 Execute       syn_report -designview -model srcnn -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.design.xml 
-Command       syn_report done; 1.809 sec.
+Command       syn_report done; 1.922 sec.
 Execute       syn_report -csynthDesign -model srcnn -o C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/syn/report/csynth.rpt -MHOut C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/kernel_module_hierarchy.tcl 
 Execute         list_part -family xck26-sfvc784-2LV-c 
 Execute           ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -2939,7 +2943,7 @@ Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/dataflow_parent_loop_proc.compgen.tcl 
 Execute       source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.compgen.tcl 
 Execute         source ./ctrl.slave.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 3.778 seconds; current allocated memory: 1.793 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.515 seconds; current allocated memory: 1.781 GB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='srcnn_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
@@ -3086,19 +3090,19 @@ INFO-FLOW: Running: gen_csynth_sec_pragma
 INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 4.263 seconds; current allocated memory: 1.818 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 4.295 seconds; current allocated memory: 1.807 GB.
 INFO: [VHDL 208-304] Generating VHDL RTL for srcnn.
 INFO: [VLOG 209-307] Generating Verilog RTL for srcnn.
 Execute       syn_report -model srcnn -printsummary 
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
-Command     autosyn done; 54.968 sec.
-Command   csynth_design done; 87.413 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 54 seconds. CPU system time: 5 seconds. Elapsed time: 87.413 seconds; current allocated memory: 784.141 MB.
-Command ap_source done; 92.611 sec.
+Command     autosyn done; 58.428 sec.
+Command   csynth_design done; 93.283 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 58 seconds. CPU system time: 5 seconds. Elapsed time: 93.283 seconds; current allocated memory: 780.609 MB.
+Command ap_source done; 96.689 sec.
 Execute cleanup_all 
-Command cleanup_all done; 0.258 sec.
-INFO-FLOW: Workspace C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1 opened at Thu Oct 30 21:35:07 +1100 2025
+Command cleanup_all done; 0.239 sec.
+INFO-FLOW: Workspace C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1 opened at Thu Oct 30 21:59:42 +1100 2025
 Execute     ap_set_clock -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     set_part xck26-sfvc784-2LV-c 
@@ -3107,7 +3111,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2023.1\lib\win
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2023.1/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
-Command       create_platform done; 2.458 sec.
+Command       create_platform done; 2.753 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
@@ -3122,7 +3126,7 @@ Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xf
 Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
 Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 2.553 sec.
+Command     set_part done; 2.844 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
@@ -3131,7 +3135,7 @@ Execute     config_export -format=ip_catalog
 Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
 INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 2.619 sec.
+Command   open_solution done; 2.915 sec.
 Execute   set_part xck26-sfvc784-2LV-c 
 INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
 Execute     create_platform xck26-sfvc784-2LV-c -board  
@@ -3149,7 +3153,7 @@ Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir
 Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
 Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.146 sec.
+Command   set_part done; 0.126 sec.
 Execute   create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 Execute   config_export -format ip_catalog -rtl verilog 
@@ -3394,7 +3398,85 @@ INFO-FLOW: DBG:PUTS:     IP package: exec C:/Users/james/Documents/Hardware_Fina
 INFO-FLOW: DBG:PUTS:     IP package: success C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/impl/ip/pack.bat
 Execute     send_msg_by_id INFO @200-802@%s srcnn_hls/solution1/impl/export.zip 
 INFO: [HLS 200-802] Generated output file srcnn_hls/solution1/impl/export.zip
-Command   export_design done; 46.201 sec.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 18 seconds. CPU system time: 2 seconds. Elapsed time: 46.201 seconds; current allocated memory: 31.098 MB.
-Command ap_source done; 49.062 sec.
+Command   export_design done; 36.857 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 18 seconds. CPU system time: 2 seconds. Elapsed time: 36.857 seconds; current allocated memory: 31.398 MB.
+Command ap_source done; 40.012 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1 opened at Thu Oct 30 23:20:01 +1100 2025
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xck26-sfvc784-2LV-c 
+Execute       create_platform xck26-sfvc784-2LV-c -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+Command       create_platform done; 3.049 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.159 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 3.267 sec.
+Execute   set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+Execute     create_platform xck26-sfvc784-2LV-c -board  
+Execute     source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.208 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+Execute   source ./srcnn_hls/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./srcnn_hls/solution1/directives.tcl
+Execute     set_directive_top -name srcnn srcnn 
+INFO: [HLS 200-1510] Running: set_directive_top -name srcnn srcnn 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 31.454 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 36.921 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 36.922 seconds; current allocated memory: 0.465 MB.
+Command ap_source done; 40.652 sec.
 Execute cleanup_all 

@@ -30,31 +30,68 @@ void srcnn(
 
   //----------------- AXI Ports and Interfaces ----------------------------------------
 
-  // AXI4-Lite control (start/stop + base-address registers)
-  #pragma HLS INTERFACE s_axilite port=return bundle=ctrl
+//  // AXI4-Lite control (start/stop + base-address registers)
+//  #pragma HLS INTERFACE s_axilite port=return bundle=ctrl
+//
+//  // Image I/O - give input/output their own memory channels
+//  #pragma HLS INTERFACE m_axi port=input_ftmap  bundle=gmem_in  offset=slave depth=(N0*H*W)
+//  #pragma HLS INTERFACE s_axilite port=input_ftmap   bundle=ctrl
+//  #pragma HLS INTERFACE m_axi port=output_ftmap bundle=gmem_out offset=slave depth=(N3*H*W)
+//  #pragma HLS INTERFACE s_axilite port=output_ftmap  bundle=ctrl
+//
+//  // Weights & biases - separate bundles so reads can overlap
+//  #pragma HLS INTERFACE m_axi port=conv1_weights bundle=gmem_w1 offset=slave depth=(N1*N0*F1*F1)
+//  #pragma HLS INTERFACE s_axilite port=conv1_weights bundle=ctrl
+//  #pragma HLS INTERFACE m_axi port=conv1_biases  bundle=gmem_w1 offset=slave depth=(N1)
+//  #pragma HLS INTERFACE s_axilite port=conv1_biases  bundle=ctrl
+//
+//  #pragma HLS INTERFACE m_axi port=conv2_weights bundle=gmem_w2 offset=slave depth=(N2*N1*F2*F2)
+//  #pragma HLS INTERFACE s_axilite port=conv2_weights bundle=ctrl
+//  #pragma HLS INTERFACE m_axi port=conv2_biases  bundle=gmem_w2 offset=slave depth=(N2)
+//  #pragma HLS INTERFACE s_axilite port=conv2_biases  bundle=ctrl
+//
+//  #pragma HLS INTERFACE m_axi port=conv3_weights bundle=gmem_w3 offset=slave depth=(N3*N2*F3*F3)
+//  #pragma HLS INTERFACE s_axilite port=conv3_weights bundle=ctrl
+//  #pragma HLS INTERFACE m_axi port=conv3_biases  bundle=gmem_w3 offset=slave depth=(N3)
+//  #pragma HLS INTERFACE s_axilite port=conv3_biases  bundle=ctrl
 
-  // Image I/O - give input/output their own memory channels
-  #pragma HLS INTERFACE m_axi port=input_ftmap  bundle=gmem_in  offset=slave depth=(N0*H*W)
-  #pragma HLS INTERFACE s_axilite port=input_ftmap   bundle=ctrl
-  #pragma HLS INTERFACE m_axi port=output_ftmap bundle=gmem_out offset=slave depth=(N3*H*W)
-  #pragma HLS INTERFACE s_axilite port=output_ftmap  bundle=ctrl
+    //----------------- AXI Interfaces for KV260 -----------------
+    //
+    // Control plane: one AXI4-Lite slave ("ctrl")
+    //  - exposes ap_start/ap_done/etc
+    //  - exposes 32/64-bit base-address regs for each pointer arg
+    //
+#pragma HLS INTERFACE s_axilite port=return          bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=input_ftmap     bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=conv1_weights   bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=conv1_biases    bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=conv2_weights   bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=conv2_biases    bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=conv3_weights   bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=conv3_biases    bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=output_ftmap    bundle=ctrl
 
-  // Weights & biases - separate bundles so reads can overlap
-  #pragma HLS INTERFACE m_axi port=conv1_weights bundle=gmem_w1 offset=slave depth=(N1*N0*F1*F1)
-  #pragma HLS INTERFACE s_axilite port=conv1_weights bundle=ctrl
-  #pragma HLS INTERFACE m_axi port=conv1_biases  bundle=gmem_w1 offset=slave depth=(N1)
-  #pragma HLS INTERFACE s_axilite port=conv1_biases  bundle=ctrl
+    // Data plane: AXI4 masters ("m_axi") so the PL can burst to PS DDR.
+    // We split them into bundles so Vivado can give each one its own
+    // AXI master port (and potentially different HP/HPC ports on the PS).
+    //
+    // Input image / feature map
+#pragma HLS INTERFACE m_axi     port=input_ftmap     bundle=gmem_in  offset=slave depth=(N0*H*W)
 
-  #pragma HLS INTERFACE m_axi port=conv2_weights bundle=gmem_w2 offset=slave depth=(N2*N1*F2*F2)
-  #pragma HLS INTERFACE s_axilite port=conv2_weights bundle=ctrl
-  #pragma HLS INTERFACE m_axi port=conv2_biases  bundle=gmem_w2 offset=slave depth=(N2)
-  #pragma HLS INTERFACE s_axilite port=conv2_biases  bundle=ctrl
+    // Final output (super-res result)
+#pragma HLS INTERFACE m_axi     port=output_ftmap    bundle=gmem_out offset=slave depth=(N3*H*W)
 
-  #pragma HLS INTERFACE m_axi port=conv3_weights bundle=gmem_w3 offset=slave depth=(N3*N2*F3*F3)
-  #pragma HLS INTERFACE s_axilite port=conv3_weights bundle=ctrl
-  #pragma HLS INTERFACE m_axi port=conv3_biases  bundle=gmem_w3 offset=slave depth=(N3)
-  #pragma HLS INTERFACE s_axilite port=conv3_biases  bundle=ctrl
+    // Conv1 params
+#pragma HLS INTERFACE m_axi     port=conv1_weights   bundle=gmem_w1  offset=slave depth=(N1*N0*F1*F1)
+#pragma HLS INTERFACE m_axi     port=conv1_biases    bundle=gmem_w1  offset=slave depth=(N1)
 
+    // Conv2 params
+#pragma HLS INTERFACE m_axi     port=conv2_weights   bundle=gmem_w2  offset=slave depth=(N2*N1*F2*F2)
+#pragma HLS INTERFACE m_axi     port=conv2_biases    bundle=gmem_w2  offset=slave depth=(N2)
+
+    // Conv3 params
+#pragma HLS INTERFACE m_axi     port=conv3_weights   bundle=gmem_w3  offset=slave depth=(N3*N2*F3*F3)
+#pragma HLS INTERFACE m_axi     port=conv3_biases    bundle=gmem_w3  offset=slave depth=(N3)
 
 
 

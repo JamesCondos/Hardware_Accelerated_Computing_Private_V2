@@ -1,9 +1,9 @@
 NOTE: Using modified tcl85t.dll from https://gitenterprise.xilinx.com/ACT/vitis_hls_tcl
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'james' on host 'james_condos' (Windows NT_amd64 version 6.2) on Thu Oct 30 21:35:07 +1100 2025
+INFO: [HLS 200-10] For user 'james' on host 'james_condos' (Windows NT_amd64 version 6.2) on Thu Oct 30 23:20:01 +1100 2025
 INFO: [HLS 200-10] In directory 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden'
-Sourcing Tcl script 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/export.tcl'
-INFO: [HLS 200-1510] Running: source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/export.tcl
+Sourcing Tcl script 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/csim.tcl
 INFO: [HLS 200-1510] Running: open_project srcnn_hls 
 INFO: [HLS 200-10] Opening project 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls'.
 INFO: [HLS 200-1510] Running: set_top srcnn 
@@ -50,36 +50,39 @@ INFO: [HLS 200-1510] Running: create_clock -period 10 -name default
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
 INFO: [HLS 200-1510] Running: source ./srcnn_hls/solution1/directives.tcl
 INFO: [HLS 200-1510] Running: set_directive_top -name srcnn srcnn 
-INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-
-****** Vivado v2023.1 (64-bit)
-  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
-  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-
-source run_ippack.tcl -notrace
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/impl/ip'
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.148 ; gain = 161.793
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-WARNING: [IP_Flow 19-4832] The IP name 'srcnn_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'srcnn_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'srcnn_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
-WARNING: [IP_Flow 19-4832] The IP name 'srcnn_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'srcnn_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'srcnn_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
-WARNING: [IP_Flow 19-4832] The IP name 'srcnn_fmul_32ns_32ns_32_3_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'srcnn_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'srcnn_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 30 21:35:56 2025...
-INFO: [HLS 200-802] Generated output file srcnn_hls/solution1/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 18 seconds. CPU system time: 2 seconds. Elapsed time: 46.201 seconds; current allocated memory: 31.098 MB.
-INFO: [HLS 200-112] Total CPU user time: 21 seconds. Total CPU system time: 3 seconds. Total elapsed time: 49.361 seconds; peak allocated memory: 1.070 GB.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../test/util.cpp in debug mode
+   Compiling ../../../../test/tb_set14.cpp in debug mode
+   Compiling ../../../../test/tb_conv1.cpp in debug mode
+   Compiling ../../../../test/tb_srcnn.cpp in debug mode
+   Compiling ../../../../src/conv1.cpp in debug mode
+   Compiling ../../../../src/conv1_tile.cpp in debug mode
+   Compiling ../../../../src/conv3.cpp in debug mode
+   Compiling ../../../../src/srcnn.cpp in debug mode
+   Generating csim.exe
+***** SRCNN Golden Reference *****
+  - Butterfly MSE: 0.000740349
+
+***** SRCNN - Set14 Test *****
+Image Name     PSNR GT vs HR (dB)  PSNR GT vs HR MATLAB (dB)  PSNR GT vs LR (dB)  MSE GT vs HR   MSE GT vs HR MATLAB        
+baboon         27.6922             27.9157                    27.3618             0.00169778     0.00161402                 
+barbara        24.9302             24.9898                    24.8997             0.00320972     0.00316839                 
+bridge         23.1062             26.2451                    25.2317             0.00261723     0.00237435                 
+coastguard     26.6691             26.8397                    26.3                0.00214792     0.00206895                 
+face           32.9951             33.4187                    32.6794             0.000495821    0.000454177                
+flowers        26.7113             27.3319                    25.6995             0.00207746     0.00184746                 
+foreman        34.6322             35.727                     33.2014             0.000341544    0.000266235                
+lenna          30.1096             30.8413                    29.1689             0.000970244    0.000822304                
+man            26.5156             27.1209                    26.0613             0.00214935     0.00193996                 
+monarch        26.4376             27.9822                    24.5799             0.00225424     0.00159023                 
+pepper         32.5202             33.4745                    32.0454             0.000556667    0.000447919                
+ppt3           27.8182             29.4367                    26.6842             0.0015257      0.0011378                  
+zebra          23.9901             27.6649                    24.7423             0.00247484     0.00171134                 
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 18496
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 36.922 seconds; current allocated memory: 0.465 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 40.99 seconds; peak allocated memory: 1.046 GB.

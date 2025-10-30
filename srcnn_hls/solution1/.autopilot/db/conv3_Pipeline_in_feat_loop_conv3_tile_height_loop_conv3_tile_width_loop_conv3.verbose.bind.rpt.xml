@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3'" level="0">
-<item name = "Date">Thu Oct 30 21:33:43 2025
+<item name = "Date">Thu Oct 30 21:58:16 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761820441887">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761821915649">
   <ports id="1" name="conv2_to_conv3" type="PortType" coreName="FIFO_LUTRAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="layer3_output_tile_0" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="289">
+  <ports id="2" name="layer3_output_tile_0" type="PortType" coreName="RAM" coreId="827547446" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="289">
     <dataInputObjs>call</dataInputObjs>
     <dataInputObjs>call</dataInputObjs>
     <dataOutputObjs>call</dataOutputObjs>
@@ -12,100 +12,100 @@
   <ports id="3" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31" type="PortType" coreName="RAM_S2P_BRAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="4" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_27" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="4" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_27" type="PortType" coreName="RAM_S2P_BRAM" coreId="827547446" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="5" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_23" type="PortType" coreName="RAM_S2P_BRAM" coreId="4294967294" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="5" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_23" type="PortType" coreName="RAM_S2P_BRAM" coreId="1868773681" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="6" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_19" type="PortType" coreName="RAM_S2P_BRAM" coreId="1986360096" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="6" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_19" type="PortType" coreName="RAM_S2P_BRAM" coreId="1664692549" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="7" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_15" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="7" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_15" type="PortType" coreName="RAM_S2P_BRAM" coreId="827547446" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="8" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_11" type="PortType" coreName="RAM_S2P_BRAM" coreId="539127920" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="8" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_11" type="PortType" coreName="RAM_S2P_BRAM" coreId="1597068127" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="9" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_7" type="PortType" coreName="RAM_S2P_BRAM" coreId="1601031264" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="9" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_7" type="PortType" coreName="RAM_S2P_BRAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="10" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_3" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="10" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_3" type="PortType" coreName="RAM_S2P_BRAM" coreId="827547446" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="11" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_30" type="PortType" coreName="RAM_S2P_BRAM" coreId="1607482656" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="11" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_30" type="PortType" coreName="RAM_S2P_BRAM" coreId="1868773681" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="12" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_26" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602391520" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="12" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_26" type="PortType" coreName="RAM_S2P_BRAM" coreId="1664692549" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="13" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_22" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="13" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_22" type="PortType" coreName="RAM_S2P_BRAM" coreId="827547446" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="14" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_18" type="PortType" coreName="RAM_S2P_BRAM" coreId="1031040613" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="14" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_18" type="PortType" coreName="RAM_S2P_BRAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="15" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_14" type="PortType" coreName="RAM_S2P_BRAM" coreId="539111737" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="15" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_14" type="PortType" coreName="RAM_S2P_BRAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="16" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_10" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602462640" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="16" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_10" type="PortType" coreName="RAM_S2P_BRAM" coreId="1664692549" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="17" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_6" type="PortType" coreName="RAM_S2P_BRAM" coreId="1936484413" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="17" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_6" type="PortType" coreName="RAM_S2P_BRAM" coreId="1600612709" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="18" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_2" type="PortType" coreName="RAM_S2P_BRAM" coreId="1601031264" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="18" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_2" type="PortType" coreName="RAM_S2P_BRAM" coreId="1886217065" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="19" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_29" type="PortType" coreName="RAM_S2P_BRAM" coreId="1601031264" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="19" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_29" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="20" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_25" type="PortType" coreName="RAM_S2P_BRAM" coreId="1935961711" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="20" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_25" type="PortType" coreName="RAM_S2P_BRAM" coreId="1008746035" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="21" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_21" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602380080" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="21" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_21" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="22" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_17" type="PortType" coreName="RAM_S2P_BRAM" coreId="1937055858" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="22" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_17" type="PortType" coreName="RAM_S2P_BRAM" coreId="1768257375" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="23" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_13" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602462720" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="23" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_13" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="24" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_9" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602382640" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="24" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_9" type="PortType" coreName="RAM_S2P_BRAM" coreId="1008746035" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="25" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_5" type="PortType" coreName="RAM_S2P_BRAM" coreId="171847458" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="25" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_5" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="26" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="1885415023" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="26" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="27" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_28" type="PortType" coreName="RAM_S2P_BRAM" coreId="1607993056" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="27" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_28" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="28" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_24" type="PortType" coreName="RAM_S2P_BRAM" coreId="1601031264" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="28" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_24" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="29" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_20" type="PortType" coreName="RAM_S2P_BRAM" coreId="1607476000" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="29" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_20" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
   <ports id="30" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_16" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="31" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_12" type="PortType" coreName="RAM_S2P_BRAM" coreId="1952673397" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="31" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_12" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="32" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_8" type="PortType" coreName="RAM_S2P_BRAM" coreId="790785133" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="32" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_8" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="33" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_4" type="PortType" coreName="RAM_S2P_BRAM" coreId="1601031264" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="33" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_4" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="34" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig" type="PortType" coreName="RAM_S2P_BRAM" coreId="1602391600" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
+  <ports id="34" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="36">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="86" name="conv3_biases_local" type="PortType" coreName="RAM_S2P_BRAM" coreId="1953394531" bitwidth="32" iftype="IfTypeRegister" arraysize="1"/>
+  <ports id="86" name="conv3_biases_local" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="1"/>
   <edges id="84" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
   <edges id="85" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.2"/>
   <edges id="92" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.4"/>
@@ -160,8 +160,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="empty" coreId="4228300630" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1"/>
-    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="_ln0" rtlName="grp_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3_fu_112" coreId="1610771864" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="empty" coreId="0" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="_ln0" rtlName="grp_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3_fu_112" coreId="0" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>conv2_to_conv3</dataInputObjs>
       <constName>conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3</constName>
@@ -170,13 +170,13 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="_ln0" rtlName="grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119" coreId="1610765848" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="_ln0" rtlName="grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119" coreId="0" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataInputObjs>layer3_output_tile_0</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>layer3_output_tile_0</dataOutputObjs>
       <constName>conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="_ln0" rtlName="grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127" coreId="11191" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="_ln0" rtlName="grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127" coreId="0" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <dataInputObjs>layer3_output_tile_0</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31</dataInputObjs>
@@ -214,7 +214,7 @@
       <dataOutputObjs>layer3_output_tile_0</dataOutputObjs>
       <constName>conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="_ln454" lineNumber="454" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv3" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="_ln454" lineNumber="454" fileName="src/srcnn.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv3" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="454" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv3"/>
     </node_objs>
     <fileValidLineNumbers fileName="src/srcnn.cpp">

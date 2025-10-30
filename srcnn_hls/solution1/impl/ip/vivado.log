@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Oct 30 21:35:32 2025
-# Process ID: 50252
+# Start of session at: Thu Oct 30 22:00:06 2025
+# Process ID: 54052
 # Current directory: C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/impl/ip
 # Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
 # Log file: C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/impl/ip/vivado.log
@@ -14,7 +14,7 @@
 source run_ippack.tcl -notrace
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
 Current project path is 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/impl/ip'
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.148 ; gain = 161.793
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1469.098 ; gain = 161.766
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
@@ -30,4 +30,4 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'srcnn_fmul_32ns_3
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 30 21:35:56 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 30 22:00:22 2025...

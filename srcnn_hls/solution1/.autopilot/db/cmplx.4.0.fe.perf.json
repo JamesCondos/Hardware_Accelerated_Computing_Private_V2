@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 4,
-    "calls": "1 4 3 8",
+    "calls": "8 4 1 7",
     "file": "srcnn.cpp",
     "fileloc": 7,
     "instructions": 711,
@@ -12,21 +12,30 @@
     "total_instructions": 9570
   },
   "1": {
-    "basicblocks": 255,
+    "basicblocks": 141,
     "calls": "",
     "file": "srcnn.cpp",
-    "fileloc": 132,
-    "instructions": 1144,
-    "loads": {
-      "L": 2
-    },
-    "name": "load_conv1_params",
+    "fileloc": 170,
+    "instructions": 375,
+    "name": "load_conv3_params",
     "stores": {
-      "G": 163
+      "G": 33
     },
-    "total_instructions": 1144
+    "total_instructions": 375
   },
   "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "srcnn.cpp",
+    "fileloc": 459,
+    "instructions": 33,
+    "loads": {
+      "L": 1
+    },
+    "name": "reconstructor",
+    "total_instructions": 33
+  },
+  "3": {
     "basicblocks": 114,
     "calls": "",
     "file": "srcnn.cpp",
@@ -41,18 +50,6 @@
       "L": 120
     },
     "total_instructions": 1141
-  },
-  "3": {
-    "basicblocks": 141,
-    "calls": "",
-    "file": "srcnn.cpp",
-    "fileloc": 170,
-    "instructions": 375,
-    "name": "load_conv3_params",
-    "stores": {
-      "G": 33
-    },
-    "total_instructions": 375
   },
   "4": {
     "basicblocks": 22,
@@ -102,24 +99,27 @@
     "total_instructions": 650
   },
   "7": {
-    "basicblocks": 7,
-    "calls": "",
-    "file": "srcnn.cpp",
-    "fileloc": 459,
-    "instructions": 33,
-    "loads": {
-      "L": 1
-    },
-    "name": "reconstructor",
-    "total_instructions": 33
-  },
-  "8": {
     "basicblocks": 1,
-    "calls": "5 2 6 7",
+    "calls": "5 3 6 2",
     "file": "srcnn.cpp",
     "fileloc": 0,
     "instructions": 26,
     "name": "_Z5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1__for.inc",
     "total_instructions": 7264
+  },
+  "8": {
+    "basicblocks": 255,
+    "calls": "",
+    "file": "srcnn.cpp",
+    "fileloc": 132,
+    "instructions": 1144,
+    "loads": {
+      "L": 2
+    },
+    "name": "load_conv1_params",
+    "stores": {
+      "G": 163
+    },
+    "total_instructions": 1144
   }
 }

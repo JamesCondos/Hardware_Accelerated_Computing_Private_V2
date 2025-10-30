@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'conv1_tile'
 ================================================================
-* Date:           Thu Oct 30 21:33:31 2025
+* Date:           Thu Oct 30 21:58:03 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -1654,7 +1654,7 @@ The critical path consists of the following:
  <State 12>: 7.300ns
 The critical path consists of the following:
 	bus read operation ('gmem_in_addr_read', src/srcnn.cpp:229->src/srcnn.cpp:120) on port 'gmem_in' (src/srcnn.cpp:229->src/srcnn.cpp:120) [675]  (7.300 ns)
-	'store' operation ('store_ln228', src/srcnn.cpp:228->src/srcnn.cpp:120) of variable 'bitcast_ln229', src/srcnn.cpp:229->src/srcnn.cpp:120 on local variable 'mux_case_1183_i' [1506]  (0.000 ns)
+	'store' operation ('store_ln228', src/srcnn.cpp:228->src/srcnn.cpp:120) of variable 'bitcast_ln229', src/srcnn.cpp:229->src/srcnn.cpp:120 on local variable 'mux_case_165801784_i' [782]  (0.000 ns)
 
  <State 13>: 0.000ns
 The critical path consists of the following:

@@ -9866,8 +9866,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Srcnn</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114326775</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-10-30T10:35:54Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114326800</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-10-30T11:00:19Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

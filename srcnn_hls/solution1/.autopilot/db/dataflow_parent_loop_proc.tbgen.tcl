@@ -7954,8 +7954,8 @@ set RtlHierarchyInfo {[
 					{"ID" : "583", "SubInstance" : "grp_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3_fu_112", "Port" : "conv2_to_conv3", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "layer3_output_tile_0", "Type" : "Memory", "Direction" : "IO", "DependentProc" : ["603"], "DependentChan" : "2", "PIPODir" : "O",
 				"SubConnect" : [
-					{"ID" : "585", "SubInstance" : "grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119", "Port" : "layer3_output_tile_0", "Inst_start_state" : "2", "Inst_end_state" : "3"},
-					{"ID" : "587", "SubInstance" : "grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127", "Port" : "layer3_output_tile_0", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
+					{"ID" : "587", "SubInstance" : "grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127", "Port" : "layer3_output_tile_0", "Inst_start_state" : "4", "Inst_end_state" : "5"},
+					{"ID" : "585", "SubInstance" : "grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119", "Port" : "layer3_output_tile_0", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "587", "SubInstance" : "grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},

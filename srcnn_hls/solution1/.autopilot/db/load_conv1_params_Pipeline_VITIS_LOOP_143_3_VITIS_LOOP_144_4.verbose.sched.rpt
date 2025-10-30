@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4'
 ================================================================
-* Date:           Thu Oct 30 21:33:23 2025
+* Date:           Thu Oct 30 21:57:54 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -918,7 +918,7 @@ The critical path consists of the following:
 
  <State 11>: 0.677ns
 The critical path consists of the following:
-	'store' operation ('store_ln146', src/srcnn.cpp:146) of variable 'bitcast_ln146', src/srcnn.cpp:146 on array 'p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv1_weig_199' [655]  (0.677 ns)
+	'store' operation ('store_ln146', src/srcnn.cpp:146) of variable 'bitcast_ln146', src/srcnn.cpp:146 on array 'p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv1_weig_71' [1037]  (0.677 ns)
 
 
 ============================================================

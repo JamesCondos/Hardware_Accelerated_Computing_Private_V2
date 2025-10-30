@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4'
 ================================================================
-* Date:           Thu Oct 30 21:33:39 2025
+* Date:           Thu Oct 30 21:58:11 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -132,8 +132,7 @@ The critical path consists of the following:
 	'alloca' operation ('j') [3]  (0.000 ns)
 	'load' operation ('j_load', src/srcnn.cpp:409) on local variable 'j' [17]  (0.000 ns)
 	'icmp' operation ('icmp_ln409', src/srcnn.cpp:409) [22]  (0.789 ns)
-	'select' operation ('select_ln408_1', src/srcnn.cpp:408) [24]  (0.414 ns)
-	'add' operation ('add_ln411', src/srcnn.cpp:411) [27]  (0.000 ns)
+	'select' operation ('select_ln408', src/srcnn.cpp:408) [23]  (0.414 ns)
 	'add' operation ('add_ln411_1', src/srcnn.cpp:411) [29]  (1.006 ns)
 	'getelementptr' operation ('layer3_output_tile_0_addr', src/srcnn.cpp:411) [31]  (0.000 ns)
 	'store' operation ('store_ln411', src/srcnn.cpp:411) of variable 'conv3_biases_local_load_read' on array 'layer3_output_tile_0' [34]  (1.237 ns)
