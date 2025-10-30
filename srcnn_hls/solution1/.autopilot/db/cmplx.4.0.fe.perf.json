@@ -1,0 +1,113 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "3 6 5 8 7",
+    "file": "srcnn.cpp",
+    "fileloc": 4,
+    "instructions": 699,
+    "name": "srcnn",
+    "total_instructions": 7133
+  },
+  "1": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "hls_fmax.h",
+    "fileloc": 19,
+    "instructions": 21,
+    "name": "generic_fmax<float>",
+    "total_instructions": 21
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "hls_fmin.h",
+    "fileloc": 19,
+    "instructions": 18,
+    "name": "generic_fmin<float>",
+    "total_instructions": 18
+  },
+  "3": {
+    "basicblocks": 367,
+    "calls": "",
+    "file": "srcnn.cpp",
+    "fileloc": 47,
+    "instructions": 712,
+    "loads": {
+      "L": 1
+    },
+    "name": "input_tiler",
+    "stores": {
+      "L": 289
+    },
+    "total_instructions": 712
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 51,
+    "instructions": 29,
+    "name": "__hls_fptosi_float_i32",
+    "total_instructions": 29
+  },
+  "5": {
+    "basicblocks": 181,
+    "calls": "",
+    "file": "conv2.cpp",
+    "fileloc": 7,
+    "instructions": 1727,
+    "loads": {
+      "L": 207
+    },
+    "name": "conv2",
+    "stores": {
+      "L": 171
+    },
+    "total_instructions": 1727
+  },
+  "6": {
+    "basicblocks": 225,
+    "calls": "1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4 1 2 4",
+    "file": "conv1_tile.cpp",
+    "fileloc": 7,
+    "instructions": 2488,
+    "loads": {
+      "L": 562
+    },
+    "name": "conv1_tile",
+    "stores": {
+      "L": 193
+    },
+    "total_instructions": 3712
+  },
+  "7": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "srcnn.cpp",
+    "fileloc": 61,
+    "instructions": 27,
+    "loads": {
+      "L": 1
+    },
+    "name": "reconstructor",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 27
+  },
+  "8": {
+    "basicblocks": 31,
+    "calls": "1 2 1 2",
+    "file": "conv3.cpp",
+    "fileloc": 7,
+    "instructions": 178,
+    "loads": {
+      "L": 5
+    },
+    "name": "conv3",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 256
+  }
+}

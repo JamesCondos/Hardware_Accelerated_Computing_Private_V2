@@ -1,0 +1,20 @@
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp:396:2: warning: Added loop label VITIS_LOOP_52_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 17; i++) {
+ ^~~
+ VITIS_LOOP_52_1: 
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp:396:2: note: FIX-IT applied suggested code changes
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp:397:9: warning: Added loop label VITIS_LOOP_53_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 17; j++) {
+        ^~~
+        VITIS_LOOP_53_2: 
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp:397:9: note: FIX-IT applied suggested code changes
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp:410:2: warning: Added loop label VITIS_LOOP_66_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 17; i++) {
+ ^~~
+ VITIS_LOOP_66_1: 
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp:410:2: note: FIX-IT applied suggested code changes
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp:411:9: warning: Added loop label VITIS_LOOP_67_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 17; j++) {
+        ^~~
+        VITIS_LOOP_67_2: 
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp:411:9: note: FIX-IT applied suggested code changes

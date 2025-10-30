@@ -1,0 +1,76 @@
+---
+MainSourceFile:  'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/conv3.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_23_1:  '
+    FileOffset:      23
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\conv3.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv3.pp.0.cpp'
+        Offset:          116612
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_23_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_24_2:  '
+    FileOffset:      24
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\conv3.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv3.pp.0.cpp'
+        Offset:          116660
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_24_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25_3:  '
+    FileOffset:      25
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\conv3.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv3.pp.0.cpp'
+        Offset:          116703
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_34_4:  '
+    FileOffset:      34
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\conv3.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv3.pp.0.cpp'
+        Offset:          116899
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_34_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_43_5:  '
+    FileOffset:      43
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\conv3.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv3.pp.0.cpp'
+        Offset:          117100
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_43_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_44_6:  '
+    FileOffset:      44
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\conv3.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv3.pp.0.cpp'
+        Offset:          117146
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_44_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_45_7:  '
+    FileOffset:      45
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\conv3.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv3.pp.0.cpp'
+        Offset:          117196
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_45_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_46_8:  '
+    FileOffset:      46
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\conv3.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv3.pp.0.cpp'
+        Offset:          117249
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_46_8: '
+...

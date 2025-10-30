@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761632488274">
+  <ports id="1" name="x" type="PortType" coreId="1008746041" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="16" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="17" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="20" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="25" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="26" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="29" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="32" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="33" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="34" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="37" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="38" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="41" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="43" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="44" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@ports.1"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="56" pipe_depth="1" RegionName="generic_fmin&lt;float>">
+    <basic_blocks id="13" name="generic_fmin&lt;float>" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="2" name="x_read" lineNumber="317" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" coreId="1008746036" contextFuncName="fp_struct" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;float&amp;gt;"/>
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="317" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
+        <dataInputObjs>x</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="3" name="data" lineNumber="317" originalName="data" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="data_fu_24_p1" coreId="4294967295" contextFuncName="fp_struct" bitwidth="32" opcode="bitcast" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;float&amp;gt;"/>
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="317" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="4" name="x_fp_exp" lineNumber="324" originalName="x_fp.exp" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_exp_fu_28_p4" coreId="0" contextFuncName="fp_struct" bitwidth="8" opcode="partselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;float&amp;gt;"/>
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="324" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="5" name="x_fp_sig" lineNumber="325" originalName="x_fp.sig" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_sig_fu_38_p1" coreId="0" contextFuncName="fp_struct" bitwidth="23" opcode="trunc" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;float&amp;gt;"/>
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="325" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="6" name="icmp_ln18" lineNumber="18" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="icmp_ln18_fu_42_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="generic_isnan_float_s" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.76" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h" linenumber="18" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_isnan&amp;lt;float&amp;gt;"/>
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="27" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;float&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="icmp_ln18_1" lineNumber="18" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="icmp_ln18_1_fu_48_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="generic_isnan_float_s" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.92" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h" linenumber="18" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_isnan&amp;lt;float&amp;gt;"/>
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="27" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;float&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="and_ln18" lineNumber="18" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="and_ln18_fu_54_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="generic_isnan_float_s" bitwidth="1" opcode="and" m_display="0" m_topoIndex="7" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h" linenumber="18" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_isnan&amp;lt;float&amp;gt;"/>
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="27" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;float&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="ymaggreater" lineNumber="38" originalName="ymaggreater" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="ymaggreater_fu_60_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="generic_fmin_float_s" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.01" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="38" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;float&amp;gt;"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="res" lineNumber="40" originalName="res" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="res_fu_66_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="generic_fmin_float_s" bitwidth="32" opcode="select" m_display="0" m_topoIndex="9" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="40" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;float&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="res_1" lineNumber="18" originalName="res" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="ap_return" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="generic_isnan_float_s" bitwidth="32" opcode="select" m_display="0" m_delay="0.44" m_topoIndex="10" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h" linenumber="18" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_isnan&amp;lt;float&amp;gt;"/>
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="27" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;float&amp;gt;"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>ret</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="_ln42" lineNumber="42" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" coreId="4294967295" contextFuncName="generic_fmin_float_s" opcode="ret" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="42" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;float&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>ap_return</dataOutputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h">
+        <validLinenumbers>18</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h">
+        <validLinenumbers>317</validLinenumbers>
+        <validLinenumbers>324</validLinenumbers>
+        <validLinenumbers>325</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h">
+        <validLinenumbers>38</validLinenumbers>
+        <validLinenumbers>40</validLinenumbers>
+        <validLinenumbers>42</validLinenumbers>
+        <validLinenumbers>21</validLinenumbers>
+        <validLinenumbers>27</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="res_1_fu_74">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_fp_sig_fu_38">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln18_fu_54">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_fp_exp_fu_28">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln18_fu_42">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln18_1_fu_48">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="res_fu_66">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ymaggreater_fu_60">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_fu_24">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="x_read_read_fu_18">
+    <nodeIds>2</nodeIds>
+  </ioNodes>
+  <ioPorts name="x">
+    <contents name="read">
+      <nodeIds>2</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="2" stage="1" latency="1"/>
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="generic_fmin_float_s" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>13</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -25,6 +25,9 @@
 typedef float ftmap_t;  // feature map
 typedef float param_t;  // parameters
 
+//typedef ap_fixed<16,4> ftmap_t;
+//typedef ap_fixed<16,4> param_t;
+
 // implements end-to-end SRCNN
 void srcnn(ftmap_t input_ftmap[N0][H][W],
            param_t conv1_weights[N1][N0][F1][F1],
@@ -41,13 +44,33 @@ void conv1(ftmap_t input_ftmap[N0][H][W],
            param_t conv1_biases[N1],
            ftmap_t output_ftmap[N1][H][W]);
 
+void load_conv1_params(
+    param_t conv1_weights_local[N1][N0][F1][F1],
+    param_t conv1_biases_local[N1],
+    param_t conv1_weights[N1][N0][F1][F1],
+    param_t conv1_biases[N1]);
+
+void load_conv2_params(
+    param_t conv2_weights_local[N2][N1][F2][F2],
+    param_t conv2_biases_local[N2],
+    param_t conv2_weights[N2][N1][F2][F2],
+    param_t conv2_biases[N2]);
+
+void load_conv3_params(
+    param_t conv3_weights_local[N3][N2][F3][F3],
+    param_t conv3_biases_local[N3],
+    param_t conv3_weights[N3][N2][F3][F3],
+    param_t conv3_biases[N3]);
+
+
 
 // implements first convolutional layer of SRCNN (streaming output)
-void conv1_tile(ftmap_t input_tile[N0][TILE_H][TILE_W],
-                param_t conv1_weights[N1][N0][F1][F1],
-                param_t conv1_biases[N1],
-                hls::stream<ftmap_t> &conv1_to_conv2);
-
+void conv1_tile(
+    ftmap_t input_ftmap[N0][H][W],
+	int pixel_h, int pixel_w,
+    param_t conv1_weights[N1][N0][F1][F1],
+    param_t conv1_biases[N1],
+    hls::stream<ftmap_t> &conv1_to_conv2);
 // implements second convolutional layer of SRCNN (streaming input/output)
 void conv2(hls::stream<ftmap_t> &conv1_to_conv2,
            param_t conv2_weights[N2][N1][F2][F2],
@@ -60,12 +83,10 @@ void conv3(hls::stream<ftmap_t> &conv2_to_conv3,
            param_t conv3_biases[N3],
            ftmap_t layer3_output_tile[N3][TILE_H][TILE_W]);
 
-void input_tiler(ftmap_t input_ftmap[N0][H][W],
-                 ftmap_t input_tile[N0][TILE_H][TILE_W],
-                 int tile_h, int tile_w);
 
 void reconstructor(ftmap_t output_ftmap[N3][H][W],
                    ftmap_t output_tile[N3][TILE_H][TILE_W],
-                   int tile_h, int tile_w);
+                   int pixel_h, int pixel_w);
 
+void pixel_tracker(int *pixel_h, int *pixel_w);
 #endif /* _SRCNN_H_ */
