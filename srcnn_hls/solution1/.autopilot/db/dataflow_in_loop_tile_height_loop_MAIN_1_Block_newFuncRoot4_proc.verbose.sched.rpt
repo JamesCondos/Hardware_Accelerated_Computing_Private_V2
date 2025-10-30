@@ -1,0 +1,218 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc'
+================================================================
+* Date:           Thu Oct 30 18:13:13 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        srcnn_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.214 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       11|       11|  0.110 us|  0.110 us|   11|   11|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.11>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tile_n_0_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %tile_n_0"   --->   Operation 13 'read' 'tile_n_0_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tile_n_0_cast = zext i8 %tile_n_0_read"   --->   Operation 14 'zext' 'tile_n_0_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (2.11ns)   --->   "%mul = mul i17 %tile_n_0_cast, i17 274"   --->   Operation 15 'mul' 'mul' <Predicate = true> <Delay = 2.11> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp = partselect i5 @_ssdm_op_PartSelect.i5.i17.i32.i32, i17 %mul, i32 12, i32 16"   --->   Operation 16 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [12/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 17 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 1.87>
+ST_2 : Operation 18 [11/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 18 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 1.87>
+ST_3 : Operation 19 [10/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 19 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 1.87>
+ST_4 : Operation 20 [9/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 20 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 1.87>
+ST_5 : Operation 21 [8/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 21 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 1.87>
+ST_6 : Operation 22 [7/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 22 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 1.87>
+ST_7 : Operation 23 [6/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 23 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 1.87>
+ST_8 : Operation 24 [5/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 24 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 1.87>
+ST_9 : Operation 25 [4/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 25 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 1.87>
+ST_10 : Operation 26 [3/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 26 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 1.87>
+ST_11 : Operation 27 [2/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 27 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 2.21>
+ST_12 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln109 = zext i5 %tmp" [src/srcnn.cpp:109]   --->   Operation 28 'zext' 'zext_ln109' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 29 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i5.i4, i5 %tmp, i4 0" [src/srcnn.cpp:109]   --->   Operation 29 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 30 [1/1] (0.77ns)   --->   "%pixel_h = add i9 %shl_ln, i9 %zext_ln109" [src/srcnn.cpp:109]   --->   Operation 30 'add' 'pixel_h' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 31 [1/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 31 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node pixel_w)   --->   "%shl_ln110 = shl i8 %rem_urem, i8 4" [src/srcnn.cpp:110]   --->   Operation 32 'shl' 'shl_ln110' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 33 [1/1] (0.33ns) (out node of the LUT)   --->   "%pixel_w = or i8 %shl_ln110, i8 %rem_urem" [src/srcnn.cpp:110]   --->   Operation 33 'or' 'pixel_w' <Predicate = true> <Delay = 0.33> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 34 [1/1] (0.00ns)   --->   "%mrv = insertvalue i17 <undef>, i8 %pixel_w" [src/srcnn.cpp:110]   --->   Operation 34 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 35 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i17 %mrv, i9 %pixel_h" [src/srcnn.cpp:110]   --->   Operation 35 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 36 [1/1] (0.00ns)   --->   "%ret_ln110 = ret i17 %mrv_1" [src/srcnn.cpp:110]   --->   Operation 36 'ret' 'ret_ln110' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 2.110ns
+The critical path consists of the following:
+	wire read operation ('tile_n_0_read') on port 'tile_n_0' [2]  (0.000 ns)
+	'mul' operation ('mul') [4]  (2.110 ns)
+
+ <State 2>: 1.879ns
+The critical path consists of the following:
+	'urem' operation ('rem_urem') [9]  (1.879 ns)
+
+ <State 3>: 1.879ns
+The critical path consists of the following:
+	'urem' operation ('rem_urem') [9]  (1.879 ns)
+
+ <State 4>: 1.879ns
+The critical path consists of the following:
+	'urem' operation ('rem_urem') [9]  (1.879 ns)
+
+ <State 5>: 1.879ns
+The critical path consists of the following:
+	'urem' operation ('rem_urem') [9]  (1.879 ns)
+
+ <State 6>: 1.879ns
+The critical path consists of the following:
+	'urem' operation ('rem_urem') [9]  (1.879 ns)
+
+ <State 7>: 1.879ns
+The critical path consists of the following:
+	'urem' operation ('rem_urem') [9]  (1.879 ns)
+
+ <State 8>: 1.879ns
+The critical path consists of the following:
+	'urem' operation ('rem_urem') [9]  (1.879 ns)
+
+ <State 9>: 1.879ns
+The critical path consists of the following:
+	'urem' operation ('rem_urem') [9]  (1.879 ns)
+
+ <State 10>: 1.879ns
+The critical path consists of the following:
+	'urem' operation ('rem_urem') [9]  (1.879 ns)
+
+ <State 11>: 1.879ns
+The critical path consists of the following:
+	'urem' operation ('rem_urem') [9]  (1.879 ns)
+
+ <State 12>: 2.214ns
+The critical path consists of the following:
+	'urem' operation ('rem_urem') [9]  (1.879 ns)
+	'or' operation ('pixel_w', src/srcnn.cpp:110) [11]  (0.335 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

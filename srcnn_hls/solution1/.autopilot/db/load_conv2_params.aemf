@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761808415680">
+  <ports id="1" name="conv2_weights_local_0_0" type="PortType" originalName="conv2_weights_local" coreName="RAM_S2P_BRAM" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="512">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="2" name="conv2_weights_local_0_1" type="PortType" originalName="conv2_weights_local" coreName="RAM_S2P_BRAM" coreId="4133302656" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="512">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="3" name="conv2_weights_local_1_0" type="PortType" originalName="conv2_weights_local" coreName="RAM_S2P_BRAM" coreId="1953391988" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="512">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="4" name="conv2_weights_local_1_1" type="PortType" originalName="conv2_weights_local" coreName="RAM_S2P_BRAM" coreId="146" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="512">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="5" name="conv2_biases_local" type="PortType" originalName="conv2_biases_local" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="6" name="gmem_w2" type="PortType" coreId="0" bitwidth="32" iftype="IfTypeFifo">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="7" name="conv2_weights" type="PortType" originalName="conv2_weights" coreId="0" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="conv2_biases" type="PortType" originalName="conv2_biases" coreId="2" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="55" source_obj="//@ports.7" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="57" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="60" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="73" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="74" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="75" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="76" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="79" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="82" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="83" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="84" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="85" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="86" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="87" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="90" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="94" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="96" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="97" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="98" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="99" source_obj="//@ports.5" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="100" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="103" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="107" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="108" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="109" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@ports.4"/>
+  <edges id="112" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="113" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="114" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="117" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="118" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="119" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@ports.0"/>
+  <edges id="120" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@ports.1"/>
+  <edges id="121" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@ports.2"/>
+  <edges id="122" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@ports.3"/>
+  <edges id="123" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="124" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="125" source_obj="//@ports.5" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="126" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="127" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="128" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="129" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="197" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="198" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="199" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="200" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="201" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="202" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="203" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="204" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="205" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.14"/>
+  <blocks id="23" name="entry" type="BlockType">
+    <controlOutputObjs>VITIS_LOOP_163_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="i" originalName="i" coreId="4130617456" bitwidth="6" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="conv2_biases_read" lineNumber="154" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="load_conv2_params" bitwidth="64" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="154" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>conv2_biases</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="conv2_weights_read" lineNumber="154" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="load_conv2_params" bitwidth="64" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="154" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>conv2_weights</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="trunc_ln" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln_reg_249" coreId="4130617456" contextFuncName="load_conv2_params" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="trunc_ln161_1" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln161_1_fu_152_p4" coreId="4130617456" contextFuncName="load_conv2_params" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="sext_ln161" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="sext_ln161_fu_162_p1" coreId="4132720752" contextFuncName="load_conv2_params" bitwidth="63" opcode="sext" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="i_write_ln161" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." coreId="4130616560" contextFuncName="load_conv2_params" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln161" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." coreId="3923276080" contextFuncName="load_conv2_params" opcode="br" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <controlInputObjs>VITIS_LOOP_163_2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/srcnn.cpp">
+      <validLinenumbers>154</validLinenumbers>
+      <validLinenumbers>161</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="29" name="VITIS_LOOP_163_2" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>VITIS_LOOP_163_2.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.end21</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_163_2.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="i_2" lineNumber="165" originalName="i" fileName="src/srcnn.cpp" fileDirectory="../." coreId="4132741744" contextFuncName="load_conv2_params" bitwidth="6" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="165" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="trunc_ln161" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln161_fu_174_p1" coreId="0" contextFuncName="load_conv2_params" bitwidth="5" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="icmp_ln161" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="icmp_ln161_fu_178_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="load_conv2_params" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.78" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="add_ln161" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln161_fu_184_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="load_conv2_params" bitwidth="6" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.78" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln161" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." coreId="4132734704" contextFuncName="load_conv2_params" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>VITIS_LOOP_163_2.split</controlInputObjs>
+      <controlInputObjs>for.end21</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/srcnn.cpp">
+      <validLinenumbers>165</validLinenumbers>
+      <validLinenumbers>161</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="48" name="VITIS_LOOP_163_2.split" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_163_2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_163_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="zext_ln161" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln161_fu_214_p1" coreId="4130615920" contextFuncName="load_conv2_params" bitwidth="64" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="zext_ln161_1" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln161_1_fu_190_p1" coreId="0" contextFuncName="load_conv2_params" bitwidth="63" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="trunc_ln161_2" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln161_2_fu_218_p1" coreId="4130618096" contextFuncName="load_conv2_params" bitwidth="1" opcode="trunc" nodeLabel="11.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="shl_ln" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="shl_ln_fu_222_p3" coreId="3923298960" contextFuncName="load_conv2_params" bitwidth="11" opcode="bitconcatenate" nodeLabel="11.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="tmp" lineNumber="165" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_reg_296" coreId="0" contextFuncName="load_conv2_params" bitwidth="1" opcode="bitselect" nodeLabel="11.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="165" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="add_ln162" lineNumber="162" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln162_fu_194_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="load_conv2_params" bitwidth="63" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.08" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="162" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="sext_ln162" lineNumber="162" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="sext_ln162_fu_199_p1" coreId="728" contextFuncName="load_conv2_params" bitwidth="64" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="162" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="gmem_w2_addr" lineNumber="162" fileName="src/srcnn.cpp" fileDirectory="../." coreId="3923270096" contextFuncName="load_conv2_params" bitwidth="32" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="162" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>gmem_w2</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>read</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="gmem_w2_load_req" lineNumber="162" fileName="src/srcnn.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="load_conv2_params" bitwidth="1" opcode="readreq" nodeLabel="2.0" nodeLatency="7" m_display="0" m_delay="7.3" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="162" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="gmem_w2_addr_read" lineNumber="162" fileName="src/srcnn.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="load_conv2_params" bitwidth="32" opcode="read" nodeLabel="10.0" m_display="0" m_delay="7.3" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="162" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="bitcast_ln162" lineNumber="162" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="conv2_biases_local_d1" coreId="4130616560" contextFuncName="load_conv2_params" bitwidth="32" opcode="bitcast" nodeLabel="11.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="162" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="conv2_biases_local_addr" lineNumber="162" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="load_conv2_params" bitwidth="5" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="162" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>conv2_biases_local</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="conv2_biases_local_addr_write_ln162" lineNumber="162" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="load_conv2_params" opcode="store" nodeLabel="11.0" m_display="0" m_delay="1.23" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="162" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="_ln161" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_load_conv2_params_Pipeline_VITIS_LOOP_163_2_fu_123" coreId="4132738096" contextFuncName="load_conv2_params" opcode="call" nodeLabel="11.0" nodeLatency="1" m_display="0" m_delay="1.88" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>gmem_w2</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>conv2_weights_local_0_0</dataOutputObjs>
+      <dataOutputObjs>conv2_weights_local_0_1</dataOutputObjs>
+      <dataOutputObjs>conv2_weights_local_1_0</dataOutputObjs>
+      <dataOutputObjs>conv2_weights_local_1_1</dataOutputObjs>
+      <constName>load_conv2_params_Pipeline_VITIS_LOOP_163_2</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="i_write_ln161" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." coreId="4132722608" contextFuncName="load_conv2_params" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.42" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln161" lineNumber="161" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="load_conv2_params" opcode="br" nodeLabel="12.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="161" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+      <controlInputObjs>VITIS_LOOP_163_2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/srcnn.cpp">
+      <validLinenumbers>161</validLinenumbers>
+      <validLinenumbers>165</validLinenumbers>
+      <validLinenumbers>162</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="50" name="for.end21" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_163_2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="_ln168" lineNumber="168" fileName="src/srcnn.cpp" fileDirectory="../." coreId="3923294032" contextFuncName="load_conv2_params" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="168" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv2_params"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/srcnn.cpp">
+      <validLinenumbers>168</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <regnodes realName="tmp_reg_296">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln_reg_249">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_242">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln161_reg_254">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln161_2_reg_286">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="i_2_reg_259">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_w2_addr_reg_275">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="shl_ln_reg_291">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_w2_addr_read_reg_281">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln161_reg_266">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <expressionNodes realName="conv2_biases_local_addr_gep_fu_106">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_78">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_w2_addr_fu_203">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln161_2_fu_218">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln161_fu_178">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln162_fu_194">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_222">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln161_1_fu_152">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln162_fu_238">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_230">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln161_fu_214">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln161_fu_184">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln162_fu_199">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln161_fu_174">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln161_1_fu_190">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_142">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln161_fu_162">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_load_conv2_params_Pipeline_VITIS_LOOP_163_2_fu_123">
+    <nodeIds>45</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="conv2_biases_read_read_fu_82">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_2_load_fu_171">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv2_weights_read_read_fu_88">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln161_store_fu_209">
+    <nodeIds>46</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln161_store_fu_166">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem_w2_addr_read_read_fu_101">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_94">
+    <nodeIds>40</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="conv2_biases_local" portID="1">
+    <nodeIds>44</nodeIds>
+  </memoryPorts>
+  <ioPorts name="conv2_biases">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv2_biases_local(p1)">
+    <contents name="store">
+      <nodeIds>44</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv2_weights">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem_w2">
+    <contents name="call">
+      <nodeIds>45</nodeIds>
+    </contents>
+    <contents name="read">
+      <nodeIds>41</nodeIds>
+    </contents>
+    <contents name="readreq">
+      <nodeIds>40</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="40" stage="8" latency="8"/>
+    </states>
+    <states id="4">
+      <operations id="40" stage="7" latency="8"/>
+    </states>
+    <states id="5">
+      <operations id="40" stage="6" latency="8"/>
+    </states>
+    <states id="6">
+      <operations id="40" stage="5" latency="8"/>
+    </states>
+    <states id="7">
+      <operations id="40" stage="4" latency="8"/>
+    </states>
+    <states id="8">
+      <operations id="40" stage="3" latency="8"/>
+    </states>
+    <states id="9">
+      <operations id="40" stage="2" latency="8"/>
+    </states>
+    <states id="10">
+      <operations id="40" stage="1" latency="8"/>
+    </states>
+    <states id="11">
+      <operations id="41" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="2" latency="2"/>
+    </states>
+    <states id="13">
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="2"/>
+      <operations id="47" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="load_conv2_params" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2785" mMaxLatency="2785">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>23</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_161_1" mII="-1" mDepth="-1" mMinTripCount="32" mMaxTripCount="32" mMinLatency="2784" mMaxLatency="2784" mType="1">
+      <basicBlocks>29</basicBlocks>
+      <basicBlocks>48</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>50</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

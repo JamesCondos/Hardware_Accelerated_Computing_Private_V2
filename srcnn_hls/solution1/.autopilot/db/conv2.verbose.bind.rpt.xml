@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv2'" level="0">
-<item name = "Date">Tue Oct 28 17:21:10 2025
+<item name = "Date">Thu Oct 30 18:13:26 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -24,21 +24,21 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">106348, 106348, 1.063 ms, 1.063 ms, 106348, 106348, no</column>
+<column name="">106347, 106347, 1.063 ms, 1.063 ms, 106347, 106347, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_33_1_VITIS_LOOP_34_2_fu_753">conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_33_1_VITIS_LOOP_34_2, 18498, 18498, 0.185 ms, 0.185 ms, 18498, 18498, no</column>
-<column name="grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_43_3_VITIS_LOOP_44_4_fu_827">conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_43_3_VITIS_LOOP_44_4, 9250, 9250, 92.500 us, 92.500 us, 9250, 9250, no</column>
-<column name="grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_85_7_VITIS_LOOP_86_8_fu_880">conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_85_7_VITIS_LOOP_86_8, 9250, 9250, 92.500 us, 92.500 us, 9250, 9250, no</column>
-<column name="grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_73_6_fu_903">conv2_Pipeline_RELU_CONV2_VITIS_LOOP_73_6, 292, 292, 2.920 us, 2.920 us, 292, 292, no</column>
-<column name="grp_conv2_Pipeline_tile_height_loop_fu_925">conv2_Pipeline_tile_height_loop, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
-<column name="grp_conv2_Pipeline_tile_height_loop9_fu_966">conv2_Pipeline_tile_height_loop9, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
-<column name="grp_conv2_Pipeline_tile_height_loop10_fu_1007">conv2_Pipeline_tile_height_loop10, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
-<column name="grp_conv2_Pipeline_tile_height_loop11_fu_1048">conv2_Pipeline_tile_height_loop11, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
+<column name="grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2_fu_344">conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2, 18498, 18498, 0.185 ms, 0.185 ms, 18498, 18498, no</column>
+<column name="grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4_fu_384">conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4, 9250, 9250, 92.500 us, 92.500 us, 9250, 9250, no</column>
+<column name="grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8_fu_407">conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8, 9250, 9250, 92.500 us, 92.500 us, 9250, 9250, no</column>
+<column name="grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6_fu_430">conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6, 292, 292, 2.920 us, 2.920 us, 292, 292, no</column>
+<column name="grp_conv2_Pipeline_tile_height_loop_fu_452">conv2_Pipeline_tile_height_loop, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
+<column name="grp_conv2_Pipeline_tile_height_loop12_fu_493">conv2_Pipeline_tile_height_loop12, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
+<column name="grp_conv2_Pipeline_tile_height_loop13_fu_534">conv2_Pipeline_tile_height_loop13, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
+<column name="grp_conv2_Pipeline_tile_height_loop14_fu_575">conv2_Pipeline_tile_height_loop14, 27, 27, 0.270 us, 0.270 us, 27, 27, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

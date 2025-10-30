@@ -1,0 +1,583 @@
+
+
+================================================================
+== Vitis HLS Report for 'conv2_Pipeline_tile_height_loop13'
+================================================================
+* Date:           Thu Oct 30 18:13:44 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        srcnn_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.016 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       27|       27|  0.270 us|  0.270 us|   27|   27|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- tile_height_loop  |       25|       25|        10|          1|          1|    17|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      61|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      36|    -|
+|Register         |        -|     -|    3527|     576|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|    3527|     673|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|       1|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln345_fu_786_p2    |         +|   0|  0|  12|           5|           1|
+    |add_ln350_2_fu_831_p2  |         +|   0|  0|  17|          10|          10|
+    |add_ln352_fu_796_p2    |         +|   0|  0|  18|          11|          11|
+    |icmp_ln345_fu_780_p2   |      icmp|   0|  0|  12|           5|           5|
+    |ap_enable_pp0          |       xor|   0|  0|   2|           1|           2|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0|  61|          32|          29|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_5     |   9|          2|    5|         10|
+    |i_fu_104                 |   9|          2|    5|         10|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   12|         24|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------+----+----+-----+-----------+
+    |                 Name                | FF | LUT| Bits| Const Bits|
+    +-------------------------------------+----+----+-----+-----------+
+    |add_2_10_reg_1396                    |  32|   0|   32|          0|
+    |add_2_11_reg_1401                    |  32|   0|   32|          0|
+    |add_2_12_reg_1406                    |  32|   0|   32|          0|
+    |add_2_13_reg_1411                    |  32|   0|   32|          0|
+    |add_2_14_reg_1416                    |  32|   0|   32|          0|
+    |add_2_15_reg_1421                    |  32|   0|   32|          0|
+    |add_2_1_reg_1346                     |  32|   0|   32|          0|
+    |add_2_2_reg_1351                     |  32|   0|   32|          0|
+    |add_2_3_reg_1356                     |  32|   0|   32|          0|
+    |add_2_4_reg_1361                     |  32|   0|   32|          0|
+    |add_2_5_reg_1366                     |  32|   0|   32|          0|
+    |add_2_6_reg_1371                     |  32|   0|   32|          0|
+    |add_2_7_reg_1376                     |  32|   0|   32|          0|
+    |add_2_8_reg_1381                     |  32|   0|   32|          0|
+    |add_2_9_reg_1386                     |  32|   0|   32|          0|
+    |add_2_reg_1341                       |  32|   0|   32|          0|
+    |add_2_s_reg_1391                     |  32|   0|   32|          0|
+    |ap_CS_fsm                            |   1|   0|    1|          0|
+    |ap_done_reg                          |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9              |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter6_reg     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter7_reg     |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter8_reg     |   1|   0|    1|          0|
+    |i_5_reg_890                          |   5|   0|    5|          0|
+    |i_fu_104                             |   5|   0|    5|          0|
+    |input_tile_10_load_reg_1034          |  32|   0|   32|          0|
+    |input_tile_11_load_reg_1039          |  32|   0|   32|          0|
+    |input_tile_12_load_reg_1044          |  32|   0|   32|          0|
+    |input_tile_13_load_reg_1049          |  32|   0|   32|          0|
+    |input_tile_14_load_reg_1054          |  32|   0|   32|          0|
+    |input_tile_15_load_reg_1059          |  32|   0|   32|          0|
+    |input_tile_16_load_reg_1064          |  32|   0|   32|          0|
+    |input_tile_1_load_reg_989            |  32|   0|   32|          0|
+    |input_tile_2_load_reg_994            |  32|   0|   32|          0|
+    |input_tile_3_load_reg_999            |  32|   0|   32|          0|
+    |input_tile_4_load_reg_1004           |  32|   0|   32|          0|
+    |input_tile_5_load_reg_1009           |  32|   0|   32|          0|
+    |input_tile_6_load_reg_1014           |  32|   0|   32|          0|
+    |input_tile_7_load_reg_1019           |  32|   0|   32|          0|
+    |input_tile_8_load_reg_1024           |  32|   0|   32|          0|
+    |input_tile_9_load_reg_1029           |  32|   0|   32|          0|
+    |input_tile_load_reg_984              |  32|   0|   32|          0|
+    |layer2_output_tile_10_addr_reg_1129  |  10|   0|   10|          0|
+    |layer2_output_tile_10_load_reg_1306  |  32|   0|   32|          0|
+    |layer2_output_tile_11_addr_reg_1135  |  10|   0|   10|          0|
+    |layer2_output_tile_11_load_reg_1311  |  32|   0|   32|          0|
+    |layer2_output_tile_12_addr_reg_1141  |  10|   0|   10|          0|
+    |layer2_output_tile_12_load_reg_1316  |  32|   0|   32|          0|
+    |layer2_output_tile_13_addr_reg_1147  |  10|   0|   10|          0|
+    |layer2_output_tile_13_load_reg_1321  |  32|   0|   32|          0|
+    |layer2_output_tile_14_addr_reg_1153  |  10|   0|   10|          0|
+    |layer2_output_tile_14_load_reg_1326  |  32|   0|   32|          0|
+    |layer2_output_tile_15_addr_reg_1159  |  10|   0|   10|          0|
+    |layer2_output_tile_15_load_reg_1331  |  32|   0|   32|          0|
+    |layer2_output_tile_16_addr_reg_1165  |  10|   0|   10|          0|
+    |layer2_output_tile_16_load_reg_1336  |  32|   0|   32|          0|
+    |layer2_output_tile_1_addr_reg_1075   |  10|   0|   10|          0|
+    |layer2_output_tile_1_load_reg_1261   |  32|   0|   32|          0|
+    |layer2_output_tile_2_addr_reg_1081   |  10|   0|   10|          0|
+    |layer2_output_tile_2_load_reg_1266   |  32|   0|   32|          0|
+    |layer2_output_tile_3_addr_reg_1087   |  10|   0|   10|          0|
+    |layer2_output_tile_3_load_reg_1271   |  32|   0|   32|          0|
+    |layer2_output_tile_4_addr_reg_1093   |  10|   0|   10|          0|
+    |layer2_output_tile_4_load_reg_1276   |  32|   0|   32|          0|
+    |layer2_output_tile_5_addr_reg_1099   |  10|   0|   10|          0|
+    |layer2_output_tile_5_load_reg_1281   |  32|   0|   32|          0|
+    |layer2_output_tile_6_addr_reg_1105   |  10|   0|   10|          0|
+    |layer2_output_tile_6_load_reg_1286   |  32|   0|   32|          0|
+    |layer2_output_tile_7_addr_reg_1111   |  10|   0|   10|          0|
+    |layer2_output_tile_7_load_reg_1291   |  32|   0|   32|          0|
+    |layer2_output_tile_8_addr_reg_1117   |  10|   0|   10|          0|
+    |layer2_output_tile_8_load_reg_1296   |  32|   0|   32|          0|
+    |layer2_output_tile_9_addr_reg_1123   |  10|   0|   10|          0|
+    |layer2_output_tile_9_load_reg_1301   |  32|   0|   32|          0|
+    |layer2_output_tile_addr_reg_1069     |  10|   0|   10|          0|
+    |layer2_output_tile_load_reg_1176     |  32|   0|   32|          0|
+    |mul_2_10_reg_1231                    |  32|   0|   32|          0|
+    |mul_2_11_reg_1236                    |  32|   0|   32|          0|
+    |mul_2_12_reg_1241                    |  32|   0|   32|          0|
+    |mul_2_13_reg_1246                    |  32|   0|   32|          0|
+    |mul_2_14_reg_1251                    |  32|   0|   32|          0|
+    |mul_2_15_reg_1256                    |  32|   0|   32|          0|
+    |mul_2_1_reg_1181                     |  32|   0|   32|          0|
+    |mul_2_2_reg_1186                     |  32|   0|   32|          0|
+    |mul_2_3_reg_1191                     |  32|   0|   32|          0|
+    |mul_2_4_reg_1196                     |  32|   0|   32|          0|
+    |mul_2_5_reg_1201                     |  32|   0|   32|          0|
+    |mul_2_6_reg_1206                     |  32|   0|   32|          0|
+    |mul_2_7_reg_1211                     |  32|   0|   32|          0|
+    |mul_2_8_reg_1216                     |  32|   0|   32|          0|
+    |mul_2_9_reg_1221                     |  32|   0|   32|          0|
+    |mul_2_reg_1171                       |  32|   0|   32|          0|
+    |mul_2_s_reg_1226                     |  32|   0|   32|          0|
+    |i_5_reg_890                          |  64|  32|    5|          0|
+    |layer2_output_tile_10_addr_reg_1129  |  64|  32|   10|          0|
+    |layer2_output_tile_11_addr_reg_1135  |  64|  32|   10|          0|
+    |layer2_output_tile_12_addr_reg_1141  |  64|  32|   10|          0|
+    |layer2_output_tile_13_addr_reg_1147  |  64|  32|   10|          0|
+    |layer2_output_tile_14_addr_reg_1153  |  64|  32|   10|          0|
+    |layer2_output_tile_15_addr_reg_1159  |  64|  32|   10|          0|
+    |layer2_output_tile_16_addr_reg_1165  |  64|  32|   10|          0|
+    |layer2_output_tile_1_addr_reg_1075   |  64|  32|   10|          0|
+    |layer2_output_tile_2_addr_reg_1081   |  64|  32|   10|          0|
+    |layer2_output_tile_3_addr_reg_1087   |  64|  32|   10|          0|
+    |layer2_output_tile_4_addr_reg_1093   |  64|  32|   10|          0|
+    |layer2_output_tile_5_addr_reg_1099   |  64|  32|   10|          0|
+    |layer2_output_tile_6_addr_reg_1105   |  64|  32|   10|          0|
+    |layer2_output_tile_7_addr_reg_1111   |  64|  32|   10|          0|
+    |layer2_output_tile_8_addr_reg_1117   |  64|  32|   10|          0|
+    |layer2_output_tile_9_addr_reg_1123   |  64|  32|   10|          0|
+    |layer2_output_tile_addr_reg_1069     |  64|  32|   10|          0|
+    +-------------------------------------+----+----+-----+-----------+
+    |Total                                |3527| 576| 2550|          0|
+    +-------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+-----------------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |           Source Object           |    C Type    |
++--------------------------------+-----+-----+------------+-----------------------------------+--------------+
+|ap_clk                          |   in|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|ap_rst                          |   in|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|ap_start                        |   in|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|ap_done                         |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|ap_idle                         |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|ap_ready                        |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_986_p_din0               |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_986_p_din1               |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_986_p_opcode             |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_986_p_dout0              |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_986_p_ce                 |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_990_p_din0               |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_990_p_din1               |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_990_p_opcode             |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_990_p_dout0              |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_990_p_ce                 |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_994_p_din0               |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_994_p_din1               |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_994_p_opcode             |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_994_p_dout0              |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_994_p_ce                 |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_998_p_din0               |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_998_p_din1               |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_998_p_opcode             |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_998_p_dout0              |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_998_p_ce                 |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1002_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1002_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1002_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1002_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1002_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1006_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1006_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1006_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1006_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1006_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1010_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1010_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1010_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1010_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1010_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1014_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1014_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1014_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1014_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1014_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1018_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1018_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1018_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1018_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1018_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1022_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1022_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1022_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1022_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1022_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1026_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1026_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1026_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1026_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1026_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1030_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1030_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1030_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1030_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1030_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1034_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1034_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1034_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1034_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1034_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1038_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1038_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1038_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1038_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1038_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1042_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1042_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1042_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1042_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1042_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1046_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1046_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1046_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1046_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1046_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1050_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1050_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1050_p_opcode            |  out|    2|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1050_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1050_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1054_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1054_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1054_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1054_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1058_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1058_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1058_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1058_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1062_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1062_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1062_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1062_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1066_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1066_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1066_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1066_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1070_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1070_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1070_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1070_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1074_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1074_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1074_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1074_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1078_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1078_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1078_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1078_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1082_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1082_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1082_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1082_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1086_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1086_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1086_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1086_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1090_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1090_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1090_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1090_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1094_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1094_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1094_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1094_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1098_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1098_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1098_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1098_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1102_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1102_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1102_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1102_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1106_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1106_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1106_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1106_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1110_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1110_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1110_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1110_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1114_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1114_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1114_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1114_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1118_p_din0              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1118_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1118_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|grp_fu_1118_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop13|  return value|
+|add_ln352_3                     |   in|   11|     ap_none|                        add_ln352_3|        scalar|
+|input_tile_address0             |  out|   11|   ap_memory|                         input_tile|         array|
+|input_tile_ce0                  |  out|    1|   ap_memory|                         input_tile|         array|
+|input_tile_q0                   |   in|   32|   ap_memory|                         input_tile|         array|
+|input_tile_1_address0           |  out|   11|   ap_memory|                       input_tile_1|         array|
+|input_tile_1_ce0                |  out|    1|   ap_memory|                       input_tile_1|         array|
+|input_tile_1_q0                 |   in|   32|   ap_memory|                       input_tile_1|         array|
+|input_tile_2_address0           |  out|   11|   ap_memory|                       input_tile_2|         array|
+|input_tile_2_ce0                |  out|    1|   ap_memory|                       input_tile_2|         array|
+|input_tile_2_q0                 |   in|   32|   ap_memory|                       input_tile_2|         array|
+|input_tile_3_address0           |  out|   11|   ap_memory|                       input_tile_3|         array|
+|input_tile_3_ce0                |  out|    1|   ap_memory|                       input_tile_3|         array|
+|input_tile_3_q0                 |   in|   32|   ap_memory|                       input_tile_3|         array|
+|input_tile_4_address0           |  out|   11|   ap_memory|                       input_tile_4|         array|
+|input_tile_4_ce0                |  out|    1|   ap_memory|                       input_tile_4|         array|
+|input_tile_4_q0                 |   in|   32|   ap_memory|                       input_tile_4|         array|
+|input_tile_5_address0           |  out|   11|   ap_memory|                       input_tile_5|         array|
+|input_tile_5_ce0                |  out|    1|   ap_memory|                       input_tile_5|         array|
+|input_tile_5_q0                 |   in|   32|   ap_memory|                       input_tile_5|         array|
+|input_tile_6_address0           |  out|   11|   ap_memory|                       input_tile_6|         array|
+|input_tile_6_ce0                |  out|    1|   ap_memory|                       input_tile_6|         array|
+|input_tile_6_q0                 |   in|   32|   ap_memory|                       input_tile_6|         array|
+|input_tile_7_address0           |  out|   11|   ap_memory|                       input_tile_7|         array|
+|input_tile_7_ce0                |  out|    1|   ap_memory|                       input_tile_7|         array|
+|input_tile_7_q0                 |   in|   32|   ap_memory|                       input_tile_7|         array|
+|input_tile_8_address0           |  out|   11|   ap_memory|                       input_tile_8|         array|
+|input_tile_8_ce0                |  out|    1|   ap_memory|                       input_tile_8|         array|
+|input_tile_8_q0                 |   in|   32|   ap_memory|                       input_tile_8|         array|
+|input_tile_9_address0           |  out|   11|   ap_memory|                       input_tile_9|         array|
+|input_tile_9_ce0                |  out|    1|   ap_memory|                       input_tile_9|         array|
+|input_tile_9_q0                 |   in|   32|   ap_memory|                       input_tile_9|         array|
+|input_tile_10_address0          |  out|   11|   ap_memory|                      input_tile_10|         array|
+|input_tile_10_ce0               |  out|    1|   ap_memory|                      input_tile_10|         array|
+|input_tile_10_q0                |   in|   32|   ap_memory|                      input_tile_10|         array|
+|input_tile_11_address0          |  out|   11|   ap_memory|                      input_tile_11|         array|
+|input_tile_11_ce0               |  out|    1|   ap_memory|                      input_tile_11|         array|
+|input_tile_11_q0                |   in|   32|   ap_memory|                      input_tile_11|         array|
+|input_tile_12_address0          |  out|   11|   ap_memory|                      input_tile_12|         array|
+|input_tile_12_ce0               |  out|    1|   ap_memory|                      input_tile_12|         array|
+|input_tile_12_q0                |   in|   32|   ap_memory|                      input_tile_12|         array|
+|input_tile_13_address0          |  out|   11|   ap_memory|                      input_tile_13|         array|
+|input_tile_13_ce0               |  out|    1|   ap_memory|                      input_tile_13|         array|
+|input_tile_13_q0                |   in|   32|   ap_memory|                      input_tile_13|         array|
+|input_tile_14_address0          |  out|   11|   ap_memory|                      input_tile_14|         array|
+|input_tile_14_ce0               |  out|    1|   ap_memory|                      input_tile_14|         array|
+|input_tile_14_q0                |   in|   32|   ap_memory|                      input_tile_14|         array|
+|input_tile_15_address0          |  out|   11|   ap_memory|                      input_tile_15|         array|
+|input_tile_15_ce0               |  out|    1|   ap_memory|                      input_tile_15|         array|
+|input_tile_15_q0                |   in|   32|   ap_memory|                      input_tile_15|         array|
+|input_tile_16_address0          |  out|   11|   ap_memory|                      input_tile_16|         array|
+|input_tile_16_ce0               |  out|    1|   ap_memory|                      input_tile_16|         array|
+|input_tile_16_q0                |   in|   32|   ap_memory|                      input_tile_16|         array|
+|add_ln350                       |   in|   10|     ap_none|                          add_ln350|        scalar|
+|layer2_output_tile_address0     |  out|   10|   ap_memory|                 layer2_output_tile|         array|
+|layer2_output_tile_ce0          |  out|    1|   ap_memory|                 layer2_output_tile|         array|
+|layer2_output_tile_we0          |  out|    1|   ap_memory|                 layer2_output_tile|         array|
+|layer2_output_tile_d0           |  out|   32|   ap_memory|                 layer2_output_tile|         array|
+|layer2_output_tile_address1     |  out|   10|   ap_memory|                 layer2_output_tile|         array|
+|layer2_output_tile_ce1          |  out|    1|   ap_memory|                 layer2_output_tile|         array|
+|layer2_output_tile_q1           |   in|   32|   ap_memory|                 layer2_output_tile|         array|
+|layer2_output_tile_1_address0   |  out|   10|   ap_memory|               layer2_output_tile_1|         array|
+|layer2_output_tile_1_ce0        |  out|    1|   ap_memory|               layer2_output_tile_1|         array|
+|layer2_output_tile_1_we0        |  out|    1|   ap_memory|               layer2_output_tile_1|         array|
+|layer2_output_tile_1_d0         |  out|   32|   ap_memory|               layer2_output_tile_1|         array|
+|layer2_output_tile_1_address1   |  out|   10|   ap_memory|               layer2_output_tile_1|         array|
+|layer2_output_tile_1_ce1        |  out|    1|   ap_memory|               layer2_output_tile_1|         array|
+|layer2_output_tile_1_q1         |   in|   32|   ap_memory|               layer2_output_tile_1|         array|
+|layer2_output_tile_2_address0   |  out|   10|   ap_memory|               layer2_output_tile_2|         array|
+|layer2_output_tile_2_ce0        |  out|    1|   ap_memory|               layer2_output_tile_2|         array|
+|layer2_output_tile_2_we0        |  out|    1|   ap_memory|               layer2_output_tile_2|         array|
+|layer2_output_tile_2_d0         |  out|   32|   ap_memory|               layer2_output_tile_2|         array|
+|layer2_output_tile_2_address1   |  out|   10|   ap_memory|               layer2_output_tile_2|         array|
+|layer2_output_tile_2_ce1        |  out|    1|   ap_memory|               layer2_output_tile_2|         array|
+|layer2_output_tile_2_q1         |   in|   32|   ap_memory|               layer2_output_tile_2|         array|
+|layer2_output_tile_3_address0   |  out|   10|   ap_memory|               layer2_output_tile_3|         array|
+|layer2_output_tile_3_ce0        |  out|    1|   ap_memory|               layer2_output_tile_3|         array|
+|layer2_output_tile_3_we0        |  out|    1|   ap_memory|               layer2_output_tile_3|         array|
+|layer2_output_tile_3_d0         |  out|   32|   ap_memory|               layer2_output_tile_3|         array|
+|layer2_output_tile_3_address1   |  out|   10|   ap_memory|               layer2_output_tile_3|         array|
+|layer2_output_tile_3_ce1        |  out|    1|   ap_memory|               layer2_output_tile_3|         array|
+|layer2_output_tile_3_q1         |   in|   32|   ap_memory|               layer2_output_tile_3|         array|
+|layer2_output_tile_4_address0   |  out|   10|   ap_memory|               layer2_output_tile_4|         array|
+|layer2_output_tile_4_ce0        |  out|    1|   ap_memory|               layer2_output_tile_4|         array|
+|layer2_output_tile_4_we0        |  out|    1|   ap_memory|               layer2_output_tile_4|         array|
+|layer2_output_tile_4_d0         |  out|   32|   ap_memory|               layer2_output_tile_4|         array|
+|layer2_output_tile_4_address1   |  out|   10|   ap_memory|               layer2_output_tile_4|         array|
+|layer2_output_tile_4_ce1        |  out|    1|   ap_memory|               layer2_output_tile_4|         array|
+|layer2_output_tile_4_q1         |   in|   32|   ap_memory|               layer2_output_tile_4|         array|
+|layer2_output_tile_5_address0   |  out|   10|   ap_memory|               layer2_output_tile_5|         array|
+|layer2_output_tile_5_ce0        |  out|    1|   ap_memory|               layer2_output_tile_5|         array|
+|layer2_output_tile_5_we0        |  out|    1|   ap_memory|               layer2_output_tile_5|         array|
+|layer2_output_tile_5_d0         |  out|   32|   ap_memory|               layer2_output_tile_5|         array|
+|layer2_output_tile_5_address1   |  out|   10|   ap_memory|               layer2_output_tile_5|         array|
+|layer2_output_tile_5_ce1        |  out|    1|   ap_memory|               layer2_output_tile_5|         array|
+|layer2_output_tile_5_q1         |   in|   32|   ap_memory|               layer2_output_tile_5|         array|
+|layer2_output_tile_6_address0   |  out|   10|   ap_memory|               layer2_output_tile_6|         array|
+|layer2_output_tile_6_ce0        |  out|    1|   ap_memory|               layer2_output_tile_6|         array|
+|layer2_output_tile_6_we0        |  out|    1|   ap_memory|               layer2_output_tile_6|         array|
+|layer2_output_tile_6_d0         |  out|   32|   ap_memory|               layer2_output_tile_6|         array|
+|layer2_output_tile_6_address1   |  out|   10|   ap_memory|               layer2_output_tile_6|         array|
+|layer2_output_tile_6_ce1        |  out|    1|   ap_memory|               layer2_output_tile_6|         array|
+|layer2_output_tile_6_q1         |   in|   32|   ap_memory|               layer2_output_tile_6|         array|
+|layer2_output_tile_7_address0   |  out|   10|   ap_memory|               layer2_output_tile_7|         array|
+|layer2_output_tile_7_ce0        |  out|    1|   ap_memory|               layer2_output_tile_7|         array|
+|layer2_output_tile_7_we0        |  out|    1|   ap_memory|               layer2_output_tile_7|         array|
+|layer2_output_tile_7_d0         |  out|   32|   ap_memory|               layer2_output_tile_7|         array|
+|layer2_output_tile_7_address1   |  out|   10|   ap_memory|               layer2_output_tile_7|         array|
+|layer2_output_tile_7_ce1        |  out|    1|   ap_memory|               layer2_output_tile_7|         array|
+|layer2_output_tile_7_q1         |   in|   32|   ap_memory|               layer2_output_tile_7|         array|
+|layer2_output_tile_8_address0   |  out|   10|   ap_memory|               layer2_output_tile_8|         array|
+|layer2_output_tile_8_ce0        |  out|    1|   ap_memory|               layer2_output_tile_8|         array|
+|layer2_output_tile_8_we0        |  out|    1|   ap_memory|               layer2_output_tile_8|         array|
+|layer2_output_tile_8_d0         |  out|   32|   ap_memory|               layer2_output_tile_8|         array|
+|layer2_output_tile_8_address1   |  out|   10|   ap_memory|               layer2_output_tile_8|         array|
+|layer2_output_tile_8_ce1        |  out|    1|   ap_memory|               layer2_output_tile_8|         array|
+|layer2_output_tile_8_q1         |   in|   32|   ap_memory|               layer2_output_tile_8|         array|
+|layer2_output_tile_9_address0   |  out|   10|   ap_memory|               layer2_output_tile_9|         array|
+|layer2_output_tile_9_ce0        |  out|    1|   ap_memory|               layer2_output_tile_9|         array|
+|layer2_output_tile_9_we0        |  out|    1|   ap_memory|               layer2_output_tile_9|         array|
+|layer2_output_tile_9_d0         |  out|   32|   ap_memory|               layer2_output_tile_9|         array|
+|layer2_output_tile_9_address1   |  out|   10|   ap_memory|               layer2_output_tile_9|         array|
+|layer2_output_tile_9_ce1        |  out|    1|   ap_memory|               layer2_output_tile_9|         array|
+|layer2_output_tile_9_q1         |   in|   32|   ap_memory|               layer2_output_tile_9|         array|
+|layer2_output_tile_10_address0  |  out|   10|   ap_memory|              layer2_output_tile_10|         array|
+|layer2_output_tile_10_ce0       |  out|    1|   ap_memory|              layer2_output_tile_10|         array|
+|layer2_output_tile_10_we0       |  out|    1|   ap_memory|              layer2_output_tile_10|         array|
+|layer2_output_tile_10_d0        |  out|   32|   ap_memory|              layer2_output_tile_10|         array|
+|layer2_output_tile_10_address1  |  out|   10|   ap_memory|              layer2_output_tile_10|         array|
+|layer2_output_tile_10_ce1       |  out|    1|   ap_memory|              layer2_output_tile_10|         array|
+|layer2_output_tile_10_q1        |   in|   32|   ap_memory|              layer2_output_tile_10|         array|
+|layer2_output_tile_11_address0  |  out|   10|   ap_memory|              layer2_output_tile_11|         array|
+|layer2_output_tile_11_ce0       |  out|    1|   ap_memory|              layer2_output_tile_11|         array|
+|layer2_output_tile_11_we0       |  out|    1|   ap_memory|              layer2_output_tile_11|         array|
+|layer2_output_tile_11_d0        |  out|   32|   ap_memory|              layer2_output_tile_11|         array|
+|layer2_output_tile_11_address1  |  out|   10|   ap_memory|              layer2_output_tile_11|         array|
+|layer2_output_tile_11_ce1       |  out|    1|   ap_memory|              layer2_output_tile_11|         array|
+|layer2_output_tile_11_q1        |   in|   32|   ap_memory|              layer2_output_tile_11|         array|
+|layer2_output_tile_12_address0  |  out|   10|   ap_memory|              layer2_output_tile_12|         array|
+|layer2_output_tile_12_ce0       |  out|    1|   ap_memory|              layer2_output_tile_12|         array|
+|layer2_output_tile_12_we0       |  out|    1|   ap_memory|              layer2_output_tile_12|         array|
+|layer2_output_tile_12_d0        |  out|   32|   ap_memory|              layer2_output_tile_12|         array|
+|layer2_output_tile_12_address1  |  out|   10|   ap_memory|              layer2_output_tile_12|         array|
+|layer2_output_tile_12_ce1       |  out|    1|   ap_memory|              layer2_output_tile_12|         array|
+|layer2_output_tile_12_q1        |   in|   32|   ap_memory|              layer2_output_tile_12|         array|
+|layer2_output_tile_13_address0  |  out|   10|   ap_memory|              layer2_output_tile_13|         array|
+|layer2_output_tile_13_ce0       |  out|    1|   ap_memory|              layer2_output_tile_13|         array|
+|layer2_output_tile_13_we0       |  out|    1|   ap_memory|              layer2_output_tile_13|         array|
+|layer2_output_tile_13_d0        |  out|   32|   ap_memory|              layer2_output_tile_13|         array|
+|layer2_output_tile_13_address1  |  out|   10|   ap_memory|              layer2_output_tile_13|         array|
+|layer2_output_tile_13_ce1       |  out|    1|   ap_memory|              layer2_output_tile_13|         array|
+|layer2_output_tile_13_q1        |   in|   32|   ap_memory|              layer2_output_tile_13|         array|
+|layer2_output_tile_14_address0  |  out|   10|   ap_memory|              layer2_output_tile_14|         array|
+|layer2_output_tile_14_ce0       |  out|    1|   ap_memory|              layer2_output_tile_14|         array|
+|layer2_output_tile_14_we0       |  out|    1|   ap_memory|              layer2_output_tile_14|         array|
+|layer2_output_tile_14_d0        |  out|   32|   ap_memory|              layer2_output_tile_14|         array|
+|layer2_output_tile_14_address1  |  out|   10|   ap_memory|              layer2_output_tile_14|         array|
+|layer2_output_tile_14_ce1       |  out|    1|   ap_memory|              layer2_output_tile_14|         array|
+|layer2_output_tile_14_q1        |   in|   32|   ap_memory|              layer2_output_tile_14|         array|
+|layer2_output_tile_15_address0  |  out|   10|   ap_memory|              layer2_output_tile_15|         array|
+|layer2_output_tile_15_ce0       |  out|    1|   ap_memory|              layer2_output_tile_15|         array|
+|layer2_output_tile_15_we0       |  out|    1|   ap_memory|              layer2_output_tile_15|         array|
+|layer2_output_tile_15_d0        |  out|   32|   ap_memory|              layer2_output_tile_15|         array|
+|layer2_output_tile_15_address1  |  out|   10|   ap_memory|              layer2_output_tile_15|         array|
+|layer2_output_tile_15_ce1       |  out|    1|   ap_memory|              layer2_output_tile_15|         array|
+|layer2_output_tile_15_q1        |   in|   32|   ap_memory|              layer2_output_tile_15|         array|
+|layer2_output_tile_16_address0  |  out|   10|   ap_memory|              layer2_output_tile_16|         array|
+|layer2_output_tile_16_ce0       |  out|    1|   ap_memory|              layer2_output_tile_16|         array|
+|layer2_output_tile_16_we0       |  out|    1|   ap_memory|              layer2_output_tile_16|         array|
+|layer2_output_tile_16_d0        |  out|   32|   ap_memory|              layer2_output_tile_16|         array|
+|layer2_output_tile_16_address1  |  out|   10|   ap_memory|              layer2_output_tile_16|         array|
+|layer2_output_tile_16_ce1       |  out|    1|   ap_memory|              layer2_output_tile_16|         array|
+|layer2_output_tile_16_q1        |   in|   32|   ap_memory|              layer2_output_tile_16|         array|
+|tmp_2                           |   in|   32|     ap_none|                              tmp_2|        scalar|
++--------------------------------+-----+-----+------------+-----------------------------------+--------------+
+

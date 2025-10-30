@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'srcnn'" level="0">
-<item name = "Date">Tue Oct 28 17:21:18 2025
+<item name = "Date">Thu Oct 30 18:13:34 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.360 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">70085281, 70085281, 0.701 sec, 0.701 sec, 70085282, 70085282, dataflow</column>
+<column name="">23934976, 23934976, 0.239 sec, 0.239 sec, 23934977, 23934977, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_Loop_tile_height_loop_MAIN_proc8_fu_396">Loop_tile_height_loop_MAIN_proc8, 70085281, 70085281, 0.701 sec, 0.701 sec, 70085281, 70085281, no</column>
+<column name="grp_load_conv1_params_fu_986">load_conv1_params, 6657, 6657, 66.570 us, 66.570 us, 6657, 6657, no</column>
+<column name="grp_load_conv2_params_fu_1157">load_conv2_params, 2785, 2785, 27.850 us, 27.850 us, 2785, 2785, no</column>
+<column name="grp_load_conv3_params_fu_1170">load_conv3_params, 812, 812, 8.120 us, 8.120 us, 812, 812, no</column>
+<column name="grp_dataflow_parent_loop_proc_fu_1211">dataflow_parent_loop_proc, 23928306, 23928306, 0.239 sec, 0.239 sec, 23928306, 23928306, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

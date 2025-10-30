@@ -1,1 +1,3 @@
-clang-tidy applied 4 of 4 suggested fixes.
+12 errors generated.
+Error while processing C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp.
+clang-tidy applied 29 of 29 suggested fixes.

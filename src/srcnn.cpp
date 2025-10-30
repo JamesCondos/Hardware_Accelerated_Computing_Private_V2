@@ -16,16 +16,46 @@ void srcnn(
 {
 
 
-#pragma HLS INTERFACE m_axi     port=input_ftmap   offset=slave bundle=INPUT
-#pragma HLS INTERFACE m_axi     port=conv1_weights offset=slave bundle=CONV1
-#pragma HLS INTERFACE m_axi     port=conv1_biases  offset=slave bundle=CONV1
-#pragma HLS INTERFACE m_axi     port=conv2_weights offset=slave bundle=CONV2
-#pragma HLS INTERFACE m_axi     port=conv2_biases  offset=slave bundle=CONV2
-#pragma HLS INTERFACE m_axi     port=conv3_weights offset=slave bundle=CONV3
-#pragma HLS INTERFACE m_axi     port=conv3_biases  offset=slave bundle=CONV3
-#pragma HLS INTERFACE m_axi     port=output_ftmap  offset=slave bundle=OUTPUT
+//#pragma HLS INTERFACE m_axi     port=input_ftmap   offset=slave bundle=INPUT
+//#pragma HLS INTERFACE m_axi     port=conv1_weights offset=slave bundle=CONV1
+//#pragma HLS INTERFACE m_axi     port=conv1_biases  offset=slave bundle=CONV1
+//#pragma HLS INTERFACE m_axi     port=conv2_weights offset=slave bundle=CONV2
+//#pragma HLS INTERFACE m_axi     port=conv2_biases  offset=slave bundle=CONV2
+//#pragma HLS INTERFACE m_axi     port=conv3_weights offset=slave bundle=CONV3
+//#pragma HLS INTERFACE m_axi     port=conv3_biases  offset=slave bundle=CONV3
+//#pragma HLS INTERFACE m_axi     port=output_ftmap  offset=slave bundle=OUTPUT
+//
+//#pragma HLS INTERFACE s_axilite port=return bundle=CTRL
 
-#pragma HLS INTERFACE s_axilite port=return bundle=CTRL
+
+  //----------------- AXI Ports and Interfaces ----------------------------------------
+
+  // AXI4-Lite control (start/stop + base-address registers)
+  #pragma HLS INTERFACE s_axilite port=return bundle=ctrl
+
+  // Image I/O - give input/output their own memory channels
+  #pragma HLS INTERFACE m_axi port=input_ftmap  bundle=gmem_in  offset=slave depth=(N0*H*W)
+  #pragma HLS INTERFACE s_axilite port=input_ftmap   bundle=ctrl
+  #pragma HLS INTERFACE m_axi port=output_ftmap bundle=gmem_out offset=slave depth=(N3*H*W)
+  #pragma HLS INTERFACE s_axilite port=output_ftmap  bundle=ctrl
+
+  // Weights & biases - separate bundles so reads can overlap
+  #pragma HLS INTERFACE m_axi port=conv1_weights bundle=gmem_w1 offset=slave depth=(N1*N0*F1*F1)
+  #pragma HLS INTERFACE s_axilite port=conv1_weights bundle=ctrl
+  #pragma HLS INTERFACE m_axi port=conv1_biases  bundle=gmem_w1 offset=slave depth=(N1)
+  #pragma HLS INTERFACE s_axilite port=conv1_biases  bundle=ctrl
+
+  #pragma HLS INTERFACE m_axi port=conv2_weights bundle=gmem_w2 offset=slave depth=(N2*N1*F2*F2)
+  #pragma HLS INTERFACE s_axilite port=conv2_weights bundle=ctrl
+  #pragma HLS INTERFACE m_axi port=conv2_biases  bundle=gmem_w2 offset=slave depth=(N2)
+  #pragma HLS INTERFACE s_axilite port=conv2_biases  bundle=ctrl
+
+  #pragma HLS INTERFACE m_axi port=conv3_weights bundle=gmem_w3 offset=slave depth=(N3*N2*F3*F3)
+  #pragma HLS INTERFACE s_axilite port=conv3_weights bundle=ctrl
+  #pragma HLS INTERFACE m_axi port=conv3_biases  bundle=gmem_w3 offset=slave depth=(N3)
+  #pragma HLS INTERFACE s_axilite port=conv3_biases  bundle=ctrl
+
+
 
 
 	param_t conv1_weights_local[N1][N0][F1][F1];
@@ -87,7 +117,7 @@ void srcnn(
 #pragma HLS STREAM variable=conv2_to_conv3 depth=64
 #pragma HLS BIND_STORAGE  variable=conv1_to_conv2 type=fifo impl=lutram
 #pragma HLS BIND_STORAGE  variable=conv2_to_conv3 type=fifo impl=lutram
-          conv1_tile(input_ftmap,pixel_h, pixel_w, conv1_weights_local, conv1_biases_local, conv1_to_conv2);
+          conv1_tile(input_ftmap, pixel_h, pixel_w, conv1_weights_local, conv1_biases_local, conv1_to_conv2);
           conv2(conv1_to_conv2, conv2_weights_local, conv2_biases_local, conv2_to_conv3);
           conv3(conv2_to_conv3, conv3_weights_local, conv3_biases_local, layer3_output_tile);
 

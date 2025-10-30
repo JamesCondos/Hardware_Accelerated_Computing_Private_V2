@@ -1,0 +1,142 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc'
+================================================================
+* Date:           Thu Oct 30 18:13:36 2025
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        srcnn_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.214 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       11|       11|  0.110 us|  0.110 us|   11|   11|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      26|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     0|     106|     103|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      92|    -|
+|Register         |        -|     -|      35|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     141|     221|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------+-------------------------+---------+----+-----+----+-----+
+    |           Instance           |          Module         | BRAM_18K| DSP|  FF | LUT| URAM|
+    +------------------------------+-------------------------+---------+----+-----+----+-----+
+    |mul_8ns_10ns_17_1_1_U424      |mul_8ns_10ns_17_1_1      |        0|   0|    0|  62|    0|
+    |urem_8ns_5ns_8_12_seq_1_U425  |urem_8ns_5ns_8_12_seq_1  |        0|   0|  106|  41|    0|
+    +------------------------------+-------------------------+---------+----+-----+----+-----+
+    |Total                         |                         |        0|   0|  106| 103|    0|
+    +------------------------------+-------------------------+---------+----+-----+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------+----------+----+---+----+------------+------------+
+    |   Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------+----------+----+---+----+------------+------------+
+    |pixel_h_fu_64_p2  |         +|   0|  0|  16|           9|           9|
+    |ap_block_state1   |        or|   0|  0|   2|           1|           1|
+    |pixel_w_fu_76_p2  |        or|   0|  0|   8|           8|           8|
+    +------------------+----------+----+---+----+------------+------------+
+    |Total             |          |   0|  0|  26|          18|          18|
+    +------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------+----+-----------+-----+-----------+
+    |     Name    | LUT| Input Size| Bits| Total Bits|
+    +-------------+----+-----------+-----+-----------+
+    |ap_NS_fsm    |  65|         13|    1|         13|
+    |ap_done      |   9|          2|    1|          2|
+    |ap_return_0  |   9|          2|    8|         16|
+    |ap_return_1  |   9|          2|    9|         18|
+    +-------------+----+-----------+-----+-----------+
+    |Total        |  92|         19|   19|         49|
+    +-------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------+----+----+-----+-----------+
+    |       Name       | FF | LUT| Bits| Const Bits|
+    +------------------+----+----+-----+-----------+
+    |ap_CS_fsm         |  12|   0|   12|          0|
+    |ap_done_reg       |   1|   0|    1|          0|
+    |ap_return_0_preg  |   8|   0|    8|          0|
+    |ap_return_1_preg  |   9|   0|    9|          0|
+    |tmp_reg_99        |   5|   0|    5|          0|
+    +------------------+----+----+-----+-----------+
+    |Total             |  35|   0|   35|          0|
+    +------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+------------------------------------------------------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |                           Source Object                          |    C Type    |
++-------------+-----+-----+------------+------------------------------------------------------------------+--------------+
+|ap_clk       |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc|  return value|
+|ap_start     |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc|  return value|
+|ap_done      |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc|  return value|
+|ap_continue  |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc|  return value|
+|ap_idle      |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc|  return value|
+|ap_ready     |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc|  return value|
+|ap_return_0  |  out|    8|  ap_ctrl_hs|  dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc|  return value|
+|ap_return_1  |  out|    9|  ap_ctrl_hs|  dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot4_proc|  return value|
+|tile_n_0     |   in|    8|     ap_none|                                                          tile_n_0|        scalar|
++-------------+-----+-----+------------+------------------------------------------------------------------+--------------+
+

@@ -1,113 +1,108 @@
 {
   "0": {
-    "basicblocks": 6,
-    "calls": "2 1 7 6 4",
+    "basicblocks": 4,
+    "calls": "6 7 1 5 2 3 4",
     "file": "srcnn.cpp",
-    "fileloc": 4,
-    "instructions": 1193,
+    "fileloc": 7,
+    "instructions": 933,
+    "loads": {
+      "L": 1,
+      "T": 1
+    },
     "name": "srcnn",
-    "total_instructions": 7244
+    "total_instructions": 31725
   },
   "1": {
-    "basicblocks": 216,
-    "calls": "8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3 8 5 3",
-    "file": "conv1_tile.cpp",
-    "fileloc": 7,
-    "instructions": 2308,
-    "loads": {
-      "L": 562
-    },
-    "name": "conv1_tile",
+    "basicblocks": 88,
+    "calls": "",
+    "file": "srcnn.cpp",
+    "fileloc": 170,
+    "instructions": 318,
+    "name": "load_conv3_params",
     "stores": {
-      "L": 192
+      "L": 33
     },
-    "total_instructions": 3532
+    "total_instructions": 318
   },
   "2": {
-    "basicblocks": 329,
+    "basicblocks": 91,
     "calls": "",
     "file": "srcnn.cpp",
-    "fileloc": 47,
-    "instructions": 668,
+    "fileloc": 306,
+    "instructions": 1070,
     "loads": {
-      "L": 1
+      "L": 179
     },
-    "name": "input_tiler",
+    "name": "conv2",
     "stores": {
-      "L": 289
+      "L": 119
     },
-    "total_instructions": 668
+    "total_instructions": 1070
   },
   "3": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "lib_floatconversion.cpp",
-    "fileloc": 51,
-    "instructions": 29,
-    "name": "__hls_fptosi_float_i32",
-    "total_instructions": 29
-  },
-  "4": {
-    "basicblocks": 5,
+    "basicblocks": 17,
     "calls": "",
     "file": "srcnn.cpp",
-    "fileloc": 61,
-    "instructions": 19,
+    "fileloc": 382,
+    "instructions": 619,
     "loads": {
-      "L": 1
-    },
-    "name": "reconstructor",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 19
-  },
-  "5": {
-    "basicblocks": 3,
-    "calls": "",
-    "file": "hls_fmin.h",
-    "fileloc": 19,
-    "instructions": 18,
-    "name": "generic_fmin<float>",
-    "total_instructions": 18
-  },
-  "6": {
-    "basicblocks": 21,
-    "calls": "8 5 8 5",
-    "file": "conv3.cpp",
-    "fileloc": 7,
-    "instructions": 142,
-    "loads": {
-      "L": 4
+      "L": 226
     },
     "name": "conv3",
     "stores": {
       "L": 3
     },
-    "total_instructions": 220
+    "total_instructions": 619
+  },
+  "4": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "srcnn.cpp",
+    "fileloc": 459,
+    "instructions": 20,
+    "loads": {
+      "L": 1
+    },
+    "name": "reconstructor",
+    "total_instructions": 20
+  },
+  "5": {
+    "basicblocks": 346,
+    "calls": "",
+    "file": "srcnn.cpp",
+    "fileloc": 196,
+    "instructions": 27616,
+    "loads": {
+      "L": 23574
+    },
+    "name": "conv1_tile",
+    "stores": {
+      "L": 291
+    },
+    "total_instructions": 27616
+  },
+  "6": {
+    "basicblocks": 210,
+    "calls": "",
+    "file": "srcnn.cpp",
+    "fileloc": 132,
+    "instructions": 1089,
+    "name": "load_conv1_params",
+    "stores": {
+      "L": 163
+    },
+    "total_instructions": 1089
   },
   "7": {
-    "basicblocks": 150,
+    "basicblocks": 14,
     "calls": "",
-    "file": "conv2.cpp",
-    "fileloc": 7,
-    "instructions": 1612,
-    "loads": {
-      "L": 206
-    },
-    "name": "conv2",
+    "file": "srcnn.cpp",
+    "fileloc": 153,
+    "instructions": 60,
+    "name": "load_conv2_params",
     "stores": {
-      "L": 170
+      "L": 5
     },
-    "total_instructions": 1612
-  },
-  "8": {
-    "basicblocks": 4,
-    "calls": "",
-    "file": "hls_fmax.h",
-    "fileloc": 19,
-    "instructions": 21,
-    "name": "generic_fmax<float>",
-    "total_instructions": 21
+    "total_instructions": 60
   }
 }

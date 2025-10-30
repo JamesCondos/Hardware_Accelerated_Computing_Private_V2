@@ -1,0 +1,108 @@
+<stg><name>dataflow_in_loop_tile_height_loop_MAIN.1_Block_newFuncRoot47_proc</name>
+
+
+<trans_list>
+
+<trans id="8" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="3" bw="1" op_0_bw="32" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+newFuncRoot:1 %conv3_biases_local_addr = getelementptr i32 %conv3_biases_local, i64 0, i64 0
+
+]]></Node>
+<StgValue><ssdm name="conv3_biases_local_addr"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="2" lat="2">
+<core>RAM_S2P_BRAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="32" op_0_bw="1">
+<![CDATA[
+newFuncRoot:2 %conv3_biases_local_load = load i1 %conv3_biases_local_addr
+
+]]></Node>
+<StgValue><ssdm name="conv3_biases_local_load"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="5" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="2" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<![CDATA[
+newFuncRoot:0 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %conv3_biases_local, i64 666, i64 25, i64 18446744073709551615
+
+]]></Node>
+<StgValue><ssdm name="specmemcore_ln0"/></StgValue>
+</operation>
+
+<operation id="6" st_id="2" stage="1" lat="2">
+<core>RAM_S2P_BRAM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="32" op_0_bw="1">
+<![CDATA[
+newFuncRoot:2 %conv3_biases_local_load = load i1 %conv3_biases_local_addr
+
+]]></Node>
+<StgValue><ssdm name="conv3_biases_local_load"/></StgValue>
+</operation>
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="32">
+<![CDATA[
+newFuncRoot:3 %ret_ln0 = ret i32 %conv3_biases_local_load
+
+]]></Node>
+<StgValue><ssdm name="ret_ln0"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

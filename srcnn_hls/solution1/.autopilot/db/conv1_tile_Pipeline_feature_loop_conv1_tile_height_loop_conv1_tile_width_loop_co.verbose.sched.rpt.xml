@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv1_tile_Pipeline_feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_co'" level="0">
-<item name = "Date">Tue Oct 28 17:20:53 2025
+<item name = "Date">Thu Oct 30 18:13:15 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.187 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.016 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">37327, 37327, 0.373 ms, 0.373 ms, 37327, 37327, no</column>
+<column name="">18827, 18827, 0.188 ms, 0.188 ms, 18827, 18827, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_conv1">37325, 37325, 336, 2, 1, 18496, yes</column>
+<column name="- feature_loop_conv1_tile_height_loop_conv1_tile_width_loop_conv1">18825, 18825, 331, 1, 1, 18496, yes</column>
 </table>
 </item>
 </section>

@@ -1,40 +1,325 @@
 ---
 MainSourceFile:  'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/.autopilot/db/srcnn.pp.0.cpp'
 Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      71
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      72
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      78
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      79
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      84
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      85
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, fifo + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      118
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, fifo + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      119
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_52_1:  '
-    FileOffset:      52
+    Message:         'Added loop label VITIS_LOOP_140_1:  '
+    FileOffset:      140
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          16815
+        Offset:          121695
         Length:          0
-        ReplacementText: 'VITIS_LOOP_52_1: '
+        ReplacementText: 'VITIS_LOOP_140_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_53_2:  '
-    FileOffset:      53
+    Message:         'Added loop label VITIS_LOOP_142_2:  '
+    FileOffset:      142
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          16854
+        Offset:          121783
         Length:          0
-        ReplacementText: 'VITIS_LOOP_53_2: '
+        ReplacementText: 'VITIS_LOOP_142_2: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_66_1:  '
-    FileOffset:      66
+    Message:         'Added loop label VITIS_LOOP_143_3:  '
+    FileOffset:      143
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          17156
+        Offset:          121825
         Length:          0
-        ReplacementText: 'VITIS_LOOP_66_1: '
+        ReplacementText: 'VITIS_LOOP_143_3: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_67_2:  '
-    FileOffset:      67
+    Message:         'Added loop label VITIS_LOOP_144_4:  '
+    FileOffset:      144
     FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
     Replacements:    
       - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
-        Offset:          17195
+        Offset:          121874
         Length:          0
-        ReplacementText: 'VITIS_LOOP_67_2: '
+        ReplacementText: 'VITIS_LOOP_144_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_161_1:  '
+    FileOffset:      161
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          122255
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_161_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_163_2:  '
+    FileOffset:      163
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          122343
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_163_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_178_1:  '
+    FileOffset:      178
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          122682
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_178_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_180_2:  '
+    FileOffset:      180
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          122769
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_180_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_181_3:  '
+    FileOffset:      181
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          122812
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_181_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_182_4:  '
+    FileOffset:      182
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          122861
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_182_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      215
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      221
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_224_1:  '
+    FileOffset:      224
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          123852
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_224_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_225_2:  '
+    FileOffset:      225
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          123909
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_225_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_226_3:  '
+    FileOffset:      226
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          123956
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_226_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, fadd + dsp is invalid combination for bind_op'
+    FileOffset:      251
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, fmul + dsp is invalid combination for bind_op'
+    FileOffset:      277
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_294_4:  '
+    FileOffset:      294
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          125621
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_294_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_295_5:  '
+    FileOffset:      295
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          125667
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_295_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_320_1:  '
+    FileOffset:      320
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          126218
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_320_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_321_2:  '
+    FileOffset:      321
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          126261
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_321_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_330_3:  '
+    FileOffset:      330
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          126478
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_330_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_331_4:  '
+    FileOffset:      331
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          126521
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_331_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_349_5:  '
+    FileOffset:      349
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          126977
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_349_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_360_6:  '
+    FileOffset:      360
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          127289
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_360_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_372_7:  '
+    FileOffset:      372
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          127571
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_372_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_373_8:  '
+    FileOffset:      373
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          127614
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_373_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_398_1:  '
+    FileOffset:      398
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          128062
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_398_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_399_2:  '
+    FileOffset:      399
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          128110
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_399_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_400_3:  '
+    FileOffset:      400
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          128153
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_400_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_409_4:  '
+    FileOffset:      409
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          128349
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_409_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_464_1:  '
+    FileOffset:      464
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          129827
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_464_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_465_2:  '
+    FileOffset:      465
+    FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\src\srcnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\srcnn.pp.0.cpp'
+        Offset:          129866
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_465_2: '
 ...

@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761808415262">
+  <ports id="1" name="conv1_weights_local_0_0_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1953391988" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="2" name="conv1_weights_local_0_0_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="3" name="conv1_weights_local_0_0_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="691478589" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="4" name="conv1_weights_local_0_0_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="656423456" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="5" name="conv1_weights_local_0_0_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1701602675" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="6" name="conv1_weights_local_0_0_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1953391988" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="7" name="conv1_weights_local_0_0_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="656423456" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="8" name="conv1_weights_local_0_0_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1953391988" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="9" name="conv1_weights_local_0_0_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="540680293" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="10" name="conv1_weights_local_0_1_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="540680293" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="11" name="conv1_weights_local_0_1_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1701602675" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="12" name="conv1_weights_local_0_1_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="656423456" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="13" name="conv1_weights_local_0_1_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="656423456" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="14" name="conv1_weights_local_0_1_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1701602675" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="15" name="conv1_weights_local_0_1_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="16" name="conv1_weights_local_0_1_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1702258035" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="17" name="conv1_weights_local_0_1_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1734702190" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="18" name="conv1_weights_local_0_1_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1936683105" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="19" name="conv1_weights_local_0_2_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="20" name="conv1_weights_local_0_2_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="808598902" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="21" name="conv1_weights_local_0_2_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1398756417" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="22" name="conv1_weights_local_0_2_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="23" name="conv1_weights_local_0_2_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="574449505" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="24" name="conv1_weights_local_0_2_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1031369833" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="25" name="conv1_weights_local_0_2_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1970217061" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="26" name="conv1_weights_local_0_2_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="27" name="conv1_weights_local_0_2_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="740910117" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="28" name="conv1_weights_local_0_3_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="574454132" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="29" name="conv1_weights_local_0_3_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="539122993" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="30" name="conv1_weights_local_0_3_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1668178292" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="31" name="conv1_weights_local_0_3_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="19" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="32" name="conv1_weights_local_0_3_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="7891302" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="33" name="conv1_weights_local_0_3_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="925973044" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="34" name="conv1_weights_local_0_3_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1213932032" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="35" name="conv1_weights_local_0_3_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="80" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="36" name="conv1_weights_local_0_3_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1668444975" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="37" name="conv1_weights_local_0_4_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="38" name="conv1_weights_local_0_4_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="39" name="conv1_weights_local_0_4_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="40" name="conv1_weights_local_0_4_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="41" name="conv1_weights_local_0_4_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="46" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="42" name="conv1_weights_local_0_4_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1634035310" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="43" name="conv1_weights_local_0_4_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1936683105" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="44" name="conv1_weights_local_0_4_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="45" name="conv1_weights_local_0_4_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="69" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="46" name="conv1_weights_local_0_5_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1680154725" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="47" name="conv1_weights_local_0_5_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="14" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="48" name="conv1_weights_local_0_5_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="263" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="49" name="conv1_weights_local_0_5_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1663070063" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="50" name="conv1_weights_local_0_5_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="294" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="51" name="conv1_weights_local_0_5_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="45" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="52" name="conv1_weights_local_0_5_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="53" name="conv1_weights_local_0_5_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="217" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="54" name="conv1_weights_local_0_5_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="537" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="55" name="conv1_weights_local_0_6_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="227" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="56" name="conv1_weights_local_0_6_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="49" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="57" name="conv1_weights_local_0_6_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="39" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="58" name="conv1_weights_local_0_6_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="70" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="59" name="conv1_weights_local_0_6_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="190" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="60" name="conv1_weights_local_0_6_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="531" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="61" name="conv1_weights_local_0_6_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1718511904" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="62" name="conv1_weights_local_0_6_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="269" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="63" name="conv1_weights_local_0_6_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1852795252" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="64" name="conv1_weights_local_0_7_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="7891302" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="65" name="conv1_weights_local_0_7_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="808591437" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="66" name="conv1_weights_local_0_7_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="925973044" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="67" name="conv1_weights_local_0_7_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="570455150" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="68" name="conv1_weights_local_0_7_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="673195827" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="69" name="conv1_weights_local_0_7_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1668444975" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="70" name="conv1_weights_local_0_7_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1769239916" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="71" name="conv1_weights_local_0_7_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1869182051" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="72" name="conv1_weights_local_0_7_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="570455150" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="73" name="conv1_weights_local_0_8_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="3684401" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="74" name="conv1_weights_local_0_8_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1830839397" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="75" name="conv1_weights_local_0_8_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="171847424" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="76" name="conv1_weights_local_0_8_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1936683105" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="77" name="conv1_weights_local_0_8_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1852385056" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="78" name="conv1_weights_local_0_8_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="539110971" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="79" name="conv1_weights_local_0_8_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="875703604" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="80" name="conv1_weights_local_0_8_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1295780106" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="81" name="conv1_weights_local_0_8_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1702065440" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="82" name="conv1_weights_local_1_0_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1919252069" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="83" name="conv1_weights_local_1_0_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="2037542765" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="84" name="conv1_weights_local_1_0_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1213932032" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="85" name="conv1_weights_local_1_0_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="840986223" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="86" name="conv1_weights_local_1_0_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1528955000" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="87" name="conv1_weights_local_1_0_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="875639328" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="88" name="conv1_weights_local_1_0_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="825368659" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="89" name="conv1_weights_local_1_0_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1769239137" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="90" name="conv1_weights_local_1_0_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="657612592" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="91" name="conv1_weights_local_1_1_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1701211753" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="92" name="conv1_weights_local_1_1_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1969365093" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="93" name="conv1_weights_local_1_1_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1634956133" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="94" name="conv1_weights_local_1_1_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="1836216166" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="95" name="conv1_weights_local_1_1_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="194" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="96" name="conv1_weights_local_1_1_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="97" name="conv1_weights_local_1_1_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="98" name="conv1_weights_local_1_1_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="99" name="conv1_weights_local_1_1_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="3917092544" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="100" name="conv1_weights_local_1_2_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="101" name="conv1_weights_local_1_2_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="102" name="conv1_weights_local_1_2_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="103" name="conv1_weights_local_1_2_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="104" name="conv1_weights_local_1_2_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="105" name="conv1_weights_local_1_2_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="2" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="106" name="conv1_weights_local_1_2_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="107" name="conv1_weights_local_1_2_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="108" name="conv1_weights_local_1_2_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="109" name="conv1_weights_local_1_3_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="110" name="conv1_weights_local_1_3_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4133306176" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="111" name="conv1_weights_local_1_3_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4133301408" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="112" name="conv1_weights_local_1_3_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="113" name="conv1_weights_local_1_3_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="3917081344" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="114" name="conv1_weights_local_1_3_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="115" name="conv1_weights_local_1_3_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="116" name="conv1_weights_local_1_3_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4718" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="117" name="conv1_weights_local_1_3_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="118" name="conv1_weights_local_1_4_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="2" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="119" name="conv1_weights_local_1_4_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="120" name="conv1_weights_local_1_4_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="121" name="conv1_weights_local_1_4_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="318" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="122" name="conv1_weights_local_1_4_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="2" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="123" name="conv1_weights_local_1_4_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4133303552" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="124" name="conv1_weights_local_1_4_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="3917081792" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="125" name="conv1_weights_local_1_4_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="3917084224" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="126" name="conv1_weights_local_1_4_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4132946400" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="127" name="conv1_weights_local_1_5_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="128" name="conv1_weights_local_1_5_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="482" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="129" name="conv1_weights_local_1_5_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="6535" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="130" name="conv1_weights_local_1_5_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="2" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="131" name="conv1_weights_local_1_5_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4132946400" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="132" name="conv1_weights_local_1_5_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="954" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="133" name="conv1_weights_local_1_5_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4273490000" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="134" name="conv1_weights_local_1_5_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4132947488" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="135" name="conv1_weights_local_1_5_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4132949280" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="136" name="conv1_weights_local_1_6_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4294967295" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="137" name="conv1_weights_local_1_6_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="19" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="138" name="conv1_weights_local_1_6_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4271429472" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="139" name="conv1_weights_local_1_6_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4132946400" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="140" name="conv1_weights_local_1_6_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4132947488" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="141" name="conv1_weights_local_1_6_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="142" name="conv1_weights_local_1_6_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="143" name="conv1_weights_local_1_6_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="144" name="conv1_weights_local_1_6_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4734" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="145" name="conv1_weights_local_1_7_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="2" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="146" name="conv1_weights_local_1_7_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4132949280" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="147" name="conv1_weights_local_1_7_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="148" name="conv1_weights_local_1_7_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4271431712" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="149" name="conv1_weights_local_1_7_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4132947488" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="150" name="conv1_weights_local_1_7_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4132946400" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="151" name="conv1_weights_local_1_7_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="152" name="conv1_weights_local_1_7_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="3917087808" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="153" name="conv1_weights_local_1_7_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4271430832" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="154" name="conv1_weights_local_1_8_0" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="562" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="155" name="conv1_weights_local_1_8_1" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4271432192" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="156" name="conv1_weights_local_1_8_2" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="3917091072" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="157" name="conv1_weights_local_1_8_3" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4132947488" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="158" name="conv1_weights_local_1_8_4" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="159" name="conv1_weights_local_1_8_5" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="3917101632" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="160" name="conv1_weights_local_1_8_6" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="4132949280" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="161" name="conv1_weights_local_1_8_7" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="162" name="conv1_weights_local_1_8_8" type="PortType" originalName="conv1_weights_local" coreName="RAM_S2P_LUTRAM" coreId="226" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="32">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="163" name="conv1_biases_local" type="PortType" originalName="conv1_biases_local" coreName="RAM_S2P_BRAM" coreId="2" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="64">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="164" name="gmem_w1" type="PortType" coreId="6586" bitwidth="32" iftype="IfTypeFifo">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="165" name="conv1_weights" type="PortType" originalName="conv1_weights" coreId="0" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="166" name="conv1_biases" type="PortType" originalName="conv1_biases" coreId="3917110528" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="375" source_obj="//@ports.165" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="377" source_obj="//@ports.164" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="380" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="386" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="389" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="392" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="395" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="396" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="397" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="398" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="399" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="402" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="405" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="408" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="409" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="410" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="411" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="412" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="413" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="416" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="420" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="421" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="422" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="423" source_obj="//@ports.163" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="424" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="427" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="431" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="432" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="433" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@ports.162"/>
+  <edges id="436" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="437" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="438" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="441" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.161"/>
+  <edges id="442" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="443" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.160"/>
+  <edges id="444" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.159"/>
+  <edges id="445" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.158"/>
+  <edges id="446" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.157"/>
+  <edges id="447" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.156"/>
+  <edges id="448" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.155"/>
+  <edges id="449" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.154"/>
+  <edges id="450" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.153"/>
+  <edges id="451" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.152"/>
+  <edges id="452" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.151"/>
+  <edges id="453" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.150"/>
+  <edges id="454" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.149"/>
+  <edges id="455" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.148"/>
+  <edges id="456" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.147"/>
+  <edges id="457" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.146"/>
+  <edges id="458" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.145"/>
+  <edges id="459" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.144"/>
+  <edges id="460" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.143"/>
+  <edges id="461" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.142"/>
+  <edges id="462" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.141"/>
+  <edges id="463" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.140"/>
+  <edges id="464" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.139"/>
+  <edges id="465" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.138"/>
+  <edges id="466" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.137"/>
+  <edges id="467" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.136"/>
+  <edges id="468" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.135"/>
+  <edges id="469" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.134"/>
+  <edges id="470" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.133"/>
+  <edges id="471" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.132"/>
+  <edges id="472" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.131"/>
+  <edges id="473" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.130"/>
+  <edges id="474" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.129"/>
+  <edges id="475" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.128"/>
+  <edges id="476" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.127"/>
+  <edges id="477" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.126"/>
+  <edges id="478" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.125"/>
+  <edges id="479" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.124"/>
+  <edges id="480" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.123"/>
+  <edges id="481" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.122"/>
+  <edges id="482" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.121"/>
+  <edges id="483" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.120"/>
+  <edges id="484" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.119"/>
+  <edges id="485" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.118"/>
+  <edges id="486" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.117"/>
+  <edges id="487" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.116"/>
+  <edges id="488" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.115"/>
+  <edges id="489" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.114"/>
+  <edges id="490" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.113"/>
+  <edges id="491" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.112"/>
+  <edges id="492" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.111"/>
+  <edges id="493" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.110"/>
+  <edges id="494" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.109"/>
+  <edges id="495" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.108"/>
+  <edges id="496" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.107"/>
+  <edges id="497" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.106"/>
+  <edges id="498" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.105"/>
+  <edges id="499" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.104"/>
+  <edges id="500" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.103"/>
+  <edges id="501" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.102"/>
+  <edges id="502" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.101"/>
+  <edges id="503" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.100"/>
+  <edges id="504" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.99"/>
+  <edges id="505" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.98"/>
+  <edges id="506" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.97"/>
+  <edges id="507" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.96"/>
+  <edges id="508" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.95"/>
+  <edges id="509" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.94"/>
+  <edges id="510" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.93"/>
+  <edges id="511" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.92"/>
+  <edges id="512" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.91"/>
+  <edges id="513" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.90"/>
+  <edges id="514" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.89"/>
+  <edges id="515" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.88"/>
+  <edges id="516" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.87"/>
+  <edges id="517" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.86"/>
+  <edges id="518" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.85"/>
+  <edges id="519" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.84"/>
+  <edges id="520" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.83"/>
+  <edges id="521" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.82"/>
+  <edges id="522" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.81"/>
+  <edges id="523" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.80"/>
+  <edges id="524" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.79"/>
+  <edges id="525" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.78"/>
+  <edges id="526" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.77"/>
+  <edges id="527" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.76"/>
+  <edges id="528" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.75"/>
+  <edges id="529" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.74"/>
+  <edges id="530" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.73"/>
+  <edges id="531" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.72"/>
+  <edges id="532" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.71"/>
+  <edges id="533" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.70"/>
+  <edges id="534" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.69"/>
+  <edges id="535" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.68"/>
+  <edges id="536" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.67"/>
+  <edges id="537" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.66"/>
+  <edges id="538" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.65"/>
+  <edges id="539" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.64"/>
+  <edges id="540" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.63"/>
+  <edges id="541" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.62"/>
+  <edges id="542" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.61"/>
+  <edges id="543" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.60"/>
+  <edges id="544" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.59"/>
+  <edges id="545" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.58"/>
+  <edges id="546" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.57"/>
+  <edges id="547" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.56"/>
+  <edges id="548" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.55"/>
+  <edges id="549" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.54"/>
+  <edges id="550" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.53"/>
+  <edges id="551" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.52"/>
+  <edges id="552" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.51"/>
+  <edges id="553" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.50"/>
+  <edges id="554" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.49"/>
+  <edges id="555" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.48"/>
+  <edges id="556" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.47"/>
+  <edges id="557" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.46"/>
+  <edges id="558" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.45"/>
+  <edges id="559" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.44"/>
+  <edges id="560" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.43"/>
+  <edges id="561" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.42"/>
+  <edges id="562" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.41"/>
+  <edges id="563" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.40"/>
+  <edges id="564" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.39"/>
+  <edges id="565" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.38"/>
+  <edges id="566" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.37"/>
+  <edges id="567" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.36"/>
+  <edges id="568" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.35"/>
+  <edges id="569" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.34"/>
+  <edges id="570" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.33"/>
+  <edges id="571" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.32"/>
+  <edges id="572" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.31"/>
+  <edges id="573" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.30"/>
+  <edges id="574" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.29"/>
+  <edges id="575" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.28"/>
+  <edges id="576" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.27"/>
+  <edges id="577" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.26"/>
+  <edges id="578" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.25"/>
+  <edges id="579" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.24"/>
+  <edges id="580" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.23"/>
+  <edges id="581" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.22"/>
+  <edges id="582" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.21"/>
+  <edges id="583" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.20"/>
+  <edges id="584" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.19"/>
+  <edges id="585" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.18"/>
+  <edges id="586" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.17"/>
+  <edges id="587" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.16"/>
+  <edges id="588" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.15"/>
+  <edges id="589" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.14"/>
+  <edges id="590" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.13"/>
+  <edges id="591" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.12"/>
+  <edges id="592" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.11"/>
+  <edges id="593" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.10"/>
+  <edges id="594" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.9"/>
+  <edges id="595" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.8"/>
+  <edges id="596" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.7"/>
+  <edges id="597" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.6"/>
+  <edges id="598" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.5"/>
+  <edges id="599" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.4"/>
+  <edges id="600" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.3"/>
+  <edges id="601" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.2"/>
+  <edges id="602" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.1"/>
+  <edges id="603" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@ports.0"/>
+  <edges id="604" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="605" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="606" source_obj="//@ports.163" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="607" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="608" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="609" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="610" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="611" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="612" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="1471" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="1472" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="1473" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="1474" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="1475" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="1476" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="1477" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="1478" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="1479" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="1480" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="1481" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="1482" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.13"/>
+  <blocks id="341" name="entry" type="BlockType">
+    <controlOutputObjs>VITIS_LOOP_142_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="167" name="phi_mul" coreId="0" bitwidth="13" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="168" name="i" originalName="i" coreId="0" bitwidth="7" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="333" name="conv1_biases_read" lineNumber="133" fileName="src/srcnn.cpp" fileDirectory="../." coreId="329" contextFuncName="load_conv1_params" bitwidth="64" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="133" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>conv1_biases</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="334" name="conv1_weights_read" lineNumber="133" fileName="src/srcnn.cpp" fileDirectory="../." coreId="1671" contextFuncName="load_conv1_params" bitwidth="64" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="133" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>conv1_weights</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="335" name="trunc_ln" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln_reg_906" coreId="1720" contextFuncName="load_conv1_params" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="336" name="trunc_ln140_1" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln140_1_fu_793_p4" coreId="399" contextFuncName="load_conv1_params" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="337" name="sext_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="sext_ln140_fu_803_p1" coreId="1319" contextFuncName="load_conv1_params" bitwidth="63" opcode="sext" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="338" name="i_write_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." coreId="1855" contextFuncName="load_conv1_params" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="339" name="phi_mul_write_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." coreId="2630" contextFuncName="load_conv1_params" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="340" name="br_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." coreId="1118" contextFuncName="load_conv1_params" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <controlInputObjs>VITIS_LOOP_142_2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/srcnn.cpp">
+      <validLinenumbers>133</validLinenumbers>
+      <validLinenumbers>140</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="348" name="VITIS_LOOP_142_2" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>VITIS_LOOP_142_2.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.end39</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_142_2.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="342" name="phi_mul_load" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." coreId="1186" contextFuncName="load_conv1_params" bitwidth="13" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="343" name="i_3" lineNumber="140" originalName="i" fileName="src/srcnn.cpp" fileDirectory="../." coreId="605" contextFuncName="load_conv1_params" bitwidth="7" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="344" name="add_ln140_1" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln140_1_fu_823_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="load_conv1_params" bitwidth="13" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.82" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="345" name="icmp_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="icmp_ln140_fu_829_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="load_conv1_params" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.77" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="346" name="add_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln140_fu_835_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="load_conv1_params" bitwidth="7" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.77" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="347" name="br_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." coreId="657" contextFuncName="load_conv1_params" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>VITIS_LOOP_142_2.split</controlInputObjs>
+      <controlInputObjs>for.end39</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/srcnn.cpp">
+      <validLinenumbers>140</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="367" name="VITIS_LOOP_142_2.split" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_142_2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_142_2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="349" name="zext_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln140_fu_870_p1" coreId="4166" contextFuncName="load_conv1_params" bitwidth="64" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="350" name="zext_ln140_1" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln140_1_fu_841_p1" coreId="2686" contextFuncName="load_conv1_params" bitwidth="63" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="351" name="trunc_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln140_fu_874_p1" coreId="49" contextFuncName="load_conv1_params" bitwidth="1" opcode="trunc" nodeLabel="11.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="354" name="lshr_ln" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="lshr_ln_reg_947" coreId="2742" contextFuncName="load_conv1_params" bitwidth="5" opcode="partselect" nodeLabel="11.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="355" name="add_ln141" lineNumber="141" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln141_fu_845_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="load_conv1_params" bitwidth="63" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.08" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="141" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="356" name="sext_ln141" lineNumber="141" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="sext_ln141_fu_850_p1" coreId="901" contextFuncName="load_conv1_params" bitwidth="64" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="141" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="357" name="gmem_w1_addr" lineNumber="141" fileName="src/srcnn.cpp" fileDirectory="../." coreId="1626" contextFuncName="load_conv1_params" bitwidth="32" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="141" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>gmem_w1</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>readreq</dataOutputObjs>
+      <dataOutputObjs>read</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="358" name="gmem_w1_load_req" lineNumber="141" fileName="src/srcnn.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="load_conv1_params" bitwidth="1" opcode="readreq" nodeLabel="2.0" nodeLatency="7" m_display="0" m_delay="7.3" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="141" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="359" name="gmem_w1_addr_read" lineNumber="141" fileName="src/srcnn.cpp" fileDirectory="../." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="121" contextFuncName="load_conv1_params" bitwidth="32" opcode="read" nodeLabel="10.0" m_display="0" m_delay="7.3" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="141" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="360" name="bitcast_ln141" lineNumber="141" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="conv1_biases_local_d1" coreId="1495" contextFuncName="load_conv1_params" bitwidth="32" opcode="bitcast" nodeLabel="11.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="141" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="361" name="conv1_biases_local_addr" lineNumber="141" fileName="src/srcnn.cpp" fileDirectory="../." coreId="937" contextFuncName="load_conv1_params" bitwidth="6" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="141" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>conv1_biases_local</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="362" name="conv1_biases_local_addr_write_ln141" lineNumber="141" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="load_conv1_params" opcode="store" nodeLabel="11.0" m_display="0" m_delay="1.23" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="141" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="363" name="_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4_fu_449" coreId="3981" contextFuncName="load_conv1_params" opcode="call" nodeLabel="11.0" nodeLatency="1" m_display="0" m_delay="0.81" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>gmem_w1</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>conv1_weights_local_1_8_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_8_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_8_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_8_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_8_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_8_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_8_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_8_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_8_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_7_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_7_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_7_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_7_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_7_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_7_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_7_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_7_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_7_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_6_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_6_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_6_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_6_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_6_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_6_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_6_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_6_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_6_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_5_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_5_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_5_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_5_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_5_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_5_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_5_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_5_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_5_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_4_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_4_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_4_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_4_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_4_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_4_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_4_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_4_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_4_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_3_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_3_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_3_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_3_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_3_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_3_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_3_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_3_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_3_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_2_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_2_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_2_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_2_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_2_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_2_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_2_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_2_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_2_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_1_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_1_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_1_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_1_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_1_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_1_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_1_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_1_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_1_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_0_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_0_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_0_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_0_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_0_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_0_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_0_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_0_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_1_0_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_8_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_8_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_8_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_8_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_8_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_8_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_8_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_8_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_8_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_7_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_7_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_7_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_7_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_7_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_7_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_7_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_7_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_7_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_6_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_6_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_6_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_6_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_6_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_6_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_6_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_6_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_6_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_5_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_5_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_5_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_5_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_5_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_5_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_5_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_5_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_5_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_4_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_4_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_4_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_4_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_4_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_4_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_4_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_4_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_4_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_3_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_3_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_3_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_3_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_3_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_3_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_3_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_3_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_3_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_2_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_2_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_2_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_2_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_2_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_2_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_2_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_2_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_2_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_1_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_1_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_1_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_1_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_1_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_1_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_1_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_1_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_1_0</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_0_8</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_0_7</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_0_6</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_0_5</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_0_4</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_0_3</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_0_2</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_0_1</dataOutputObjs>
+      <dataOutputObjs>conv1_weights_local_0_0_0</dataOutputObjs>
+      <constName>load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="364" name="i_write_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." coreId="2854" contextFuncName="load_conv1_params" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.42" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="365" name="phi_mul_write_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." coreId="4345" contextFuncName="load_conv1_params" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.42" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="366" name="br_ln140" lineNumber="140" fileName="src/srcnn.cpp" fileDirectory="../." coreId="2459" contextFuncName="load_conv1_params" opcode="br" nodeLabel="12.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="140" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+      <controlInputObjs>VITIS_LOOP_142_2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/srcnn.cpp">
+      <validLinenumbers>140</validLinenumbers>
+      <validLinenumbers>141</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="369" name="for.end39" type="BlockType">
+    <controlInputObjs>VITIS_LOOP_142_2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="368" name="_ln151" lineNumber="151" fileName="src/srcnn.cpp" fileDirectory="../." coreId="270" contextFuncName="load_conv1_params" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="151" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="load_conv1_params"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/srcnn.cpp">
+      <validLinenumbers>151</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <regnodes realName="gmem_w1_addr_reg_931">
+    <nodeIds>357</nodeIds>
+  </regnodes>
+  <regnodes realName="lshr_ln_reg_947">
+    <nodeIds>354</nodeIds>
+  </regnodes>
+  <regnodes realName="phi_mul_reg_892">
+    <nodeIds>167</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln140_reg_911">
+    <nodeIds>337</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_w1_addr_read_reg_937">
+    <nodeIds>359</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln_reg_906">
+    <nodeIds>335</nodeIds>
+  </regnodes>
+  <regnodes realName="phi_mul_load_reg_916">
+    <nodeIds>342</nodeIds>
+  </regnodes>
+  <regnodes realName="i_3_reg_921">
+    <nodeIds>343</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln140_reg_942">
+    <nodeIds>351</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_899">
+    <nodeIds>168</nodeIds>
+  </regnodes>
+  <expressionNodes realName="add_ln140_fu_835">
+    <nodeIds>346</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln140_fu_829">
+    <nodeIds>345</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln140_fu_803">
+    <nodeIds>337</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_w1_addr_fu_854">
+    <nodeIds>357</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln141_fu_845">
+    <nodeIds>355</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_404">
+    <nodeIds>168</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln140_1_fu_841">
+    <nodeIds>350</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="phi_mul_fu_400">
+    <nodeIds>167</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv1_biases_local_addr_gep_fu_432">
+    <nodeIds>361</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln140_1_fu_823">
+    <nodeIds>344</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lshr_ln_fu_878">
+    <nodeIds>354</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln141_fu_850">
+    <nodeIds>356</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln140_1_fu_793">
+    <nodeIds>336</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln140_fu_870">
+    <nodeIds>349</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln141_fu_888">
+    <nodeIds>360</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_783">
+    <nodeIds>335</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln140_fu_874">
+    <nodeIds>351</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4_fu_449">
+    <nodeIds>363</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="conv1_weights_read_read_fu_414">
+    <nodeIds>334</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_readreq_fu_420">
+    <nodeIds>358</nodeIds>
+  </ioNodes>
+  <ioNodes realName="gmem_w1_addr_read_read_fu_427">
+    <nodeIds>359</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln140_store_fu_865">
+    <nodeIds>365</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln140_store_fu_860">
+    <nodeIds>364</nodeIds>
+  </ioNodes>
+  <ioNodes realName="phi_mul_load_load_fu_817">
+    <nodeIds>342</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_3_load_fu_820">
+    <nodeIds>343</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln140_store_fu_807">
+    <nodeIds>338</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv1_biases_read_read_fu_408">
+    <nodeIds>333</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln140_store_fu_812">
+    <nodeIds>339</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="conv1_biases_local" portID="1">
+    <nodeIds>362</nodeIds>
+  </memoryPorts>
+  <ioPorts name="conv1_biases">
+    <contents name="read">
+      <nodeIds>333</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv1_biases_local(p1)">
+    <contents name="store">
+      <nodeIds>362</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv1_weights">
+    <contents name="read">
+      <nodeIds>334</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem_w1">
+    <contents name="call">
+      <nodeIds>363</nodeIds>
+    </contents>
+    <contents name="read">
+      <nodeIds>359</nodeIds>
+    </contents>
+    <contents name="readreq">
+      <nodeIds>358</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="167" stage="1" latency="1"/>
+      <operations id="168" stage="1" latency="1"/>
+      <operations id="169" stage="1" latency="1"/>
+      <operations id="170" stage="1" latency="1"/>
+      <operations id="171" stage="1" latency="1"/>
+      <operations id="172" stage="1" latency="1"/>
+      <operations id="173" stage="1" latency="1"/>
+      <operations id="174" stage="1" latency="1"/>
+      <operations id="175" stage="1" latency="1"/>
+      <operations id="176" stage="1" latency="1"/>
+      <operations id="177" stage="1" latency="1"/>
+      <operations id="178" stage="1" latency="1"/>
+      <operations id="179" stage="1" latency="1"/>
+      <operations id="180" stage="1" latency="1"/>
+      <operations id="181" stage="1" latency="1"/>
+      <operations id="182" stage="1" latency="1"/>
+      <operations id="183" stage="1" latency="1"/>
+      <operations id="184" stage="1" latency="1"/>
+      <operations id="185" stage="1" latency="1"/>
+      <operations id="186" stage="1" latency="1"/>
+      <operations id="187" stage="1" latency="1"/>
+      <operations id="188" stage="1" latency="1"/>
+      <operations id="189" stage="1" latency="1"/>
+      <operations id="190" stage="1" latency="1"/>
+      <operations id="191" stage="1" latency="1"/>
+      <operations id="192" stage="1" latency="1"/>
+      <operations id="193" stage="1" latency="1"/>
+      <operations id="194" stage="1" latency="1"/>
+      <operations id="195" stage="1" latency="1"/>
+      <operations id="196" stage="1" latency="1"/>
+      <operations id="197" stage="1" latency="1"/>
+      <operations id="198" stage="1" latency="1"/>
+      <operations id="199" stage="1" latency="1"/>
+      <operations id="200" stage="1" latency="1"/>
+      <operations id="201" stage="1" latency="1"/>
+      <operations id="202" stage="1" latency="1"/>
+      <operations id="203" stage="1" latency="1"/>
+      <operations id="204" stage="1" latency="1"/>
+      <operations id="205" stage="1" latency="1"/>
+      <operations id="206" stage="1" latency="1"/>
+      <operations id="207" stage="1" latency="1"/>
+      <operations id="208" stage="1" latency="1"/>
+      <operations id="209" stage="1" latency="1"/>
+      <operations id="210" stage="1" latency="1"/>
+      <operations id="211" stage="1" latency="1"/>
+      <operations id="212" stage="1" latency="1"/>
+      <operations id="213" stage="1" latency="1"/>
+      <operations id="214" stage="1" latency="1"/>
+      <operations id="215" stage="1" latency="1"/>
+      <operations id="216" stage="1" latency="1"/>
+      <operations id="217" stage="1" latency="1"/>
+      <operations id="218" stage="1" latency="1"/>
+      <operations id="219" stage="1" latency="1"/>
+      <operations id="220" stage="1" latency="1"/>
+      <operations id="221" stage="1" latency="1"/>
+      <operations id="222" stage="1" latency="1"/>
+      <operations id="223" stage="1" latency="1"/>
+      <operations id="224" stage="1" latency="1"/>
+      <operations id="225" stage="1" latency="1"/>
+      <operations id="226" stage="1" latency="1"/>
+      <operations id="227" stage="1" latency="1"/>
+      <operations id="228" stage="1" latency="1"/>
+      <operations id="229" stage="1" latency="1"/>
+      <operations id="230" stage="1" latency="1"/>
+      <operations id="231" stage="1" latency="1"/>
+      <operations id="232" stage="1" latency="1"/>
+      <operations id="233" stage="1" latency="1"/>
+      <operations id="234" stage="1" latency="1"/>
+      <operations id="235" stage="1" latency="1"/>
+      <operations id="236" stage="1" latency="1"/>
+      <operations id="237" stage="1" latency="1"/>
+      <operations id="238" stage="1" latency="1"/>
+      <operations id="239" stage="1" latency="1"/>
+      <operations id="240" stage="1" latency="1"/>
+      <operations id="241" stage="1" latency="1"/>
+      <operations id="242" stage="1" latency="1"/>
+      <operations id="243" stage="1" latency="1"/>
+      <operations id="244" stage="1" latency="1"/>
+      <operations id="245" stage="1" latency="1"/>
+      <operations id="246" stage="1" latency="1"/>
+      <operations id="247" stage="1" latency="1"/>
+      <operations id="248" stage="1" latency="1"/>
+      <operations id="249" stage="1" latency="1"/>
+      <operations id="250" stage="1" latency="1"/>
+      <operations id="251" stage="1" latency="1"/>
+      <operations id="252" stage="1" latency="1"/>
+      <operations id="253" stage="1" latency="1"/>
+      <operations id="254" stage="1" latency="1"/>
+      <operations id="255" stage="1" latency="1"/>
+      <operations id="256" stage="1" latency="1"/>
+      <operations id="257" stage="1" latency="1"/>
+      <operations id="258" stage="1" latency="1"/>
+      <operations id="259" stage="1" latency="1"/>
+      <operations id="260" stage="1" latency="1"/>
+      <operations id="261" stage="1" latency="1"/>
+      <operations id="262" stage="1" latency="1"/>
+      <operations id="263" stage="1" latency="1"/>
+      <operations id="264" stage="1" latency="1"/>
+      <operations id="265" stage="1" latency="1"/>
+      <operations id="266" stage="1" latency="1"/>
+      <operations id="267" stage="1" latency="1"/>
+      <operations id="268" stage="1" latency="1"/>
+      <operations id="269" stage="1" latency="1"/>
+      <operations id="270" stage="1" latency="1"/>
+      <operations id="271" stage="1" latency="1"/>
+      <operations id="272" stage="1" latency="1"/>
+      <operations id="273" stage="1" latency="1"/>
+      <operations id="274" stage="1" latency="1"/>
+      <operations id="275" stage="1" latency="1"/>
+      <operations id="276" stage="1" latency="1"/>
+      <operations id="277" stage="1" latency="1"/>
+      <operations id="278" stage="1" latency="1"/>
+      <operations id="279" stage="1" latency="1"/>
+      <operations id="280" stage="1" latency="1"/>
+      <operations id="281" stage="1" latency="1"/>
+      <operations id="282" stage="1" latency="1"/>
+      <operations id="283" stage="1" latency="1"/>
+      <operations id="284" stage="1" latency="1"/>
+      <operations id="285" stage="1" latency="1"/>
+      <operations id="286" stage="1" latency="1"/>
+      <operations id="287" stage="1" latency="1"/>
+      <operations id="288" stage="1" latency="1"/>
+      <operations id="289" stage="1" latency="1"/>
+      <operations id="290" stage="1" latency="1"/>
+      <operations id="291" stage="1" latency="1"/>
+      <operations id="292" stage="1" latency="1"/>
+      <operations id="293" stage="1" latency="1"/>
+      <operations id="294" stage="1" latency="1"/>
+      <operations id="295" stage="1" latency="1"/>
+      <operations id="296" stage="1" latency="1"/>
+      <operations id="297" stage="1" latency="1"/>
+      <operations id="298" stage="1" latency="1"/>
+      <operations id="299" stage="1" latency="1"/>
+      <operations id="300" stage="1" latency="1"/>
+      <operations id="301" stage="1" latency="1"/>
+      <operations id="302" stage="1" latency="1"/>
+      <operations id="303" stage="1" latency="1"/>
+      <operations id="304" stage="1" latency="1"/>
+      <operations id="305" stage="1" latency="1"/>
+      <operations id="306" stage="1" latency="1"/>
+      <operations id="307" stage="1" latency="1"/>
+      <operations id="308" stage="1" latency="1"/>
+      <operations id="309" stage="1" latency="1"/>
+      <operations id="310" stage="1" latency="1"/>
+      <operations id="311" stage="1" latency="1"/>
+      <operations id="312" stage="1" latency="1"/>
+      <operations id="313" stage="1" latency="1"/>
+      <operations id="314" stage="1" latency="1"/>
+      <operations id="315" stage="1" latency="1"/>
+      <operations id="316" stage="1" latency="1"/>
+      <operations id="317" stage="1" latency="1"/>
+      <operations id="318" stage="1" latency="1"/>
+      <operations id="319" stage="1" latency="1"/>
+      <operations id="320" stage="1" latency="1"/>
+      <operations id="321" stage="1" latency="1"/>
+      <operations id="322" stage="1" latency="1"/>
+      <operations id="323" stage="1" latency="1"/>
+      <operations id="324" stage="1" latency="1"/>
+      <operations id="325" stage="1" latency="1"/>
+      <operations id="326" stage="1" latency="1"/>
+      <operations id="327" stage="1" latency="1"/>
+      <operations id="328" stage="1" latency="1"/>
+      <operations id="329" stage="1" latency="1"/>
+      <operations id="330" stage="1" latency="1"/>
+      <operations id="331" stage="1" latency="1"/>
+      <operations id="332" stage="1" latency="1"/>
+      <operations id="333" stage="1" latency="1"/>
+      <operations id="334" stage="1" latency="1"/>
+      <operations id="335" stage="1" latency="1"/>
+      <operations id="336" stage="1" latency="1"/>
+      <operations id="337" stage="1" latency="1"/>
+      <operations id="338" stage="1" latency="1"/>
+      <operations id="339" stage="1" latency="1"/>
+      <operations id="340" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="342" stage="1" latency="1"/>
+      <operations id="343" stage="1" latency="1"/>
+      <operations id="344" stage="1" latency="1"/>
+      <operations id="345" stage="1" latency="1"/>
+      <operations id="346" stage="1" latency="1"/>
+      <operations id="347" stage="1" latency="1"/>
+      <operations id="350" stage="1" latency="1"/>
+      <operations id="355" stage="1" latency="1"/>
+      <operations id="356" stage="1" latency="1"/>
+      <operations id="357" stage="1" latency="1"/>
+      <operations id="364" stage="1" latency="1"/>
+      <operations id="365" stage="1" latency="1"/>
+      <operations id="368" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="358" stage="8" latency="8"/>
+    </states>
+    <states id="4">
+      <operations id="358" stage="7" latency="8"/>
+    </states>
+    <states id="5">
+      <operations id="358" stage="6" latency="8"/>
+    </states>
+    <states id="6">
+      <operations id="358" stage="5" latency="8"/>
+    </states>
+    <states id="7">
+      <operations id="358" stage="4" latency="8"/>
+    </states>
+    <states id="8">
+      <operations id="358" stage="3" latency="8"/>
+    </states>
+    <states id="9">
+      <operations id="358" stage="2" latency="8"/>
+    </states>
+    <states id="10">
+      <operations id="358" stage="1" latency="8"/>
+    </states>
+    <states id="11">
+      <operations id="359" stage="1" latency="1"/>
+    </states>
+    <states id="12">
+      <operations id="349" stage="1" latency="1"/>
+      <operations id="351" stage="1" latency="1"/>
+      <operations id="354" stage="1" latency="1"/>
+      <operations id="360" stage="1" latency="1"/>
+      <operations id="361" stage="1" latency="1"/>
+      <operations id="362" stage="1" latency="1"/>
+      <operations id="363" stage="2" latency="2"/>
+    </states>
+    <states id="13">
+      <operations id="352" stage="1" latency="1"/>
+      <operations id="353" stage="1" latency="1"/>
+      <operations id="363" stage="1" latency="2"/>
+      <operations id="366" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="load_conv1_params" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="6657" mMaxLatency="6657">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>341</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_140_1" mII="-1" mDepth="-1" mMinTripCount="64" mMaxTripCount="64" mMinLatency="6656" mMaxLatency="6656" mType="1">
+      <basicBlocks>348</basicBlocks>
+      <basicBlocks>367</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>369</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
