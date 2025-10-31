@@ -1,0 +1,30 @@
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3648:2: warning: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+ for (int out_feat = 0; out_feat < 64; out_feat++) {
+ ^~~
+ VITIS_LOOP_14_1: 
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3648:2: note: FIX-IT applied suggested code changes
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3650:3: warning: Added loop label VITIS_LOOP_16_2:   [xilinx-label-all-loops]
+  for (int out_feat_y = 0; out_feat_y < 255; out_feat_y++) {
+  ^~~
+  VITIS_LOOP_16_2: 
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3650:3: note: FIX-IT applied suggested code changes
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3652:4: warning: Added loop label VITIS_LOOP_18_3:   [xilinx-label-all-loops]
+   for (int out_feat_x = 0; out_feat_x < 255; out_feat_x++) {
+   ^~~
+   VITIS_LOOP_18_3: 
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3652:4: note: FIX-IT applied suggested code changes
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3663:5: warning: Added loop label VITIS_LOOP_29_4:   [xilinx-label-all-loops]
+    for (int in_feat = 0; in_feat < 1; in_feat++) {
+    ^~~
+    VITIS_LOOP_29_4: 
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3663:5: note: FIX-IT applied suggested code changes
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3665:6: warning: Added loop label VITIS_LOOP_31_5:   [xilinx-label-all-loops]
+     for (int kernel_x = 0; kernel_x < 9; kernel_x++) {
+     ^~~
+     VITIS_LOOP_31_5: 
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3665:6: note: FIX-IT applied suggested code changes
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3668:7: warning: Added loop label VITIS_LOOP_34_6:   [xilinx-label-all-loops]
+      for (int kernel_y = 0; kernel_y <9; kernel_y++) {
+      ^~~
+      VITIS_LOOP_34_6: 
+C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden\srcnn_hls\solution1\.autopilot\db\conv1.pp.0.cpp:3668:7: note: FIX-IT applied suggested code changes

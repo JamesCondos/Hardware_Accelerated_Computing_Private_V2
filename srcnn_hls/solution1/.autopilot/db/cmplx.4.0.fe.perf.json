@@ -1,0 +1,88 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "5 3 1",
+    "file": "srcnn.cpp",
+    "fileloc": 3,
+    "instructions": 23,
+    "loads": {
+      "T": 1
+    },
+    "name": "srcnn",
+    "total_instructions": 692
+  },
+  "1": {
+    "basicblocks": 16,
+    "calls": "6 2 6 2 4",
+    "file": "conv3.cpp",
+    "fileloc": 5,
+    "instructions": 126,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "conv3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 225
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "hls_fmin.h",
+    "fileloc": 19,
+    "instructions": 18,
+    "name": "generic_fmin<double>",
+    "total_instructions": 18
+  },
+  "3": {
+    "basicblocks": 13,
+    "calls": "6 2 6 2 4",
+    "file": "conv2.cpp",
+    "fileloc": 5,
+    "instructions": 116,
+    "loads": {
+      "G": 1,
+      "L": 2
+    },
+    "name": "conv2",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 215
+  },
+  "4": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "hls_fmax.h",
+    "fileloc": 19,
+    "instructions": 21,
+    "name": "generic_fmax<float>",
+    "total_instructions": 21
+  },
+  "5": {
+    "basicblocks": 16,
+    "calls": "6 2 6 2 4",
+    "file": "conv1.cpp",
+    "fileloc": 5,
+    "instructions": 130,
+    "loads": {
+      "L": 3
+    },
+    "name": "conv1",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 229
+  },
+  "6": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "hls_fmax.h",
+    "fileloc": 19,
+    "instructions": 21,
+    "name": "generic_fmax<double>",
+    "total_instructions": 21
+  }
+}
