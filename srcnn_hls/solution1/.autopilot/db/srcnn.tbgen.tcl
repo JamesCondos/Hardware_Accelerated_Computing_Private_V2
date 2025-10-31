@@ -156,12 +156,12 @@ set RtlHierarchyInfo {[
 					{"ID" : "13", "SubInstance" : "grp_conv3_fu_76", "Port" : "output_ftmap", "Inst_start_state" : "5", "Inst_end_state" : "6"}]},
 			{"Name" : "layer1_output", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "8", "SubInstance" : "grp_conv2_fu_64", "Port" : "layer1_output", "Inst_start_state" : "3", "Inst_end_state" : "4"},
-					{"ID" : "3", "SubInstance" : "grp_conv1_fu_52", "Port" : "layer1_output", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
+					{"ID" : "3", "SubInstance" : "grp_conv1_fu_52", "Port" : "layer1_output", "Inst_start_state" : "1", "Inst_end_state" : "2"},
+					{"ID" : "8", "SubInstance" : "grp_conv2_fu_64", "Port" : "layer1_output", "Inst_start_state" : "3", "Inst_end_state" : "4"}]},
 			{"Name" : "layer2_output", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "8", "SubInstance" : "grp_conv2_fu_64", "Port" : "layer2_output", "Inst_start_state" : "3", "Inst_end_state" : "4"},
-					{"ID" : "13", "SubInstance" : "grp_conv3_fu_76", "Port" : "layer2_output", "Inst_start_state" : "5", "Inst_end_state" : "6"}]}]},
+					{"ID" : "13", "SubInstance" : "grp_conv3_fu_76", "Port" : "layer2_output", "Inst_start_state" : "5", "Inst_end_state" : "6"},
+					{"ID" : "8", "SubInstance" : "grp_conv2_fu_64", "Port" : "layer2_output", "Inst_start_state" : "3", "Inst_end_state" : "4"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.layer1_output_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.layer2_output_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_conv1_fu_52", "Parent" : "0", "Child" : ["4", "5", "6", "7"],

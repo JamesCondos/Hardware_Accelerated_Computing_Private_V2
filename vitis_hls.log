@@ -1,6 +1,6 @@
 NOTE: Using modified tcl85t.dll from https://gitenterprise.xilinx.com/ACT/vitis_hls_tcl
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'james' on host 'james_condos' (Windows NT_amd64 version 6.2) on Fri Oct 31 13:02:14 +1100 2025
+INFO: [HLS 200-10] For user 'james' on host 'james_condos' (Windows NT_amd64 version 6.2) on Fri Oct 31 14:36:23 +1100 2025
 INFO: [HLS 200-10] In directory 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden'
 Sourcing Tcl script 'C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/csynth.tcl'
 INFO: [HLS 200-1510] Running: source C:/Users/james/Documents/Hardware_Final_Project_Private_V2/golden/srcnn_hls/solution1/csynth.tcl
@@ -48,12 +48,12 @@ INFO: [HLS 200-1510] Running: create_clock -period 10 -name default
 INFO: [HLS 200-1510] Running: source ./srcnn_hls/solution1/directives.tcl
 INFO: [HLS 200-1510] Running: csynth_design 
 WARNING: [HLS 200-40] Cannot find source file src/conv1_tile.cpp; skipping it.
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 1.051 GB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 1.039 GB.
 INFO: [HLS 200-10] Analyzing design file 'src/conv1.cpp' ... 
 INFO: [HLS 200-10] Analyzing design file 'src/conv2.cpp' ... 
 INFO: [HLS 200-10] Analyzing design file 'src/conv3.cpp' ... 
 INFO: [HLS 200-10] Analyzing design file 'src/srcnn.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.659 seconds; current allocated memory: 1.053 GB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 3.816 seconds; current allocated memory: 1.041 GB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
 INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.22.29.35.43)' into 'fp_struct<double>::to_double() const (.49.56.64.72)' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:523:0)
@@ -95,10 +95,10 @@ INFO: [HLS 214-178] Inlining function '__gnu_cxx::__promote_2<int, int, __gnu_cx
 INFO: [HLS 214-178] Inlining function '__gnu_cxx::__promote_2<double, int, __gnu_cxx::__promote<double, std::__is_integer<double>::__value>::__type, __gnu_cxx::__promote<int, std::__is_integer<int>::__value>::__type>::__type std::fmin<double, int>(double, int)' into 'conv3(float (*) [255][255], float (*) [32][5][5], float*, float (*) [255][255])' (src/conv3.cpp:9:0)
 INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'conv3(float (*) [255][255], float (*) [32][5][5], float*, float (*) [255][255])' (src/conv3.cpp:9:0)
 INFO: [HLS 214-178] Inlining function 'fmaxf' into 'conv3(float (*) [255][255], float (*) [32][5][5], float*, float (*) [255][255])' (src/conv3.cpp:9:0)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.619 seconds; current allocated memory: 1.054 GB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 1.054 GB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.319 seconds; current allocated memory: 1.042 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 1.042 GB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.191 seconds; current allocated memory: 1.063 GB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 1.051 GB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO: [XFORM 203-602] Inlining function 'generic_fmax<double>' into 'conv1' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxdouble.cpp:7->C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:1432->src/conv1.cpp:40) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_fmin<double>' into 'conv1' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmindouble.cpp:7->C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:1452->src/conv1.cpp:40) automatically.
@@ -109,7 +109,7 @@ INFO: [XFORM 203-602] Inlining function 'generic_fmax<float>' into 'conv2' (C:\s
 INFO: [XFORM 203-602] Inlining function 'generic_fmax<double>' into 'conv3' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxdouble.cpp:7->C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:1432->src/conv3.cpp:32) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_fmin<double>' into 'conv3' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmindouble.cpp:7->C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:1452->src/conv3.cpp:32) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_fmax<float>' into 'conv3' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp:7->src/conv3.cpp:37) automatically.
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.275 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.334 seconds; current allocated memory: 1.057 GB.
 INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_5' (src/conv3.cpp:28) in function 'conv3' automatically.
 INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_3' (src/conv2.cpp:15) in function 'conv2' automatically.
 INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_31_5' (src/conv1.cpp:31) in function 'conv1' automatically.
@@ -132,7 +132,7 @@ INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/conv2.cpp
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/conv1.cpp:47:75) to (src/conv1.cpp:18:21) in function 'conv1'... converting 4 basic blocks.
 INFO: [XFORM 203-602] Inlining function 'generic_fmax<double>' into 'conv3' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmaxdouble.cpp:7->C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:1432->src/conv3.cpp:32) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_fmin<double>' into 'conv3' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath\src\c\fmindouble.cpp:7->C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:1452->src/conv3.cpp:32) automatically.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.882 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.818 seconds; current allocated memory: 1.087 GB.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_26_4' (src/conv3.cpp:26:24) in function 'conv3'.
 WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_15_3' (src/conv3.cpp:15:23) in function 'conv3' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
 Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-960.html
@@ -142,7 +142,7 @@ INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_11_1' (src/conv2.cpp:11
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_18_3' (src/conv1.cpp:18:21) in function 'conv1'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_16_2' (src/conv1.cpp:16:20) in function 'conv1'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_14_1' (src/conv1.cpp:14:19) in function 'conv1'.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.578 seconds; current allocated memory: 1.154 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.455 seconds; current allocated memory: 1.142 GB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'srcnn' ...
 WARNING: [SYN 201-103] Legalizing function name 'generic_fmax<double>' to 'generic_fmax_double_s'.
@@ -154,13 +154,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'generic_fmax<double>'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'generic_fmax<double>'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.458 seconds; current allocated memory: 1.158 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.345 seconds; current allocated memory: 1.146 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 1.159 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 1.147 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'generic_fmin_double_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -168,13 +168,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'generic_fmin<double>'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'generic_fmin<double>'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.173 seconds; current allocated memory: 1.160 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 1.147 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 1.160 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 1.147 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -192,13 +192,13 @@ WARNING: [HLS 200-880] The II Violation in module 'conv1' (loop 'VITIS_LOOP_14_1
 Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-880.html
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 36, Depth = 56, loop 'VITIS_LOOP_14_1_VITIS_LOOP_18_3_VITIS_LOOP_31_5'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.914 seconds; current allocated memory: 1.166 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.945 seconds; current allocated memory: 1.153 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.569 seconds; current allocated memory: 1.166 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.576 seconds; current allocated memory: 1.153 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -220,13 +220,13 @@ WARNING: [HLS 200-885] The II Violation in module 'conv2' (loop 'VITIS_LOOP_11_1
 Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-885.html
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 32, Depth = 278, loop 'VITIS_LOOP_11_1_VITIS_LOOP_13_2_VITIS_LOOP_15_3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.463 seconds; current allocated memory: 1.179 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 3.418 seconds; current allocated memory: 1.166 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.79 seconds; current allocated memory: 1.179 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.874 seconds; current allocated memory: 1.166 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv3_Pipeline_VITIS_LOOP_26_4_VITIS_LOOP_28_5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -244,47 +244,47 @@ WARNING: [HLS 200-880] The II Violation in module 'conv3_Pipeline_VITIS_LOOP_26_
 Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-880.html
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 20, Depth = 32, loop 'VITIS_LOOP_26_4_VITIS_LOOP_28_5'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.436 seconds; current allocated memory: 1.179 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.399 seconds; current allocated memory: 1.167 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.353 seconds; current allocated memory: 1.179 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.358 seconds; current allocated memory: 1.167 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.681 seconds; current allocated memory: 1.179 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.682 seconds; current allocated memory: 1.167 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 1.180 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.201 seconds; current allocated memory: 1.167 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'srcnn' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 1.180 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.189 seconds; current allocated memory: 1.167 GB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.297 seconds; current allocated memory: 1.180 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.251 seconds; current allocated memory: 1.168 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'generic_fmax_double_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_fmax_double_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.421 seconds; current allocated memory: 1.181 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.429 seconds; current allocated memory: 1.169 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'generic_fmin_double_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_fmin_double_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.161 seconds; current allocated memory: 1.182 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.207 seconds; current allocated memory: 1.170 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -294,7 +294,7 @@ INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 
 INFO: [RTGEN 206-100] Generating core module 'mul_7ns_8ns_13_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_4_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.432 seconds; current allocated memory: 1.187 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.399 seconds; current allocated memory: 1.175 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv2' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -303,7 +303,7 @@ INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 3
 INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_4_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv2'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.308 seconds; current allocated memory: 1.205 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.362 seconds; current allocated memory: 1.193 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv3_Pipeline_VITIS_LOOP_26_4_VITIS_LOOP_28_5' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -313,7 +313,7 @@ INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 
 INFO: [RTGEN 206-100] Generating core module 'mul_6ns_6ns_10_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sitodp_32s_64_4_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv3_Pipeline_VITIS_LOOP_26_4_VITIS_LOOP_28_5'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.824 seconds; current allocated memory: 1.224 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.951 seconds; current allocated memory: 1.212 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -322,7 +322,7 @@ INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 
 INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_4_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sitodp_32s_64_4_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.037 seconds; current allocated memory: 1.232 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.047 seconds; current allocated memory: 1.220 GB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'srcnn' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -341,12 +341,12 @@ INFO: [RTGEN 206-100] Generating core module 'sitodp_32s_64_4_no_dsp_1': 2 insta
 INFO: [RTGEN 206-100] Finished creating RTL model for 'srcnn'.
 INFO: [RTMG 210-278] Implementing memory 'srcnn_layer1_output_RAM_AUTO_1R1W' using auto RAMs.
 INFO: [RTMG 210-278] Implementing memory 'srcnn_layer2_output_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.585 seconds; current allocated memory: 1.249 GB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.758 seconds; current allocated memory: 1.249 GB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.911 seconds; current allocated memory: 1.249 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.691 seconds; current allocated memory: 1.238 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.554 seconds; current allocated memory: 1.238 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.978 seconds; current allocated memory: 1.238 GB.
 INFO: [VHDL 208-304] Generating VHDL RTL for srcnn.
 INFO: [VLOG 209-307] Generating Verilog RTL for srcnn.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 135.86 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 18 seconds. CPU system time: 2 seconds. Elapsed time: 35.099 seconds; current allocated memory: 203.160 MB.
-INFO: [HLS 200-112] Total CPU user time: 21 seconds. Total CPU system time: 4 seconds. Total elapsed time: 44.326 seconds; peak allocated memory: 1.249 GB.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 18 seconds. CPU system time: 3 seconds. Elapsed time: 34.089 seconds; current allocated memory: 204.195 MB.
+INFO: [HLS 200-112] Total CPU user time: 23 seconds. Total CPU system time: 4 seconds. Total elapsed time: 39.712 seconds; peak allocated memory: 1.238 GB.

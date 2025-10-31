@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761876166291">
-  <ports id="1" name="x" type="PortType" coreId="1967537184" bitwidth="64">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761881812280">
+  <ports id="1" name="x" type="PortType" coreId="1634485536" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="11" name="ap_return" direction="DirOut">
@@ -23,14 +23,14 @@
   <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@ports.1"/>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="56" pipe_depth="1" RegionName="generic_fmin&lt;double>">
     <basic_blocks id="13" name="generic_fmin&lt;double>" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="2" name="x_read" lineNumber="488" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" coreId="1802398056" contextFuncName="fp_struct" bitwidth="64" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="2" name="x_read" lineNumber="488" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" coreId="1970037110" contextFuncName="fp_struct" bitwidth="64" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="488" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
         <dataInputObjs>x</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="3" name="data" lineNumber="488" originalName="data" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="data_fu_24_p1" coreId="1008746034" contextFuncName="fp_struct" bitwidth="64" opcode="bitcast" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="3" name="data" lineNumber="488" originalName="data" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="data_fu_24_p1" coreId="171847458" contextFuncName="fp_struct" bitwidth="64" opcode="bitcast" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="488" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
         <dataInputObjs>read</dataInputObjs>
@@ -38,14 +38,14 @@
         <dataOutputObjs>trunc</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="4" name="x_fp_exp" lineNumber="490" originalName="x_fp.exp" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_exp_fu_28_p4" coreId="634794536" contextFuncName="fp_struct" bitwidth="11" opcode="partselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="4" name="x_fp_exp" lineNumber="490" originalName="x_fp.exp" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_exp_fu_28_p4" coreId="1730569580" contextFuncName="fp_struct" bitwidth="11" opcode="partselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="490" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
         <dataInputObjs>bitcast</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="5" name="x_fp_sig" lineNumber="491" originalName="x_fp.sig" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_sig_fu_38_p1" coreId="4093539712" contextFuncName="fp_struct" bitwidth="52" opcode="trunc" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="5" name="x_fp_sig" lineNumber="491" originalName="x_fp.sig" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_sig_fu_38_p1" coreId="1601531495" contextFuncName="fp_struct" bitwidth="52" opcode="trunc" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="491" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
         <dataInputObjs>bitcast</dataInputObjs>
@@ -93,7 +93,7 @@
         <dataOutputObjs>ret</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="_ln42" lineNumber="42" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" coreId="4294967295" contextFuncName="generic_fmin_double_s" opcode="ret" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="_ln42" lineNumber="42" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" coreId="1701601909" contextFuncName="generic_fmin_double_s" opcode="ret" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="42" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;double&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>ap_return</dataOutputObjs>

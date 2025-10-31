@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "2 26 7",
+    "calls": "23 21 5",
     "file": "srcnn.cpp",
     "fileloc": 3,
     "instructions": 4,
@@ -25,51 +25,24 @@
   },
   "10": {
     "basicblocks": 1,
-    "calls": "18",
-    "file": "lib_floatconversion.cpp",
-    "fileloc": 55,
-    "instructions": 2,
-    "name": "__hls_fptosi_double_i32",
-    "total_instructions": 170
-  },
-  "11": {
-    "basicblocks": 1,
-    "calls": "5",
-    "file": "x_hls_utils.h",
-    "fileloc": 375,
-    "instructions": 2,
-    "name": "to_ieee",
-    "total_instructions": 24
-  },
-  "12": {
-    "basicblocks": 1,
     "calls": "",
     "file": "x_hls_utils.h",
-    "fileloc": 485,
-    "instructions": 15,
-    "name": "fp_struct",
+    "fileloc": 338,
+    "instructions": 17,
+    "loads": {
+      "L": 4
+    },
+    "name": "data",
     "stores": {
       "L": 3
     },
-    "total_instructions": 15
+    "total_instructions": 17
   },
-  "13": {
+  "11": {
     "basicblocks": 1,
-    "calls": "",
+    "calls": "15",
     "file": "x_hls_utils.h",
-    "fileloc": 541,
-    "instructions": 3,
-    "loads": {
-      "L": 1
-    },
-    "name": "__signbit",
-    "total_instructions": 3
-  },
-  "14": {
-    "basicblocks": 1,
-    "calls": "25",
-    "file": "x_hls_utils.h",
-    "fileloc": 348,
+    "fileloc": 511,
     "instructions": 4,
     "loads": {
       "L": 1
@@ -77,31 +50,37 @@
     "name": "to_int",
     "total_instructions": 21
   },
-  "15": {
-    "basicblocks": 22,
-    "calls": "12 12 19 19 23 19 3 3",
-    "file": "hls_fmax.h",
-    "fileloc": 19,
-    "instructions": 60,
+  "12": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "name": "generic_cast_IEEE754<int, double>",
+    "total_instructions": 168
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "12",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "__hls_fptosi_double_i32",
+    "total_instructions": 170
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "15",
+    "file": "x_hls_utils.h",
+    "fileloc": 523,
+    "instructions": 5,
     "loads": {
-      "L": 7
-    },
-    "name": "generic_fmax<double>",
-    "stores": {
       "L": 1
     },
-    "total_instructions": 243
+    "name": "to_double",
+    "total_instructions": 22
   },
-  "16": {
-    "basicblocks": 1,
-    "calls": "8",
-    "file": "fmaxfloat.cpp",
-    "fileloc": 6,
-    "instructions": 2,
-    "name": "fmaxf",
-    "total_instructions": 245
-  },
-  "17": {
+  "15": {
     "basicblocks": 1,
     "calls": "",
     "file": "x_hls_utils.h",
@@ -116,18 +95,18 @@
     },
     "total_instructions": 17
   },
-  "18": {
+  "16": {
     "basicblocks": 1,
-    "calls": "27",
-    "file": "hls_case_IEEE754.h",
-    "fileloc": 116,
+    "calls": "24",
+    "file": "x_hls_utils.h",
+    "fileloc": 375,
     "instructions": 2,
-    "name": "generic_cast_IEEE754<int, double>",
-    "total_instructions": 168
+    "name": "to_ieee",
+    "total_instructions": 24
   },
-  "19": {
+  "17": {
     "basicblocks": 3,
-    "calls": "12",
+    "calls": "8",
     "file": "hls_isnan.h",
     "fileloc": 16,
     "instructions": 14,
@@ -137,99 +116,63 @@
     "name": "generic_isnan<double>",
     "total_instructions": 29
   },
-  "2": {
-    "basicblocks": 15,
-    "calls": "10 10 16",
-    "file": "conv1.cpp",
-    "fileloc": 5,
-    "instructions": 72,
+  "18": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 514,
+    "instructions": 6,
     "loads": {
-      "L": 3
+      "L": 1
     },
-    "name": "conv1",
-    "stores": {
-      "G": 1
-    },
-    "total_instructions": 1647
+    "name": "expv",
+    "total_instructions": 6
   },
-  "20": {
+  "19": {
     "basicblocks": 22,
-    "calls": "12 12 19 19 23 19 3 3",
-    "file": "hls_fmin.h",
+    "calls": "8 8 17 17 9 17 11 11",
+    "file": "hls_fmax.h",
     "fileloc": 19,
     "instructions": 60,
     "loads": {
       "L": 7
     },
-    "name": "generic_fmin<double>",
+    "name": "generic_fmax<double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 243
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 541,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "__signbit",
+    "total_instructions": 3
+  },
+  "20": {
+    "basicblocks": 22,
+    "calls": "26 26 4 4 16 4 27 27",
+    "file": "hls_fmax.h",
+    "fileloc": 19,
+    "instructions": 60,
+    "loads": {
+      "L": 7
+    },
+    "name": "generic_fmax<float>",
     "stores": {
       "L": 1
     },
     "total_instructions": 243
   },
   "21": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 312,
-    "instructions": 15,
-    "name": "fp_struct",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 15
-  },
-  "22": {
-    "basicblocks": 3,
-    "calls": "21",
-    "file": "hls_isnan.h",
-    "fileloc": 16,
-    "instructions": 14,
-    "loads": {
-      "L": 2
-    },
-    "name": "generic_isnan<float>",
-    "total_instructions": 29
-  },
-  "23": {
-    "basicblocks": 1,
-    "calls": "24",
-    "file": "x_hls_utils.h",
-    "fileloc": 538,
-    "instructions": 2,
-    "name": "to_ieee",
-    "total_instructions": 24
-  },
-  "24": {
-    "basicblocks": 1,
-    "calls": "17",
-    "file": "x_hls_utils.h",
-    "fileloc": 523,
-    "instructions": 5,
-    "loads": {
-      "L": 1
-    },
-    "name": "to_double",
-    "total_instructions": 22
-  },
-  "25": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "x_hls_utils.h",
-    "fileloc": 338,
-    "instructions": 17,
-    "loads": {
-      "L": 4
-    },
-    "name": "data",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 17
-  },
-  "26": {
     "basicblocks": 15,
-    "calls": "10 10 16",
+    "calls": "13 13 3",
     "file": "conv2.cpp",
     "fileloc": 5,
     "instructions": 70,
@@ -243,42 +186,33 @@
     },
     "total_instructions": 1645
   },
-  "27": {
-    "basicblocks": 58,
-    "calls": "12 1 6 6 13",
-    "file": "hls_case_IEEE754.h",
-    "fileloc": 12,
-    "instructions": 123,
-    "loads": {
-      "L": 3
-    },
-    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, double>",
-    "total_instructions": 166
-  },
-  "3": {
+  "22": {
     "basicblocks": 1,
-    "calls": "17",
-    "file": "x_hls_utils.h",
-    "fileloc": 511,
-    "instructions": 4,
-    "loads": {
-      "L": 1
-    },
-    "name": "to_int",
-    "total_instructions": 21
-  },
-  "4": {
-    "basicblocks": 1,
-    "calls": "15",
+    "calls": "19",
     "file": "fmaxdouble.cpp",
     "fileloc": 6,
     "instructions": 2,
     "name": "fmax",
     "total_instructions": 245
   },
-  "5": {
+  "23": {
+    "basicblocks": 15,
+    "calls": "13 13 3",
+    "file": "conv1.cpp",
+    "fileloc": 5,
+    "instructions": 72,
+    "loads": {
+      "L": 3
+    },
+    "name": "conv1",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 1647
+  },
+  "24": {
     "basicblocks": 1,
-    "calls": "25",
+    "calls": "10",
     "file": "x_hls_utils.h",
     "fileloc": 351,
     "instructions": 5,
@@ -288,21 +222,63 @@
     "name": "to_float",
     "total_instructions": 22
   },
-  "6": {
+  "25": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "fmindouble.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "fmin",
+    "total_instructions": 245
+  },
+  "26": {
     "basicblocks": 1,
     "calls": "",
     "file": "x_hls_utils.h",
-    "fileloc": 514,
-    "instructions": 6,
+    "fileloc": 312,
+    "instructions": 15,
+    "name": "fp_struct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 15
+  },
+  "27": {
+    "basicblocks": 1,
+    "calls": "10",
+    "file": "x_hls_utils.h",
+    "fileloc": 348,
+    "instructions": 4,
     "loads": {
       "L": 1
     },
-    "name": "expv",
-    "total_instructions": 6
+    "name": "to_int",
+    "total_instructions": 21
   },
-  "7": {
+  "3": {
+    "basicblocks": 1,
+    "calls": "20",
+    "file": "fmaxfloat.cpp",
+    "fileloc": 6,
+    "instructions": 2,
+    "name": "fmaxf",
+    "total_instructions": 245
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "26",
+    "file": "hls_isnan.h",
+    "fileloc": 16,
+    "instructions": 14,
+    "loads": {
+      "L": 2
+    },
+    "name": "generic_isnan<float>",
+    "total_instructions": 29
+  },
+  "5": {
     "basicblocks": 15,
-    "calls": "10 10 16",
+    "calls": "13 13 3",
     "file": "conv3.cpp",
     "fileloc": 5,
     "instructions": 72,
@@ -316,28 +292,52 @@
     },
     "total_instructions": 1647
   },
-  "8": {
+  "6": {
+    "basicblocks": 58,
+    "calls": "8 1 18 18 2",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 123,
+    "loads": {
+      "L": 3
+    },
+    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, double>",
+    "total_instructions": 166
+  },
+  "7": {
     "basicblocks": 22,
-    "calls": "21 21 22 22 11 22 14 14",
-    "file": "hls_fmax.h",
+    "calls": "8 8 17 17 9 17 11 11",
+    "file": "hls_fmin.h",
     "fileloc": 19,
     "instructions": 60,
     "loads": {
       "L": 7
     },
-    "name": "generic_fmax<float>",
+    "name": "generic_fmin<double>",
     "stores": {
       "L": 1
     },
     "total_instructions": 243
   },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 485,
+    "instructions": 15,
+    "name": "fp_struct",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 15
+  },
   "9": {
     "basicblocks": 1,
-    "calls": "20",
-    "file": "fmindouble.cpp",
-    "fileloc": 6,
+    "calls": "14",
+    "file": "x_hls_utils.h",
+    "fileloc": 538,
     "instructions": 2,
-    "name": "fmin",
-    "total_instructions": 245
+    "name": "to_ieee",
+    "total_instructions": 24
   }
 }

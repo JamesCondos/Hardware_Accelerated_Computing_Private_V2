@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'generic_fmax_double_s'
 ================================================================
-* Date:           Fri Oct 31 13:02:32 2025
+* Date:           Fri Oct 31 14:36:38 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -105,7 +105,8 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	wire read operation ('x_read', C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:488->C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:21) on port 'x' (C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:488->C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:21) [2]  (0.000 ns)
 	'icmp' operation ('icmp_ln25_1', C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:25) [8]  (1.101 ns)
-	'and' operation ('and_ln25', C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:25) [9]  (0.000 ns)
+	'xor' operation ('xor_ln18', C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:18->C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:27) [11]  (0.000 ns)
+	'and' operation ('and_ln18', C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:18->C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:27) [12]  (0.000 ns)
 	'or' operation ('or_ln18', C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:18->C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:27) [13]  (0.000 ns)
 	'or' operation ('or_ln18_1', C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:18->C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:27) [14]  (0.000 ns)
 	'select' operation ('res', C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:18->C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:27) [15]  (0.424 ns)

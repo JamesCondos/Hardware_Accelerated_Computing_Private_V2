@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761876166052">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761881812056">
   <ports id="1" name="x" type="PortType" coreId="1634485536" bitwidth="64">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
@@ -29,14 +29,14 @@
   <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@ports.1"/>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="73" pipe_depth="1" RegionName="generic_fmax&lt;double>">
     <basic_blocks id="17" name="generic_fmax&lt;double>" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="2" name="x_read" lineNumber="488" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" coreId="635333456" contextFuncName="fp_struct" bitwidth="64" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="2" name="x_read" lineNumber="488" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" coreId="651286272" contextFuncName="fp_struct" bitwidth="64" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmax&amp;lt;double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="488" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
         <dataInputObjs>x</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="3" name="data" lineNumber="488" originalName="data" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="data_fu_30_p1" coreId="1528533848" contextFuncName="fp_struct" bitwidth="64" opcode="bitcast" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="3" name="data" lineNumber="488" originalName="data" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="data_fu_30_p1" coreId="1527263176" contextFuncName="fp_struct" bitwidth="64" opcode="bitcast" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmax&amp;lt;double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="488" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
         <dataInputObjs>read</dataInputObjs>
@@ -44,14 +44,14 @@
         <dataOutputObjs>partselect</dataOutputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="4" name="x_fp_sign" lineNumber="489" originalName="x_fp.sign" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_sign_fu_34_p3" coreId="635651856" contextFuncName="fp_struct" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="4" name="x_fp_sign" lineNumber="489" originalName="x_fp.sign" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_sign_fu_34_p3" coreId="651286272" contextFuncName="fp_struct" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="1">
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmax&amp;lt;double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="489" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
         <dataInputObjs>bitcast</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="5" name="x_fp_exp" lineNumber="490" originalName="x_fp.exp" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_exp_fu_42_p4" coreId="1528529368" contextFuncName="fp_struct" bitwidth="11" opcode="partselect" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="5" name="x_fp_exp" lineNumber="490" originalName="x_fp.exp" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_exp_fu_42_p4" coreId="651413680" contextFuncName="fp_struct" bitwidth="11" opcode="partselect" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmax&amp;lt;double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="490" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
         <dataInputObjs>bitcast</dataInputObjs>
@@ -59,7 +59,7 @@
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="6" name="x_fp_sig" lineNumber="491" originalName="x_fp.sig" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_sig_fu_52_p1" coreId="635651856" contextFuncName="fp_struct" bitwidth="52" opcode="trunc" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="6" name="x_fp_sig" lineNumber="491" originalName="x_fp.sig" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_sig_fu_52_p1" coreId="651413680" contextFuncName="fp_struct" bitwidth="52" opcode="trunc" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmax&amp;lt;double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="491" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
         <dataInputObjs>bitcast</dataInputObjs>
@@ -127,7 +127,7 @@
         <dataOutputObjs>ret</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="_ln42" lineNumber="42" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" coreId="641876864" contextFuncName="generic_fmax_double_s" opcode="ret" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="_ln42" lineNumber="42" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" coreId="64" contextFuncName="generic_fmax_double_s" opcode="ret" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" linenumber="42" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmax&amp;lt;double&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>ap_return</dataOutputObjs>

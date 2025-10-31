@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761876174603">
-  <ports id="1" name="input_ftmap" type="PortType" originalName="input_ftmap" coreName="RAM" coreId="1634485536" bitwidth="32" iftype="IfTypeRegister" arraysize="65025">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761881820972">
+  <ports id="1" name="input_ftmap" type="PortType" originalName="input_ftmap" coreName="RAM" coreId="656418676" bitwidth="32" iftype="IfTypeRegister" arraysize="65025">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="conv1_weights" type="PortType" originalName="conv1_weights" coreName="RAM" coreId="1702035557" bitwidth="32" iftype="IfTypeRegister" arraysize="5184">
+  <ports id="2" name="conv1_weights" type="PortType" originalName="conv1_weights" coreName="RAM" coreId="1634485536" bitwidth="32" iftype="IfTypeRegister" arraysize="5184">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="3" name="conv1_biases" type="PortType" coreName="RAM" coreId="1634485536" bitwidth="32" iftype="IfTypeRegister" arraysize="64">
+  <ports id="3" name="conv1_biases" type="PortType" coreName="RAM" coreId="1918986355" bitwidth="32" iftype="IfTypeRegister" arraysize="64">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="4" name="conv2_weights" type="PortType" originalName="conv2_weights" coreName="RAM" coreId="1635147636" bitwidth="32" iftype="IfTypeRegister" arraysize="2048">
+  <ports id="4" name="conv2_weights" type="PortType" originalName="conv2_weights" coreName="RAM" coreId="1917860896" bitwidth="32" iftype="IfTypeRegister" arraysize="2048">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="5" name="conv2_biases" type="PortType" coreName="RAM" coreId="1717920800" bitwidth="32" iftype="IfTypeRegister" arraysize="32">
+  <ports id="5" name="conv2_biases" type="PortType" coreName="RAM" coreId="1919250511" bitwidth="32" iftype="IfTypeRegister" arraysize="32">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="6" name="conv3_weights" type="PortType" originalName="conv3_weights" coreName="RAM" coreId="1918986355" bitwidth="32" iftype="IfTypeRegister" arraysize="800">
+  <ports id="6" name="conv3_weights" type="PortType" originalName="conv3_weights" coreName="RAM" coreId="1717920800" bitwidth="32" iftype="IfTypeRegister" arraysize="800">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="7" name="conv3_biases" type="PortType" originalName="conv3_biases" coreId="1668444990" bitwidth="32">
+  <ports id="7" name="conv3_biases" type="PortType" originalName="conv3_biases" coreId="0" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="8" name="output_ftmap" type="PortType" originalName="output_ftmap" coreName="RAM" coreId="1634485536" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="65025">
@@ -43,20 +43,20 @@
   <edges id="238" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
   <edges id="239" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
   <blocks id="34" name="srcnn" type="BlockType">
-    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="_ln15" lineNumber="15" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv1_fu_52" coreId="0" contextFuncName="srcnn" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="_ln15" lineNumber="15" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv1_fu_52" coreId="4294967295" contextFuncName="srcnn" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="15" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="srcnn"/>
       <dataInputObjs>input_ftmap</dataInputObjs>
       <dataInputObjs>conv1_weights</dataInputObjs>
       <dataInputObjs>conv1_biases</dataInputObjs>
       <constName>conv1</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="_ln16" lineNumber="16" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv2_fu_64" coreId="4294967295" contextFuncName="srcnn" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="_ln16" lineNumber="16" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv2_fu_64" coreId="4228300630" contextFuncName="srcnn" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="16" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="srcnn"/>
       <dataInputObjs>conv2_weights</dataInputObjs>
       <dataInputObjs>conv2_biases</dataInputObjs>
       <constName>conv2</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="conv3_biases_read" coreId="0" bitwidth="32" opcode="read" nodeLabel="4.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="conv3_biases_read" coreId="4294967295" bitwidth="32" opcode="read" nodeLabel="4.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataInputObjs>conv3_biases</dataInputObjs>
       <dataOutputObjs>bitcast</dataOutputObjs>
     </node_objs>
@@ -64,14 +64,14 @@
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln17" lineNumber="17" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv3_fu_76" coreId="0" contextFuncName="srcnn" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln17" lineNumber="17" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv3_fu_76" coreId="736492320" contextFuncName="srcnn" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="17" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="srcnn"/>
       <dataInputObjs>conv3_weights</dataInputObjs>
       <dataInputObjs>bitcast</dataInputObjs>
       <dataOutputObjs>output_ftmap</dataOutputObjs>
       <constName>conv3</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln18" lineNumber="18" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="srcnn" opcode="ret" nodeLabel="5.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln18" lineNumber="18" fileName="src/srcnn.cpp" fileDirectory="../." coreId="736500704" contextFuncName="srcnn" opcode="ret" nodeLabel="5.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/srcnn.cpp" linenumber="18" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="srcnn"/>
     </node_objs>
     <fileValidLineNumbers fileName="src/srcnn.cpp">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761876170554">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761881816647">
   <ports id="1" name="conv2_weights" type="PortType" coreName="RAM" coreId="1634485536" bitwidth="32" iftype="IfTypeRegister" arraysize="2048">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -69,7 +69,7 @@
   <ports id="2" name="conv2_biases" type="PortType" coreName="RAM" coreId="1634485536" bitwidth="32" iftype="IfTypeRegister" arraysize="32">
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="3" name="layer1_output" type="PortType" coreName="RAM" coreId="732980752" bitwidth="32" iftype="IfTypeRegister" arraysize="4161600">
+  <ports id="3" name="layer1_output" type="PortType" coreName="RAM" coreId="1651076195" bitwidth="32" iftype="IfTypeRegister" arraysize="4161600">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -135,7 +135,7 @@
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="4" name="layer2_output" type="PortType" coreName="RAM" coreId="1634485536" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="2080800">
+  <ports id="4" name="layer2_output" type="PortType" coreName="RAM" coreId="1346117671" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="2080800">
     <dataInputObjs>getelementptr</dataInputObjs>
   </ports>
   <edges id="1071" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
@@ -1727,62 +1727,62 @@
   <edges id="3308" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.975"/>
   <blocks id="18" name="entry" type="BlockType">
     <controlOutputObjs>VITIS_LOOP_26_4</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="out_feat_x" originalName="__x" coreId="1667834152" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="out_feat_x" originalName="__x" coreId="1952542572" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="out_feat_y" originalName="__x" coreId="1763780640" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="out_feat_y" originalName="__x" coreId="736071104" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="indvar_flatten" coreId="732980752" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="indvar_flatten" coreId="1667834152" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="out_feat" originalName="out_feat" coreId="1763780640" bitwidth="6" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="out_feat" originalName="out_feat" coreId="736071104" bitwidth="6" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="indvar_flatten195" coreId="1952542572" bitwidth="21" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="indvar_flatten195" coreId="1651076195" bitwidth="21" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="indvar_flatten195_write_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="779644521" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="indvar_flatten195_write_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="1852402793" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="6" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="out_feat_write_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="732980752" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="7" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="out_feat_write_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="7" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="indvar_flatten_write_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="1835231521" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="indvar_flatten_write_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="1952542572" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="8" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="out_feat_y_write_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="9" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="out_feat_y_write_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="1535" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="9" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="out_feat_x_write_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="1952542572" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="10" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="out_feat_x_write_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="10" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="1852402793" contextFuncName="conv2" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <controlInputObjs>VITIS_LOOP_26_4</controlInputObjs>
     </node_objs>
@@ -1793,7 +1793,7 @@
   <blocks id="1062" name="for.end63" type="BlockType">
     <controlInputObjs>VITIS_LOOP_26_4</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="1061" name="_ln42" lineNumber="42" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" opcode="ret" nodeLabel="245.0" m_display="0" m_topoIndex="1004" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="1061" name="_ln42" lineNumber="42" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="ret" nodeLabel="245.0" m_display="0" m_topoIndex="1004" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="src/conv2.cpp" linenumber="42" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
     </node_objs>
     <fileValidLineNumbers fileName="src/conv2.cpp">
@@ -1808,19 +1808,19 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>for.end63</controlOutputObjs>
       <controlOutputObjs>for.inc61</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="out_feat_y_1" originalName="out_feat_y" coreId="1869181810" bitwidth="8" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="out_feat_y_1" originalName="out_feat_y" coreId="4294967295" bitwidth="8" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="out_feat_1" lineNumber="33" originalName="out_feat" fileName="src/conv2.cpp" fileDirectory="../." coreId="1852402793" contextFuncName="conv2" bitwidth="6" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="out_feat_1" lineNumber="33" originalName="out_feat" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="6" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>trunc</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="indvar_flatten195_load" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="1852402793" contextFuncName="conv2" bitwidth="21" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="indvar_flatten195_load" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="6" contextFuncName="conv2" bitwidth="21" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -1831,7 +1831,7 @@
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="tmp_cast" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="tmp_cast_fu_1705_p3" coreId="1667834152" contextFuncName="conv2" bitwidth="11" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="tmp_cast" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="tmp_cast_fu_1705_p3" coreId="1859" contextFuncName="conv2" bitwidth="11" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -1908,7 +1908,7 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="data_18" lineNumber="488" originalName="data" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="data_18_fu_1929_p1" coreId="0" contextFuncName="fp_struct" bitwidth="64" opcode="bitcast" nodeLabel="5.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="data_18" lineNumber="488" originalName="data" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="data_18_fu_1929_p1" coreId="2296604913" contextFuncName="fp_struct" bitwidth="64" opcode="bitcast" nodeLabel="5.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath" linenumber="1432" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="fmax&amp;lt;int, int&amp;gt;"/>
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmax&amp;lt;double&amp;gt;"/>
@@ -2042,7 +2042,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="x_fp_exp_12" lineNumber="490" originalName="x_fp.exp" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_exp_12_fu_2011_p4" coreId="0" contextFuncName="fp_struct" bitwidth="11" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="x_fp_exp_12" lineNumber="490" originalName="x_fp.exp" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="x_fp_exp_12_fu_2011_p4" coreId="8" contextFuncName="fp_struct" bitwidth="11" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath" linenumber="1452" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="fmin&amp;lt;double, int&amp;gt;"/>
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h" linenumber="21" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmin&amp;lt;double&amp;gt;"/>
@@ -2123,7 +2123,7 @@
         <dataOutputObjs>trunc</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="xs_sign_1" lineNumber="18" originalName="xs.sign" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="xs_sign_1_reg_4989" coreId="1914708526" contextFuncName="generic_isnan_double_s" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="xs_sign_1" lineNumber="18" originalName="xs.sign" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="xs_sign_1_reg_4989" coreId="0" contextFuncName="generic_isnan_double_s" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath" linenumber="1452" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="fmin&amp;lt;double, int&amp;gt;"/>
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h" linenumber="18" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_isnan&amp;lt;double&amp;gt;"/>
@@ -2133,7 +2133,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="xs_exp_1" lineNumber="490" originalName="xs.exp" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="xs_exp_1_fu_2073_p4" coreId="1953392955" contextFuncName="fp_struct" bitwidth="11" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="xs_exp_1" lineNumber="490" originalName="xs.exp" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="xs_exp_1_fu_2073_p4" coreId="0" contextFuncName="fp_struct" bitwidth="11" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="13" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2144,7 +2144,7 @@
         <dataOutputObjs>sub</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="trunc_ln534" lineNumber="534" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="trunc_ln534_fu_2083_p1" coreId="943141165" contextFuncName="mantissa" bitwidth="52" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="trunc_ln534" lineNumber="534" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="trunc_ln534_fu_2083_p1" coreId="0" contextFuncName="mantissa" bitwidth="52" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="15" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2153,7 +2153,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="mantissa_1" lineNumber="534" originalName="mantissa" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="mantissa_1_fu_2087_p4" coreId="151666223" contextFuncName="mantissa" bitwidth="54" opcode="bitconcatenate" nodeLabel="5.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="mantissa_1" lineNumber="534" originalName="mantissa" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="mantissa_1_fu_2087_p4" coreId="0" contextFuncName="mantissa" bitwidth="54" opcode="bitconcatenate" nodeLabel="5.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="15" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2163,7 +2163,7 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="mantissa_4_cast_cast_cast" lineNumber="534" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="mantissa_4_cast_cast_cast_fu_2097_p1" coreId="1278" contextFuncName="mantissa" bitwidth="137" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="mantissa_4_cast_cast_cast" lineNumber="534" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="mantissa_4_cast_cast_cast_fu_2097_p1" coreId="0" contextFuncName="mantissa" bitwidth="137" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="15" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2173,7 +2173,7 @@
         <dataOutputObjs>lshr</dataOutputObjs>
         <dataOutputObjs>shl</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="xs_exp_1_cast" lineNumber="490" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="xs_exp_1_cast_fu_2101_p1" coreId="543649385" contextFuncName="fp_struct" bitwidth="12" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="109" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="xs_exp_1_cast" lineNumber="490" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="xs_exp_1_cast_fu_2101_p1" coreId="0" contextFuncName="fp_struct" bitwidth="12" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="109" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="13" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2193,7 +2193,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="tmp_29" lineNumber="490" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="tmp_29_reg_4999" coreId="12" contextFuncName="fp_struct" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="tmp_29" lineNumber="490" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="tmp_29_reg_4999" coreId="0" contextFuncName="fp_struct" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="13" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2214,7 +2214,7 @@
         <dataOutputObjs>sext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="sub_i43_i_i_i36_cast" lineNumber="490" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="sub_i43_i_i_i36_cast_fu_2125_p1" coreId="844832809" contextFuncName="fp_struct" bitwidth="12" opcode="sext" nodeLabel="5.0" m_display="0" m_topoIndex="113" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="sub_i43_i_i_i36_cast" lineNumber="490" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="sub_i43_i_i_i36_cast_fu_2125_p1" coreId="0" contextFuncName="fp_struct" bitwidth="12" opcode="sext" nodeLabel="5.0" m_display="0" m_topoIndex="113" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="13" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2234,7 +2234,7 @@
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="sh_prom_i18_i_i_i_i38_cast_cast_cast" lineNumber="490" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="sh_prom_i18_i_i_i_i38_cast_cast_cast_fu_2137_p1" coreId="1479490115" contextFuncName="fp_struct" bitwidth="32" opcode="sext" nodeLabel="5.0" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="sh_prom_i18_i_i_i_i38_cast_cast_cast" lineNumber="490" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="sh_prom_i18_i_i_i_i38_cast_cast_cast_fu_2137_p1" coreId="0" contextFuncName="fp_struct" bitwidth="32" opcode="sext" nodeLabel="5.0" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="13" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2243,7 +2243,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="sh_prom_i18_i_i_i_i38_cast_cast_cast_cast" lineNumber="490" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="sh_prom_i18_i_i_i_i38_cast_cast_cast_cast_fu_2141_p1" coreId="1546726963" contextFuncName="fp_struct" bitwidth="137" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="116" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="sh_prom_i18_i_i_i_i38_cast_cast_cast_cast" lineNumber="490" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="sh_prom_i18_i_i_i_i38_cast_cast_cast_cast_fu_2141_p1" coreId="0" contextFuncName="fp_struct" bitwidth="137" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="116" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="13" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2273,7 +2273,7 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="tmp_30" lineNumber="534" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="tmp_30_reg_5009" coreId="1313415741" contextFuncName="mantissa" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="tmp_30" lineNumber="534" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="tmp_30_reg_5009" coreId="0" contextFuncName="mantissa" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="15" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2283,7 +2283,7 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="tmp_83_cast" lineNumber="534" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="tmp_83_cast_fu_2185_p1" coreId="1" contextFuncName="mantissa" bitwidth="14" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="tmp_83_cast" lineNumber="534" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="tmp_83_cast_fu_2185_p1" coreId="0" contextFuncName="mantissa" bitwidth="14" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="15" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2292,7 +2292,7 @@
         <dataInputObjs>bitselect</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="tmp_s" lineNumber="534" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="tmp_s_fu_2188_p4" coreId="1" contextFuncName="mantissa" bitwidth="14" opcode="partselect" nodeLabel="6.0" m_display="0" m_topoIndex="131" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="tmp_s" lineNumber="534" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="tmp_s_fu_2188_p4" coreId="0" contextFuncName="mantissa" bitwidth="14" opcode="partselect" nodeLabel="6.0" m_display="0" m_topoIndex="131" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="31" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="15" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h" linenumber="117" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_cast_IEEE754&amp;lt;int, double&amp;gt;"/>
@@ -2347,7 +2347,7 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="4038" contextFuncName="conv2" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>for.inc61</controlInputObjs>
@@ -2401,13 +2401,13 @@
       <controlInputObjs>VITIS_LOOP_26_4</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>VITIS_LOOP_26_4</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="out_feat_x_load" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="732973024" contextFuncName="conv2" bitwidth="8" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="out_feat_x_load" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="8" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="15" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="indvar_flatten_load" lineNumber="13" fileName="src/conv2.cpp" fileDirectory="../." coreId="1768843590" contextFuncName="conv2" bitwidth="16" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="indvar_flatten_load" lineNumber="13" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="16" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="13" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
@@ -2420,7 +2420,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="trunc_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="trunc_ln11_fu_1741_p1" coreId="1162760773" contextFuncName="conv2" bitwidth="5" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="trunc_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="trunc_ln11_fu_1741_p1" coreId="0" contextFuncName="conv2" bitwidth="5" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
@@ -2508,7 +2508,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="tmp_85_cast" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="tmp_85_cast_fu_1753_p3" coreId="1685025392" contextFuncName="conv2" bitwidth="11" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="tmp_85_cast" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="tmp_85_cast_fu_1753_p3" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>trunc</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
@@ -2587,23 +2587,23 @@
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
         <dataOutputObjs>store</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="zext_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln11_fu_4673_p1" coreId="627823728" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="257.0" m_display="0" m_topoIndex="1007" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="zext_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln11_fu_4673_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="257.0" m_display="0" m_topoIndex="1007" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="zext_ln38" lineNumber="38" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln38_fu_4677_p1" coreId="1852795252" contextFuncName="conv2" bitwidth="15" opcode="zext" nodeLabel="257.0" m_display="0" m_topoIndex="1008" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="zext_ln38" lineNumber="38" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln38_fu_4677_p1" coreId="0" contextFuncName="conv2" bitwidth="15" opcode="zext" nodeLabel="257.0" m_display="0" m_topoIndex="1008" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="38" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="tmp_11" lineNumber="38" fileName="src/conv2.cpp" fileDirectory="../." rtlName="tmp_11_fu_4680_p3" coreId="539122994" contextFuncName="conv2" bitwidth="14" opcode="bitconcatenate" nodeLabel="257.0" m_display="0" m_topoIndex="1009" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="tmp_11" lineNumber="38" fileName="src/conv2.cpp" fileDirectory="../." rtlName="tmp_11_fu_4680_p3" coreId="0" contextFuncName="conv2" bitwidth="14" opcode="bitconcatenate" nodeLabel="257.0" m_display="0" m_topoIndex="1009" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="38" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="zext_ln38_1" lineNumber="38" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln38_1_fu_4687_p1" coreId="1" contextFuncName="conv2" bitwidth="15" opcode="zext" nodeLabel="257.0" m_display="0" m_topoIndex="1010" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="zext_ln38_1" lineNumber="38" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln38_1_fu_4687_p1" coreId="0" contextFuncName="conv2" bitwidth="15" opcode="zext" nodeLabel="257.0" m_display="0" m_topoIndex="1010" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="38" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
@@ -2614,12 +2614,12 @@
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="sub_ln38_cast" lineNumber="38" fileName="src/conv2.cpp" fileDirectory="../." rtlName="sub_ln38_cast_fu_4697_p1" coreId="908093039" contextFuncName="conv2" bitwidth="16" opcode="sext" nodeLabel="257.0" m_display="0" m_topoIndex="1012" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="sub_ln38_cast" lineNumber="38" fileName="src/conv2.cpp" fileDirectory="../." rtlName="sub_ln38_cast_fu_4697_p1" coreId="0" contextFuncName="conv2" bitwidth="16" opcode="sext" nodeLabel="257.0" m_display="0" m_topoIndex="1012" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="38" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="conv2_biases_addr" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="1819243365" contextFuncName="conv2" bitwidth="5" opcode="getelementptr" nodeLabel="257.0" m_display="0" m_topoIndex="1013" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="conv2_biases_addr" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="5" opcode="getelementptr" nodeLabel="257.0" m_display="0" m_topoIndex="1013" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_biases</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2631,7 +2631,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="bitcast_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_fu_4741_p1" coreId="858927154" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="273.0" m_display="0" m_topoIndex="1027" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="bitcast_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_fu_4741_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="273.0" m_display="0" m_topoIndex="1027" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fadd</dataOutputObjs>
@@ -2643,12 +2643,12 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="zext_ln11_1" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln11_1_fu_1771_p1" coreId="544108320" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="zext_ln11_1" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln11_1_fu_1771_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="conv2_weights_addr" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="3689" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="conv2_weights_addr" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2660,7 +2660,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="bitcast_ln11_1" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_1_fu_2970_p1" coreId="808541300" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="12.0" m_display="0" m_topoIndex="303" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="bitcast_ln11_1" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_1_fu_2970_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="12.0" m_display="0" m_topoIndex="303" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -2672,18 +2672,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="or_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_fu_1776_p2" coreId="1470693712" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="or_ln11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_fu_1776_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="zext_ln33" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_fu_1782_p1" coreId="3289395" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="zext_ln33" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_fu_1782_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="conv2_weights_addr_1" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="1226965113" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="conv2_weights_addr_1" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2695,7 +2695,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="bitcast_ln11_2" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_2_fu_2975_p1" coreId="1734439795" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="12.0" m_display="0" m_topoIndex="304" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="bitcast_ln11_2" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_2_fu_2975_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="12.0" m_display="0" m_topoIndex="304" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -2707,18 +2707,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="or_ln11_1" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_1_fu_1800_p2" coreId="1348955753" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="or_ln11_1" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_1_fu_1800_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="zext_ln33_19" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_19_fu_1806_p1" coreId="1931488372" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="zext_ln33_19" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_19_fu_1806_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="conv2_weights_addr_2" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="842019164" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="conv2_weights_addr_2" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2730,7 +2730,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="bitcast_ln11_3" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_3_fu_3032_p1" coreId="731745920" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="13.0" m_display="0" m_topoIndex="327" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="bitcast_ln11_3" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_3_fu_3032_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="13.0" m_display="0" m_topoIndex="327" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -2742,18 +2742,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="or_ln11_2" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_2_fu_1811_p2" coreId="731750336" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="or_ln11_2" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_2_fu_1811_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="zext_ln33_20" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_20_fu_1817_p1" coreId="731749696" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="zext_ln33_20" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_20_fu_1817_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="conv2_weights_addr_3" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731746752" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="conv2_weights_addr_3" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2765,7 +2765,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="bitcast_ln11_4" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_4_fu_3037_p1" coreId="731750240" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="13.0" m_display="0" m_topoIndex="328" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="bitcast_ln11_4" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_4_fu_3037_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="13.0" m_display="0" m_topoIndex="328" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -2777,18 +2777,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="or_ln11_3" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_3_fu_1874_p2" coreId="731746880" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="or_ln11_3" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_3_fu_1874_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="zext_ln33_21" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_21_fu_1880_p1" coreId="731747328" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="zext_ln33_21" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_21_fu_1880_p1" coreId="2147483647" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="conv2_weights_addr_4" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731748224" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="conv2_weights_addr_4" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="610" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2800,7 +2800,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="bitcast_ln11_5" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_5_fu_3094_p1" coreId="731747936" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="14.0" m_display="0" m_topoIndex="351" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="bitcast_ln11_5" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_5_fu_3094_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="14.0" m_display="0" m_topoIndex="351" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -2812,18 +2812,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="or_ln11_4" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_4_fu_1885_p2" coreId="731745488" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="or_ln11_4" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_4_fu_1885_p2" coreId="619" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="zext_ln33_22" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_22_fu_1891_p1" coreId="731749072" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="zext_ln33_22" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_22_fu_1891_p1" coreId="2147483647" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="conv2_weights_addr_5" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731747584" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="conv2_weights_addr_5" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2835,7 +2835,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="bitcast_ln11_6" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_6_fu_3099_p1" coreId="731751456" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="14.0" m_display="0" m_topoIndex="352" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="bitcast_ln11_6" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_6_fu_3099_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="14.0" m_display="0" m_topoIndex="352" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -2847,18 +2847,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="or_ln11_5" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_5_fu_1907_p2" coreId="731749808" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="4.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="or_ln11_5" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_5_fu_1907_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="4.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="zext_ln33_23" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_23_fu_1913_p1" coreId="731747344" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="zext_ln33_23" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_23_fu_1913_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="conv2_weights_addr_6" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731752352" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="conv2_weights_addr_6" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2870,7 +2870,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="bitcast_ln11_7" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_7_fu_3156_p1" coreId="731749504" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="15.0" m_display="0" m_topoIndex="375" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="bitcast_ln11_7" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_7_fu_3156_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="15.0" m_display="0" m_topoIndex="375" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -2882,18 +2882,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="or_ln11_6" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_6_fu_1918_p2" coreId="731748608" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="4.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="or_ln11_6" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_6_fu_1918_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="4.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="135" name="zext_ln33_24" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_24_fu_1924_p1" coreId="731752112" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="135" name="zext_ln33_24" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_24_fu_1924_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="conv2_weights_addr_7" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731746304" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="conv2_weights_addr_7" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="4.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2905,7 +2905,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="138" name="bitcast_ln11_8" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_8_fu_3161_p1" coreId="731753200" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="15.0" m_display="0" m_topoIndex="376" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="138" name="bitcast_ln11_8" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_8_fu_3161_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="15.0" m_display="0" m_topoIndex="376" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -2917,18 +2917,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="140" name="or_ln11_7" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_7_fu_2159_p2" coreId="731752096" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="120" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="140" name="or_ln11_7" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_7_fu_2159_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="120" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="zext_ln33_25" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_25_fu_2165_p1" coreId="731722496" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="zext_ln33_25" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_25_fu_2165_p1" coreId="741350128" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="142" name="conv2_weights_addr_8" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731751904" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="142" name="conv2_weights_addr_8" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2940,7 +2940,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="144" name="bitcast_ln11_9" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_9_fu_3218_p1" coreId="731753664" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="400" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="144" name="bitcast_ln11_9" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_9_fu_3218_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="400" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -2952,18 +2952,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="146" name="or_ln11_8" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_8_fu_2170_p2" coreId="731723184" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="125" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="146" name="or_ln11_8" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_8_fu_2170_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="125" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="147" name="zext_ln33_26" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_26_fu_2176_p1" coreId="731723840" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="126" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="147" name="zext_ln33_26" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_26_fu_2176_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="126" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="148" name="conv2_weights_addr_9" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731722336" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="127" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="148" name="conv2_weights_addr_9" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="1044" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="127" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -2975,7 +2975,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="150" name="bitcast_ln11_10" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_10_fu_3223_p1" coreId="731723472" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="401" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="150" name="bitcast_ln11_10" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_10_fu_3223_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="16.0" m_display="0" m_topoIndex="401" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -2987,18 +2987,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="152" name="or_ln11_9" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_9_fu_2218_p2" coreId="731722096" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="6.0" m_display="0" m_topoIndex="136" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="152" name="or_ln11_9" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_9_fu_2218_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="6.0" m_display="0" m_topoIndex="136" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="153" name="zext_ln33_27" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_27_fu_2224_p1" coreId="731754000" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="137" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="153" name="zext_ln33_27" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_27_fu_2224_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="137" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="154" name="conv2_weights_addr_10" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731722976" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="138" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="154" name="conv2_weights_addr_10" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="138" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3010,7 +3010,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="156" name="bitcast_ln11_11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_11_fu_3280_p1" coreId="741048704" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="17.0" m_display="0" m_topoIndex="424" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="156" name="bitcast_ln11_11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_11_fu_3280_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="17.0" m_display="0" m_topoIndex="424" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3022,18 +3022,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="158" name="or_ln11_10" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_10_fu_2229_p2" coreId="741048864" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="6.0" m_display="0" m_topoIndex="141" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="158" name="or_ln11_10" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_10_fu_2229_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="6.0" m_display="0" m_topoIndex="141" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="159" name="zext_ln33_28" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_28_fu_2235_p1" coreId="731732176" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="142" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="159" name="zext_ln33_28" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_28_fu_2235_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="142" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="160" name="conv2_weights_addr_11" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731733424" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="143" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="160" name="conv2_weights_addr_11" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="143" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3045,7 +3045,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="162" name="bitcast_ln11_12" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_12_fu_3285_p1" coreId="731737584" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="17.0" m_display="0" m_topoIndex="425" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="162" name="bitcast_ln11_12" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_12_fu_3285_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="17.0" m_display="0" m_topoIndex="425" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3057,18 +3057,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="164" name="or_ln11_11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_11_fu_2240_p2" coreId="731732992" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="7.0" m_display="0" m_topoIndex="146" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="164" name="or_ln11_11" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_11_fu_2240_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="7.0" m_display="0" m_topoIndex="146" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="165" name="zext_ln33_29" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_29_fu_2246_p1" coreId="731731568" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="7.0" m_display="0" m_topoIndex="147" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="165" name="zext_ln33_29" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_29_fu_2246_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="7.0" m_display="0" m_topoIndex="147" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="166" name="conv2_weights_addr_12" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731734400" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="7.0" m_display="0" m_topoIndex="148" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="166" name="conv2_weights_addr_12" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="7.0" m_display="0" m_topoIndex="148" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3080,7 +3080,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="168" name="bitcast_ln11_13" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_13_fu_3342_p1" coreId="731733824" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="18.0" m_display="0" m_topoIndex="448" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="168" name="bitcast_ln11_13" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_13_fu_3342_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="18.0" m_display="0" m_topoIndex="448" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3092,18 +3092,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="170" name="or_ln11_12" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_12_fu_2251_p2" coreId="731737152" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="7.0" m_display="0" m_topoIndex="151" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="170" name="or_ln11_12" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_12_fu_2251_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="7.0" m_display="0" m_topoIndex="151" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="171" name="zext_ln33_30" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_30_fu_2257_p1" coreId="731738192" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="7.0" m_display="0" m_topoIndex="152" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="171" name="zext_ln33_30" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_30_fu_2257_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="7.0" m_display="0" m_topoIndex="152" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="172" name="conv2_weights_addr_13" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731732688" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="7.0" m_display="0" m_topoIndex="153" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="172" name="conv2_weights_addr_13" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="7.0" m_display="0" m_topoIndex="153" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3115,7 +3115,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="174" name="bitcast_ln11_14" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_14_fu_3347_p1" coreId="731735056" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="18.0" m_display="0" m_topoIndex="449" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="174" name="bitcast_ln11_14" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_14_fu_3347_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="18.0" m_display="0" m_topoIndex="449" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3127,18 +3127,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="176" name="or_ln11_13" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_13_fu_2492_p2" coreId="731731808" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="8.0" m_display="0" m_topoIndex="192" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="176" name="or_ln11_13" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_13_fu_2492_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="8.0" m_display="0" m_topoIndex="192" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="177" name="zext_ln33_31" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_31_fu_2498_p1" coreId="731733632" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="193" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="177" name="zext_ln33_31" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_31_fu_2498_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="193" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="178" name="conv2_weights_addr_14" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731735216" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="8.0" m_display="0" m_topoIndex="194" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="178" name="conv2_weights_addr_14" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="8.0" m_display="0" m_topoIndex="194" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3150,7 +3150,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="180" name="bitcast_ln11_15" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_15_fu_3404_p1" coreId="731734368" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="19.0" m_display="0" m_topoIndex="472" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="180" name="bitcast_ln11_15" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_15_fu_3404_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="19.0" m_display="0" m_topoIndex="472" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3162,18 +3162,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="182" name="or_ln11_14" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_14_fu_2503_p2" coreId="731735392" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="8.0" m_display="0" m_topoIndex="197" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="182" name="or_ln11_14" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_14_fu_2503_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="8.0" m_display="0" m_topoIndex="197" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="183" name="zext_ln33_32" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_32_fu_2509_p1" coreId="731735408" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="198" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="183" name="zext_ln33_32" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_32_fu_2509_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="198" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="184" name="conv2_weights_addr_15" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731736272" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="8.0" m_display="0" m_topoIndex="199" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="184" name="conv2_weights_addr_15" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="8.0" m_display="0" m_topoIndex="199" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3185,7 +3185,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="186" name="bitcast_ln11_16" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_16_fu_3409_p1" coreId="731737072" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="19.0" m_display="0" m_topoIndex="473" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="186" name="bitcast_ln11_16" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_16_fu_3409_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="19.0" m_display="0" m_topoIndex="473" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3197,18 +3197,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="188" name="or_ln11_15" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_15_fu_2551_p2" coreId="731731616" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="9.0" m_display="0" m_topoIndex="208" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="188" name="or_ln11_15" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_15_fu_2551_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="9.0" m_display="0" m_topoIndex="208" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="189" name="zext_ln33_33" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_33_fu_2557_p1" coreId="731738896" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="209" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="189" name="zext_ln33_33" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_33_fu_2557_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="209" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="190" name="conv2_weights_addr_16" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731732720" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="210" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="190" name="conv2_weights_addr_16" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="210" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3220,7 +3220,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="192" name="bitcast_ln11_17" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_17_fu_3466_p1" coreId="731740208" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="20.0" m_display="0" m_topoIndex="497" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="192" name="bitcast_ln11_17" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_17_fu_3466_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="20.0" m_display="0" m_topoIndex="497" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3232,18 +3232,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="194" name="or_ln11_16" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_16_fu_2562_p2" coreId="731744208" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="9.0" m_display="0" m_topoIndex="213" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="194" name="or_ln11_16" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_16_fu_2562_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="9.0" m_display="0" m_topoIndex="213" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="195" name="zext_ln33_34" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_34_fu_2568_p1" coreId="731744464" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="214" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="195" name="zext_ln33_34" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_34_fu_2568_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="214" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="196" name="conv2_weights_addr_17" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731740672" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="215" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="196" name="conv2_weights_addr_17" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="215" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3255,7 +3255,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="198" name="bitcast_ln11_18" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_18_fu_3471_p1" coreId="731744720" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="20.0" m_display="0" m_topoIndex="498" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="198" name="bitcast_ln11_18" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_18_fu_3471_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="20.0" m_display="0" m_topoIndex="498" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3267,18 +3267,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="200" name="or_ln11_17" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_17_fu_2794_p2" coreId="731743248" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="10.0" m_display="0" m_topoIndex="253" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="200" name="or_ln11_17" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_17_fu_2794_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="10.0" m_display="0" m_topoIndex="253" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="201" name="zext_ln33_35" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_35_fu_2800_p1" coreId="731741280" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="254" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="201" name="zext_ln33_35" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_35_fu_2800_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="254" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="202" name="conv2_weights_addr_18" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731742256" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="255" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="202" name="conv2_weights_addr_18" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="255" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3290,7 +3290,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="204" name="bitcast_ln11_19" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_19_fu_3528_p1" coreId="731742128" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="21.0" m_display="0" m_topoIndex="521" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="204" name="bitcast_ln11_19" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_19_fu_3528_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="21.0" m_display="0" m_topoIndex="521" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3302,18 +3302,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="206" name="or_ln11_18" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_18_fu_2805_p2" coreId="731739696" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="10.0" m_display="0" m_topoIndex="258" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="206" name="or_ln11_18" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_18_fu_2805_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="10.0" m_display="0" m_topoIndex="258" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="207" name="zext_ln33_36" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_36_fu_2811_p1" coreId="731742032" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="259" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="207" name="zext_ln33_36" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_36_fu_2811_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="259" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="208" name="conv2_weights_addr_19" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731742896" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="260" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="208" name="conv2_weights_addr_19" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="10.0" m_display="0" m_topoIndex="260" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3325,7 +3325,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="210" name="bitcast_ln11_20" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_20_fu_3533_p1" coreId="731744864" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="21.0" m_display="0" m_topoIndex="522" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="210" name="bitcast_ln11_20" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_20_fu_3533_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="21.0" m_display="0" m_topoIndex="522" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3337,18 +3337,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="212" name="or_ln11_19" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_19_fu_2918_p2" coreId="731744992" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="11.0" m_display="0" m_topoIndex="284" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="212" name="or_ln11_19" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_19_fu_2918_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="11.0" m_display="0" m_topoIndex="284" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="213" name="zext_ln33_37" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_37_fu_2924_p1" coreId="731742800" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="285" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="213" name="zext_ln33_37" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_37_fu_2924_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="285" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="214" name="conv2_weights_addr_20" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731738576" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="286" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="214" name="conv2_weights_addr_20" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="286" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3360,7 +3360,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="216" name="bitcast_ln11_21" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_21_fu_3590_p1" coreId="731745296" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="22.0" m_display="0" m_topoIndex="545" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="216" name="bitcast_ln11_21" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_21_fu_3590_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="22.0" m_display="0" m_topoIndex="545" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3372,18 +3372,18 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="218" name="or_ln11_20" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_20_fu_2929_p2" coreId="731744240" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="11.0" m_display="0" m_topoIndex="289" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="218" name="or_ln11_20" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_20_fu_2929_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="11.0" m_display="0" m_topoIndex="289" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="219" name="zext_ln33_38" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_38_fu_2935_p1" coreId="731739120" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="290" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="219" name="zext_ln33_38" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_38_fu_2935_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="11.0" m_display="0" m_topoIndex="290" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="220" name="conv2_weights_addr_21" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="731739552" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="291" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="220" name="conv2_weights_addr_21" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="11.0" m_display="0" m_topoIndex="291" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3395,7 +3395,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="222" name="bitcast_ln11_22" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_22_fu_3595_p1" coreId="731739680" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="22.0" m_display="0" m_topoIndex="546" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="222" name="bitcast_ln11_22" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_22_fu_3595_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="22.0" m_display="0" m_topoIndex="546" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3442,7 +3442,7 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="230" name="or_ln11_22" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_22_fu_2991_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="12.0" m_display="0" m_topoIndex="311" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="230" name="or_ln11_22" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_22_fu_2991_p2" coreId="750338592" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="12.0" m_display="0" m_topoIndex="311" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -3518,7 +3518,7 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="243" name="zext_ln33_42" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_42_fu_3059_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="13.0" m_display="0" m_topoIndex="336" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="243" name="zext_ln33_42" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_42_fu_3059_p1" coreId="112" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="13.0" m_display="0" m_topoIndex="336" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -3535,7 +3535,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="246" name="bitcast_ln11_26" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_26_fu_3719_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="24.0" m_display="0" m_topoIndex="595" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="246" name="bitcast_ln11_26" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_26_fu_3719_p1" coreId="10" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="24.0" m_display="0" m_topoIndex="595" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3558,7 +3558,7 @@
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="250" name="conv2_weights_addr_26" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="14.0" m_display="0" m_topoIndex="356" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="250" name="conv2_weights_addr_26" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="750331832" contextFuncName="conv2" bitwidth="11" opcode="getelementptr" nodeLabel="14.0" m_display="0" m_topoIndex="356" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>conv2_weights</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -3570,7 +3570,7 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>bitcast</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="252" name="bitcast_ln11_27" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_27_fu_3776_p1" coreId="0" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="25.0" m_display="0" m_topoIndex="618" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="252" name="bitcast_ln11_27" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="bitcast_ln11_27_fu_3776_p1" coreId="743661813" contextFuncName="conv2" bitwidth="32" opcode="bitcast" nodeLabel="25.0" m_display="0" m_topoIndex="618" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>fmul</dataOutputObjs>
@@ -3582,7 +3582,7 @@
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>or</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="254" name="or_ln11_26" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_26_fu_3115_p2" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="14.0" m_display="0" m_topoIndex="359" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="254" name="or_ln11_26" lineNumber="11" fileName="src/conv2.cpp" fileDirectory="../." rtlName="or_ln11_26_fu_3115_p2" coreId="2147483647" contextFuncName="conv2" bitwidth="11" opcode="or" nodeLabel="14.0" m_display="0" m_topoIndex="359" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="11" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
@@ -3623,7 +3623,7 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="261" name="zext_ln33_45" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_45_fu_3172_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="15.0" m_display="0" m_topoIndex="379" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="261" name="zext_ln33_45" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_45_fu_3172_p1" coreId="12" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="15.0" m_display="0" m_topoIndex="379" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>or</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -6632,7 +6632,7 @@
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="693" name="layer1_output_addr_13" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="966" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="16.0" m_display="0" m_topoIndex="419" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="693" name="layer1_output_addr_13" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="16.0" m_display="0" m_topoIndex="419" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -6645,7 +6645,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="695" name="zext_ln33_96" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_96_fu_3327_p1" coreId="1277" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="17.0" m_display="0" m_topoIndex="439" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="695" name="zext_ln33_96" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_96_fu_3327_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="17.0" m_display="0" m_topoIndex="439" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -6663,12 +6663,12 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="698" name="zext_ln33_97" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_97_fu_3337_p1" coreId="1072" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="17.0" m_display="0" m_topoIndex="442" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="698" name="zext_ln33_97" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_97_fu_3337_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="17.0" m_display="0" m_topoIndex="442" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="699" name="layer1_output_addr_15" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="622" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="17.0" m_display="0" m_topoIndex="443" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="699" name="layer1_output_addr_15" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="17.0" m_display="0" m_topoIndex="443" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -6681,7 +6681,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="701" name="zext_ln33_98" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_98_fu_3389_p1" coreId="577" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="18.0" m_display="0" m_topoIndex="463" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="701" name="zext_ln33_98" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_98_fu_3389_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="18.0" m_display="0" m_topoIndex="463" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -6704,7 +6704,7 @@
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="705" name="layer1_output_addr_17" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="657" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="18.0" m_display="0" m_topoIndex="467" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="705" name="layer1_output_addr_17" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="18.0" m_display="0" m_topoIndex="467" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -6717,7 +6717,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="707" name="zext_ln33_100" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_100_fu_3451_p1" coreId="692" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="19.0" m_display="0" m_topoIndex="487" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="707" name="zext_ln33_100" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_100_fu_3451_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="19.0" m_display="0" m_topoIndex="487" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -6740,7 +6740,7 @@
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="711" name="layer1_output_addr_19" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="914" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="491" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="711" name="layer1_output_addr_19" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="19.0" m_display="0" m_topoIndex="491" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -6753,7 +6753,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="713" name="zext_ln33_102" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_102_fu_3513_p1" coreId="1111" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="20.0" m_display="0" m_topoIndex="512" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="713" name="zext_ln33_102" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_102_fu_3513_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="20.0" m_display="0" m_topoIndex="512" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -6789,7 +6789,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="719" name="zext_ln33_104" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_104_fu_3575_p1" coreId="1242" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="21.0" m_display="0" m_topoIndex="536" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="719" name="zext_ln33_104" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_104_fu_3575_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="21.0" m_display="0" m_topoIndex="536" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -7190,7 +7190,7 @@
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="786" name="layer1_output_addr_44" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="33423870" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="32.0" m_display="0" m_topoIndex="805" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="786" name="layer1_output_addr_44" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="32.0" m_display="0" m_topoIndex="805" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7221,12 +7221,12 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="791" name="zext_ln33_128" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_128_fu_4324_p1" coreId="16843009" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="33.0" m_display="0" m_topoIndex="822" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="791" name="zext_ln33_128" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_128_fu_4324_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="33.0" m_display="0" m_topoIndex="822" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="792" name="layer1_output_addr_46" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="16907777" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="33.0" m_display="0" m_topoIndex="823" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="792" name="layer1_output_addr_46" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="33.0" m_display="0" m_topoIndex="823" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7239,7 +7239,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="794" name="zext_ln33_129" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_129_fu_4334_p1" coreId="16843009" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="33.0" m_display="0" m_topoIndex="825" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="794" name="zext_ln33_129" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_129_fu_4334_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="33.0" m_display="0" m_topoIndex="825" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -7257,12 +7257,12 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="797" name="zext_ln33_130" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_130_fu_4364_p1" coreId="16843009" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="34.0" m_display="0" m_topoIndex="836" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="797" name="zext_ln33_130" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_130_fu_4364_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="34.0" m_display="0" m_topoIndex="836" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="798" name="layer1_output_addr_48" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="16843009" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="34.0" m_display="0" m_topoIndex="837" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="798" name="layer1_output_addr_48" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="34.0" m_display="0" m_topoIndex="837" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7280,7 +7280,7 @@
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="801" name="layer1_output_addr_49" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="16843009" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="34.0" m_display="0" m_topoIndex="840" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="801" name="layer1_output_addr_49" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="34.0" m_display="0" m_topoIndex="840" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7293,12 +7293,12 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="803" name="zext_ln33_132" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_132_fu_4404_p1" coreId="4294967295" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="35.0" m_display="0" m_topoIndex="850" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="803" name="zext_ln33_132" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_132_fu_4404_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="35.0" m_display="0" m_topoIndex="850" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="804" name="layer1_output_addr_50" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="16843009" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="35.0" m_display="0" m_topoIndex="851" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="804" name="layer1_output_addr_50" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="35.0" m_display="0" m_topoIndex="851" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7316,7 +7316,7 @@
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="807" name="layer1_output_addr_51" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="16843009" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="35.0" m_display="0" m_topoIndex="854" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="807" name="layer1_output_addr_51" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="35.0" m_display="0" m_topoIndex="854" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7329,12 +7329,12 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="809" name="zext_ln33_134" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_134_fu_4444_p1" coreId="16843009" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="36.0" m_display="0" m_topoIndex="865" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="809" name="zext_ln33_134" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_134_fu_4444_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="36.0" m_display="0" m_topoIndex="865" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="810" name="layer1_output_addr_52" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="16843009" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="36.0" m_display="0" m_topoIndex="866" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="810" name="layer1_output_addr_52" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="36.0" m_display="0" m_topoIndex="866" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7388,7 +7388,7 @@
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="819" name="layer1_output_addr_55" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="37.0" m_display="0" m_topoIndex="883" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="819" name="layer1_output_addr_55" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="37.0" m_display="0" m_topoIndex="883" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7401,12 +7401,12 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="821" name="zext_ln33_138" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_138_fu_4524_p1" coreId="4294967295" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="38.0" m_display="0" m_topoIndex="893" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="821" name="zext_ln33_138" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_138_fu_4524_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="38.0" m_display="0" m_topoIndex="893" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="822" name="layer1_output_addr_56" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="38.0" m_display="0" m_topoIndex="894" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="822" name="layer1_output_addr_56" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="38.0" m_display="0" m_topoIndex="894" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7437,12 +7437,12 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="827" name="zext_ln33_140" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_140_fu_4564_p1" coreId="4294967295" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="39.0" m_display="0" m_topoIndex="907" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="827" name="zext_ln33_140" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_140_fu_4564_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="39.0" m_display="0" m_topoIndex="907" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="828" name="layer1_output_addr_58" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="39.0" m_display="0" m_topoIndex="908" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="828" name="layer1_output_addr_58" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="39.0" m_display="0" m_topoIndex="908" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7455,12 +7455,12 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="830" name="zext_ln33_141" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_141_fu_4574_p1" coreId="4294967295" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="39.0" m_display="0" m_topoIndex="910" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="830" name="zext_ln33_141" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_141_fu_4574_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="39.0" m_display="0" m_topoIndex="910" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="831" name="layer1_output_addr_59" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="39.0" m_display="0" m_topoIndex="911" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="831" name="layer1_output_addr_59" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="39.0" m_display="0" m_topoIndex="911" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7473,7 +7473,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="833" name="zext_ln33_142" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_142_fu_4614_p1" coreId="4294967295" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="40.0" m_display="0" m_topoIndex="924" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="833" name="zext_ln33_142" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_142_fu_4614_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="40.0" m_display="0" m_topoIndex="924" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -7491,7 +7491,7 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="836" name="zext_ln33_143" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_143_fu_4624_p1" coreId="4294967295" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="40.0" m_display="0" m_topoIndex="927" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="836" name="zext_ln33_143" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_143_fu_4624_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="40.0" m_display="0" m_topoIndex="927" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
@@ -7514,7 +7514,7 @@
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="840" name="layer1_output_addr_62" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="41.0" m_display="0" m_topoIndex="938" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="840" name="layer1_output_addr_62" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="41.0" m_display="0" m_topoIndex="938" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -7527,12 +7527,12 @@
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="842" name="zext_ln33_145" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_145_fu_4653_p1" coreId="4294967295" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="41.0" m_display="0" m_topoIndex="939" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="842" name="zext_ln33_145" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." rtlName="zext_ln33_145_fu_4653_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="41.0" m_display="0" m_topoIndex="939" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="843" name="layer1_output_addr_63" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="41.0" m_display="0" m_topoIndex="940" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="843" name="layer1_output_addr_63" lineNumber="33" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="22" opcode="getelementptr" nodeLabel="41.0" m_display="0" m_topoIndex="940" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="33" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>layer1_output</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
@@ -8635,7 +8635,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="1037" name="data_26" lineNumber="317" originalName="data" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="data_26_fu_4749_p1" coreId="4294967295" contextFuncName="fp_struct" bitwidth="32" opcode="bitcast" nodeLabel="277.0" m_display="0" m_topoIndex="1031" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="1037" name="data_26" lineNumber="317" originalName="data" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="data_26_fu_4749_p1" coreId="869" contextFuncName="fp_struct" bitwidth="32" opcode="bitcast" nodeLabel="277.0" m_display="0" m_topoIndex="1031" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="38" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" linenumber="22" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmax&amp;lt;float&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="317" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
@@ -8645,7 +8645,7 @@
         <dataOutputObjs>trunc</dataOutputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="1038" name="y_fp_exp" lineNumber="324" originalName="y_fp.exp" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="y_fp_exp_fu_4753_p4" coreId="4294967295" contextFuncName="fp_struct" bitwidth="8" opcode="partselect" nodeLabel="277.0" m_display="0" m_topoIndex="1032" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="1038" name="y_fp_exp" lineNumber="324" originalName="y_fp.exp" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="y_fp_exp_fu_4753_p4" coreId="2346" contextFuncName="fp_struct" bitwidth="8" opcode="partselect" nodeLabel="277.0" m_display="0" m_topoIndex="1032" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="38" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" linenumber="22" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmax&amp;lt;float&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="324" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
@@ -8655,7 +8655,7 @@
         <dataOutputObjs>icmp</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="1039" name="y_fp_sig" lineNumber="325" originalName="y_fp.sig" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="y_fp_sig_fu_4763_p1" coreId="4294967295" contextFuncName="fp_struct" bitwidth="23" opcode="trunc" nodeLabel="277.0" m_display="0" m_topoIndex="1033" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="1039" name="y_fp_sig" lineNumber="325" originalName="y_fp.sig" fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" fileDirectory="../../../../../../scratch/2023.1/hls_product/1026/2023.1/src/shared/hls/clib/hlsmath" rtlName="y_fp_sig_fu_4763_p1" coreId="2214" contextFuncName="fp_struct" bitwidth="23" opcode="trunc" nodeLabel="277.0" m_display="0" m_topoIndex="1033" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="38" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h" linenumber="22" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="generic_fmax&amp;lt;float&amp;gt;"/>
         <inlineStackInfo fileName="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib/src/hls\utils/x_hls_utils.h" linenumber="325" fileDirectory="C:\scratch\2023.1\hls_product\1026\2023.1\src\shared\hls\clib\hlsmath" functionName="fp_struct"/>
@@ -8775,32 +8775,32 @@
         <dataOutputObjs>store</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="1054" name="indvar_flatten195_write_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.42" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="1054" name="indvar_flatten195_write_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.42" m_topoIndex="37" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="15" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="1055" name="out_feat_write_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.42" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="1055" name="out_feat_write_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="store" nodeLabel="1.0" m_display="0" m_delay="0.42" m_topoIndex="38" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="15" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="1056" name="indvar_flatten_write_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" opcode="store" nodeLabel="32.0" m_display="0" m_delay="0.42" m_topoIndex="815" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="1056" name="indvar_flatten_write_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="store" nodeLabel="32.0" m_display="0" m_delay="0.42" m_topoIndex="815" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="15" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="1057" name="out_feat_y_write_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" opcode="store" nodeLabel="32.0" m_display="0" m_delay="0.42" m_topoIndex="816" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="1057" name="out_feat_y_write_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="store" nodeLabel="32.0" m_display="0" m_delay="0.42" m_topoIndex="816" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="15" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>select</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="1058" name="out_feat_x_write_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.42" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="1058" name="out_feat_x_write_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.42" m_topoIndex="58" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="15" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <dataInputObjs>add</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="1059" name="br_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="conv2" opcode="br" nodeLabel="277.0" m_display="0" m_topoIndex="1045" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="1059" name="br_ln15" lineNumber="15" fileName="src/conv2.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="br" nodeLabel="277.0" m_display="0" m_topoIndex="1045" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="src/conv2.cpp" linenumber="15" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
         <controlInputObjs>VITIS_LOOP_26_4</controlInputObjs>
       </node_objs>

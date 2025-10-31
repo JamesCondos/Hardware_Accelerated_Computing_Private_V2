@@ -1,41 +1,14 @@
 {
-    "1": {
-        "name": "conv3",
-        "file": "",
-        "fileloc": "0",
-        "instructions": "58",
-        "total_instructions": "464",
-        "calls": "6",
-        "basicblocks": "4",
-        "loads": {
-            "L": "4"
-        },
-        "stores": {
-            "L": "7"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "2": {
-        "name": "generic_fmax<double>",
-        "file": "hls_fmax.h",
-        "fileloc": "19",
-        "instructions": "15",
-        "total_instructions": "15",
-        "calls": "",
-        "basicblocks": "1"
-    },
     "0": {
         "name": "srcnn",
         "file": "",
         "fileloc": "0",
         "instructions": "23",
         "total_instructions": "2339",
-        "calls": "4 5 1",
+        "calls": "3 2 5",
         "basicblocks": "1"
     },
-    "3": {
+    "1": {
         "name": "generic_fmin<double>",
         "file": "hls_fmin.h",
         "fileloc": "19",
@@ -44,26 +17,7 @@
         "calls": "",
         "basicblocks": "1"
     },
-    "4": {
-        "name": "conv1",
-        "file": "",
-        "fileloc": "0",
-        "instructions": "538",
-        "total_instructions": "798",
-        "calls": "2 3 2 3 2 3 2 3 2 3 2 3 2 3 2 3 2 3 2 3",
-        "basicblocks": "6",
-        "loads": {
-            "L": "27"
-        },
-        "stores": {
-            "G": "1",
-            "L": "16"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "5": {
+    "2": {
         "name": "conv2",
         "file": "",
         "fileloc": "0",
@@ -83,7 +37,26 @@
             "L": "1"
         }
     },
-    "6": {
+    "3": {
+        "name": "conv1",
+        "file": "",
+        "fileloc": "0",
+        "instructions": "538",
+        "total_instructions": "798",
+        "calls": "6 1 6 1 6 1 6 1 6 1 6 1 6 1 6 1 6 1 6 1",
+        "basicblocks": "6",
+        "loads": {
+            "L": "27"
+        },
+        "stores": {
+            "G": "1",
+            "L": "16"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
         "name": "conv3_Pipeline_VITIS_LOOP_26_4_VITIS_LOOP_28_5",
         "file": "",
         "fileloc": "0",
@@ -101,5 +74,32 @@
         "loops": {
             "L": "1"
         }
+    },
+    "5": {
+        "name": "conv3",
+        "file": "",
+        "fileloc": "0",
+        "instructions": "58",
+        "total_instructions": "464",
+        "calls": "4",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "generic_fmax<double>",
+        "file": "hls_fmax.h",
+        "fileloc": "19",
+        "instructions": "15",
+        "total_instructions": "15",
+        "calls": "",
+        "basicblocks": "1"
     }
 }
