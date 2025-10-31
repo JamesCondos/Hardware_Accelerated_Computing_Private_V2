@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 6,
-    "calls": "5 6 1 4 2 3 7",
+    "calls": "5 3 4 1 7 6 2",
     "file": "srcnn.cpp",
     "fileloc": 7,
     "instructions": 95,
@@ -9,57 +9,10 @@
     "total_instructions": 4402
   },
   "1": {
-    "basicblocks": 11,
-    "calls": "",
-    "file": "srcnn.cpp",
-    "fileloc": 170,
-    "instructions": 41,
-    "loads": {
-      "L": 2
-    },
-    "name": "load_conv3_params",
-    "stores": {
-      "G": 2
-    },
-    "total_instructions": 41
-  },
-  "2": {
-    "basicblocks": 49,
-    "calls": "",
-    "file": "srcnn.cpp",
-    "fileloc": 306,
-    "instructions": 702,
-    "loads": {
-      "G": 69,
-      "L": 138
-    },
-    "name": "conv2",
-    "stores": {
-      "L": 71
-    },
-    "total_instructions": 702
-  },
-  "3": {
-    "basicblocks": 279,
-    "calls": "",
-    "file": "srcnn.cpp",
-    "fileloc": 382,
-    "instructions": 771,
-    "loads": {
-      "G": 26,
-      "L": 50
-    },
-    "name": "conv3",
-    "stores": {
-      "L": 27
-    },
-    "total_instructions": 771
-  },
-  "4": {
     "basicblocks": 847,
     "calls": "",
     "file": "srcnn.cpp",
-    "fileloc": 196,
+    "fileloc": 233,
     "instructions": 2702,
     "loads": {
       "G": 82,
@@ -71,11 +24,56 @@
     },
     "total_instructions": 2702
   },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "srcnn.cpp",
+    "fileloc": 496,
+    "instructions": 23,
+    "loads": {
+      "L": 1
+    },
+    "name": "reconstructor",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 23
+  },
+  "3": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "srcnn.cpp",
+    "fileloc": 190,
+    "instructions": 27,
+    "loads": {
+      "L": 2
+    },
+    "name": "load_conv2_params",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 27
+  },
+  "4": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "srcnn.cpp",
+    "fileloc": 207,
+    "instructions": 41,
+    "loads": {
+      "L": 2
+    },
+    "name": "load_conv3_params",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 41
+  },
   "5": {
     "basicblocks": 11,
     "calls": "",
     "file": "srcnn.cpp",
-    "fileloc": 132,
+    "fileloc": 169,
     "instructions": 41,
     "loads": {
       "L": 2
@@ -87,33 +85,35 @@
     "total_instructions": 41
   },
   "6": {
-    "basicblocks": 7,
+    "basicblocks": 279,
     "calls": "",
     "file": "srcnn.cpp",
-    "fileloc": 153,
-    "instructions": 27,
+    "fileloc": 419,
+    "instructions": 771,
     "loads": {
-      "L": 2
+      "G": 26,
+      "L": 50
     },
-    "name": "load_conv2_params",
+    "name": "conv3",
     "stores": {
-      "G": 2
+      "L": 27
     },
-    "total_instructions": 27
+    "total_instructions": 771
   },
   "7": {
-    "basicblocks": 7,
+    "basicblocks": 49,
     "calls": "",
     "file": "srcnn.cpp",
-    "fileloc": 459,
-    "instructions": 23,
+    "fileloc": 343,
+    "instructions": 702,
     "loads": {
-      "L": 1
+      "G": 69,
+      "L": 138
     },
-    "name": "reconstructor",
+    "name": "conv2",
     "stores": {
-      "L": 1
+      "L": 71
     },
-    "total_instructions": 23
+    "total_instructions": 702
   }
 }

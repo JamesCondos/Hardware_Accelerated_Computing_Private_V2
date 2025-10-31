@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_conv1_params'" level="0">
-<item name = "Date">Thu Oct 30 21:58:19 2025
+<item name = "Date">Fri Oct 31 13:48:12 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -31,12 +31,12 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4_fu_449">load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4, 92, 92, 0.920 us, 0.920 us, 92, 92, no</column>
+<column name="grp_load_conv1_params_Pipeline_VITIS_LOOP_180_3_VITIS_LOOP_181_4_fu_449">load_conv1_params_Pipeline_VITIS_LOOP_180_3_VITIS_LOOP_181_4, 92, 92, 0.920 us, 0.920 us, 92, 92, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_140_1">6656, 6656, 104, -, -, 64, no</column>
+<column name="- VITIS_LOOP_177_1">6656, 6656, 104, -, -, 64, no</column>
 </table>
 </item>
 </section>
@@ -63,7 +63,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4_fu_449">load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4, 0, 0, 1148, 442, 0</column>
+<column name="grp_load_conv1_params_Pipeline_VITIS_LOOP_180_3_VITIS_LOOP_181_4_fu_449">load_conv1_params_Pipeline_VITIS_LOOP_180_3_VITIS_LOOP_181_4, 0, 0, 1148, 442, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -80,10 +80,10 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln140_1_fu_823_p2">+, 0, 0, 20, 13, 7</column>
-<column name="add_ln140_fu_835_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln141_fu_845_p2">+, 0, 0, 70, 63, 63</column>
-<column name="icmp_ln140_fu_829_p2">icmp, 0, 0, 15, 7, 8</column>
+<column name="add_ln177_1_fu_823_p2">+, 0, 0, 20, 13, 7</column>
+<column name="add_ln177_fu_835_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln178_fu_845_p2">+, 0, 0, 70, 63, 63</column>
+<column name="icmp_ln177_fu_829_p2">icmp, 0, 0, 15, 7, 8</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -113,14 +113,14 @@
 <column name="ap_CS_fsm">13, 0, 13, 0</column>
 <column name="gmem_w1_addr_read_reg_937">32, 0, 32, 0</column>
 <column name="gmem_w1_addr_reg_931">64, 0, 64, 0</column>
-<column name="grp_load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4_fu_449_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_load_conv1_params_Pipeline_VITIS_LOOP_180_3_VITIS_LOOP_181_4_fu_449_ap_start_reg">1, 0, 1, 0</column>
 <column name="i_3_reg_921">7, 0, 7, 0</column>
 <column name="i_fu_404">7, 0, 7, 0</column>
 <column name="lshr_ln_reg_947">5, 0, 5, 0</column>
 <column name="phi_mul_fu_400">13, 0, 13, 0</column>
 <column name="phi_mul_load_reg_916">13, 0, 13, 0</column>
-<column name="sext_ln140_reg_911">63, 0, 63, 0</column>
-<column name="trunc_ln140_reg_942">1, 0, 1, 0</column>
+<column name="sext_ln177_reg_911">63, 0, 63, 0</column>
+<column name="trunc_ln177_reg_942">1, 0, 1, 0</column>
 <column name="trunc_ln_reg_906">62, 0, 62, 0</column>
 </table>
 </item>

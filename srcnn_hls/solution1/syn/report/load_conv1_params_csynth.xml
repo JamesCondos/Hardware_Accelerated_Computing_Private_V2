@@ -32,7 +32,7 @@
 <Interval-max>6657</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_140_1>
+<VITIS_LOOP_177_1>
 <Slack>7.30</Slack>
 <TripCount>64</TripCount>
 <Latency>6656</Latency>
@@ -40,7 +40,7 @@
 <IterationLatency>104</IterationLatency>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_140_1>
+</VITIS_LOOP_177_1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 

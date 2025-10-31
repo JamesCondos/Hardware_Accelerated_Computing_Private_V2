@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'conv2_Pipeline_tile_height_loop'
 ================================================================
-* Date:           Thu Oct 30 21:58:27 2025
+* Date:           Fri Oct 31 13:48:22 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -85,10 +85,10 @@
     +-----------------------+----------+----+---+----+------------+------------+
     |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------+----------+----+---+----+------------+------------+
-    |add_ln345_fu_786_p2    |         +|   0|  0|  12|           5|           1|
-    |add_ln350_1_fu_831_p2  |         +|   0|  0|  17|          10|          10|
-    |add_ln352_1_fu_796_p2  |         +|   0|  0|  18|          11|          11|
-    |icmp_ln345_fu_780_p2   |      icmp|   0|  0|  12|           5|           5|
+    |add_ln382_fu_786_p2    |         +|   0|  0|  12|           5|           1|
+    |add_ln387_1_fu_831_p2  |         +|   0|  0|  17|          10|          10|
+    |add_ln389_1_fu_796_p2  |         +|   0|  0|  18|          11|          11|
+    |icmp_ln382_fu_780_p2   |      icmp|   0|  0|  12|           5|           5|
     |ap_enable_pp0          |       xor|   0|  0|   2|           1|           2|
     +-----------------------+----------+----+---+----+------------+------------+
     |Total                  |          |   0|  0|  61|          32|          29|
@@ -406,7 +406,7 @@
 |grp_fu_1118_p_din1              |  out|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop|  return value|
 |grp_fu_1118_p_dout0             |   in|   32|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop|  return value|
 |grp_fu_1118_p_ce                |  out|    1|  ap_ctrl_hs|  conv2_Pipeline_tile_height_loop|  return value|
-|add_ln352                       |   in|   11|     ap_none|                        add_ln352|        scalar|
+|add_ln389                       |   in|   11|     ap_none|                        add_ln389|        scalar|
 |input_tile_address0             |  out|   11|   ap_memory|                       input_tile|         array|
 |input_tile_ce0                  |  out|    1|   ap_memory|                       input_tile|         array|
 |input_tile_q0                   |   in|   32|   ap_memory|                       input_tile|         array|
@@ -458,7 +458,7 @@
 |input_tile_16_address0          |  out|   11|   ap_memory|                    input_tile_16|         array|
 |input_tile_16_ce0               |  out|    1|   ap_memory|                    input_tile_16|         array|
 |input_tile_16_q0                |   in|   32|   ap_memory|                    input_tile_16|         array|
-|add_ln350                       |   in|   10|     ap_none|                        add_ln350|        scalar|
+|add_ln387                       |   in|   10|     ap_none|                        add_ln387|        scalar|
 |layer2_output_tile_address0     |  out|   10|   ap_memory|               layer2_output_tile|         array|
 |layer2_output_tile_ce0          |  out|    1|   ap_memory|               layer2_output_tile|         array|
 |layer2_output_tile_we0          |  out|    1|   ap_memory|               layer2_output_tile|         array|

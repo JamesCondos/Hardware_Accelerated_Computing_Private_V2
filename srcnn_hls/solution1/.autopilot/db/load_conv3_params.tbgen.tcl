@@ -488,108 +488,108 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "gmem_w3_blk_n_AR", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "gmem_w3", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "gmem_w3", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "conv3_weights", "Type" : "None", "Direction" : "I"},
 			{"Name" : "conv3_biases_0_0_val", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_30", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_30", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_30", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_29", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_29", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_29", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_28", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_28", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_28", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_27", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_27", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_27", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_26", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_26", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_26", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_25", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_25", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_25", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_24", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_24", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_24", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_23", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_23", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_23", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_22", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_22", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_22", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_21", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_21", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_21", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_20", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_20", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_20", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_19", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_19", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_19", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_18", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_18", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_18", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_17", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_17", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_17", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_16", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_16", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_16", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_15", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_15", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_15", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_14", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_14", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_14", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_13", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_13", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_13", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_12", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_12", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_12", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_11", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_11", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_11", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_10", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_10", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_10", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_9", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_9", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_9", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_8", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_8", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_8", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_7", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_7", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_7", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_6", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_6", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_6", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_5", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_5", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_5", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_4", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_4", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_4", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_3", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_3", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_3", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_2", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_2", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_2", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_1", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_1", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_1", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
+					{"ID" : "1", "SubInstance" : "grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig", "Inst_start_state" : "9", "Inst_end_state" : "10"}]},
 			{"Name" : "conv3_biases_local", "Type" : "Memory", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144", "Parent" : "0", "Child" : ["2"],
-		"CDFG" : "load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4",
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144", "Parent" : "0", "Child" : ["2"],
+		"CDFG" : "load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -606,7 +606,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "gmem_w3", "Type" : "MAXI", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "gmem_w3_blk_n_R", "Type" : "RtlSignal"}]},
-			{"Name" : "sext_ln180", "Type" : "None", "Direction" : "I"},
+			{"Name" : "sext_ln217", "Type" : "None", "Direction" : "I"},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_30", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_29", "Type" : "Memory", "Direction" : "O"},
@@ -640,9 +640,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_1", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig", "Type" : "Memory", "Direction" : "O"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -683,9 +683,9 @@ set ArgLastReadFirstWriteLatency {
 		p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_1 {Type O LastRead -1 FirstWrite 2}
 		p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig {Type O LastRead -1 FirstWrite 2}
 		conv3_biases_local {Type O LastRead -1 FirstWrite 9}}
-	load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4 {
+	load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4 {
 		gmem_w3 {Type I LastRead 1 FirstWrite -1}
-		sext_ln180 {Type I LastRead 0 FirstWrite -1}
+		sext_ln217 {Type I LastRead 0 FirstWrite -1}
 		p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31 {Type O LastRead -1 FirstWrite 2}
 		p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_30 {Type O LastRead -1 FirstWrite 2}
 		p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_29 {Type O LastRead -1 FirstWrite 2}

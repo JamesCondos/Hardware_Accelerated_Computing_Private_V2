@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_conv1_params'" level="0">
-<item name = "Date">Thu Oct 30 21:57:55 2025
+<item name = "Date">Fri Oct 31 13:47:46 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_140_1">6656, 6656, 104, -, -, 64, no</column>
+<column name="- VITIS_LOOP_177_1">6656, 6656, 104, -, -, 64, no</column>
 </table>
 </item>
 </section>

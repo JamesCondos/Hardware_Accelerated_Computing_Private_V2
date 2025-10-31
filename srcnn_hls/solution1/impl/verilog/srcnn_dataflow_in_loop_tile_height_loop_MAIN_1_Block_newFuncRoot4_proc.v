@@ -60,9 +60,9 @@ wire   [16:0] mul_fu_32_p2;
 wire   [4:0] grp_fu_48_p1;
 wire    ap_CS_fsm_state12;
 wire   [8:0] shl_ln_fu_57_p3;
-wire   [8:0] zext_ln109_fu_54_p1;
+wire   [8:0] zext_ln146_fu_54_p1;
 wire   [7:0] grp_fu_48_p2;
-wire   [7:0] shl_ln110_fu_70_p2;
+wire   [7:0] shl_ln147_fu_70_p2;
 wire   [7:0] pixel_w_fu_76_p2;
 wire   [8:0] pixel_h_fu_64_p2;
 reg    grp_fu_48_ap_start;
@@ -313,14 +313,14 @@ assign mul_fu_32_p00 = tile_n_0;
 
 assign mul_fu_32_p1 = 17'd274;
 
-assign pixel_h_fu_64_p2 = (shl_ln_fu_57_p3 + zext_ln109_fu_54_p1);
+assign pixel_h_fu_64_p2 = (shl_ln_fu_57_p3 + zext_ln146_fu_54_p1);
 
-assign pixel_w_fu_76_p2 = (shl_ln110_fu_70_p2 | grp_fu_48_p2);
+assign pixel_w_fu_76_p2 = (shl_ln147_fu_70_p2 | grp_fu_48_p2);
 
-assign shl_ln110_fu_70_p2 = grp_fu_48_p2 << 8'd4;
+assign shl_ln147_fu_70_p2 = grp_fu_48_p2 << 8'd4;
 
 assign shl_ln_fu_57_p3 = {{tmp_reg_99}, {4'd0}};
 
-assign zext_ln109_fu_54_p1 = tmp_reg_99;
+assign zext_ln146_fu_54_p1 = tmp_reg_99;
 
 endmodule //srcnn_dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc

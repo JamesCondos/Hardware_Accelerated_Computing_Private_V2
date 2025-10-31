@@ -344,11 +344,11 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "conv2_to_conv3", "Type" : "Fifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "512", "DependentChanType" : "0",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3_fu_112", "Port" : "conv2_to_conv3", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "2", "SubInstance" : "grp_conv3_Pipeline_VITIS_LOOP_435_1_VITIS_LOOP_436_2_VITIS_LOOP_437_3_fu_112", "Port" : "conv2_to_conv3", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "layer3_output_tile_0", "Type" : "Memory", "Direction" : "IO", "DependentProc" : ["0"], "DependentChan" : "0", "PIPODir" : "O",
 				"SubConnect" : [
 					{"ID" : "6", "SubInstance" : "grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127", "Port" : "layer3_output_tile_0", "Inst_start_state" : "4", "Inst_end_state" : "5"},
-					{"ID" : "4", "SubInstance" : "grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119", "Port" : "layer3_output_tile_0", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
+					{"ID" : "4", "SubInstance" : "grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_446_4_fu_119", "Port" : "layer3_output_tile_0", "Inst_start_state" : "2", "Inst_end_state" : "3"}]},
 			{"Name" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "6", "SubInstance" : "grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_31", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
@@ -447,8 +447,8 @@ set RtlHierarchyInfo {[
 					{"ID" : "6", "SubInstance" : "grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127", "Port" : "p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig", "Inst_start_state" : "4", "Inst_end_state" : "5"}]},
 			{"Name" : "conv3_biases_local", "Type" : "Memory", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.input_tile_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3_fu_112", "Parent" : "0", "Child" : ["3"],
-		"CDFG" : "conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3",
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_conv3_Pipeline_VITIS_LOOP_435_1_VITIS_LOOP_436_2_VITIS_LOOP_437_3_fu_112", "Parent" : "0", "Child" : ["3"],
+		"CDFG" : "conv3_Pipeline_VITIS_LOOP_435_1_VITIS_LOOP_436_2_VITIS_LOOP_437_3",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -467,11 +467,11 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "conv2_to_conv3_blk_n", "Type" : "RtlSignal"}]}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_435_1_VITIS_LOOP_436_2_VITIS_LOOP_437_3", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter1", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3_fu_112.flow_control_loop_pipe_sequential_init_U", "Parent" : "2"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119", "Parent" : "0", "Child" : ["5"],
-		"CDFG" : "conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4",
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_conv3_Pipeline_VITIS_LOOP_435_1_VITIS_LOOP_436_2_VITIS_LOOP_437_3_fu_112.flow_control_loop_pipe_sequential_init_U", "Parent" : "2"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_446_4_fu_119", "Parent" : "0", "Child" : ["5"],
+		"CDFG" : "conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_446_4",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -488,9 +488,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "layer3_output_tile_0", "Type" : "Memory", "Direction" : "O"},
 			{"Name" : "conv3_biases_local_load", "Type" : "None", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "OUT_STATIONARY_CONV3_VITIS_LOOP_409_4", "PipelineType" : "UPC",
+			{"Name" : "OUT_STATIONARY_CONV3_VITIS_LOOP_446_4", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_state1", "FirstStateIter" : "", "FirstStateBlock" : "ap_ST_fsm_state1_blk", "LastState" : "ap_ST_fsm_state1", "LastStateIter" : "", "LastStateBlock" : "ap_ST_fsm_state1_blk", "QuitState" : "ap_ST_fsm_state1", "QuitStateIter" : "", "QuitStateBlock" : "ap_ST_fsm_state1_blk", "OneDepthLoop" : "1", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119.flow_control_loop_pipe_sequential_init_U", "Parent" : "4"},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_446_4_fu_119.flow_control_loop_pipe_sequential_init_U", "Parent" : "4"},
 	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127", "Parent" : "0", "Child" : ["7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21"],
 		"CDFG" : "conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3",
 		"Protocol" : "ap_ctrl_hs",
@@ -597,10 +597,10 @@ set ArgLastReadFirstWriteLatency {
 		p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig_4 {Type I LastRead 8 FirstWrite -1}
 		p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv3_weig {Type I LastRead 8 FirstWrite -1}
 		conv3_biases_local {Type I LastRead 0 FirstWrite -1}}
-	conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3 {
+	conv3_Pipeline_VITIS_LOOP_435_1_VITIS_LOOP_436_2_VITIS_LOOP_437_3 {
 		input_tile {Type O LastRead -1 FirstWrite 1}
 		conv2_to_conv3 {Type I LastRead 1 FirstWrite -1}}
-	conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4 {
+	conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_446_4 {
 		layer3_output_tile_0 {Type O LastRead -1 FirstWrite 0}
 		conv3_biases_local_load {Type I LastRead 0 FirstWrite -1}}
 	conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3 {

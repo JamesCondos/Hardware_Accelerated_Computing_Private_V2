@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv3'" level="0">
-<item name = "Date">Thu Oct 30 21:58:35 2025
+<item name = "Date">Fri Oct 31 13:48:30 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -31,8 +31,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3_fu_112">conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3, 9250, 9250, 92.500 us, 92.500 us, 9250, 9250, no</column>
-<column name="grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119">conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4, 291, 291, 2.910 us, 2.910 us, 291, 291, no</column>
+<column name="grp_conv3_Pipeline_VITIS_LOOP_435_1_VITIS_LOOP_436_2_VITIS_LOOP_437_3_fu_112">conv3_Pipeline_VITIS_LOOP_435_1_VITIS_LOOP_436_2_VITIS_LOOP_437_3, 9250, 9250, 92.500 us, 92.500 us, 9250, 9250, no</column>
+<column name="grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_446_4_fu_119">conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_446_4, 291, 291, 2.910 us, 2.910 us, 291, 291, no</column>
 <column name="grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127">conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3, 83331, 83331, 0.833 ms, 0.833 ms, 83331, 83331, no</column>
 </table>
 </item>
@@ -64,8 +64,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119">conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4, 0, 0, 21, 177, 0</column>
-<column name="grp_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3_fu_112">conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3, 0, 0, 43, 313, 0</column>
+<column name="grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_446_4_fu_119">conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_446_4, 0, 0, 21, 177, 0</column>
+<column name="grp_conv3_Pipeline_VITIS_LOOP_435_1_VITIS_LOOP_436_2_VITIS_LOOP_437_3_fu_112">conv3_Pipeline_VITIS_LOOP_435_1_VITIS_LOOP_436_2_VITIS_LOOP_437_3, 0, 0, 43, 313, 0</column>
 <column name="grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127">conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3, 0, 15, 5002, 7227, 0</column>
 </table>
 </item>
@@ -109,8 +109,8 @@
 <column name="ap_CS_fsm">5, 0, 5, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="conv3_biases_local_load_reg_198">32, 0, 32, 0</column>
-<column name="grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_409_4_fu_119_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_conv3_Pipeline_VITIS_LOOP_398_1_VITIS_LOOP_399_2_VITIS_LOOP_400_3_fu_112_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_conv3_Pipeline_OUT_STATIONARY_CONV3_VITIS_LOOP_446_4_fu_119_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_conv3_Pipeline_VITIS_LOOP_435_1_VITIS_LOOP_436_2_VITIS_LOOP_437_3_fu_112_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_conv3_Pipeline_in_feat_loop_conv3_tile_height_loop_conv3_tile_width_loop_conv3_fu_127_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>

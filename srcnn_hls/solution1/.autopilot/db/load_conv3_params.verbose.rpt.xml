@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_conv3_params'" level="0">
-<item name = "Date">Thu Oct 30 21:58:20 2025
+<item name = "Date">Fri Oct 31 13:48:14 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144">load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4, 803, 803, 8.030 us, 8.030 us, 803, 803, no</column>
+<column name="grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144">load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4, 803, 803, 8.030 us, 8.030 us, 803, 803, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144">load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4, 0, 0, 77, 276, 0</column>
+<column name="grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144">load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4, 0, 0, 77, 276, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -103,7 +103,7 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">10, 0, 10, 0</column>
-<column name="grp_load_conv3_params_Pipeline_VITIS_LOOP_180_2_VITIS_LOOP_181_3_VITIS_LOOP_182_4_fu_144_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_load_conv3_params_Pipeline_VITIS_LOOP_217_2_VITIS_LOOP_218_3_VITIS_LOOP_219_4_fu_144_ap_start_reg">1, 0, 1, 0</column>
 <column name="trunc_ln_reg_236">62, 0, 62, 0</column>
 </table>
 </item>

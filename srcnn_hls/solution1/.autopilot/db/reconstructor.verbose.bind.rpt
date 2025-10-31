@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'reconstructor'
 ================================================================
-* Date:           Thu Oct 30 21:58:17 2025
+* Date:           Fri Oct 31 13:48:09 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -38,7 +38,7 @@
         |                                                   |                                         |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |                      Instance                     |                  Module                 |   min   |   max   |    min   |    max   | min | max |   Type  |
         +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_reconstructor_Pipeline_VITIS_LOOP_465_2_fu_66  |reconstructor_Pipeline_VITIS_LOOP_465_2  |      297|      297|  2.970 us|  2.970 us|  297|  297|       no|
+        |grp_reconstructor_Pipeline_VITIS_LOOP_502_2_fu_66  |reconstructor_Pipeline_VITIS_LOOP_502_2  |      297|      297|  2.970 us|  2.970 us|  297|  297|       no|
         +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -85,15 +85,15 @@ ST_1 : Operation 3 [1/1] (1.88ns)   --->   "%output_ftmap_1 = read i64 @_ssdm_op
 ST_1 : Operation 4 [1/1] (1.83ns)   --->   "%pixel_h = read i9 @_ssdm_op_Read.ap_fifo.i9P0A, i9 %pixel_h_loc"   --->   Operation 4 'read' 'pixel_h' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 9> <Depth = 4> <FIFO>
 ST_1 : Operation 5 [1/1] (1.83ns)   --->   "%pixel_w = read i8 @_ssdm_op_Read.ap_fifo.i8P0A, i8 %pixel_w_loc"   --->   Operation 5 'read' 'pixel_w' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 4> <FIFO>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i8.i2, i8 %pixel_w, i2 0"   --->   Operation 6 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [2/2] (3.65ns)   --->   "%call_ln0 = call void @reconstructor_Pipeline_VITIS_LOOP_465_2, i9 %pixel_h, i32 %gmem_out, i10 %tmp, i64 %output_ftmap_1, i32 %layer3_output_tile_0"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 3.65> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 7 [2/2] (3.65ns)   --->   "%call_ln0 = call void @reconstructor_Pipeline_VITIS_LOOP_502_2, i9 %pixel_h, i32 %gmem_out, i10 %tmp, i64 %output_ftmap_1, i32 %layer3_output_tile_0"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 3.65> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %output_ftmap, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i9 %pixel_h_loc, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %pixel_w_loc, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem_out, void @empty_43, i32 0, i32 0, void @empty_42, i32 0, i32 65025, void @empty_36, void @empty_40, void @empty_42, i32 16, i32 16, i32 16, i32 16, void @empty_42, void @empty_42, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln0 = call void @reconstructor_Pipeline_VITIS_LOOP_465_2, i9 %pixel_h, i32 %gmem_out, i10 %tmp, i64 %output_ftmap_1, i32 %layer3_output_tile_0"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%ret_ln125 = ret" [src/srcnn.cpp:125]   --->   Operation 13 'ret' 'ret_ln125' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln0 = call void @reconstructor_Pipeline_VITIS_LOOP_502_2, i9 %pixel_h, i32 %gmem_out, i10 %tmp, i64 %output_ftmap_1, i32 %layer3_output_tile_0"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%ret_ln162 = ret" [src/srcnn.cpp:162]   --->   Operation 13 'ret' 'ret_ln162' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -127,7 +127,7 @@ specinterface_ln0 (specinterface ) [ 000]
 specinterface_ln0 (specinterface ) [ 000]
 specinterface_ln0 (specinterface ) [ 000]
 call_ln0          (call          ) [ 000]
-ret_ln125         (ret           ) [ 000]
+ret_ln162         (ret           ) [ 000]
 </LifeTime>
 
 <model>
@@ -229,7 +229,7 @@ ret_ln125         (ret           ) [ 000]
 <pin id="21" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="reconstructor_Pipeline_VITIS_LOOP_465_2"/></StgValue>
+<StgValue><ssdm name="reconstructor_Pipeline_VITIS_LOOP_502_2"/></StgValue>
 </bind>
 </comp>
 
@@ -386,7 +386,7 @@ ret_ln125         (ret           ) [ 000]
 </bind>
 </comp>
 
-<comp id="66" class="1004" name="grp_reconstructor_Pipeline_VITIS_LOOP_465_2_fu_66">
+<comp id="66" class="1004" name="grp_reconstructor_Pipeline_VITIS_LOOP_502_2_fu_66">
 <pin_list>
 <pin id="67" dir="0" index="0" bw="0" slack="0"/>
 <pin id="68" dir="0" index="1" bw="9" slack="0"/>
@@ -517,7 +517,7 @@ ret_ln125         (ret           ) [ 000]
 |----------|---------------------------------------------------|---------|---------|---------|
 | Operation|                  Functional Unit                  |  Delay  |    FF   |   LUT   |
 |----------|---------------------------------------------------|---------|---------|---------|
-|   call   | grp_reconstructor_Pipeline_VITIS_LOOP_465_2_fu_66 |  0.427  |   158   |   342   |
+|   call   | grp_reconstructor_Pipeline_VITIS_LOOP_502_2_fu_66 |  0.427  |   158   |   342   |
 |----------|---------------------------------------------------|---------|---------|---------|
 |          |             output_ftmap_1_read_fu_48             |    0    |    0    |    0    |
 |   read   |                 pixel_h_read_fu_54                |    0    |    0    |    0    |
@@ -546,9 +546,9 @@ N/A
 |---------------------------------------------------|------|------|------|--------||---------||---------|
 |                        Comp                       |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
 |---------------------------------------------------|------|------|------|--------||---------||---------|
-| grp_reconstructor_Pipeline_VITIS_LOOP_465_2_fu_66 |  p1  |   2  |   9  |   18   ||    9    |
-| grp_reconstructor_Pipeline_VITIS_LOOP_465_2_fu_66 |  p3  |   2  |  10  |   20   ||    9    |
-| grp_reconstructor_Pipeline_VITIS_LOOP_465_2_fu_66 |  p4  |   2  |  64  |   128  ||    9    |
+| grp_reconstructor_Pipeline_VITIS_LOOP_502_2_fu_66 |  p1  |   2  |   9  |   18   ||    9    |
+| grp_reconstructor_Pipeline_VITIS_LOOP_502_2_fu_66 |  p3  |   2  |  10  |   20   ||    9    |
+| grp_reconstructor_Pipeline_VITIS_LOOP_502_2_fu_66 |  p4  |   2  |  64  |   128  ||    9    |
 |---------------------------------------------------|------|------|------|--------||---------||---------|
 |                       Total                       |      |      |      |   166  ||  1.281  ||    27   |
 |---------------------------------------------------|------|------|------|--------||---------||---------|

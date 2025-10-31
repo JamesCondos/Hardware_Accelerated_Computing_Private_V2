@@ -16157,11 +16157,4 @@ assign p_cast_cast_fu_1430_p1 = $signed(p_cast_fu_1420_p4);
 
 assign p_cast_fu_1420_p4 = {{conv3_biases[63:2]}};
 
-
-reg find_df_deadlock = 0;
-// synthesis translate_off
-`include "srcnn_hls_deadlock_detector.vh"
-// synthesis translate_on
-
 endmodule //srcnn
-

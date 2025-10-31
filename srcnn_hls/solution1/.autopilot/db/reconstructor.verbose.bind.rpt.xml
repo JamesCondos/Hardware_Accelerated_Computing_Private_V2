@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'reconstructor'" level="0">
-<item name = "Date">Thu Oct 30 21:58:17 2025
+<item name = "Date">Fri Oct 31 13:48:09 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_reconstructor_Pipeline_VITIS_LOOP_465_2_fu_66">reconstructor_Pipeline_VITIS_LOOP_465_2, 297, 297, 2.970 us, 2.970 us, 297, 297, no</column>
+<column name="grp_reconstructor_Pipeline_VITIS_LOOP_502_2_fu_66">reconstructor_Pipeline_VITIS_LOOP_502_2, 297, 297, 2.970 us, 2.970 us, 297, 297, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

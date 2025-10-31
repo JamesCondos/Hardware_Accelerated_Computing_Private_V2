@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dataflow_in_loop_tile_height_loop_MAIN_1_Block_newFuncRoot4_proc'
 ================================================================
-* Date:           Thu Oct 30 21:57:57 2025
+* Date:           Fri Oct 31 13:47:48 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -123,15 +123,15 @@ State 11 <SV = 10> <Delay = 1.87>
 ST_11 : Operation 27 [2/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 27 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 12 <SV = 11> <Delay = 2.21>
-ST_12 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln109 = zext i5 %tmp" [src/srcnn.cpp:109]   --->   Operation 28 'zext' 'zext_ln109' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 29 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i5.i4, i5 %tmp, i4 0" [src/srcnn.cpp:109]   --->   Operation 29 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 30 [1/1] (0.77ns)   --->   "%pixel_h = add i9 %shl_ln, i9 %zext_ln109" [src/srcnn.cpp:109]   --->   Operation 30 'add' 'pixel_h' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln146 = zext i5 %tmp" [src/srcnn.cpp:146]   --->   Operation 28 'zext' 'zext_ln146' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 29 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i5.i4, i5 %tmp, i4 0" [src/srcnn.cpp:146]   --->   Operation 29 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 30 [1/1] (0.77ns)   --->   "%pixel_h = add i9 %shl_ln, i9 %zext_ln146" [src/srcnn.cpp:146]   --->   Operation 30 'add' 'pixel_h' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_12 : Operation 31 [1/12] (1.87ns)   --->   "%rem_urem = urem i8 %tile_n_0_read, i8 15"   --->   Operation 31 'urem' 'rem_urem' <Predicate = true> <Delay = 1.87> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 11> <II = 8> <Delay = 1.87> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_12 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node pixel_w)   --->   "%shl_ln110 = shl i8 %rem_urem, i8 4" [src/srcnn.cpp:110]   --->   Operation 32 'shl' 'shl_ln110' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 33 [1/1] (0.33ns) (out node of the LUT)   --->   "%pixel_w = or i8 %shl_ln110, i8 %rem_urem" [src/srcnn.cpp:110]   --->   Operation 33 'or' 'pixel_w' <Predicate = true> <Delay = 0.33> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_12 : Operation 34 [1/1] (0.00ns)   --->   "%mrv = insertvalue i17 <undef>, i8 %pixel_w" [src/srcnn.cpp:110]   --->   Operation 34 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 35 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i17 %mrv, i9 %pixel_h" [src/srcnn.cpp:110]   --->   Operation 35 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 36 [1/1] (0.00ns)   --->   "%ret_ln110 = ret i17 %mrv_1" [src/srcnn.cpp:110]   --->   Operation 36 'ret' 'ret_ln110' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node pixel_w)   --->   "%shl_ln147 = shl i8 %rem_urem, i8 4" [src/srcnn.cpp:147]   --->   Operation 32 'shl' 'shl_ln147' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 33 [1/1] (0.33ns) (out node of the LUT)   --->   "%pixel_w = or i8 %shl_ln147, i8 %rem_urem" [src/srcnn.cpp:147]   --->   Operation 33 'or' 'pixel_w' <Predicate = true> <Delay = 0.33> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 34 [1/1] (0.00ns)   --->   "%mrv = insertvalue i17 <undef>, i8 %pixel_w" [src/srcnn.cpp:147]   --->   Operation 34 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 35 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i17 %mrv, i9 %pixel_h" [src/srcnn.cpp:147]   --->   Operation 35 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 36 [1/1] (0.00ns)   --->   "%ret_ln147 = ret i17 %mrv_1" [src/srcnn.cpp:147]   --->   Operation 36 'ret' 'ret_ln147' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -187,7 +187,7 @@ The critical path consists of the following:
  <State 12>: 2.214ns
 The critical path consists of the following:
 	'urem' operation ('rem_urem') [9]  (1.879 ns)
-	'or' operation ('pixel_w', src/srcnn.cpp:110) [11]  (0.335 ns)
+	'or' operation ('pixel_w', src/srcnn.cpp:147) [11]  (0.335 ns)
 
 
 ============================================================

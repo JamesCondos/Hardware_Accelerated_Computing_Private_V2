@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_conv2_params'" level="0">
-<item name = "Date">Thu Oct 30 21:58:19 2025
+<item name = "Date">Fri Oct 31 13:48:13 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -31,12 +31,12 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_load_conv2_params_Pipeline_VITIS_LOOP_163_2_fu_123">load_conv2_params_Pipeline_VITIS_LOOP_163_2, 75, 75, 0.750 us, 0.750 us, 75, 75, no</column>
+<column name="grp_load_conv2_params_Pipeline_VITIS_LOOP_200_2_fu_123">load_conv2_params_Pipeline_VITIS_LOOP_200_2, 75, 75, 0.750 us, 0.750 us, 75, 75, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_161_1">2784, 2784, 87, -, -, 32, no</column>
+<column name="- VITIS_LOOP_198_1">2784, 2784, 87, -, -, 32, no</column>
 </table>
 </item>
 </section>
@@ -63,7 +63,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_load_conv2_params_Pipeline_VITIS_LOOP_163_2_fu_123">load_conv2_params_Pipeline_VITIS_LOOP_163_2, 0, 0, 258, 240, 0</column>
+<column name="grp_load_conv2_params_Pipeline_VITIS_LOOP_200_2_fu_123">load_conv2_params_Pipeline_VITIS_LOOP_200_2, 0, 0, 258, 240, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -80,9 +80,9 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln161_fu_184_p2">+, 0, 0, 13, 6, 1</column>
-<column name="add_ln162_fu_194_p2">+, 0, 0, 70, 63, 63</column>
-<column name="icmp_ln161_fu_178_p2">icmp, 0, 0, 14, 6, 7</column>
+<column name="add_ln198_fu_184_p2">+, 0, 0, 13, 6, 1</column>
+<column name="add_ln199_fu_194_p2">+, 0, 0, 70, 63, 63</column>
+<column name="icmp_ln198_fu_178_p2">icmp, 0, 0, 14, 6, 7</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -111,14 +111,14 @@
 <column name="ap_CS_fsm">13, 0, 13, 0</column>
 <column name="gmem_w2_addr_read_reg_281">32, 0, 32, 0</column>
 <column name="gmem_w2_addr_reg_275">64, 0, 64, 0</column>
-<column name="grp_load_conv2_params_Pipeline_VITIS_LOOP_163_2_fu_123_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_load_conv2_params_Pipeline_VITIS_LOOP_200_2_fu_123_ap_start_reg">1, 0, 1, 0</column>
 <column name="i_2_reg_259">6, 0, 6, 0</column>
 <column name="i_fu_78">6, 0, 6, 0</column>
-<column name="sext_ln161_reg_254">63, 0, 63, 0</column>
+<column name="sext_ln198_reg_254">63, 0, 63, 0</column>
 <column name="shl_ln_reg_291">5, 0, 11, 6</column>
 <column name="tmp_reg_296">1, 0, 1, 0</column>
-<column name="trunc_ln161_2_reg_286">1, 0, 1, 0</column>
-<column name="trunc_ln161_reg_266">5, 0, 5, 0</column>
+<column name="trunc_ln198_2_reg_286">1, 0, 1, 0</column>
+<column name="trunc_ln198_reg_266">5, 0, 5, 0</column>
 <column name="trunc_ln_reg_249">62, 0, 62, 0</column>
 </table>
 </item>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'conv1_tile'" level="0">
-<item name = "Date">Thu Oct 30 21:58:26 2025
+<item name = "Date">Fri Oct 31 13:48:20 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -36,11 +36,11 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_225_2">748, 748, 44, -, -, 17, no</column>
-<column name=" + VITIS_LOOP_226_3">34, 34, 2, -, -, 17, no</column>
+<column name="- VITIS_LOOP_262_2">748, 748, 44, -, -, 17, no</column>
+<column name=" + VITIS_LOOP_263_3">34, 34, 2, -, -, 17, no</column>
 <column name="- STREAM_OUT_CONV1">39296, 39296, 614, -, -, 64, no</column>
-<column name=" + VITIS_LOOP_294_4">612, 612, 36, -, -, 17, no</column>
-<column name="  ++ VITIS_LOOP_295_5">34, 34, 2, -, -, 17, no</column>
+<column name=" + VITIS_LOOP_331_4">612, 612, 36, -, -, 17, no</column>
+<column name="  ++ VITIS_LOOP_332_5">34, 34, 2, -, -, 17, no</column>
 </table>
 </item>
 </section>
@@ -87,24 +87,24 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln225_1_fu_2473_p2">+, 0, 0, 29, 22, 22</column>
-<column name="add_ln225_2_fu_2482_p2">+, 0, 0, 71, 64, 64</column>
-<column name="add_ln225_3_fu_2428_p2">+, 0, 0, 12, 5, 1</column>
-<column name="add_ln225_fu_2434_p2">+, 0, 0, 17, 10, 10</column>
-<column name="add_ln226_fu_3674_p2">+, 0, 0, 12, 5, 1</column>
-<column name="add_ln293_fu_5146_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln294_fu_5217_p2">+, 0, 0, 12, 5, 1</column>
-<column name="add_ln295_fu_5248_p2">+, 0, 0, 12, 5, 1</column>
-<column name="add_ln297_1_fu_5188_p2">+, 0, 0, 17, 10, 10</column>
-<column name="add_ln297_2_fu_5205_p2">+, 0, 0, 21, 14, 14</column>
-<column name="add_ln297_3_fu_5231_p2">+, 0, 0, 21, 14, 14</column>
-<column name="add_ln297_fu_5178_p2">+, 0, 0, 17, 10, 10</column>
-<column name="sub_ln225_fu_2463_p2">-, 0, 0, 28, 21, 21</column>
-<column name="icmp_ln225_fu_2422_p2">icmp, 0, 0, 12, 5, 5</column>
-<column name="icmp_ln226_fu_3668_p2">icmp, 0, 0, 12, 5, 5</column>
-<column name="icmp_ln293_fu_5140_p2">icmp, 0, 0, 15, 7, 8</column>
-<column name="icmp_ln294_fu_5211_p2">icmp, 0, 0, 12, 5, 5</column>
-<column name="icmp_ln295_fu_5242_p2">icmp, 0, 0, 12, 5, 5</column>
+<column name="add_ln262_1_fu_2473_p2">+, 0, 0, 29, 22, 22</column>
+<column name="add_ln262_2_fu_2482_p2">+, 0, 0, 71, 64, 64</column>
+<column name="add_ln262_3_fu_2428_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln262_fu_2434_p2">+, 0, 0, 17, 10, 10</column>
+<column name="add_ln263_fu_3674_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln330_fu_5146_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln331_fu_5217_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln332_fu_5248_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln334_1_fu_5188_p2">+, 0, 0, 17, 10, 10</column>
+<column name="add_ln334_2_fu_5205_p2">+, 0, 0, 21, 14, 14</column>
+<column name="add_ln334_3_fu_5231_p2">+, 0, 0, 21, 14, 14</column>
+<column name="add_ln334_fu_5178_p2">+, 0, 0, 17, 10, 10</column>
+<column name="sub_ln262_fu_2463_p2">-, 0, 0, 28, 21, 21</column>
+<column name="icmp_ln262_fu_2422_p2">icmp, 0, 0, 12, 5, 5</column>
+<column name="icmp_ln263_fu_3668_p2">icmp, 0, 0, 12, 5, 5</column>
+<column name="icmp_ln330_fu_5140_p2">icmp, 0, 0, 15, 7, 8</column>
+<column name="icmp_ln331_fu_5211_p2">icmp, 0, 0, 12, 5, 5</column>
+<column name="icmp_ln332_fu_5242_p2">icmp, 0, 0, 12, 5, 5</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
@@ -130,13 +130,13 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln225_3_reg_7031">5, 0, 5, 0</column>
-<column name="add_ln226_reg_8497">5, 0, 5, 0</column>
-<column name="add_ln293_reg_8510">7, 0, 7, 0</column>
-<column name="add_ln294_reg_8528">5, 0, 5, 0</column>
-<column name="add_ln295_reg_8546">5, 0, 5, 0</column>
-<column name="add_ln297_2_reg_8520">14, 0, 14, 0</column>
-<column name="add_ln297_reg_8515">10, 0, 10, 0</column>
+<column name="add_ln262_3_reg_7031">5, 0, 5, 0</column>
+<column name="add_ln263_reg_8497">5, 0, 5, 0</column>
+<column name="add_ln330_reg_8510">7, 0, 7, 0</column>
+<column name="add_ln331_reg_8528">5, 0, 5, 0</column>
+<column name="add_ln332_reg_8546">5, 0, 5, 0</column>
+<column name="add_ln334_2_reg_8520">14, 0, 14, 0</column>
+<column name="add_ln334_reg_8515">10, 0, 10, 0</column>
 <column name="ap_CS_fsm">17, 0, 17, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="feat_fu_1658">7, 0, 7, 0</column>
@@ -435,10 +435,10 @@
 <column name="th_3_reg_1751">5, 0, 5, 0</column>
 <column name="th_5_reg_7024">5, 0, 5, 0</column>
 <column name="th_fu_490">5, 0, 5, 0</column>
-<column name="trunc_ln293_reg_8502">1, 0, 1, 0</column>
+<column name="trunc_ln330_reg_8502">1, 0, 1, 0</column>
 <column name="tw_1_reg_1762">5, 0, 5, 0</column>
 <column name="tw_reg_1739">5, 0, 5, 0</column>
-<column name="zext_ln225_reg_7019">8, 0, 22, 14</column>
+<column name="zext_ln262_reg_7019">8, 0, 22, 14</column>
 </table>
 </item>
 </section>

@@ -657,14 +657,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 1822 \
-    name add_ln352_5 \
+    name add_ln389_5 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_add_ln352_5 \
+    corename dc_add_ln389_5 \
     op interface \
-    ports { add_ln352_5 { I 11 vector } } \
+    ports { add_ln389_5 { I 11 vector } } \
 } "
 }
 
@@ -672,14 +672,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 1840 \
-    name add_ln350 \
+    name add_ln387 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_add_ln350 \
+    corename dc_add_ln387 \
     op interface \
-    ports { add_ln350 { I 10 vector } } \
+    ports { add_ln387 { I 10 vector } } \
 } "
 }
 

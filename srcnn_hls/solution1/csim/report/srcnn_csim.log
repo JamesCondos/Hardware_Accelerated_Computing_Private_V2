@@ -1,39 +1,30 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-make: 'csim.exe' is up to date.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.
-W
+   Compiling ../../../../test/util.cpp in debug mode
+   Compiling ../../../../test/tb_set14.cpp in debug mode
+   Compiling ../../../../test/tb_conv1.cpp in debug mode
+   Compiling ../../../../test/tb_srcnn.cpp in debug mode
+   Compiling ../../../../src/conv3.cpp in debug mode
+   Compiling ../../../../src/srcnn.cpp in debug mode
+   Generating csim.exe
+***** SRCNN Golden Reference *****
+  - Butterfly MSE: 0.000740349
+
+***** SRCNN - Set14 Test *****
+Image Name     PSNR GT vs HR (dB)  PSNR GT vs HR MATLAB (dB)  PSNR GT vs LR (dB)  MSE GT vs HR   MSE GT vs HR MATLAB        
+baboon         27.6922             27.9157                    27.3618             0.00169778     0.00161402                 
+barbara        24.9302             24.9898                    24.8997             0.00320972     0.00316839                 
+bridge         23.1062             26.2451                    25.2317             0.00261723     0.00237435                 
+coastguard     26.6691             26.8397                    26.3                0.00214792     0.00206895                 
+face           32.9951             33.4187                    32.6794             0.000495821    0.000454177                
+flowers        26.7113             27.3319                    25.6995             0.00207746     0.00184746                 
+foreman        34.6322             35.727                     33.2014             0.000341544    0.000266235                
+lenna          30.1096             30.8413                    29.1689             0.000970244    0.000822304                
+man            26.5156             27.1209                    26.0613             0.00214935     0.00193996                 
+monarch        26.4376             27.9822                    24.5799             0.00225424     0.00159023                 
+pepper         32.5202             33.4745                    32.0454             0.000556667    0.000447919                
+ppt3           27.8182             29.4367                    26.6842             0.0015257      0.0011378                  
+zebra          23.9901             27.6649                    24.7423             0.00247484     0.00171134                 
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 18496
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

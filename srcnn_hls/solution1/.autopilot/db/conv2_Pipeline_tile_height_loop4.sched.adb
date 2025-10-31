@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>add_ln352_1</name>
+						<name>add_ln389_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1851089774</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1851089774</coreId>
+						<coreId>1008746033</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
+						<coreId>1178345534</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
+						<coreId>1229536288</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -214,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1008746033</coreId>
+						<coreId>1229536288</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -250,7 +250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1229536288</coreId>
+						<coreId>1008746033</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -358,7 +358,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1178345534</coreId>
+						<coreId>1851089774</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -394,7 +394,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1685021552</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -430,7 +430,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
+						<coreId>1008746033</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -466,7 +466,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1668183366</coreId>
+						<coreId>1229536288</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -502,7 +502,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1635147636</coreId>
+						<coreId>1178345534</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -538,7 +538,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
+						<coreId>1851089774</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -574,7 +574,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -610,7 +610,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1178345534</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -646,7 +646,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1008746033</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -664,7 +664,7 @@
 					<Obj>
 						<type>1</type>
 						<id>19</id>
-						<name>add_ln350</name>
+						<name>add_ln387</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -682,7 +682,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1008746033</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -718,7 +718,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1229536288</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -754,7 +754,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1008746033</coreId>
+						<coreId>540947252</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -790,7 +790,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1229536288</coreId>
+						<coreId>540947252</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -826,7 +826,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1008746033</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -898,7 +898,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -934,7 +934,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1330,7 +1330,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>540947252</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1437,7 +1437,7 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>add_ln350_read</name>
+						<name>add_ln387_read</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1480,7 +1480,7 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>add_ln352_1_read</name>
+						<name>add_ln389_1_read</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1611,7 +1611,7 @@
 						<name>i_6</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>345</lineNumber>
+						<lineNumber>382</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1627,7 +1627,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>345</second>
+										<second>382</second>
 									</item>
 								</second>
 							</item>
@@ -1665,10 +1665,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>icmp_ln345</name>
+						<name>icmp_ln382</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>345</lineNumber>
+						<lineNumber>382</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1684,7 +1684,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>345</second>
+										<second>382</second>
 									</item>
 								</second>
 							</item>
@@ -1722,10 +1722,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>add_ln345</name>
+						<name>add_ln382</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>345</lineNumber>
+						<lineNumber>382</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1741,7 +1741,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>345</second>
+										<second>382</second>
 									</item>
 								</second>
 							</item>
@@ -1779,10 +1779,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>br_ln345</name>
+						<name>br_ln382</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>345</lineNumber>
+						<lineNumber>382</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1798,7 +1798,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>345</second>
+										<second>382</second>
 									</item>
 								</second>
 							</item>
@@ -1837,10 +1837,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>zext_ln352</name>
+						<name>zext_ln389</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1856,7 +1856,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -1893,10 +1893,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>zext_ln352_5</name>
+						<name>zext_ln389_5</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1912,7 +1912,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -1949,10 +1949,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>add_ln352</name>
+						<name>add_ln389</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -1968,7 +1968,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2006,10 +2006,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>zext_ln352_6</name>
+						<name>zext_ln389_6</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2025,7 +2025,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2065,7 +2065,7 @@
 						<name>input_tile_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2081,7 +2081,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2123,7 +2123,7 @@
 						<name>input_tile_1_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2139,7 +2139,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2181,7 +2181,7 @@
 						<name>input_tile_2_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2197,7 +2197,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2239,7 +2239,7 @@
 						<name>input_tile_3_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2255,7 +2255,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2297,7 +2297,7 @@
 						<name>input_tile_4_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2313,7 +2313,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2355,7 +2355,7 @@
 						<name>input_tile_5_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2371,7 +2371,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2413,7 +2413,7 @@
 						<name>input_tile_6_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2429,7 +2429,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2471,7 +2471,7 @@
 						<name>input_tile_7_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2487,7 +2487,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2529,7 +2529,7 @@
 						<name>input_tile_8_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2545,7 +2545,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2587,7 +2587,7 @@
 						<name>input_tile_9_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2603,7 +2603,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2645,7 +2645,7 @@
 						<name>input_tile_10_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2661,7 +2661,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2703,7 +2703,7 @@
 						<name>input_tile_11_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2719,7 +2719,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2761,7 +2761,7 @@
 						<name>input_tile_12_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2777,7 +2777,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2819,7 +2819,7 @@
 						<name>input_tile_13_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2835,7 +2835,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2877,7 +2877,7 @@
 						<name>input_tile_14_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2893,7 +2893,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2935,7 +2935,7 @@
 						<name>input_tile_15_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -2951,7 +2951,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -2964,7 +2964,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2778161168</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2993,7 +2993,7 @@
 						<name>input_tile_16_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3009,7 +3009,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -3048,10 +3048,10 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>add_ln350_2</name>
+						<name>add_ln387_2</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3067,7 +3067,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3080,7 +3080,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783126776</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3105,10 +3105,10 @@
 					<Obj>
 						<type>0</type>
 						<id>72</id>
-						<name>zext_ln350</name>
+						<name>zext_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3124,7 +3124,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3137,7 +3137,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2754250240</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -3164,7 +3164,7 @@
 						<name>layer2_output_tile_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3180,7 +3180,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3222,7 +3222,7 @@
 						<name>layer2_output_tile_1_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3238,7 +3238,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3251,7 +3251,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1663975592</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3280,7 +3280,7 @@
 						<name>layer2_output_tile_2_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3296,7 +3296,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3309,7 +3309,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6775040</coreId>
+						<coreId>1869440365</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3338,7 +3338,7 @@
 						<name>layer2_output_tile_3_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3354,7 +3354,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3367,7 +3367,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007552</coreId>
+						<coreId>1936942336</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3396,7 +3396,7 @@
 						<name>layer2_output_tile_4_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3412,7 +3412,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3425,7 +3425,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2788534224</coreId>
+						<coreId>1663970112</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3454,7 +3454,7 @@
 						<name>layer2_output_tile_5_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3470,7 +3470,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3483,7 +3483,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2788533600</coreId>
+						<coreId>4228300630</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3512,7 +3512,7 @@
 						<name>layer2_output_tile_6_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3528,7 +3528,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3541,7 +3541,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783137680</coreId>
+						<coreId>4228300630</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3570,7 +3570,7 @@
 						<name>layer2_output_tile_7_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3586,7 +3586,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3599,7 +3599,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783114128</coreId>
+						<coreId>4228300630</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3628,7 +3628,7 @@
 						<name>layer2_output_tile_8_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3644,7 +3644,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3657,7 +3657,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783141904</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3686,7 +3686,7 @@
 						<name>layer2_output_tile_9_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3702,7 +3702,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3715,7 +3715,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783131768</coreId>
+						<coreId>866407590</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3744,7 +3744,7 @@
 						<name>layer2_output_tile_10_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3760,7 +3760,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3773,7 +3773,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>753</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3802,7 +3802,7 @@
 						<name>layer2_output_tile_11_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3818,7 +3818,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3831,7 +3831,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>11883</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3860,7 +3860,7 @@
 						<name>layer2_output_tile_12_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3876,7 +3876,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3889,7 +3889,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>10617</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3918,7 +3918,7 @@
 						<name>layer2_output_tile_13_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3934,7 +3934,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -3947,7 +3947,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4228300630</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -3976,7 +3976,7 @@
 						<name>layer2_output_tile_14_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -3992,7 +3992,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -4005,7 +4005,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783141624</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -4034,7 +4034,7 @@
 						<name>layer2_output_tile_15_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4050,7 +4050,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -4063,7 +4063,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1819113472</coreId>
+						<coreId>1702257920</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -4092,7 +4092,7 @@
 						<name>layer2_output_tile_16_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4108,7 +4108,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -4121,7 +4121,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1397508096</coreId>
+						<coreId>10763</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>10</bitwidth>
@@ -4150,7 +4150,7 @@
 						<name>input_tile_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4166,7 +4166,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -4179,7 +4179,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783134712</coreId>
+						<coreId>1660282368</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4206,7 +4206,7 @@
 						<name>mul_1</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4222,7 +4222,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -4235,7 +4235,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783132944</coreId>
+						<coreId>2855378499</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4263,7 +4263,7 @@
 						<name>layer2_output_tile_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4279,7 +4279,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -4292,7 +4292,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1663970240</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4319,7 +4319,7 @@
 						<name>add_1</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4335,7 +4335,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -4348,7 +4348,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1663981760</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4376,7 +4376,7 @@
 						<name>input_tile_1_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4392,7 +4392,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -4405,7 +4405,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702257920</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4432,7 +4432,7 @@
 						<name>mul_1_1</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4448,7 +4448,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -4461,7 +4461,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1663981120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4489,7 +4489,7 @@
 						<name>input_tile_2_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4505,7 +4505,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -4545,7 +4545,7 @@
 						<name>mul_1_2</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4561,7 +4561,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -4574,7 +4574,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>557812522</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4602,7 +4602,7 @@
 						<name>input_tile_3_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4618,7 +4618,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -4631,7 +4631,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>11680</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4658,7 +4658,7 @@
 						<name>mul_1_3</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4674,7 +4674,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -4687,7 +4687,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783159416</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4715,7 +4715,7 @@
 						<name>input_tile_4_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4731,7 +4731,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -4744,7 +4744,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783150968</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4771,7 +4771,7 @@
 						<name>mul_1_4</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4787,7 +4787,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -4800,7 +4800,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2746184895</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4828,7 +4828,7 @@
 						<name>input_tile_5_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4844,7 +4844,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -4857,7 +4857,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>49</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4884,7 +4884,7 @@
 						<name>mul_1_5</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4900,7 +4900,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -4913,7 +4913,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783155600</coreId>
+						<coreId>4228300630</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4941,7 +4941,7 @@
 						<name>input_tile_6_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -4957,7 +4957,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -4970,7 +4970,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2779932352</coreId>
+						<coreId>1599294464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -4997,7 +4997,7 @@
 						<name>mul_1_6</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5013,7 +5013,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -5026,7 +5026,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953394432</coreId>
+						<coreId>1663999144</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5054,7 +5054,7 @@
 						<name>input_tile_7_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5070,7 +5070,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -5083,7 +5083,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1702257920</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5110,7 +5110,7 @@
 						<name>mul_1_7</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5126,7 +5126,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -5139,7 +5139,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1931498832</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5167,7 +5167,7 @@
 						<name>input_tile_8_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5183,7 +5183,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -5196,7 +5196,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2981384377</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5223,7 +5223,7 @@
 						<name>mul_1_8</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5239,7 +5239,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -5252,7 +5252,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783146128</coreId>
+						<coreId>1145981184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5280,7 +5280,7 @@
 						<name>input_tile_9_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5296,7 +5296,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -5309,7 +5309,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>598</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5336,7 +5336,7 @@
 						<name>mul_1_9</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5352,7 +5352,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -5365,7 +5365,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936942336</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5393,7 +5393,7 @@
 						<name>input_tile_10_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5409,7 +5409,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -5422,7 +5422,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3760249108</coreId>
+						<coreId>1667737824</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5449,7 +5449,7 @@
 						<name>mul_1_s</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5465,7 +5465,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -5478,7 +5478,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3752100824</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5506,7 +5506,7 @@
 						<name>input_tile_11_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5522,7 +5522,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -5535,7 +5535,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>7955712</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5562,7 +5562,7 @@
 						<name>mul_1_10</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5578,7 +5578,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -5591,7 +5591,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783149328</coreId>
+						<coreId>1663997992</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5619,7 +5619,7 @@
 						<name>input_tile_12_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5635,7 +5635,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -5648,7 +5648,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3706948220</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5675,7 +5675,7 @@
 						<name>mul_1_11</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5691,7 +5691,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -5704,7 +5704,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2502657657</coreId>
+						<coreId>6775040</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5732,7 +5732,7 @@
 						<name>input_tile_13_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5748,7 +5748,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -5761,7 +5761,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>564860884</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5788,7 +5788,7 @@
 						<name>mul_1_12</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5804,7 +5804,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -5817,7 +5817,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1599294464</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5845,7 +5845,7 @@
 						<name>input_tile_14_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5861,7 +5861,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -5874,7 +5874,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2423281152</coreId>
+						<coreId>1663997888</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5901,7 +5901,7 @@
 						<name>mul_1_13</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5917,7 +5917,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -5930,7 +5930,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783159672</coreId>
+						<coreId>1936942336</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -5958,7 +5958,7 @@
 						<name>input_tile_15_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -5974,7 +5974,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -5987,7 +5987,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4055818086</coreId>
+						<coreId>179804658</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6014,7 +6014,7 @@
 						<name>mul_1_14</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6030,7 +6030,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -6043,7 +6043,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3971660138</coreId>
+						<coreId>1663986240</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6071,7 +6071,7 @@
 						<name>input_tile_16_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>352</lineNumber>
+						<lineNumber>389</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6087,7 +6087,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>352</second>
+										<second>389</second>
 									</item>
 								</second>
 							</item>
@@ -6100,7 +6100,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>542329856</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6127,7 +6127,7 @@
 						<name>mul_1_15</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>351</lineNumber>
+						<lineNumber>388</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6143,7 +6143,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>351</second>
+										<second>388</second>
 									</item>
 								</second>
 							</item>
@@ -6156,7 +6156,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783144696</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6184,7 +6184,7 @@
 						<name>layer2_output_tile_1_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6200,7 +6200,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6213,7 +6213,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2779929712</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6240,7 +6240,7 @@
 						<name>add_1_1</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6256,7 +6256,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6269,7 +6269,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783159824</coreId>
+						<coreId>1667704272</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6297,7 +6297,7 @@
 						<name>layer2_output_tile_2_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6313,7 +6313,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6353,7 +6353,7 @@
 						<name>add_1_2</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6369,7 +6369,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6410,7 +6410,7 @@
 						<name>layer2_output_tile_3_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6426,7 +6426,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6439,7 +6439,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953394432</coreId>
+						<coreId>1663999552</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6466,7 +6466,7 @@
 						<name>add_1_3</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6482,7 +6482,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6495,7 +6495,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1663989952</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6523,7 +6523,7 @@
 						<name>layer2_output_tile_4_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6539,7 +6539,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6552,7 +6552,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2788609568</coreId>
+						<coreId>1663984552</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6579,7 +6579,7 @@
 						<name>add_1_4</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6595,7 +6595,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6608,7 +6608,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2097043743</coreId>
+						<coreId>1667732224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6636,7 +6636,7 @@
 						<name>layer2_output_tile_5_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6652,7 +6652,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6665,7 +6665,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6692,7 +6692,7 @@
 						<name>add_1_5</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6708,7 +6708,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6721,7 +6721,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783162896</coreId>
+						<coreId>1667738112</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6749,7 +6749,7 @@
 						<name>layer2_output_tile_6_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6765,7 +6765,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6778,7 +6778,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2788613504</coreId>
+						<coreId>1664002472</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6805,7 +6805,7 @@
 						<name>add_1_6</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6821,7 +6821,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6834,7 +6834,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2423294464</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6862,7 +6862,7 @@
 						<name>layer2_output_tile_7_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6878,7 +6878,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6891,7 +6891,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1664004160</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6918,7 +6918,7 @@
 						<name>add_1_7</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6934,7 +6934,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -6947,7 +6947,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2267756695</coreId>
+						<coreId>1664013120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -6975,7 +6975,7 @@
 						<name>layer2_output_tile_8_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -6991,7 +6991,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7004,7 +7004,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>7955712</coreId>
+						<coreId>1660282112</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7031,7 +7031,7 @@
 						<name>add_1_8</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7047,7 +7047,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7060,7 +7060,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3673461550</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7088,7 +7088,7 @@
 						<name>layer2_output_tile_9_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7104,7 +7104,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7117,7 +7117,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4280595956</coreId>
+						<coreId>1330007552</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7144,7 +7144,7 @@
 						<name>add_1_9</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7160,7 +7160,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7173,7 +7173,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>118</coreId>
+						<coreId>1664007544</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7201,7 +7201,7 @@
 						<name>layer2_output_tile_10_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7217,7 +7217,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7230,7 +7230,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>301</coreId>
+						<coreId>1664012584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7257,7 +7257,7 @@
 						<name>add_1_s</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7273,7 +7273,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7286,7 +7286,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783173264</coreId>
+						<coreId>1664013888</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7314,7 +7314,7 @@
 						<name>layer2_output_tile_11_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7330,7 +7330,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7343,7 +7343,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2788609760</coreId>
+						<coreId>1664005864</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7370,7 +7370,7 @@
 						<name>add_1_10</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7386,7 +7386,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7399,7 +7399,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1177762947</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7427,7 +7427,7 @@
 						<name>layer2_output_tile_12_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7443,7 +7443,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7456,7 +7456,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783162616</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7483,7 +7483,7 @@
 						<name>add_1_11</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7499,7 +7499,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7512,7 +7512,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783168784</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7540,7 +7540,7 @@
 						<name>layer2_output_tile_13_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7556,7 +7556,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7569,7 +7569,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>926235020</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7596,7 +7596,7 @@
 						<name>add_1_12</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7612,7 +7612,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7625,7 +7625,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783176056</coreId>
+						<coreId>1667707488</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7653,7 +7653,7 @@
 						<name>layer2_output_tile_14_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7669,7 +7669,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7682,7 +7682,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>71216940</coreId>
+						<coreId>96434073</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7709,7 +7709,7 @@
 						<name>add_1_13</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7725,7 +7725,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7738,7 +7738,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1145981184</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7766,7 +7766,7 @@
 						<name>layer2_output_tile_15_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7782,7 +7782,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7795,7 +7795,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783171576</coreId>
+						<coreId>1664016832</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7822,7 +7822,7 @@
 						<name>add_1_14</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7838,7 +7838,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7851,7 +7851,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4248699354</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7879,7 +7879,7 @@
 						<name>layer2_output_tile_16_load</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7895,7 +7895,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7908,7 +7908,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>6895</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7935,7 +7935,7 @@
 						<name>add_1_15</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -7951,7 +7951,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -7964,7 +7964,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1994573807</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -7989,10 +7989,10 @@
 					<Obj>
 						<type>0</type>
 						<id>161</id>
-						<name>layer2_output_tile_addr_write_ln350</name>
+						<name>layer2_output_tile_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8008,7 +8008,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8021,7 +8021,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8047,10 +8047,10 @@
 					<Obj>
 						<type>0</type>
 						<id>162</id>
-						<name>layer2_output_tile_1_addr_write_ln350</name>
+						<name>layer2_output_tile_1_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8066,7 +8066,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8105,10 +8105,10 @@
 					<Obj>
 						<type>0</type>
 						<id>163</id>
-						<name>layer2_output_tile_2_addr_write_ln350</name>
+						<name>layer2_output_tile_2_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8124,7 +8124,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8137,7 +8137,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2779932736</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8163,10 +8163,10 @@
 					<Obj>
 						<type>0</type>
 						<id>164</id>
-						<name>layer2_output_tile_3_addr_write_ln350</name>
+						<name>layer2_output_tile_3_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8182,7 +8182,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8195,7 +8195,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783183224</coreId>
+						<coreId>1869833472</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8221,10 +8221,10 @@
 					<Obj>
 						<type>0</type>
 						<id>165</id>
-						<name>layer2_output_tile_4_addr_write_ln350</name>
+						<name>layer2_output_tile_4_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8240,7 +8240,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8253,7 +8253,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1140555137</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8279,10 +8279,10 @@
 					<Obj>
 						<type>0</type>
 						<id>166</id>
-						<name>layer2_output_tile_5_addr_write_ln350</name>
+						<name>layer2_output_tile_5_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8298,7 +8298,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8311,7 +8311,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1664011432</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8337,10 +8337,10 @@
 					<Obj>
 						<type>0</type>
 						<id>167</id>
-						<name>layer2_output_tile_6_addr_write_ln350</name>
+						<name>layer2_output_tile_6_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8356,7 +8356,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8369,7 +8369,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2419175409</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8395,10 +8395,10 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>layer2_output_tile_7_addr_write_ln350</name>
+						<name>layer2_output_tile_7_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8414,7 +8414,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8427,7 +8427,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2185073293</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8453,10 +8453,10 @@
 					<Obj>
 						<type>0</type>
 						<id>169</id>
-						<name>layer2_output_tile_8_addr_write_ln350</name>
+						<name>layer2_output_tile_8_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8472,7 +8472,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8485,7 +8485,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2779937584</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8511,10 +8511,10 @@
 					<Obj>
 						<type>0</type>
 						<id>170</id>
-						<name>layer2_output_tile_9_addr_write_ln350</name>
+						<name>layer2_output_tile_9_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8530,7 +8530,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8543,7 +8543,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2317759689</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8569,10 +8569,10 @@
 					<Obj>
 						<type>0</type>
 						<id>171</id>
-						<name>layer2_output_tile_10_addr_write_ln350</name>
+						<name>layer2_output_tile_10_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8588,7 +8588,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8601,7 +8601,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783186576</coreId>
+						<coreId>7955712</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8627,10 +8627,10 @@
 					<Obj>
 						<type>0</type>
 						<id>172</id>
-						<name>layer2_output_tile_11_addr_write_ln350</name>
+						<name>layer2_output_tile_11_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8646,7 +8646,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8659,7 +8659,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1664022208</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8685,10 +8685,10 @@
 					<Obj>
 						<type>0</type>
 						<id>173</id>
-						<name>layer2_output_tile_12_addr_write_ln350</name>
+						<name>layer2_output_tile_12_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8704,7 +8704,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8717,7 +8717,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1145981184</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8743,10 +8743,10 @@
 					<Obj>
 						<type>0</type>
 						<id>174</id>
-						<name>layer2_output_tile_13_addr_write_ln350</name>
+						<name>layer2_output_tile_13_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8762,7 +8762,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8801,10 +8801,10 @@
 					<Obj>
 						<type>0</type>
 						<id>175</id>
-						<name>layer2_output_tile_14_addr_write_ln350</name>
+						<name>layer2_output_tile_14_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8820,7 +8820,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8833,7 +8833,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702257920</coreId>
+						<coreId>1660282112</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8859,10 +8859,10 @@
 					<Obj>
 						<type>0</type>
 						<id>176</id>
-						<name>layer2_output_tile_15_addr_write_ln350</name>
+						<name>layer2_output_tile_15_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8878,7 +8878,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8891,7 +8891,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2998652599</coreId>
+						<coreId>10825</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8917,10 +8917,10 @@
 					<Obj>
 						<type>0</type>
 						<id>177</id>
-						<name>layer2_output_tile_16_addr_write_ln350</name>
+						<name>layer2_output_tile_16_addr_write_ln387</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>350</lineNumber>
+						<lineNumber>387</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8936,7 +8936,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>350</second>
+										<second>387</second>
 									</item>
 								</second>
 							</item>
@@ -8949,7 +8949,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>8771</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8975,10 +8975,10 @@
 					<Obj>
 						<type>0</type>
 						<id>178</id>
-						<name>i_write_ln345</name>
+						<name>i_write_ln382</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>345</lineNumber>
+						<lineNumber>382</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -8994,7 +8994,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>345</second>
+										<second>382</second>
 									</item>
 								</second>
 							</item>
@@ -9007,7 +9007,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2788613632</coreId>
+						<coreId>1664030888</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -9034,10 +9034,10 @@
 					<Obj>
 						<type>0</type>
 						<id>179</id>
-						<name>br_ln345</name>
+						<name>br_ln382</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>345</lineNumber>
+						<lineNumber>382</lineNumber>
 						<contextFuncName>conv2</contextFuncName>
 						<contextNormFuncName>conv2</contextNormFuncName>
 						<inlineStackInfo>
@@ -9053,7 +9053,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>conv2</second>
 										</first>
-										<second>345</second>
+										<second>382</second>
 									</item>
 								</second>
 							</item>
@@ -9066,7 +9066,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2783182224</coreId>
+						<coreId>1667710512</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -9108,7 +9108,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1471246943</coreId>
+						<coreId>611</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -9311,7 +9311,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1178345534</coreId>
+					<coreId>16843266</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -9347,7 +9347,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>16843266</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -9381,7 +9381,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1178345534</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -9538,7 +9538,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1178345534</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

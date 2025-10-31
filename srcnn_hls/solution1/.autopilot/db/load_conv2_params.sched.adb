@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1549826352</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>540947250</coreId>
+						<coreId>1549820784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1600612709</coreId>
+						<coreId>1549826112</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>7</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -250,7 +250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>544433525</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -286,7 +286,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1008746035</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -353,7 +353,7 @@
 						<name>conv2_biases_read</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -369,7 +369,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -410,7 +410,7 @@
 						<name>conv2_weights_read</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -426,7 +426,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -439,7 +439,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6085</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -467,7 +467,7 @@
 						<name>trunc_ln</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -483,7 +483,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -523,10 +523,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>trunc_ln161_1</name>
+						<name>trunc_ln198_1</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -542,7 +542,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -555,7 +555,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6645</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>62</bitwidth>
@@ -582,10 +582,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>sext_ln161</name>
+						<name>sext_ln198</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -601,7 +601,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -614,7 +614,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2296604913</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>63</bitwidth>
@@ -638,10 +638,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>i_write_ln161</name>
+						<name>i_write_ln198</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -657,7 +657,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -695,10 +695,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>br_ln161</name>
+						<name>br_ln198</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -714,7 +714,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -754,7 +754,7 @@
 						<name>i_2</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>202</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -770,7 +770,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>165</second>
+										<second>202</second>
 									</item>
 								</second>
 							</item>
@@ -808,10 +808,10 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>trunc_ln161</name>
+						<name>trunc_ln198</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -827,7 +827,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -864,10 +864,10 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>icmp_ln161</name>
+						<name>icmp_ln198</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -883,7 +883,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -921,10 +921,10 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>add_ln161</name>
+						<name>add_ln198</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -940,7 +940,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -978,10 +978,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>br_ln161</name>
+						<name>br_ln198</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -997,7 +997,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -1036,10 +1036,10 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>zext_ln161</name>
+						<name>zext_ln198</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1055,7 +1055,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -1092,10 +1092,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>zext_ln161_1</name>
+						<name>zext_ln198_1</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1111,7 +1111,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -1148,10 +1148,10 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>trunc_ln161_2</name>
+						<name>trunc_ln198_2</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1167,7 +1167,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -1180,7 +1180,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2296604913</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1207,7 +1207,7 @@
 						<name>shl_ln</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1223,7 +1223,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -1236,7 +1236,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2296604913</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -1265,7 +1265,7 @@
 						<name>tmp</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>165</lineNumber>
+						<lineNumber>202</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1281,7 +1281,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>165</second>
+										<second>202</second>
 									</item>
 								</second>
 							</item>
@@ -1320,10 +1320,10 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>add_ln162</name>
+						<name>add_ln199</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<lineNumber>199</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1339,7 +1339,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>162</second>
+										<second>199</second>
 									</item>
 								</second>
 							</item>
@@ -1352,7 +1352,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6365</coreId>
+						<coreId>2296604913</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>63</bitwidth>
@@ -1377,10 +1377,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>sext_ln162</name>
+						<name>sext_ln199</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<lineNumber>199</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1396,7 +1396,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>162</second>
+										<second>199</second>
 									</item>
 								</second>
 							</item>
@@ -1436,7 +1436,7 @@
 						<name>gmem_w2_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<lineNumber>199</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1452,7 +1452,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>162</second>
+										<second>199</second>
 									</item>
 								</second>
 							</item>
@@ -1465,7 +1465,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>10995116</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1493,7 +1493,7 @@
 						<name>gmem_w2_load_req</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<lineNumber>199</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1509,7 +1509,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>162</second>
+										<second>199</second>
 									</item>
 								</second>
 							</item>
@@ -1551,7 +1551,7 @@
 						<name>gmem_w2_addr_read</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<lineNumber>199</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1567,7 +1567,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>162</second>
+										<second>199</second>
 									</item>
 								</second>
 							</item>
@@ -1606,10 +1606,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>bitcast_ln162</name>
+						<name>bitcast_ln199</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<lineNumber>199</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1625,7 +1625,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>162</second>
+										<second>199</second>
 									</item>
 								</second>
 							</item>
@@ -1665,7 +1665,7 @@
 						<name>conv2_biases_local_addr</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<lineNumber>199</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1681,7 +1681,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>162</second>
+										<second>199</second>
 									</item>
 								</second>
 							</item>
@@ -1720,10 +1720,10 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>conv2_biases_local_addr_write_ln162</name>
+						<name>conv2_biases_local_addr_write_ln199</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>162</lineNumber>
+						<lineNumber>199</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1739,7 +1739,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>162</second>
+										<second>199</second>
 									</item>
 								</second>
 							</item>
@@ -1777,10 +1777,10 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>_ln161</name>
+						<name>_ln198</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1796,7 +1796,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -1844,10 +1844,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>i_write_ln161</name>
+						<name>i_write_ln198</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1863,7 +1863,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -1903,10 +1903,10 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>br_ln161</name>
+						<name>br_ln198</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>161</lineNumber>
+						<lineNumber>198</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1922,7 +1922,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>161</second>
+										<second>198</second>
 									</item>
 								</second>
 							</item>
@@ -1959,10 +1959,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>_ln168</name>
+						<name>_ln205</name>
 						<fileName>src/srcnn.cpp</fileName>
 						<fileDirectory>C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden</fileDirectory>
-						<lineNumber>168</lineNumber>
+						<lineNumber>205</lineNumber>
 						<contextFuncName>load_conv2_params</contextFuncName>
 						<contextNormFuncName>load_conv2_params</contextNormFuncName>
 						<inlineStackInfo>
@@ -1978,7 +1978,7 @@
 											<first>src/srcnn.cpp</first>
 											<second>load_conv2_params</second>
 										</first>
-										<second>168</second>
+										<second>205</second>
 									</item>
 								</second>
 							</item>
@@ -2036,7 +2036,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1600612709</coreId>
+						<coreId>1549825104</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2067,7 +2067,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>7</coreId>
+						<coreId>1296567872</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2098,7 +2098,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
+						<coreId>1634493764</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2129,7 +2129,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
+						<coreId>1549827504</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>6</bitwidth>
@@ -2160,7 +2160,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2678930832</coreId>
+						<coreId>1554390000</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>6</bitwidth>
@@ -2191,7 +2191,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>544367976</coreId>
+						<coreId>596</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>6</bitwidth>
@@ -2222,7 +2222,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>544108393</coreId>
+						<coreId>1554387744</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>64</bitwidth>
@@ -2235,7 +2235,7 @@
 					<Obj>
 						<type>2</type>
 						<id>115</id>
-						<name>load_conv2_params_Pipeline_VITIS_LOOP_163_2</name>
+						<name>load_conv2_params_Pipeline_VITIS_LOOP_200_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2253,13 +2253,13 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953391988</coreId>
+						<coreId>1553858592</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:load_conv2_params_Pipeline_VITIS_LOOP_163_2&gt;</content>
+				<content>&lt;constant:load_conv2_params_Pipeline_VITIS_LOOP_200_2&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -2287,7 +2287,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>1292686984</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2307,7 +2307,7 @@
 				<Obj>
 					<type>3</type>
 					<id>29</id>
-					<name>VITIS_LOOP_163_2</name>
+					<name>VITIS_LOOP_200_2</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2325,7 +2325,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2753514448</coreId>
+					<coreId>1296490288</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2342,7 +2342,7 @@
 				<Obj>
 					<type>3</type>
 					<id>48</id>
-					<name>VITIS_LOOP_163_2.split</name>
+					<name>VITIS_LOOP_200_2.split</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2360,7 +2360,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>941</coreId>
+					<coreId>1296496528</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2406,7 +2406,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2031</coreId>
+					<coreId>1633370624</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -2936,8 +2936,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_119">
 			<mId>3</mId>
-			<mTag>VITIS_LOOP_161_1</mTag>
-			<mNormTag>VITIS_LOOP_161_1</mNormTag>
+			<mTag>VITIS_LOOP_198_1</mTag>
+			<mNormTag>VITIS_LOOP_198_1</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'conv2'
 ================================================================
-* Date:           Thu Oct 30 21:58:30 2025
+* Date:           Fri Oct 31 13:48:25 2025
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        srcnn_hls
@@ -38,10 +38,10 @@
         |                                                                                  |                                                                       |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline|
         |                                     Instance                                     |                                 Module                                |   min   |   max   |    min    |    max    |  min  |  max  |   Type  |
         +----------------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+-----------+-----------+-------+-------+---------+
-        |grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2_fu_344     |conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2     |    18498|    18498|   0.185 ms|   0.185 ms|  18498|  18498|       no|
-        |grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4_fu_384  |conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4  |     9250|     9250|  92.500 us|  92.500 us|   9250|   9250|       no|
-        |grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8_fu_407      |conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8      |     9250|     9250|  92.500 us|  92.500 us|   9250|   9250|       no|
-        |grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6_fu_430                             |conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6                             |      292|      292|   2.920 us|   2.920 us|    292|    292|       no|
+        |grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_357_1_VITIS_LOOP_358_2_fu_344     |conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_357_1_VITIS_LOOP_358_2     |    18498|    18498|   0.185 ms|   0.185 ms|  18498|  18498|       no|
+        |grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_367_3_VITIS_LOOP_368_4_fu_384  |conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_367_3_VITIS_LOOP_368_4  |     9250|     9250|  92.500 us|  92.500 us|   9250|   9250|       no|
+        |grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_409_7_VITIS_LOOP_410_8_fu_407      |conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_409_7_VITIS_LOOP_410_8      |     9250|     9250|  92.500 us|  92.500 us|   9250|   9250|       no|
+        |grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_397_6_fu_430                             |conv2_Pipeline_RELU_CONV2_VITIS_LOOP_397_6                             |      292|      292|   2.920 us|   2.920 us|    292|    292|       no|
         |grp_conv2_Pipeline_tile_height_loop_fu_452                                        |conv2_Pipeline_tile_height_loop                                        |       27|       27|   0.270 us|   0.270 us|     27|     27|       no|
         |grp_conv2_Pipeline_tile_height_loop4_fu_493                                       |conv2_Pipeline_tile_height_loop4                                       |       27|       27|   0.270 us|   0.270 us|     27|     27|       no|
         |grp_conv2_Pipeline_tile_height_loop5_fu_534                                       |conv2_Pipeline_tile_height_loop5                                       |       27|       27|   0.270 us|   0.270 us|     27|     27|       no|
@@ -86,10 +86,10 @@
     +----------------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+----+------+-----+-----+
     |                                     Instance                                     |                                 Module                                | BRAM_18K| DSP|  FF  | LUT | URAM|
     +----------------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+----+------+-----+-----+
-    |grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4_fu_384  |conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4  |        0|   0|    50|  290|    0|
-    |grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6_fu_430                             |conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6                             |        0|   0|   376|  299|    0|
-    |grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8_fu_407      |conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8      |        0|   0|    49|  364|    0|
-    |grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2_fu_344     |conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2     |        0|   0|    46|  294|    0|
+    |grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_367_3_VITIS_LOOP_368_4_fu_384  |conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_367_3_VITIS_LOOP_368_4  |        0|   0|    50|  290|    0|
+    |grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_397_6_fu_430                             |conv2_Pipeline_RELU_CONV2_VITIS_LOOP_397_6                             |        0|   0|   376|  299|    0|
+    |grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_409_7_VITIS_LOOP_410_8_fu_407      |conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_409_7_VITIS_LOOP_410_8      |        0|   0|    49|  364|    0|
+    |grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_357_1_VITIS_LOOP_358_2_fu_344     |conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_357_1_VITIS_LOOP_358_2     |        0|   0|    46|  294|    0|
     |grp_conv2_Pipeline_tile_height_loop_fu_452                                        |conv2_Pipeline_tile_height_loop                                        |        0|   0|  3527|  673|    0|
     |grp_conv2_Pipeline_tile_height_loop4_fu_493                                       |conv2_Pipeline_tile_height_loop4                                       |        0|   0|  3527|  673|    0|
     |grp_conv2_Pipeline_tile_height_loop5_fu_534                                       |conv2_Pipeline_tile_height_loop5                                       |        0|   0|  3527|  673|    0|
@@ -186,19 +186,19 @@
     +-----------------------+----------+----+---+----+------------+------------+
     |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------------+----------+----+---+----+------------+------------+
-    |add_ln340_fu_662_p2    |         +|   0|  0|  13|           6|           1|
-    |add_ln342_fu_733_p2    |         +|   0|  0|  14|           7|           3|
-    |add_ln350_fu_680_p2    |         +|   0|  0|  17|          10|          10|
-    |add_ln352_1_fu_787_p2  |         +|   0|  0|  18|          11|          11|
-    |add_ln352_2_fu_835_p2  |         +|   0|  0|  18|          11|          11|
-    |add_ln352_3_fu_863_p2  |         +|   0|  0|  18|          11|          11|
-    |add_ln352_fu_759_p2    |         +|   0|  0|  18|          11|          11|
-    |icmp_ln340_fu_656_p2   |      icmp|   0|  0|  14|           6|           7|
+    |add_ln377_fu_662_p2    |         +|   0|  0|  13|           6|           1|
+    |add_ln379_fu_733_p2    |         +|   0|  0|  14|           7|           3|
+    |add_ln387_fu_680_p2    |         +|   0|  0|  17|          10|          10|
+    |add_ln389_1_fu_787_p2  |         +|   0|  0|  18|          11|          11|
+    |add_ln389_2_fu_835_p2  |         +|   0|  0|  18|          11|          11|
+    |add_ln389_3_fu_863_p2  |         +|   0|  0|  18|          11|          11|
+    |add_ln389_fu_759_p2    |         +|   0|  0|  18|          11|          11|
+    |icmp_ln377_fu_656_p2   |      icmp|   0|  0|  14|           6|           7|
     |ap_block_state1        |        or|   0|  0|   2|           1|           1|
-    |or_ln342_1_fu_814_p2   |        or|   0|  0|   6|           6|           2|
-    |or_ln342_2_fu_842_p2   |        or|   0|  0|   6|           6|           2|
-    |or_ln342_fu_766_p2     |        or|   0|  0|   6|           6|           1|
-    |or_ln345_fu_794_p2     |        or|   0|  0|   5|           5|           1|
+    |or_ln379_1_fu_814_p2   |        or|   0|  0|   6|           6|           2|
+    |or_ln379_2_fu_842_p2   |        or|   0|  0|   6|           6|           2|
+    |or_ln379_fu_766_p2     |        or|   0|  0|   6|           6|           1|
+    |or_ln382_fu_794_p2     |        or|   0|  0|   5|           5|           1|
     +-----------------------+----------+----+---+----+------------+------------+
     |Total                  |          |   0|  0| 155|          97|          72|
     +-----------------------+----------+----+---+----+------------+------------+
@@ -480,20 +480,20 @@
     +-----------------------------------------------------------------------------------------------+----+----+-----+-----------+
     |                                              Name                                             | FF | LUT| Bits| Const Bits|
     +-----------------------------------------------------------------------------------------------+----+----+-----+-----------+
-    |add_ln340_reg_880                                                                              |   6|   0|    6|          0|
-    |add_ln342_reg_934                                                                              |   7|   0|    7|          0|
-    |add_ln350_reg_885                                                                              |  10|   0|   10|          0|
-    |add_ln352_1_reg_951                                                                            |  10|   0|   11|          1|
-    |add_ln352_2_reg_976                                                                            |  11|   0|   11|          0|
-    |add_ln352_3_reg_981                                                                            |   9|   0|   11|          2|
-    |add_ln352_reg_946                                                                              |  11|   0|   11|          0|
+    |add_ln377_reg_880                                                                              |   6|   0|    6|          0|
+    |add_ln379_reg_934                                                                              |   7|   0|    7|          0|
+    |add_ln387_reg_885                                                                              |  10|   0|   10|          0|
+    |add_ln389_1_reg_951                                                                            |  10|   0|   11|          1|
+    |add_ln389_2_reg_976                                                                            |  11|   0|   11|          0|
+    |add_ln389_3_reg_981                                                                            |   9|   0|   11|          2|
+    |add_ln389_reg_946                                                                              |  11|   0|   11|          0|
     |ap_CS_fsm                                                                                      |  16|   0|   16|          0|
     |ap_done_reg                                                                                    |   1|   0|    1|          0|
     |feat_fu_108                                                                                    |   6|   0|    6|          0|
-    |grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4_fu_384_ap_start_reg  |   1|   0|    1|          0|
-    |grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6_fu_430_ap_start_reg                             |   1|   0|    1|          0|
-    |grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8_fu_407_ap_start_reg      |   1|   0|    1|          0|
-    |grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2_fu_344_ap_start_reg     |   1|   0|    1|          0|
+    |grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_367_3_VITIS_LOOP_368_4_fu_384_ap_start_reg  |   1|   0|    1|          0|
+    |grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_397_6_fu_430_ap_start_reg                             |   1|   0|    1|          0|
+    |grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_409_7_VITIS_LOOP_410_8_fu_407_ap_start_reg      |   1|   0|    1|          0|
+    |grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_357_1_VITIS_LOOP_358_2_fu_344_ap_start_reg     |   1|   0|    1|          0|
     |grp_conv2_Pipeline_tile_height_loop4_fu_493_ap_start_reg                                       |   1|   0|    1|          0|
     |grp_conv2_Pipeline_tile_height_loop5_fu_534_ap_start_reg                                       |   1|   0|    1|          0|
     |grp_conv2_Pipeline_tile_height_loop6_fu_575_ap_start_reg                                       |   1|   0|    1|          0|
@@ -503,8 +503,8 @@
     |lshr_ln_reg_900                                                                                |   4|   0|    4|          0|
     |reg_636                                                                                        |  32|   0|   32|          0|
     |reg_642                                                                                        |  32|   0|   32|          0|
-    |trunc_ln340_reg_894                                                                            |   1|   0|    1|          0|
-    |trunc_ln342_reg_939                                                                            |   6|   0|    6|          0|
+    |trunc_ln377_reg_894                                                                            |   1|   0|    1|          0|
+    |trunc_ln379_reg_939                                                                            |   6|   0|    6|          0|
     +-----------------------------------------------------------------------------------------------+----+----+-----+-----------+
     |Total                                                                                          | 182|   0|  185|          3|
     +-----------------------------------------------------------------------------------------------+----+----+-----+-----------+

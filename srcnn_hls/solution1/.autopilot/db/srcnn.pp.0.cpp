@@ -3832,31 +3832,38 @@ __attribute__((sdx_kernel("srcnn", 0))) void srcnn(
 #pragma HLSDIRECTIVE TOP name=srcnn
 # 16 "src/srcnn.cpp"
 
-# 34 "src/srcnn.cpp"
+# 64 "src/srcnn.cpp"
 #pragma HLS INTERFACE s_axilite port=return bundle=ctrl
-
-
-#pragma HLS INTERFACE m_axi port=input_ftmap bundle=gmem_in offset=slave depth=(1*255*255)
 #pragma HLS INTERFACE s_axilite port=input_ftmap bundle=ctrl
-#pragma HLS INTERFACE m_axi port=output_ftmap bundle=gmem_out offset=slave depth=(1*255*255)
+#pragma HLS INTERFACE s_axilite port=conv1_weights bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=conv1_biases bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=conv2_weights bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=conv2_biases bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=conv3_weights bundle=ctrl
+#pragma HLS INTERFACE s_axilite port=conv3_biases bundle=ctrl
 #pragma HLS INTERFACE s_axilite port=output_ftmap bundle=ctrl
 
 
+
+
+
+
+#pragma HLS INTERFACE m_axi port=input_ftmap bundle=gmem_in offset=slave depth=(1*255*255)
+
+
+#pragma HLS INTERFACE m_axi port=output_ftmap bundle=gmem_out offset=slave depth=(1*255*255)
+
+
 #pragma HLS INTERFACE m_axi port=conv1_weights bundle=gmem_w1 offset=slave depth=(64*1*9*9)
-#pragma HLS INTERFACE s_axilite port=conv1_weights bundle=ctrl
 #pragma HLS INTERFACE m_axi port=conv1_biases bundle=gmem_w1 offset=slave depth=(64)
-#pragma HLS INTERFACE s_axilite port=conv1_biases bundle=ctrl
+
 
 #pragma HLS INTERFACE m_axi port=conv2_weights bundle=gmem_w2 offset=slave depth=(32*64*1*1)
-#pragma HLS INTERFACE s_axilite port=conv2_weights bundle=ctrl
 #pragma HLS INTERFACE m_axi port=conv2_biases bundle=gmem_w2 offset=slave depth=(32)
-#pragma HLS INTERFACE s_axilite port=conv2_biases bundle=ctrl
+
 
 #pragma HLS INTERFACE m_axi port=conv3_weights bundle=gmem_w3 offset=slave depth=(1*32*5*5)
-#pragma HLS INTERFACE s_axilite port=conv3_weights bundle=ctrl
 #pragma HLS INTERFACE m_axi port=conv3_biases bundle=gmem_w3 offset=slave depth=(1)
-#pragma HLS INTERFACE s_axilite port=conv3_biases bundle=ctrl
-
 
 
 
@@ -3939,11 +3946,11 @@ void load_conv1_params(
 {
 #pragma HLS INLINE off
 
- VITIS_LOOP_140_1: for (int i = 0; i < 64; i++) {
+ VITIS_LOOP_177_1: for (int i = 0; i < 64; i++) {
         conv1_biases_local[i] = conv1_biases[i];
-        VITIS_LOOP_142_2: for (int j = 0; j < 1; j++) {
-            VITIS_LOOP_143_3: for (int kh = 0; kh < 9; kh++) {
-                VITIS_LOOP_144_4: for (int kw = 0; kw < 9; kw++) {
+        VITIS_LOOP_179_2: for (int j = 0; j < 1; j++) {
+            VITIS_LOOP_180_3: for (int kh = 0; kh < 9; kh++) {
+                VITIS_LOOP_181_4: for (int kw = 0; kw < 9; kw++) {
 #pragma HLS PIPELINE II=1
  conv1_weights_local[i][j][kh][kw] = conv1_weights[i][j][kh][kw];
                 }
@@ -3960,9 +3967,9 @@ void load_conv2_params(
 {
 #pragma HLS INLINE off
 
- VITIS_LOOP_161_1: for (int i = 0; i < 32; i++) {
+ VITIS_LOOP_198_1: for (int i = 0; i < 32; i++) {
         conv2_biases_local[i] = conv2_biases[i];
-        VITIS_LOOP_163_2: for (int j = 0; j < 64; j++) {
+        VITIS_LOOP_200_2: for (int j = 0; j < 64; j++) {
 #pragma HLS PIPELINE II=1
  conv2_weights_local[i][j][0][0] = conv2_weights[i][j][0][0];
         }
@@ -3977,11 +3984,11 @@ void load_conv3_params(
 {
 #pragma HLS INLINE off
 
- VITIS_LOOP_178_1: for (int i = 0; i < 1; i++) {
+ VITIS_LOOP_215_1: for (int i = 0; i < 1; i++) {
         conv3_biases_local[i] = conv3_biases[i];
-        VITIS_LOOP_180_2: for (int j = 0; j < 32; j++) {
-            VITIS_LOOP_181_3: for (int kh = 0; kh < 5; kh++) {
-                VITIS_LOOP_182_4: for (int kw = 0; kw < 5; kw++) {
+        VITIS_LOOP_217_2: for (int j = 0; j < 32; j++) {
+            VITIS_LOOP_218_3: for (int kh = 0; kh < 5; kh++) {
+                VITIS_LOOP_219_4: for (int kw = 0; kw < 5; kw++) {
 #pragma HLS PIPELINE II=1
  conv3_weights_local[i][j][kh][kw] = conv3_weights[i][j][kh][kw];
                 }
@@ -4023,16 +4030,16 @@ void conv1_tile(
 #pragma HLS BIND_STORAGE variable=layer1_output_tile type=RAM_S2P impl=bram
 #pragma HLS ARRAY_PARTITION variable=layer1_output_tile type=cyclic factor=2 dim=1
 
- VITIS_LOOP_224_1: for (int in_feat = 0; in_feat < 1; in_feat++) {
-         VITIS_LOOP_225_2: for (int th = 0; th < 17; th++) {
-             VITIS_LOOP_226_3: for (int tw = 0; tw < 17; tw++) {
+ VITIS_LOOP_261_1: for (int in_feat = 0; in_feat < 1; in_feat++) {
+         VITIS_LOOP_262_2: for (int th = 0; th < 17; th++) {
+             VITIS_LOOP_263_3: for (int tw = 0; tw < 17; tw++) {
 #pragma HLS PIPELINE off
  input_tile[in_feat][th][tw] =
                      input_ftmap[in_feat][pixel_h + th][pixel_w + tw];
              }
          }
      }
-# 242 "src/srcnn.cpp"
+# 279 "src/srcnn.cpp"
     feature_loop_conv1:
     for (int feat = 0; feat < 64; feat++) {
      tile_height_loop_conv1:
@@ -4085,8 +4092,8 @@ void conv1_tile(
 
     STREAM_OUT_CONV1:
     for (int feat = 0; feat < 64; feat++) {
-        VITIS_LOOP_294_4: for (int th = 0; th < 17; th++) {
-            VITIS_LOOP_295_5: for (int tw = 0; tw < 17; tw++) {
+        VITIS_LOOP_331_4: for (int th = 0; th < 17; th++) {
+            VITIS_LOOP_332_5: for (int tw = 0; tw < 17; tw++) {
 #pragma HLS PIPELINE off
  conv1_to_conv2.write(layer1_output_tile[feat][th][tw]);
             }
@@ -4111,8 +4118,8 @@ void conv2(
 
     STREAM_READ_CONV2:
     for (int feat = 0; feat < 64; feat++) {
-        VITIS_LOOP_320_1: for (int i = 0; i < 17; i++) {
-            VITIS_LOOP_321_2: for (int j = 0; j < 17; j++) {
+        VITIS_LOOP_357_1: for (int i = 0; i < 17; i++) {
+            VITIS_LOOP_358_2: for (int j = 0; j < 17; j++) {
                 input_tile[feat][i][j] = conv1_to_conv2.read();
             }
         }
@@ -4121,8 +4128,8 @@ void conv2(
 
     OUT_STATIONARY_CONV2:
     for (int out_feat = 0; out_feat < 32; out_feat++) {
-        VITIS_LOOP_330_3: for (int i = 0; i < 17; i++) {
-            VITIS_LOOP_331_4: for (int j = 0; j < 17; j++) {
+        VITIS_LOOP_367_3: for (int i = 0; i < 17; i++) {
+            VITIS_LOOP_368_4: for (int j = 0; j < 17; j++) {
 #pragma HLS PIPELINE II=1
  layer2_output_tile[out_feat][i][j] = conv2_biases[out_feat];
             }
@@ -4140,7 +4147,7 @@ void conv2(
              tile_width_loop:
 #pragma HLS PIPELINE II=1
 
- VITIS_LOOP_349_5: for (int j = 0; j < 17; j++) {
+ VITIS_LOOP_386_5: for (int j = 0; j < 17; j++) {
                     layer2_output_tile[feat][i][j] +=
                         conv2_weights[feat][in_feat][0][0] *
                         input_tile[in_feat][i][j];
@@ -4151,7 +4158,7 @@ void conv2(
 
         RELU_CONV2:
         for (int i = 0; i < 17; i++) {
-            VITIS_LOOP_360_6: for (int j = 0; j < 17; j++) {
+            VITIS_LOOP_397_6: for (int j = 0; j < 17; j++) {
 #pragma HLS PIPELINE II = 1
  if (layer2_output_tile[feat][i][j] < 0) {
                     layer2_output_tile[feat][i][j] = 0;
@@ -4163,8 +4170,8 @@ void conv2(
 
     STREAM_OUT_CONV2:
     for (int feat = 0; feat < 32; feat++) {
-        VITIS_LOOP_372_7: for (int i = 0; i < 17; i++) {
-            VITIS_LOOP_373_8: for (int j = 0; j < 17; j++) {
+        VITIS_LOOP_409_7: for (int i = 0; i < 17; i++) {
+            VITIS_LOOP_410_8: for (int j = 0; j < 17; j++) {
                 conv2_to_conv3.write(layer2_output_tile[feat][i][j]);
             }
         }
@@ -4189,9 +4196,9 @@ void conv3(
     ftmap_t input_tile[32][17][17];
 
 
-    VITIS_LOOP_398_1: for (int feat = 0; feat < 32; feat++) {
-        VITIS_LOOP_399_2: for (int i = 0; i < 17; i++) {
-            VITIS_LOOP_400_3: for (int j = 0; j < 17; j++) {
+    VITIS_LOOP_435_1: for (int feat = 0; feat < 32; feat++) {
+        VITIS_LOOP_436_2: for (int i = 0; i < 17; i++) {
+            VITIS_LOOP_437_3: for (int j = 0; j < 17; j++) {
                 input_tile[feat][i][j] = conv2_to_conv3.read();
             }
         }
@@ -4200,7 +4207,7 @@ void conv3(
 
     OUT_STATIONARY_CONV3:
     for (int i = 0; i < 17; i++) {
-        VITIS_LOOP_409_4: for (int j = 0; j < 17; j++) {
+        VITIS_LOOP_446_4: for (int j = 0; j < 17; j++) {
 #pragma HLS PIPELINE II = 1
  layer3_output_tile[0][i][j] = conv3_biases[0];
         }
@@ -4255,8 +4262,8 @@ void reconstructor(ftmap_t output_ftmap[1][255][255],
                    int pixel_h, int pixel_w)
 {
 
-    VITIS_LOOP_464_1: for (int i = 0; i < 17; i++) {
-        VITIS_LOOP_465_2: for (int j = 0; j < 17; j++) {
+    VITIS_LOOP_501_1: for (int i = 0; i < 17; i++) {
+        VITIS_LOOP_502_2: for (int j = 0; j < 17; j++) {
 #pragma HLS PIPELINE II=1
  output_ftmap[0][pixel_h + i][pixel_w + j] = output_tile[0][i][j];
         }

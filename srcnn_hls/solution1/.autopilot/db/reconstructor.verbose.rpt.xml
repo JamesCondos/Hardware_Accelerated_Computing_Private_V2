@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'reconstructor'" level="0">
-<item name = "Date">Thu Oct 30 21:58:36 2025
+<item name = "Date">Fri Oct 31 13:48:31 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_reconstructor_Pipeline_VITIS_LOOP_465_2_fu_66">reconstructor_Pipeline_VITIS_LOOP_465_2, 297, 297, 2.970 us, 2.970 us, 297, 297, no</column>
+<column name="grp_reconstructor_Pipeline_VITIS_LOOP_502_2_fu_66">reconstructor_Pipeline_VITIS_LOOP_502_2, 297, 297, 2.970 us, 2.970 us, 297, 297, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_reconstructor_Pipeline_VITIS_LOOP_465_2_fu_66">reconstructor_Pipeline_VITIS_LOOP_465_2, 0, 0, 195, 481, 0</column>
+<column name="grp_reconstructor_Pipeline_VITIS_LOOP_502_2_fu_66">reconstructor_Pipeline_VITIS_LOOP_502_2, 0, 0, 195, 481, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -98,7 +98,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">2, 0, 2, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_reconstructor_Pipeline_VITIS_LOOP_465_2_fu_66_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_reconstructor_Pipeline_VITIS_LOOP_502_2_fu_66_ap_start_reg">1, 0, 1, 0</column>
 <column name="output_ftmap_1_reg_88">64, 0, 64, 0</column>
 <column name="pixel_h_reg_93">9, 0, 9, 0</column>
 <column name="tmp_reg_98">8, 0, 10, 2</column>

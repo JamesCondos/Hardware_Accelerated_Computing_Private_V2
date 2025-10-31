@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761827333927">
-  <ports id="1" name="conv1_to_conv2" type="PortType" coreName="FIFO_LUTRAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRom">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761878905997">
+  <ports id="1" name="conv1_to_conv2" type="PortType" coreName="FIFO_LUTRAM" coreId="842230048" bitwidth="32" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
   <ports id="2" name="conv2_to_conv3" type="PortType" coreName="FIFO_LUTRAM" coreId="1953391988" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="3" name="conv2_biases_local" type="PortType" coreName="RAM_S2P_BRAM" coreId="2794589392" bitwidth="32" iftype="IfTypeRegister" arraysize="32">
+  <ports id="3" name="conv2_biases_local" type="PortType" coreName="RAM_S2P_BRAM" coreId="1635147636" bitwidth="32" iftype="IfTypeRegister" arraysize="32">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="4" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3" type="PortType" coreName="RAM_S2P_BRAM" coreId="10" bitwidth="32" iftype="IfTypeRegister" arraysize="512">
+  <ports id="4" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3" type="PortType" coreName="RAM_S2P_BRAM" coreId="540946720" bitwidth="32" iftype="IfTypeRegister" arraysize="512">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="5" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="512">
+  <ports id="5" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1" type="PortType" coreName="RAM_S2P_BRAM" coreId="1818850399" bitwidth="32" iftype="IfTypeRegister" arraysize="512">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="6" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2" type="PortType" coreName="RAM_S2P_BRAM" coreId="2794592904" bitwidth="32" iftype="IfTypeRegister" arraysize="512">
+  <ports id="6" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="512">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
-  <ports id="7" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig" type="PortType" coreName="RAM_S2P_BRAM" coreId="2794587008" bitwidth="32" iftype="IfTypeRegister" arraysize="512">
+  <ports id="7" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig" type="PortType" coreName="RAM_S2P_BRAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="512">
     <dataOutputObjs>getelementptr</dataOutputObjs>
     <dataOutputObjs>getelementptr</dataOutputObjs>
   </ports>
@@ -379,14 +379,14 @@
   <edges id="709" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.38" sink_obj="//@blocks.4/@node_objs.48"/>
   <blocks id="58" name="entry" type="BlockType">
     <controlOutputObjs>in_feature_loop_conv2</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="feat" originalName="feat" coreId="2794961720" bitwidth="6" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="feat" originalName="feat" coreId="0" bitwidth="6" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>store</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="input_tile" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="input_tile" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -394,8 +394,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="input_tile_1" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_1_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="input_tile_1" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_1_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -403,8 +403,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="input_tile_2" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_2_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="input_tile_2" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_2_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -412,8 +412,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="input_tile_3" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_3_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="input_tile_3" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_3_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -421,8 +421,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="input_tile_4" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_4_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="input_tile_4" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_4_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -430,8 +430,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="input_tile_5" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_5_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="input_tile_5" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_5_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -439,8 +439,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="input_tile_6" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_6_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="input_tile_6" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_6_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -448,8 +448,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="input_tile_7" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_7_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="input_tile_7" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_7_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -457,8 +457,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="input_tile_8" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_8_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="input_tile_8" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_8_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -466,8 +466,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="input_tile_9" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_9_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="input_tile_9" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_9_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -475,8 +475,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="input_tile_10" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_10_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="input_tile_10" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_10_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -484,8 +484,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="input_tile_11" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_11_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="input_tile_11" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_11_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -493,8 +493,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="input_tile_12" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_12_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="input_tile_12" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_12_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -502,8 +502,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="input_tile_13" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_13_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="input_tile_13" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_13_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -511,8 +511,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="input_tile_14" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_14_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="input_tile_14" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_14_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -520,8 +520,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="input_tile_15" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_15_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="input_tile_15" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_15_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -529,8 +529,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="input_tile_16" lineNumber="314" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_16_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="314" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="input_tile_16" lineNumber="351" originalName="input_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="input_tile_16_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="351" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -538,19 +538,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="layer2_output_tile" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
-      <dataOutputObjs>call</dataOutputObjs>
-      <dataOutputObjs>call</dataOutputObjs>
-      <dataOutputObjs>call</dataOutputObjs>
-      <dataOutputObjs>call</dataOutputObjs>
-      <dataOutputObjs>call</dataOutputObjs>
-      <dataOutputObjs>call</dataOutputObjs>
-      <dataOutputObjs>call</dataOutputObjs>
-      <constName>empty</constName>
-    </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="layer2_output_tile_1" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_1_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="layer2_output_tile" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -560,8 +549,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="layer2_output_tile_2" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_2_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="layer2_output_tile_1" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_1_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -571,8 +560,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="layer2_output_tile_3" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_3_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="layer2_output_tile_2" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_2_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -582,8 +571,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="layer2_output_tile_4" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_4_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="layer2_output_tile_3" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_3_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -593,8 +582,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="layer2_output_tile_5" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_5_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="layer2_output_tile_4" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_4_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -604,8 +593,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="layer2_output_tile_6" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_6_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="layer2_output_tile_5" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_5_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -615,8 +604,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="layer2_output_tile_7" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_7_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="layer2_output_tile_6" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_6_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -626,8 +615,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="layer2_output_tile_8" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_8_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="layer2_output_tile_7" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_7_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -637,8 +626,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="layer2_output_tile_9" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_9_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="layer2_output_tile_8" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_8_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -648,8 +637,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="layer2_output_tile_10" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_10_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="layer2_output_tile_9" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_9_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -659,8 +648,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="layer2_output_tile_11" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_11_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="layer2_output_tile_10" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_10_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -670,8 +659,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="layer2_output_tile_12" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_12_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="layer2_output_tile_11" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_11_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -681,8 +670,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="layer2_output_tile_13" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_13_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="layer2_output_tile_12" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_12_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -692,8 +681,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="layer2_output_tile_14" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_14_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="layer2_output_tile_13" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_13_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -703,8 +692,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="layer2_output_tile_15" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_15_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="layer2_output_tile_14" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_14_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -714,8 +703,8 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="layer2_output_tile_16" lineNumber="315" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_16_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="315" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="layer2_output_tile_15" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_15_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -725,8 +714,19 @@
       <dataOutputObjs>call</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="empty" coreId="2794968528" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1"/>
-    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="_ln0" rtlName="grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2_fu_344" coreId="0" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="layer2_output_tile_16" lineNumber="352" originalName="layer2_output_tile" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="layer2_output_tile_16_U" coreName="RAM" implIndex="auto" control="no" opType="ram_s2p" coreId="83" contextFuncName="conv2" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="empty" coreId="0" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="_ln0" rtlName="grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_357_1_VITIS_LOOP_358_2_fu_344" coreId="0" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
@@ -745,10 +745,10 @@
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>conv1_to_conv2</dataInputObjs>
-      <constName>conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2</constName>
+      <constName>conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_357_1_VITIS_LOOP_358_2</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="empty_256" coreId="2794211328" bitwidth="32" opcode="wait" nodeLabel="2.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1"/>
-    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="_ln0" rtlName="grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4_fu_384" coreId="2794977080" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="empty_256" coreId="0" bitwidth="32" opcode="wait" nodeLabel="2.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="_ln0" rtlName="grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_367_3_VITIS_LOOP_368_4_fu_384" coreId="0" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
@@ -767,21 +767,21 @@
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>conv2_biases_local</dataInputObjs>
-      <constName>conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4</constName>
+      <constName>conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_367_3_VITIS_LOOP_368_4</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="feat_write_ln340" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreId="6775040" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="38" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="feat_write_ln377" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>alloca</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="br_ln340" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="br_ln377" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <controlInputObjs>in_feature_loop_conv2</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="src/srcnn.cpp">
-      <validLinenumbers>314</validLinenumbers>
-      <validLinenumbers>315</validLinenumbers>
-      <validLinenumbers>340</validLinenumbers>
+      <validLinenumbers>351</validLinenumbers>
+      <validLinenumbers>352</validLinenumbers>
+      <validLinenumbers>377</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="63" name="in_feature_loop_conv2" type="BlockType">
@@ -791,8 +791,8 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>for.inc149.preheader</controlOutputObjs>
     <controlOutputObjs>in_feature_loop_conv2.split</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="feat_1" lineNumber="340" originalName="feat" fileName="src/srcnn.cpp" fileDirectory="../." coreId="1936942336" contextFuncName="conv2" bitwidth="6" opcode="load" nodeLabel="4.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="feat_1" lineNumber="377" originalName="feat" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="6" opcode="load" nodeLabel="4.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -801,26 +801,26 @@
       <dataOutputObjs>trunc</dataOutputObjs>
       <dataOutputObjs>partselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="icmp_ln340" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="icmp_ln340_fu_656_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="conv2" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="0.78" m_topoIndex="43" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="icmp_ln377" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="icmp_ln377_fu_656_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="conv2" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="0.78" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="add_ln340" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln340_fu_662_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="6" opcode="add" nodeLabel="4.0" m_display="0" m_delay="0.78" m_topoIndex="44" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="add_ln377" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln377_fu_662_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="6" opcode="add" nodeLabel="4.0" m_display="0" m_delay="0.78" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>store</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln340" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln377" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>icmp</dataInputObjs>
       <controlInputObjs>in_feature_loop_conv2.split</controlInputObjs>
       <controlInputObjs>for.inc149.preheader</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="src/srcnn.cpp">
-      <validLinenumbers>340</validLinenumbers>
+      <validLinenumbers>377</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="72" name="in_feature_loop_conv2.split" type="BlockType">
@@ -828,19 +828,19 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>tile_height_loop</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="zext_ln350" lineNumber="350" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln350_fu_668_p1" coreId="2794973368" contextFuncName="conv2" bitwidth="10" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="350" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="zext_ln387" lineNumber="387" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln387_fu_668_p1" coreId="0" contextFuncName="conv2" bitwidth="10" opcode="zext" nodeLabel="4.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="387" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="tmp_28" lineNumber="350" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_28_fu_672_p3" coreId="0" contextFuncName="conv2" bitwidth="10" opcode="bitconcatenate" nodeLabel="4.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="350" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="tmp_28" lineNumber="387" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_28_fu_672_p3" coreId="0" contextFuncName="conv2" bitwidth="10" opcode="bitconcatenate" nodeLabel="4.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="387" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="add_ln350" lineNumber="350" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln350_fu_680_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="10" opcode="add" nodeLabel="4.0" m_display="0" m_delay="0.78" m_topoIndex="48" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="350" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="add_ln387" lineNumber="387" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln387_fu_680_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="10" opcode="add" nodeLabel="4.0" m_display="0" m_delay="0.78" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="387" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>bitconcatenate</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
@@ -849,29 +849,29 @@
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="trunc_ln340" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln340_fu_686_p1" coreId="2794972368" contextFuncName="conv2" bitwidth="1" opcode="trunc" nodeLabel="4.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="trunc_ln377" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln377_fu_686_p1" coreId="0" contextFuncName="conv2" bitwidth="1" opcode="trunc" nodeLabel="4.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="lshr_ln" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="lshr_ln_reg_900" coreId="0" contextFuncName="conv2" bitwidth="4" opcode="partselect" nodeLabel="4.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="lshr_ln" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="lshr_ln_reg_900" coreId="0" contextFuncName="conv2" bitwidth="4" opcode="partselect" nodeLabel="4.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>bitconcatenate</dataOutputObjs>
       <dataOutputObjs>bitconcatenate</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln342" lineNumber="342" fileName="src/srcnn.cpp" fileDirectory="../." coreId="2796292368" contextFuncName="conv2" opcode="br" nodeLabel="4.0" m_display="0" m_delay="0.42" m_topoIndex="51" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="342" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln379" lineNumber="379" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="br" nodeLabel="4.0" m_display="0" m_delay="0.42" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="379" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <controlInputObjs>tile_height_loop</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="src/srcnn.cpp">
-      <validLinenumbers>350</validLinenumbers>
-      <validLinenumbers>340</validLinenumbers>
-      <validLinenumbers>342</validLinenumbers>
+      <validLinenumbers>387</validLinenumbers>
+      <validLinenumbers>377</validLinenumbers>
+      <validLinenumbers>379</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="76" name="tile_height_loop" type="BlockType">
@@ -881,8 +881,8 @@
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>for.body105.preheader</controlOutputObjs>
     <controlOutputObjs>tile_height_loop.split</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="in_feat" lineNumber="342" originalName="in_feat" fileName="src/srcnn.cpp" fileDirectory="../." coreId="1819113472" contextFuncName="conv2" bitwidth="7" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="342" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="in_feat" lineNumber="379" originalName="in_feat" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="7" opcode="phi" nodeLabel="5.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="379" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>add</dataInputObjs>
       <dataOutputObjs>bitselect</dataOutputObjs>
       <dataOutputObjs>trunc</dataOutputObjs>
@@ -894,20 +894,20 @@
       <controlInputObjs>in_feature_loop_conv2.split</controlInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="tmp_33" lineNumber="342" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_33_fu_700_p3" coreId="0" contextFuncName="conv2" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="342" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="tmp_33" lineNumber="379" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_33_fu_700_p3" coreId="0" contextFuncName="conv2" bitwidth="1" opcode="bitselect" nodeLabel="5.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="379" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>br</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="br_ln342" lineNumber="342" fileName="src/srcnn.cpp" fileDirectory="../." coreId="2794780160" contextFuncName="conv2" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="342" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="br_ln379" lineNumber="379" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="379" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>bitselect</dataInputObjs>
       <controlInputObjs>tile_height_loop.split</controlInputObjs>
       <controlInputObjs>for.body105.preheader</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="src/srcnn.cpp">
-      <validLinenumbers>342</validLinenumbers>
+      <validLinenumbers>379</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="130" name="tile_height_loop.split" type="BlockType">
@@ -915,98 +915,98 @@
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>tile_height_loop</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="trunc_ln342" lineNumber="342" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln342_fu_743_p1" coreId="2796286464" contextFuncName="conv2" bitwidth="6" opcode="trunc" nodeLabel="6.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="342" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="trunc_ln379" lineNumber="379" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="trunc_ln379_fu_743_p1" coreId="0" contextFuncName="conv2" bitwidth="6" opcode="trunc" nodeLabel="6.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="379" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>or</dataOutputObjs>
       <dataOutputObjs>or</dataOutputObjs>
       <dataOutputObjs>or</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="zext_ln352" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln352_fu_747_p1" coreId="2794982992" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="zext_ln389" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln389_fu_747_p1" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="tmp_29" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_29_fu_751_p3" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="bitconcatenate" nodeLabel="6.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="tmp_29" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_29_fu_751_p3" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="bitconcatenate" nodeLabel="6.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="add_ln352" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln352_fu_759_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="11" opcode="add" nodeLabel="6.0" m_display="0" m_delay="0.79" m_topoIndex="74" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="add_ln389" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln389_fu_759_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="11" opcode="add" nodeLabel="6.0" m_display="0" m_delay="0.79" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>bitconcatenate</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="lshr_ln3" lineNumber="342" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="lshr_ln3_reg_909" coreId="1599294464" contextFuncName="conv2" bitwidth="5" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="342" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="lshr_ln3" lineNumber="379" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="lshr_ln3_reg_909" coreId="0" contextFuncName="conv2" bitwidth="5" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="379" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>bitconcatenate</dataOutputObjs>
       <dataOutputObjs>or</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="tmp_30" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_30_fu_718_p3" coreId="0" contextFuncName="conv2" bitwidth="9" opcode="bitconcatenate" nodeLabel="5.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="tmp_30" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_30_fu_718_p3" coreId="0" contextFuncName="conv2" bitwidth="9" opcode="bitconcatenate" nodeLabel="5.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="tmp_43_cast" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_43_cast_fu_725_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="tmp_43_cast" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_43_cast_fu_725_p1" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>bitconcatenate</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_8" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_8" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_9" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreId="1819113472" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_9" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_10" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_10" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_11" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_11" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_12" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="64" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_12" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_13" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="65" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_13" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="tmp" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="mux_2_1_32_1_1_U1898" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" contextFuncName="conv2" bitwidth="32" opcode="mux" nodeLabel="6.0" m_display="0" m_delay="0.42" m_topoIndex="75" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="tmp" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="mux_2_1_32_1_1_U1898" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" contextFuncName="conv2" bitwidth="32" opcode="mux" nodeLabel="6.0" m_display="0" m_delay="0.42" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="_ln352" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv2_Pipeline_tile_height_loop_fu_452" coreId="0" contextFuncName="conv2" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="2.03" m_topoIndex="76" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="_ln389" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv2_Pipeline_tile_height_loop_fu_452" coreId="0" contextFuncName="conv2" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="2.03" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>add</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
@@ -1046,54 +1046,54 @@
       <dataInputObjs>mux</dataInputObjs>
       <constName>conv2_Pipeline_tile_height_loop</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="or_ln342" lineNumber="342" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1917" coreId="2794995792" contextFuncName="conv2" bitwidth="6" opcode="or" nodeLabel="8.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="342" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="or_ln379" lineNumber="379" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1917" coreId="0" contextFuncName="conv2" bitwidth="6" opcode="or" nodeLabel="8.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="379" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
       <dataOutputObjs>bitconcatenate</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="zext_ln352_9" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln352_9_fu_771_p1" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="zext_ln389_9" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln389_9_fu_771_p1" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>or</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="tmp_31" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U1900" coreId="2796290688" contextFuncName="conv2" bitwidth="10" opcode="bitconcatenate" nodeLabel="8.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="tmp_31" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U1900" coreId="0" contextFuncName="conv2" bitwidth="10" opcode="bitconcatenate" nodeLabel="8.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>or</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="zext_ln352_10" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln352_10_fu_783_p1" coreId="2794984784" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="zext_ln389_10" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="zext_ln389_10_fu_783_p1" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>bitconcatenate</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="add_ln352_1" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1918" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="11" opcode="add" nodeLabel="8.0" m_display="0" m_delay="0.78" m_topoIndex="82" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="add_ln389_1" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1918" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="11" opcode="add" nodeLabel="8.0" m_display="0" m_delay="0.78" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>zext</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_14" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="66" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_14" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_15" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1919" coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="67" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_15" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1919" coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="tmp_s" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="mux_2_1_32_1_1_U1899" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" contextFuncName="conv2" bitwidth="32" opcode="mux" nodeLabel="6.0" m_display="0" m_delay="0.42" m_topoIndex="77" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="tmp_s" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="mux_2_1_32_1_1_U1899" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" contextFuncName="conv2" bitwidth="32" opcode="mux" nodeLabel="6.0" m_display="0" m_delay="0.42" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="_ln352" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1920" coreId="0" contextFuncName="conv2" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_delay="2.03" m_topoIndex="83" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="_ln389" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1920" coreId="0" contextFuncName="conv2" opcode="call" nodeLabel="8.0" nodeLatency="1" m_display="0" m_delay="2.03" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>add</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
@@ -1133,102 +1133,102 @@
       <dataInputObjs>mux</dataInputObjs>
       <constName>conv2_Pipeline_tile_height_loop4</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="or_ln342_1" lineNumber="342" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="or_ln342_1_fu_814_p2" coreId="0" contextFuncName="conv2" bitwidth="6" opcode="or" nodeLabel="10.0" m_display="0" m_topoIndex="95" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="342" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="or_ln379_1" lineNumber="379" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="or_ln379_1_fu_814_p2" coreId="0" contextFuncName="conv2" bitwidth="6" opcode="or" nodeLabel="10.0" m_display="0" m_topoIndex="95" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="379" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
       <dataOutputObjs>bitconcatenate</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="zext_ln352_11" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1921" coreId="2786590816" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="zext_ln389_11" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1921" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>or</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="tmp_32" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_32_fu_823_p3" coreId="1330007552" contextFuncName="conv2" bitwidth="10" opcode="bitconcatenate" nodeLabel="10.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="tmp_32" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_32_fu_823_p3" coreId="0" contextFuncName="conv2" bitwidth="10" opcode="bitconcatenate" nodeLabel="10.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>or</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="106" name="zext_ln352_12" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1922" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="98" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="106" name="zext_ln389_12" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1922" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="10.0" m_display="0" m_topoIndex="98" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>bitconcatenate</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="add_ln352_2" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln352_2_fu_835_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="11" opcode="add" nodeLabel="10.0" m_display="0" m_delay="0.78" m_topoIndex="99" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="add_ln389_2" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln389_2_fu_835_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="11" opcode="add" nodeLabel="10.0" m_display="0" m_delay="0.78" m_topoIndex="99" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>zext</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="or_ln345" lineNumber="345" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1923" coreId="2794991824" contextFuncName="conv2" bitwidth="5" opcode="or" nodeLabel="9.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="345" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="or_ln382" lineNumber="382" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1923" coreId="0" contextFuncName="conv2" bitwidth="5" opcode="or" nodeLabel="9.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="382" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataOutputObjs>bitconcatenate</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="tmp_34" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_34_fu_799_p3" coreId="0" contextFuncName="conv2" bitwidth="9" opcode="bitconcatenate" nodeLabel="9.0" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="tmp_34" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_34_fu_799_p3" coreId="0" contextFuncName="conv2" bitwidth="9" opcode="bitconcatenate" nodeLabel="9.0" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>partselect</dataInputObjs>
       <dataInputObjs>or</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="tmp_46_cast" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1924" coreId="1702257920" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="tmp_46_cast" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1924" coreId="0" contextFuncName="conv2" bitwidth="64" opcode="zext" nodeLabel="9.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>bitconcatenate</dataInputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
       <dataOutputObjs>getelementptr</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_16" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_16" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_3</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_17" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1925" coreId="1953394432" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_17" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1925" coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_2</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_18" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_18" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_1</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_19" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1926" coreId="2796289872" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_19" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1926" coreId="0" contextFuncName="conv2" bitwidth="9" opcode="getelementptr" nodeLabel="9.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_20" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="91" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_20" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="91" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_21" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1927" coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="92" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_21" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1927" coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="92" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="tmp_25" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="mux_2_1_32_1_1_U1898" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" contextFuncName="conv2" bitwidth="32" opcode="mux" nodeLabel="10.0" m_display="0" m_delay="0.42" m_topoIndex="100" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="tmp_25" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="mux_2_1_32_1_1_U1898" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" contextFuncName="conv2" bitwidth="32" opcode="mux" nodeLabel="10.0" m_display="0" m_delay="0.42" m_topoIndex="100" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="_ln352" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1928" coreId="2795003728" contextFuncName="conv2" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="2.03" m_topoIndex="101" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="_ln389" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1928" coreId="0" contextFuncName="conv2" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="2.03" m_topoIndex="101" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>add</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
@@ -1268,54 +1268,54 @@
       <dataInputObjs>mux</dataInputObjs>
       <constName>conv2_Pipeline_tile_height_loop5</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="or_ln342_2" lineNumber="342" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="or_ln342_2_fu_842_p2" coreId="0" contextFuncName="conv2" bitwidth="6" opcode="or" nodeLabel="12.0" m_display="0" m_topoIndex="103" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="342" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="or_ln379_2" lineNumber="379" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="or_ln379_2_fu_842_p2" coreId="0" contextFuncName="conv2" bitwidth="6" opcode="or" nodeLabel="12.0" m_display="0" m_topoIndex="103" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="379" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
       <dataOutputObjs>bitconcatenate</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="zext_ln352_13" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1929" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="12.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="zext_ln389_13" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1929" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="12.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>or</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="tmp_35" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_35_fu_851_p3" coreId="0" contextFuncName="conv2" bitwidth="10" opcode="bitconcatenate" nodeLabel="12.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="tmp_35" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="tmp_35_fu_851_p3" coreId="0" contextFuncName="conv2" bitwidth="10" opcode="bitconcatenate" nodeLabel="12.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>or</dataInputObjs>
       <dataOutputObjs>zext</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="122" name="zext_ln352_14" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1930" coreId="2795017552" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="12.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="122" name="zext_ln389_14" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1930" coreId="0" contextFuncName="conv2" bitwidth="11" opcode="zext" nodeLabel="12.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>bitconcatenate</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="add_ln352_3" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln352_3_fu_863_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="11" opcode="add" nodeLabel="12.0" m_display="0" m_delay="0.78" m_topoIndex="107" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="add_ln389_3" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="add_ln389_3_fu_863_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="11" opcode="add" nodeLabel="12.0" m_display="0" m_delay="0.78" m_topoIndex="107" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>zext</dataInputObjs>
       <dataInputObjs>zext</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="124" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_22" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1931" coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="93" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="124" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_22" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1931" coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="93" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_23" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="94" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_23" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreName="RAM_S2P_BRAM" implIndex="bram" control="no" opType="ram_s2p" coreId="97" contextFuncName="conv2" bitwidth="32" opcode="load" nodeLabel="9.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="94" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>getelementptr</dataInputObjs>
       <dataOutputObjs>mux</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="126" name="tmp_27" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1932" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" contextFuncName="conv2" bitwidth="32" opcode="mux" nodeLabel="10.0" m_display="0" m_delay="0.42" m_topoIndex="102" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="126" name="tmp_27" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1932" coreName="Multiplexer" implIndex="auto" control="no" opType="mux" coreId="76" contextFuncName="conv2" bitwidth="32" opcode="mux" nodeLabel="10.0" m_display="0" m_delay="0.42" m_topoIndex="102" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>load</dataInputObjs>
       <dataInputObjs>trunc</dataInputObjs>
       <dataOutputObjs>call</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="127" name="_ln352" lineNumber="352" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv2_Pipeline_tile_height_loop6_fu_575" coreId="2796292608" contextFuncName="conv2" opcode="call" nodeLabel="12.0" nodeLatency="1" m_display="0" m_delay="2.03" m_topoIndex="108" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="352" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="127" name="_ln389" lineNumber="389" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv2_Pipeline_tile_height_loop6_fu_575" coreId="0" contextFuncName="conv2" opcode="call" nodeLabel="12.0" nodeLatency="1" m_display="0" m_delay="2.03" m_topoIndex="108" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="389" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>add</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
@@ -1355,29 +1355,29 @@
       <dataInputObjs>mux</dataInputObjs>
       <constName>conv2_Pipeline_tile_height_loop6</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="128" name="add_ln342" lineNumber="342" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1933" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="7" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.77" m_topoIndex="68" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="342" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="128" name="add_ln379" lineNumber="379" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U1933" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="conv2" bitwidth="7" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.77" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="379" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>phi</dataInputObjs>
       <dataOutputObjs>phi</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="br_ln342" lineNumber="342" fileName="src/srcnn.cpp" fileDirectory="../." coreId="1953394432" contextFuncName="conv2" opcode="br" nodeLabel="13.0" m_display="0" m_topoIndex="109" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="342" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="129" name="br_ln379" lineNumber="379" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="br" nodeLabel="13.0" m_display="0" m_topoIndex="109" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="379" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <controlInputObjs>tile_height_loop</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="src/srcnn.cpp">
-      <validLinenumbers>342</validLinenumbers>
-      <validLinenumbers>352</validLinenumbers>
-      <validLinenumbers>340</validLinenumbers>
-      <validLinenumbers>345</validLinenumbers>
+      <validLinenumbers>379</validLinenumbers>
+      <validLinenumbers>389</validLinenumbers>
+      <validLinenumbers>377</validLinenumbers>
+      <validLinenumbers>382</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="134" name="for.body105.preheader" type="BlockType">
     <controlInputObjs>tile_height_loop</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
     <controlOutputObjs>in_feature_loop_conv2</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="131" name="_ln350" lineNumber="350" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6_fu_430" coreId="1145981184" contextFuncName="conv2" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="2.02" m_topoIndex="69" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="350" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="131" name="_ln387" lineNumber="387" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_397_6_fu_430" coreId="0" contextFuncName="conv2" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="2.02" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="387" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>add</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
@@ -1396,26 +1396,26 @@
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
-      <constName>conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6</constName>
+      <constName>conv2_Pipeline_RELU_CONV2_VITIS_LOOP_397_6</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="132" name="feat_write_ln340" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U1902" coreId="0" contextFuncName="conv2" opcode="store" nodeLabel="5.0" m_display="0" m_delay="0.42" m_topoIndex="70" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="132" name="feat_write_ln377" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U1902" coreId="0" contextFuncName="conv2" opcode="store" nodeLabel="5.0" m_display="0" m_delay="0.42" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <dataInputObjs>add</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="133" name="br_ln340" lineNumber="340" fileName="src/srcnn.cpp" fileDirectory="../." coreId="2795002040" contextFuncName="conv2" opcode="br" nodeLabel="14.0" m_display="0" m_topoIndex="110" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="340" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="133" name="br_ln377" lineNumber="377" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="br" nodeLabel="14.0" m_display="0" m_topoIndex="110" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="377" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
       <controlInputObjs>in_feature_loop_conv2</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="src/srcnn.cpp">
-      <validLinenumbers>350</validLinenumbers>
-      <validLinenumbers>340</validLinenumbers>
+      <validLinenumbers>387</validLinenumbers>
+      <validLinenumbers>377</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <blocks id="138" name="for.inc149.preheader" type="BlockType">
     <controlInputObjs>in_feature_loop_conv2</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="empty_257" coreId="2795017168" bitwidth="32" opcode="wait" nodeLabel="4.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="empty_257" coreId="0" bitwidth="32" opcode="wait" nodeLabel="4.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1"/>
     <node_objs xsi:type="cdfg:CdfgNode" id="136" name="_ln0" rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U1904" coreId="0" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
@@ -1435,13 +1435,13 @@
       <dataInputObjs>alloca</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>conv2_to_conv3</dataOutputObjs>
-      <constName>conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8</constName>
+      <constName>conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_409_7_VITIS_LOOP_410_8</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="137" name="_ln378" lineNumber="378" fileName="src/srcnn.cpp" fileDirectory="../." coreId="1397508096" contextFuncName="conv2" opcode="ret" nodeLabel="15.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="378" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="137" name="_ln415" lineNumber="415" fileName="src/srcnn.cpp" fileDirectory="../." coreId="0" contextFuncName="conv2" opcode="ret" nodeLabel="15.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/srcnn.cpp" linenumber="415" fileDirectory="C:\Users\james\Documents\Hardware_Final_Project_Private_V2\golden" functionName="conv2"/>
     </node_objs>
     <fileValidLineNumbers fileName="src/srcnn.cpp">
-      <validLinenumbers>378</validLinenumbers>
+      <validLinenumbers>415</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <ScheduleInfo time="0"/>
@@ -1460,16 +1460,16 @@
   <ScheduleInfo time="13"/>
   <ScheduleInfo time="14"/>
   <ScheduleInfo time="15"/>
+  <regnodes realName="add_ln389_3_reg_981">
+    <nodeIds>123</nodeIds>
+  </regnodes>
   <regnodes realName="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_16_reg_956">
     <nodeIds>111</nodeIds>
   </regnodes>
   <regnodes realName="feat_reg_870">
     <nodeIds>8</nodeIds>
   </regnodes>
-  <regnodes realName="add_ln352_2_reg_976">
-    <nodeIds>107</nodeIds>
-  </regnodes>
-  <regnodes realName="trunc_ln342_reg_939">
+  <regnodes realName="trunc_ln379_reg_939">
     <nodeIds>77</nodeIds>
   </regnodes>
   <regnodes realName="lshr_ln_reg_900">
@@ -1481,35 +1481,38 @@
   <regnodes realName="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_8_reg_914">
     <nodeIds>86</nodeIds>
   </regnodes>
-  <regnodes realName="add_ln350_reg_885">
+  <regnodes realName="add_ln387_reg_885">
     <nodeIds>66</nodeIds>
   </regnodes>
   <regnodes realName="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_11_reg_929">
     <nodeIds>89</nodeIds>
   </regnodes>
+  <regnodes realName="add_ln377_reg_880">
+    <nodeIds>61</nodeIds>
+  </regnodes>
   <regnodes realName="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_19_reg_971">
     <nodeIds>114</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln379_reg_934">
+    <nodeIds>128</nodeIds>
   </regnodes>
   <regnodes realName="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_9_reg_919">
     <nodeIds>87</nodeIds>
   </regnodes>
-  <regnodes realName="add_ln342_reg_934">
-    <nodeIds>128</nodeIds>
-  </regnodes>
-  <regnodes realName="add_ln352_3_reg_981">
-    <nodeIds>123</nodeIds>
-  </regnodes>
   <regnodes realName="lshr_ln3_reg_909">
     <nodeIds>83</nodeIds>
   </regnodes>
-  <regnodes realName="trunc_ln340_reg_894">
+  <regnodes realName="trunc_ln377_reg_894">
     <nodeIds>67</nodeIds>
-  </regnodes>
-  <regnodes realName="add_ln340_reg_880">
-    <nodeIds>61</nodeIds>
   </regnodes>
   <regnodes realName="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_10_reg_924">
     <nodeIds>88</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln389_1_reg_951">
+    <nodeIds>98</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln389_2_reg_976">
+    <nodeIds>107</nodeIds>
   </regnodes>
   <regnodes realName="reg_636">
     <nodeIds>92</nodeIds>
@@ -1518,9 +1521,6 @@
   <regnodes realName="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_17_reg_961">
     <nodeIds>112</nodeIds>
   </regnodes>
-  <regnodes realName="add_ln352_reg_946">
-    <nodeIds>80</nodeIds>
-  </regnodes>
   <regnodes realName="in_feat_reg_332">
     <nodeIds>73</nodeIds>
   </regnodes>
@@ -1528,8 +1528,8 @@
     <nodeIds>101</nodeIds>
     <nodeIds>126</nodeIds>
   </regnodes>
-  <regnodes realName="add_ln352_1_reg_951">
-    <nodeIds>98</nodeIds>
+  <regnodes realName="add_ln389_reg_946">
+    <nodeIds>80</nodeIds>
   </regnodes>
   <expressionNodes realName="grp_fu_627">
     <nodeIds>101</nodeIds>
@@ -1538,8 +1538,23 @@
   <expressionNodes realName="layer2_output_tile_1_alloca_fu_184">
     <nodeIds>36</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="add_ln387_fu_680">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln389_2_fu_835">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_10_gep_fu_262">
     <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln389_13_fu_847">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln389_fu_747">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln377_fu_662">
+    <nodeIds>61</nodeIds>
   </expressionNodes>
   <expressionNodes realName="lshr_ln3_fu_708">
     <nodeIds>83</nodeIds>
@@ -1547,8 +1562,8 @@
   <expressionNodes realName="input_tile_13_alloca_fu_164">
     <nodeIds>31</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln352_14_fu_859">
-    <nodeIds>122</nodeIds>
+  <expressionNodes realName="zext_ln387_fu_668">
+    <nodeIds>64</nodeIds>
   </expressionNodes>
   <expressionNodes realName="input_tile_11_alloca_fu_156">
     <nodeIds>29</nodeIds>
@@ -1556,20 +1571,11 @@
   <expressionNodes realName="tmp_35_fu_851">
     <nodeIds>121</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="or_ln342_1_fu_814">
-    <nodeIds>103</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln352_1_fu_787">
-    <nodeIds>98</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="layer2_output_tile_10_alloca_fu_220">
     <nodeIds>45</nodeIds>
   </expressionNodes>
   <expressionNodes realName="tmp_31_fu_775">
     <nodeIds>96</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln352_3_fu_863">
-    <nodeIds>123</nodeIds>
   </expressionNodes>
   <expressionNodes realName="input_tile_3_alloca_fu_124">
     <nodeIds>21</nodeIds>
@@ -1583,6 +1589,9 @@
   <expressionNodes realName="tmp_29_fu_751">
     <nodeIds>79</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="or_ln379_fu_766">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="grp_fu_616">
     <nodeIds>92</nodeIds>
     <nodeIds>117</nodeIds>
@@ -1590,20 +1599,20 @@
   <expressionNodes realName="input_tile_15_alloca_fu_172">
     <nodeIds>33</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln342_fu_743">
-    <nodeIds>77</nodeIds>
+  <expressionNodes realName="or_ln379_1_fu_814">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln389_14_fu_859">
+    <nodeIds>122</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln377_fu_656">
+    <nodeIds>60</nodeIds>
   </expressionNodes>
   <expressionNodes realName="lshr_ln_fu_690">
     <nodeIds>70</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_output_tile_9_alloca_fu_216">
     <nodeIds>44</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln352_11_fu_819">
-    <nodeIds>104</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln352_9_fu_771">
-    <nodeIds>95</nodeIds>
   </expressionNodes>
   <expressionNodes realName="input_tile_12_alloca_fu_160">
     <nodeIds>30</nodeIds>
@@ -1613,6 +1622,12 @@
   </expressionNodes>
   <expressionNodes realName="layer2_output_tile_3_alloca_fu_192">
     <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln379_2_fu_842">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln379_fu_743">
+    <nodeIds>77</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_output_tile_16_alloca_fu_244">
     <nodeIds>51</nodeIds>
@@ -1626,11 +1641,11 @@
   <expressionNodes realName="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_8_gep_fu_248">
     <nodeIds>86</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln340_fu_656">
-    <nodeIds>60</nodeIds>
+  <expressionNodes realName="zext_ln389_10_fu_783">
+    <nodeIds>97</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln342_fu_733">
-    <nodeIds>128</nodeIds>
+  <expressionNodes realName="zext_ln389_9_fu_771">
+    <nodeIds>95</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_output_tile_6_alloca_fu_204">
     <nodeIds>41</nodeIds>
@@ -1659,12 +1674,6 @@
   <expressionNodes realName="input_tile_7_alloca_fu_140">
     <nodeIds>25</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="or_ln342_2_fu_842">
-    <nodeIds>119</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln352_fu_759">
-    <nodeIds>80</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="layer2_output_tile_7_alloca_fu_208">
     <nodeIds>42</nodeIds>
   </expressionNodes>
@@ -1673,12 +1682,6 @@
   </expressionNodes>
   <expressionNodes realName="input_tile_6_alloca_fu_136">
     <nodeIds>24</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="or_ln345_fu_794">
-    <nodeIds>108</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln352_12_fu_831">
-    <nodeIds>106</nodeIds>
   </expressionNodes>
   <expressionNodes realName="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_17_gep_fu_307">
     <nodeIds>112</nodeIds>
@@ -1698,6 +1701,15 @@
   <expressionNodes realName="input_tile_16_alloca_fu_176">
     <nodeIds>34</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="add_ln389_1_fu_787">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln389_3_fu_863">
+    <nodeIds>123</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln389_12_fu_831">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="layer2_output_tile_15_alloca_fu_240">
     <nodeIds>50</nodeIds>
   </expressionNodes>
@@ -1706,9 +1718,6 @@
   </expressionNodes>
   <expressionNodes realName="layer2_output_tile_alloca_fu_180">
     <nodeIds>35</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln352_fu_747">
-    <nodeIds>78</nodeIds>
   </expressionNodes>
   <expressionNodes realName="input_tile_14_alloca_fu_168">
     <nodeIds>32</nodeIds>
@@ -1725,8 +1734,8 @@
   <expressionNodes realName="layer2_output_tile_11_alloca_fu_224">
     <nodeIds>46</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="or_ln342_fu_766">
-    <nodeIds>94</nodeIds>
+  <expressionNodes realName="zext_ln389_11_fu_819">
+    <nodeIds>104</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_output_tile_14_alloca_fu_236">
     <nodeIds>49</nodeIds>
@@ -1734,47 +1743,44 @@
   <expressionNodes realName="layer2_output_tile_8_alloca_fu_212">
     <nodeIds>43</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln340_fu_686">
-    <nodeIds>67</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="input_tile_9_alloca_fu_148">
     <nodeIds>27</nodeIds>
   </expressionNodes>
   <expressionNodes realName="tmp_30_fu_718">
     <nodeIds>84</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln352_2_fu_835">
-    <nodeIds>107</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="input_tile_2_alloca_fu_120">
     <nodeIds>20</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln352_13_fu_847">
-    <nodeIds>120</nodeIds>
   </expressionNodes>
   <expressionNodes realName="tmp_33_fu_700">
     <nodeIds>74</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="zext_ln352_10_fu_783">
-    <nodeIds>97</nodeIds>
+  <expressionNodes realName="add_ln379_fu_733">
+    <nodeIds>128</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln377_fu_686">
+    <nodeIds>67</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_output_tile_2_alloca_fu_188">
     <nodeIds>37</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln340_fu_662">
-    <nodeIds>61</nodeIds>
+  <expressionNodes realName="add_ln389_fu_759">
+    <nodeIds>80</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="add_ln350_fu_680">
-    <nodeIds>66</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="zext_ln350_fu_668">
-    <nodeIds>64</nodeIds>
+  <expressionNodes realName="or_ln382_fu_794">
+    <nodeIds>108</nodeIds>
   </expressionNodes>
   <expressionNodes realName="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig_16_gep_fu_300">
     <nodeIds>111</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_360_6_fu_430">
-    <nodeIds>131</nodeIds>
+  <moduleNodes realName="grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_367_3_VITIS_LOOP_368_4_fu_384">
+    <nodeIds>55</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_357_1_VITIS_LOOP_358_2_fu_344">
+    <nodeIds>53</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_409_7_VITIS_LOOP_410_8_fu_407">
+    <nodeIds>136</nodeIds>
   </moduleNodes>
   <moduleNodes realName="grp_conv2_Pipeline_tile_height_loop_fu_452">
     <nodeIds>93</nodeIds>
@@ -1782,29 +1788,23 @@
   <moduleNodes realName="grp_conv2_Pipeline_tile_height_loop4_fu_493">
     <nodeIds>102</nodeIds>
   </moduleNodes>
+  <moduleNodes realName="grp_conv2_Pipeline_RELU_CONV2_VITIS_LOOP_397_6_fu_430">
+    <nodeIds>131</nodeIds>
+  </moduleNodes>
   <moduleNodes realName="grp_conv2_Pipeline_tile_height_loop6_fu_575">
     <nodeIds>127</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_conv2_Pipeline_STREAM_READ_CONV2_VITIS_LOOP_320_1_VITIS_LOOP_321_2_fu_344">
-    <nodeIds>53</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_conv2_Pipeline_OUT_STATIONARY_CONV2_VITIS_LOOP_330_3_VITIS_LOOP_331_4_fu_384">
-    <nodeIds>55</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_conv2_Pipeline_STREAM_OUT_CONV2_VITIS_LOOP_372_7_VITIS_LOOP_373_8_fu_407">
-    <nodeIds>136</nodeIds>
   </moduleNodes>
   <moduleNodes realName="grp_conv2_Pipeline_tile_height_loop5_fu_534">
     <nodeIds>118</nodeIds>
   </moduleNodes>
-  <ioNodes realName="store_ln340_store_fu_739">
-    <nodeIds>132</nodeIds>
-  </ioNodes>
-  <ioNodes realName="store_ln340_store_fu_648">
-    <nodeIds>56</nodeIds>
-  </ioNodes>
   <ioNodes realName="feat_1_load_fu_653">
     <nodeIds>59</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln377_store_fu_648">
+    <nodeIds>56</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln377_store_fu_739">
+    <nodeIds>132</nodeIds>
   </ioNodes>
   <memoryPorts dataString="p_ZZ5srcnnPA255_A255_fPA1_A9_A9_fPfPA64_A1_A1_fS6_PA32_A5_A5_fS6_S1_E19conv2_weig">
     <nodeIds>100</nodeIds>

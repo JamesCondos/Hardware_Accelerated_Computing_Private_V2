@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_conv1_params'" level="0">
-<item name = "Date">Thu Oct 30 21:57:55 2025
+<item name = "Date">Fri Oct 31 13:47:46 2025
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">srcnn_hls</item>
@@ -31,12 +31,12 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4_fu_449">load_conv1_params_Pipeline_VITIS_LOOP_143_3_VITIS_LOOP_144_4, 92, 92, 0.920 us, 0.920 us, 92, 92, no</column>
+<column name="grp_load_conv1_params_Pipeline_VITIS_LOOP_180_3_VITIS_LOOP_181_4_fu_449">load_conv1_params_Pipeline_VITIS_LOOP_180_3_VITIS_LOOP_181_4, 92, 92, 0.920 us, 0.920 us, 92, 92, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_140_1">6656, 6656, 104, -, -, 64, no</column>
+<column name="- VITIS_LOOP_177_1">6656, 6656, 104, -, -, 64, no</column>
 </table>
 </item>
 </section>

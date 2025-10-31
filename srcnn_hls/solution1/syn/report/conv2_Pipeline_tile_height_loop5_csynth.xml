@@ -1813,8 +1813,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>add_ln352_3</name>
-<Object>add_ln352_3</Object>
+<name>add_ln389_3</name>
+<Object>add_ln389_3</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2385,8 +2385,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>add_ln350</name>
-<Object>add_ln350</Object>
+<name>add_ln387</name>
+<Object>add_ln387</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
