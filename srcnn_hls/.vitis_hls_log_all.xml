@@ -4,6 +4,14 @@
     <logs>
       <synLog/>
       <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors.&#xD;&#xA;" projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:06:28.129+1100"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors.&#xD;&#xA;" projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:06:03.402+1100"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:04:48.155+1100"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors.&#xD;&#xA;" projectName="srcnn_hls" solutionName="solution1" date="2025-10-30T23:59:05.821+1100"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors.&#xD;&#xA;" projectName="srcnn_hls" solutionName="solution1" date="2025-10-30T23:52:23.399+1100"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="srcnn_hls" solutionName="solution1" date="2025-10-30T23:51:14.388+1100"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
@@ -19,6 +27,20 @@
         <logs message="WARNING: [IP_Flow 19-4832] The IP name 'srcnn_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="srcnn_hls" solutionName="solution1" date="2025-10-30T22:00:18.646+1100" type="Warning"/>
         <logs message="WARNING: [IP_Flow 19-4832] The IP name 'srcnn_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="srcnn_hls" solutionName="solution1" date="2025-10-30T22:00:16.634+1100" type="Warning"/>
       </packageLog>
+      <csimLog>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;@E Simulation failed.&#xD;&#xA;" projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:20:29.728+1100" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;foreman        7.62153             35.727                     33.2014             0.599251       0.000266235                " projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:20:26.135+1100" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;flowers        6.72876             27.3319                    25.6995             0.283662       0.00184746                 " projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:20:21.269+1100" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;face           6.64456             33.4187                    32.6794             0.185027       0.000454177                " projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:20:16.390+1100" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;coastguard     7.09434             26.8397                    26.3                0.354464       0.00206895                 " projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:20:11.409+1100" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;bridge         6.67743             26.2451                    25.2317             0.371415       0.00237435                 " projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:20:06.289+1100" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;barbara        7.53088             24.9898                    24.8997             0.399977       0.00316839                 " projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:20:01.463+1100" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;baboon         7.51202             27.9157                    27.3618             0.345616       0.00161402                 " projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:19:56.658+1100" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;***** SRCNN Golden Reference *****&#xD;&#xA;  - Butterfly MSE: 0.401628&#xD;&#xA;&#xD;&#xA;***** SRCNN - Set14 Test *****&#xD;&#xA;Image Name     PSNR GT vs HR (dB)  PSNR GT vs HR MATLAB (dB)  PSNR GT vs LR (dB)  MSE GT vs HR   MSE GT vs HR MATLAB        " projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:19:51.689+1100" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;@E Simulation failed.&#xD;&#xA;" projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:19:38.427+1100" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;baboon         7.51202             27.9157                    27.3618             0.345616       0.00161402                 " projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:19:35.777+1100" type="Warning"/>
+        <logs message="WARNING [HLS SIM]: hls::stream 'conv1_to_conv2' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;***** SRCNN Golden Reference *****&#xD;&#xA;  - Butterfly MSE: 0.401628&#xD;&#xA;&#xD;&#xA;***** SRCNN - Set14 Test *****&#xD;&#xA;Image Name     PSNR GT vs HR (dB)  PSNR GT vs HR MATLAB (dB)  PSNR GT vs LR (dB)  MSE GT vs HR   MSE GT vs HR MATLAB        " projectName="srcnn_hls" solutionName="solution1" date="2025-10-31T00:19:30.941+1100" type="Warning"/>
+      </csimLog>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>
